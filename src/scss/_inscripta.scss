@@ -1,0 +1,198 @@
+// 
+// inscripta
+// 
+
+
+img.img-logo {
+  height: 40px;
+}
+
+.product-card-primary {
+  height: 100%;
+  padding: 15px;
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: solid $white 8px;
+}
+
+.product-card-primary:hover {
+  border-bottom: solid $primary 8px;
+}
+
+.product-card-secondary {
+  height: 100%;
+  padding: 15px;
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: solid $white 7px;
+}
+
+.product-card-secondary:hover {
+  border-bottom: solid $secondary 8px;
+}
+
+
+.product-card2 {
+  //height: 100%;
+  //box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid #eaecf3;
+  //border-radius: .75rem;
+  padding: 25px;
+  box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
+}
+
+.img-product-name {
+  //width: 60%;
+  height: 1.85em;
+}
+
+.font-weight-extra-bold {
+  font-weight:900;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.h4 {
+    font-size: 1.25rem;
+}
+
+h4.product-tagline {
+    line-height:1;
+    font-weight:700;
+}
+
+.feature-card-old {
+  //height: 100%;
+  padding: 15px;
+  //box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  //border-radius: 5px;
+  background-color: white;
+  color: black;
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+  //height: 200px;
+  padding: 0px;
+  //box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  //border-radius: 5px;
+  //background-color: white;
+  color: white;
+  box-shadow: 15px 15px 30px 0 rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: scroll !important;
+}
+
+.mask {
+  background: rgba(39,62,84,0.62);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.advantage-img-masked {
+  background: linear-gradient(to bottom,
+        #{fade-out($primary, 0.4)} 0%,
+        #{fade-out($primary, 0.4)} 100%),
+    url("../assets/img/h3.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.half-box {
+  align-items: center;
+  display: grid;
+}
+
+.contact-card {
+  display:flex;
+  align-items:center;
+  border-left: solid $secondary 5px;
+}
+
+.stack-box {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $ia-light;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.stack-heading-box {
+  padding: 10px;
+  writing-mode: sideways-lr;
+}
+
+.word-box {
+  border: 2px solid grey; 
+  border-radius: 6px;
+}
+
+.row-header {
+  background-color: light_blue;
+}
+
+//.team-profile-box {
+//  margin-top: 8em;
+//  padding: 1em;
+  //margin: 1em;
+  //height: 100%;
+//  border: solid grey 1px;
+//  border-radius: 5px;
+//}
+
+.team-profile-box {
+  margin-top: 8em;
+  //height: 100%;
+  //box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaecf3;
+  border-radius: .75rem;
+  padding: 25px;
+  box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
+}
+
+.team-profile-img {
+  width: 60%;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-top: -8em;
+
+}
+
+.highlight-box {
+  padding: 1.2em;
+  height: 100%;
+  //margin-top:-7px;
+  //border: solid $primary 2px;
+  border-radius: 5px;
+}
+
+.image-card {
+  background-color: white;
+  height: 100%;
+}
+
+.card-box {
+  display: block;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 100%;
+}
+
+.blog-link {
+    text-decoration: none;
+
+}
