@@ -190,7 +190,7 @@ html(lang='en')
             .container.px-2
                 .row.gx-2.gx-lg-2.justify-content-center
                     .col-lg-8
-                        img.img-fluid(src="assets/img/inscripta_stack.png" alt="Inscripta Stack")
+                        img.img-fluid.lazyload(src="assets/img/inscripta_stack.png" alt="Inscripta Stack")
                     .col-lg-4
                         h1.font-weight-bold.mt-3 Inscripta Technology Stack
                         h5.mt-5 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
@@ -250,28 +250,28 @@ html(lang='en')
                                     .image-card.mx-4
                                         a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
                                             .card-box
-                                                img(src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%")
+                                                img.lazyload(src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%")
                                             h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
                                         a.blog-link(target='new' href='https://medium.com/inscripta/product-search-is-broken-heres-how-99e08504bdd9')
                                             .card-box
-                                                img(src='https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png', style="width: 100%")
+                                                img.lazyload(src='https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png', style="width: 100%")
                                             h5.font-weight-bold.mx-3.my-4 Product Search is Broken: Here&rsquo;s How
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
                                         a.blog-link(target='new' href='https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede')
                                             .card-box
-                                                img(src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%")
+                                                img.lazyload(src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%")
                                             h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
                                         a.blog-link(target='new' href='https://medium.com/inscripta teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer-74adbafe48c1')
                                             .card-box
-                                                img(src='https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg', style="width: 100%")
+                                                img.lazyload(src='https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg', style="width: 100%")
                                             h5.font-weight-bold.mx-3.my-4 Teaching computers how humans think ...
                         a.carousel-control-prev(href='#myCarousel' role='button' data-slide='prev')
                             span.carousel-control-prev-icon(aria-hidden='true')
@@ -404,6 +404,8 @@ html(lang='en')
 
         // carousel
         script(async='' src='js/carousel.js')
+
+        script(src="lazysizes.min.js" async='')
 
         script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-EFFNZ2DL25')
         script.
