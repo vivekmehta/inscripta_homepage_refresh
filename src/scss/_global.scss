@@ -26,3 +26,18 @@ body {
 .text-white-75 {
     color: fade-out($white, 0.25) !important;
 }
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.align-content-center {
+    display:flex;
+    align-content:center;
+}
+
+.flex-align-content-center {
+    display:flex;
+    align-content:center;
+}
+

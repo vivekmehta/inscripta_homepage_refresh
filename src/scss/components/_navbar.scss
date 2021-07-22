@@ -10,26 +10,34 @@
     .navbar-brand {
         font-family: $font-family-sans-serif;
         font-weight: $font-weight-bold;
-        color: $gray-900;
+        //color: $ia_dark;
+        //color: $gray-900;
+        //height: 40px
+        //background: url("../assets/img/logo/logo-cs.png") no-repeat;
+        background: url("../assets/img/logo/logo.svg") no-repeat;
+        background-size: 100%;
+        width: 180px;
+        height: 50px;
+        background-position-y: 5px;
     }
 
     .navbar-nav {
         .nav-item {
             .nav-link {
-                color: $gray-600;
+                //color: $ia_light;
+                color: $ia_dark;
                 font-family: $font-family-sans-serif;
                 font-weight: $font-weight-bold;
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 padding: 0.75rem 0;
 
-                &:hover,
-                &:active {
-                    color: $primary;
+                &:hover {
+                    color: $secondary;
                 }
 
-                &.active {
-                    color: $primary !important;
-                }
+                //&.active {
+                //    color: $primary !important;
+                //  }
             }
         }
     }
@@ -37,24 +45,32 @@
     @include media-breakpoint-up(lg) {
         // Base styling for the navbar - screen sizes greater than the large breakpoint
         box-shadow: none;
-        background-color: transparent;
+        background-color: rgba(0%, 0%, 0%, 0.25);
+        //background-color: $white;
 
         .navbar-brand {
-            color: fade-out($white, 0.3);
+            //background-image: url("../assets/img/logo/logo.svg");
+            background: url("../assets/img/logo/logo-cs.png") no-repeat;
+            background-size: 100%;
+            width: 180px;
+            height: 50px;
+            //color: fade-out($white, 0.3);
 
-            &:hover {
-                color: $white;
-            }
+            //&:hover {
+            //    color: $white;
+            //}
         }
 
         .navbar-nav {
             .nav-item {
                 .nav-link {
                     color: fade-out($white, 0.3);
+                    //color: $ia_dark;
                     padding: 0 1rem;
 
                     &:hover {
-                        color: $white;
+                        //color: $white;
+                        color: $ia_red;
                     }
                 }
 
@@ -72,20 +88,27 @@
             background-color: $white;
 
             .navbar-brand {
-                color: $gray-900;
+                background: url("../assets/img/logo/logo.svg") no-repeat;
+                background-size: 100%;
+                width: 180px;
+                height: 50px;
+                background-position-y: 5px;
 
-                &:hover {
-                    color: $primary;
-                }
+                //color: $gray-900;
+
+                //&:hover {
+                //    color: $primary;
+                //}
             }
 
             .navbar-nav {
                 .nav-item {
                     .nav-link {
-                        color: $gray-900;
+                        color: $ia_dark;
 
                         &:hover {
-                            color: $primary;
+                            //color: $primary;
+                            color: $ia_red;
                         }
                     }
                 }
