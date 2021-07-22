@@ -14,12 +14,12 @@ html(lang='en')
         link(rel='icon', type='image/x-icon', href='assets/favicon.png')
 
         // Bootstrap Icons
-        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
+        //link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
 
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
             integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
 
-        link(rel="stylesheet" href="assets/wickedcss.min.css")
+        //link(rel="stylesheet" href="assets/wickedcss.min.css")
 
         // Google fonts
         //link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
@@ -404,6 +404,13 @@ html(lang='en')
         // carousel
         script(src='js/carousel.js')
 
+        script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-EFFNZ2DL25')
+        script.
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EFFNZ2DL25');
 
+        
         script(type='text/javascript' data-cfasync='false').
             window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
