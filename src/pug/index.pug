@@ -14,8 +14,8 @@ html(lang='en')
         link(rel='icon', type='image/x-icon', href='assets/favicon.png')
 
         //Font
-        link(href='https://fonts.googleapis.com/css?family=Lato:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Nunito Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
 
         // SimpleLightbox plugin CSS
         link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet')
@@ -83,12 +83,11 @@ html(lang='en')
                 
 
         section#products.page-section.bg-light
-            .container.px-2.px-lg-2
-                //h2.text-center.mt-0 Our products
-                .row.mb-5
-                    .col-md-5
+            .container.px-4.px-lg-2
+                .row.gx-4.gx-lg-5.mb-5
+                    .col-lg-5.col-md-5
                         h1.font-weight-bold Inscripta's AI Products
-                    .col-md-7
+                    .col-lg-7.col-md-7
                         h5 Our products, built using state-of-the-art NLP, OCR and Document Processing techniques, can be customized quickly for a variety of business domains. 
                 //hr.divider.bg-light.mb-5 
                 .row.gx-4.gx-lg-5.mt-4
@@ -142,10 +141,11 @@ html(lang='en')
                         .py-lg-5
                             h1.font-weight-bold.mb-5 Inscripta Advantage
                             h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation. 
-                            a.btn.btn-secondary.btn-xl(href='#stack') Inscripta Stack
+                            mb-5
+                                a.btn.btn-secondary.btn-xl(href='#stack') Inscripta Stack
                     .col-lg-7.col-md-12.mx-auto
                         .row
-                            .col-lg-6.col-md-6.text-center.px-3.mt-0
+                            .col-lg-6.col-md-6.text-center.mt-lg-0.mt-2
                                 .feature-card.lazyload(data-bg="assets/img/advantage/custom.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
@@ -157,7 +157,7 @@ html(lang='en')
                                             h3.font-weight-bold
                                                 | Real-world solutions
                                                 | built to handle noisy, heterogeneous data
-                            .col-lg-6.col-md-6.text-center.px-3.mt-5
+                            .col-lg-6.col-md-6.text-center.mt-lg-5
                                 .feature-card.lazyload(data-bg="assets/img/advantage/skill.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
@@ -184,12 +184,12 @@ html(lang='en')
                         img.img-fluid(src="assets/img/inscripta_stack.png" alt="Inscripta Stack")
 
         section#stack.page-section
-            .container.px-2
-                .row.gx-2.gx-lg-2
+            .container.px-4.px-lg-2
+                .row.gx-2.gx-lg-4
                     .col-lg-8
                         img.img-fluid.lazyload(data-src="assets/img/inscripta_stack.png" alt="Inscripta Stack")
-                    .col-lg-4.half-box
-                        .py-lg-5
+                    .col-lg-4
+                        .py-lg-5.mx-2
                             h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
                             h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
                             .mb-3
@@ -279,7 +279,7 @@ html(lang='en')
 
         // Team
         section#team.page-section.bg-light
-            .container.px-2.px-lg-2
+            .container.px-4.px-lg-2
                 .col-lg-11.mx-auto 
                     .row.mb-5
                         .col-md-3
@@ -359,7 +359,7 @@ html(lang='en')
                         .contact-card.col-lg-10
                             h3.text-primary.font-weight-bold.mx-2.my-0 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
                     .col-lg-4
-                        h2.mt-0 Get In Touch!
+                        h2.mt-4.mt-lg-0 Get In Touch!
                         hr.divider.bg-secondary.mx-0
                         p.mb-3
                             | Looking to add intelligence to your systems? 
@@ -386,21 +386,18 @@ html(lang='en')
                     //.col-lg-2
                         h6 Legal
 
-                //.small.text-center.text-muted.mt-4
-                    | Copyright &copy; 2021 - Inscripta AI 
-
-
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
 
         // SimpleLightbox plugin JS
-        script(async='' src='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js')
+        // script(async='' src='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
 
         // carousel
         script(async='' src='js/carousel.js')
+
 
         script(src="js/lazysizes.min.js")
         script(src="js/ls.unveilhooks.min.js")

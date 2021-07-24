@@ -8,7 +8,7 @@
     transition: background-color 0.2s ease;
 
     .navbar-brand {
-        font-family: $font-family-sans-serif;
+        font-family: $font-family-serif;
         font-weight: $font-weight-bold;
         background: url("../assets/img/logo/logo.svg") no-repeat;
         background-size: 100%;
@@ -20,9 +20,8 @@
     .navbar-nav {
         .nav-item {
             .nav-link {
-                //color: $ia_light;
                 color: $ia_dark;
-                font-family: $font-family-sans-serif;
+                font-family: $font-family-serif;
                 font-weight: $font-weight-bold;
                 font-size: 1.1rem;
                 padding: 0.75rem 0;
@@ -31,9 +30,9 @@
                     color: $secondary;
                 }
 
-                //&.active {
-                //    color: $primary !important;
-                //  }
+                /*&.active {
+                    color: $secondary !important;
+                }*/
             }
         }
     }
@@ -42,31 +41,22 @@
         // Base styling for the navbar - screen sizes greater than the large breakpoint
         box-shadow: none;
         background-color: transparent;
-        //background-color: $white;
 
         .navbar-brand {
-            //background-image: url("../assets/img/logo/logo.svg");
             background: url("../assets/img/logo/logo-cs.png") no-repeat;
             background-size: 100%;
             width: 180px;
             height: 50px;
-            //color: fade-out($white, 0.3);
-
-            //&:hover {
-            //    color: $white;
-            //}
         }
 
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    color: fade-out($white, 0.3);
-                    //color: $ia_dark;
+                    color: fade-out($white, 0.2);
                     padding: 0 1rem;
 
                     &:hover {
-                        //color: $white;
-                        color: $ia_red;
+                        color: $secondary;
                     }
                 }
 
@@ -89,12 +79,6 @@
                 width: 180px;
                 height: 50px;
                 background-position-y: 5px;
-
-                //color: $gray-900;
-
-                //&:hover {
-                //    color: $primary;
-                //}
             }
 
             .navbar-nav {
@@ -103,8 +87,11 @@
                         color: $ia_dark;
 
                         &:hover {
-                            //color: $primary;
-                            color: $ia_red;
+                            color: $secondary;
+                        }
+
+                        &:active {
+                            color: $secondary;
                         }
                     }
                 }

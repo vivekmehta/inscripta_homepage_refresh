@@ -11052,7 +11052,7 @@ hr.divider-light {
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   background: url("../assets/img/logo/logo.svg") no-repeat;
   background-size: 100%;
@@ -11062,10 +11062,13 @@ hr.divider-light {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #313131;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   padding: 0.75rem 0;
+  /*&.active {
+      color: $secondary !important;
+  }*/
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #DE1F26;
@@ -11082,7 +11085,7 @@ hr.divider-light {
     height: 50px;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11106,6 +11109,9 @@ hr.divider-light {
     color: #313131;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #DE1F26;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:active {
     color: #DE1F26;
   }
 }
