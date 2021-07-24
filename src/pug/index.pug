@@ -146,25 +146,25 @@ html(lang='en')
                     .col-lg-7.col-md-12.mx-auto
                         .row
                             .col-lg-6.col-md-6.text-center.px-3.mt-0
-                                .feature-card(style='background: url("assets/img/advantage/custom.jpg")').mb-4
+                                .feature-card.lazyload(data-bg="assets/img/advantage/custom.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold Customizable products 
                                                 | to enable quicker AI integration
-                                .feature-card(style='background: url("assets/img/advantage/noisy.jpg")').mb-4
+                                .feature-card.lazyload(data-bg="assets/img/advantage/noisy.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold
                                                 | Real-world solutions
                                                 | built to handle noisy, heterogeneous data
                             .col-lg-6.col-md-6.text-center.px-3.mt-5
-                                .feature-card(style='background: url("assets/img/advantage/skill.jpg")').mb-4
+                                .feature-card.lazyload(data-bg="assets/img/advantage/skill.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold 
                                                 | Products designed by a highly 
                                                 | skilled and experienced AI team
-                                .feature-card(style='background: url("assets/img/advantage/papers.jpg")').mb-4
+                                .feature-card.lazyload(data-bg="assets/img/advantage/papers.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold
@@ -403,6 +403,7 @@ html(lang='en')
         script(async='' src='js/carousel.js')
 
         script(src="js/lazysizes.min.js")
+        script(src="js/ls.unveilhooks.min.js")
 
         script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-EFFNZ2DL25')
         script.
