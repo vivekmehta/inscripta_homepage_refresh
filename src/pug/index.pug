@@ -76,12 +76,10 @@ html(lang='en')
                             h5.text-primary // About Inscripta
                             h1.font-weight-bold  Your Partner for AI Transformation
                             h5.mt-4.mb-4 Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.
-                            //h5.mt-4.mb-4 Our products, built using state-of-the-art NLP, OCR and Document Processing techniques, can be customized quickly for a variety of business domains.
                             .mt-5
-                                //a.h5(href='#products') Explore our products
                                 a.btn.btn-secondary.btn-xl(href='#products') Explore products                   
                     .col-lg-6.col-md-12
-                            img.img-fluid(src="assets/img/about_inscripta_ai.png")
+                            img.img-fluid.lazyload(data-src="assets/img/about_inscripta_ai.png")
                 
 
         section#products.page-section.bg-light
@@ -97,9 +95,9 @@ html(lang='en')
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-primary.bg-white
                             .text-center.mb-3
-                                img.img-product(src="assets/img/products/parseqa_isometric.png")
+                                img.img-product.lazyload(data-src="assets/img/products/parseqa_isometric.png")
                             .mb-3
-                                img.img-product-name(src="assets/img/products/parseqa_title.jpg")
+                                img.img-product-name.lazyload(data-src="assets/img/products/parseqa_title.jpg")
                             .mb-3
                                 h4.product-tagline KNOWLEDGE SEARCH <br/> FAST-TRACKED
                             .product-detail
@@ -107,9 +105,9 @@ html(lang='en')
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-secondary.bg-white
                             .text-center.mb-3
-                                img.img-product(src="assets/img/products/deckster_isometric.png")
+                                img.img-product.lazyload(data-src="assets/img/products/deckster_isometric.png")
                             .mb-3
-                                img.img-product-name(src="assets/img/products/deckster_title.jpg")
+                                img.img-product-name.lazyload(data-src="assets/img/products/deckster_title.jpg")
                             .mb-3
                                 h4.product-tagline PRESENTATIONS <br/> FAST-TRACKED
                             .product-detail
@@ -117,9 +115,9 @@ html(lang='en')
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-primary.bg-white
                             .text-center.mb-3
-                                img.img-product(src="assets/img/products/revlo_isometric.png")
+                                img.img-product.lazyload(data-src="assets/img/products/revlo_isometric.png")
                             .mb-3
-                                img.img-product-name(src="assets/img/products/revlo_title.jpg")
+                                img.img-product-name.lazyload(data-src="assets/img/products/revlo_title.jpg")
                             .mb-3
                                 h4.product-tagline PRODUCT DISCOVERY <br/> FAST-TRACKED
                             .product-detail
@@ -127,9 +125,9 @@ html(lang='en')
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-secondary.bg-white
                             .text-center.mb-3
-                                img.img-product(src="assets/img/products/silho_isometric.png")
+                                img.img-product.lazyload(data-src="assets/img/products/silho_isometric.png")
                             .mb-3
-                                img.img-product-name(src="assets/img/products/silho_title.jpg")
+                                img.img-product-name.lazyload(data-src="assets/img/products/silho_title.jpg")
                             .mb-3
                                 h4.product-tagline DIGITIZATION <br/> FAST-TRACKED
                             .product-detail
@@ -189,7 +187,7 @@ html(lang='en')
             .container.px-2
                 .row.gx-2.gx-lg-2
                     .col-lg-8
-                        img.img-fluid.lazyload(src="assets/img/inscripta_stack.png" alt="Inscripta Stack")
+                        img.img-fluid.lazyload(data-src="assets/img/inscripta_stack.png" alt="Inscripta Stack")
                     .col-lg-4.half-box
                         .py-lg-5
                             h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
@@ -249,28 +247,28 @@ html(lang='en')
                                     .image-card.mx-4
                                         a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
                                             .card-box
-                                                img.lazyload(src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%")
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%")
                                             h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
                                         a.blog-link(target='new' href='https://medium.com/inscripta/product-search-is-broken-heres-how-99e08504bdd9')
                                             .card-box
-                                                img.lazyload(src='https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png', style="width: 100%")
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png', style="width: 100%")
                                             h5.font-weight-bold.mx-3.my-4 Product Search is Broken: Here&rsquo;s How
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
                                         a.blog-link(target='new' href='https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede')
                                             .card-box
-                                                img.lazyload(src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%")
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%")
                                             h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
                                         a.blog-link(target='new' href='https://medium.com/inscripta teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer-74adbafe48c1')
                                             .card-box
-                                                img.lazyload(src='https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg', style="width: 100%")
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg', style="width: 100%")
                                             h5.font-weight-bold.mx-3.my-4 Teaching computers how humans think ...
                         a.carousel-control-prev(href='#myCarousel' role='button' data-slide='prev')
                             span.carousel-control-prev-icon(aria-hidden='true')
@@ -313,7 +311,7 @@ html(lang='en')
                             .col-lg-4.px-3
                                 .team-profile-box.mx-auto
                                     .text-center.text-primary
-                                        img.team-profile-img(src='assets/img/team/AR.jpg')
+                                        img.team-profile-img.lazyload(data-src='assets/img/team/AR.jpg')
                                         h4.mb-3 Anand Ramanathan
                                         h6.mb-2 Cofounder 
                                         a(href='https://www.linkedin.com/in/anand-ramanathan/' target='_blank')
@@ -324,7 +322,7 @@ html(lang='en')
                             .col-lg-4.px-3
                                 .team-profile-box
                                     .text-center.text-primary
-                                        img.team-profile-img(src='assets/img/team/VM.jpg')
+                                        img.team-profile-img.lazyload(data-src='assets/img/team/VM.jpg')
                                         h4.mb-3 Vivek Mehta
                                         h6.mb-2 Cofounder
                                         a(href='https://www.linkedin.com/in/vivek-mehta/' target='_blank')
@@ -337,7 +335,7 @@ html(lang='en')
                             .col-lg-4.px-3
                                 .team-profile-box
                                     .text-center.text-primary
-                                        img.team-profile-img(src='assets/img/team/VN.jpg')
+                                        img.team-profile-img.lazyload(data-src='assets/img/team/VN.jpg')
                                         h4.mb-3 Vivek Nallur
                                         h6.mb-2 Research and Academic Consultant
                                         a(href='https://www.linkedin.com/in/vivek-nallur-1b27231/' target='_blank')
@@ -404,7 +402,7 @@ html(lang='en')
         // carousel
         script(async='' src='js/carousel.js')
 
-        script(src="lazysizes.min.js" async='')
+        script(src="js/lazysizes.min.js")
 
         script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-EFFNZ2DL25')
         script.
@@ -414,5 +412,5 @@ html(lang='en')
           gtag('config', 'G-EFFNZ2DL25');
 
         
-        script(type='text/javascript' data-cfasync='false').
+        script(type='text/javascript' data-cfasync='false' async='').
             window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
