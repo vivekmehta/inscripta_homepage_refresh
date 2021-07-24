@@ -50,6 +50,8 @@ html(lang='en')
                             a.nav-link(href='#expertise') EXPERTISE
                         li.nav-item
                             a.nav-link(href='#blogs') BLOGS
+                        li.nav-item
+                            a.nav-link(href='#team') TEAM
                         //li.nav-item
                             a.nav-link(href='#contact') HIRING
                         li.nav-item
@@ -64,7 +66,7 @@ html(lang='en')
                     .col-lg-8.align-self-baseline.mt-5
                         h3.text-white.mb-5
                             | Fast-track AI transformation through high-quality, customizable products built using NLP, OCR and Document Processing techniques
-                        a.btn.btn-secondary.btn-xl.mt-2(href='#about') Explore
+                        a.btn.btn-secondary.btn-xl.mt-2(href='#about') KNOW MORE
 
         section#about.page-section
             .container.px-4.px-lg-5
@@ -77,14 +79,10 @@ html(lang='en')
                             //h5.mt-4.mb-4 Our products, built using state-of-the-art NLP, OCR and Document Processing techniques, can be customized quickly for a variety of business domains.
                             .mt-5
                                 //a.h5(href='#products') Explore our products
-                                a.btn.btn-secondary.btn-xl(href='#products') Explore products
-                            //hr.divider
-                            //.mt-4                    
+                                a.btn.btn-secondary.btn-xl(href='#products') Explore products                   
                     .col-lg-6.col-md-12
-                        //.col-lg-11
-                        img.img-fluid(src="assets/img/about_inscripta_ai.png")
-                //- .mt-5.align-items-center.text-center
-                //-     a.btn.btn-secondary.btn-xl(href='#products') Find Out More
+                            img.img-fluid(src="assets/img/about_inscripta_ai.png")
+                
 
         section#products.page-section.bg-light
             .container.px-2.px-lg-2
@@ -98,43 +96,43 @@ html(lang='en')
                 .row.gx-4.gx-lg-5.mt-4
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-primary.bg-white
-                            .img-product.text-center
-                                img.img-fluid(src="assets/img/products/parseqa_isometric.png")
-                            .my-3
+                            .text-center.mb-3
+                                img.img-product(src="assets/img/products/parseqa_isometric.png")
+                            .mb-3
                                 img.img-product-name(src="assets/img/products/parseqa_title.jpg")
-                            .my-3
+                            .mb-3
                                 h4.product-tagline KNOWLEDGE SEARCH <br/> FAST-TRACKED
-                            .mt-3
+                            .product-detail
                                 | Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-secondary.bg-white
-                            .img-product.text-center
-                                img.img-fluid(src="assets/img/products/deckster_isometric.png")
-                            .my-3
+                            .text-center.mb-3
+                                img.img-product(src="assets/img/products/deckster_isometric.png")
+                            .mb-3
                                 img.img-product-name(src="assets/img/products/deckster_title.jpg")
-                            .my-3
+                            .mb-3
                                 h4.product-tagline PRESENTATIONS <br/> FAST-TRACKED
-                            .mt-3
+                            .product-detail
                                 | Our AI-driven presentation builder speeds up content reuse letting you focus on getting the message right
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-primary.bg-white
-                            .img-product.text-center
-                                img.img-fluid(src="assets/img/products/revlo_isometric.png")
-                            .my-3
+                            .text-center.mb-3
+                                img.img-product(src="assets/img/products/revlo_isometric.png")
+                            .mb-3
                                 img.img-product-name(src="assets/img/products/revlo_title.jpg")
-                            .my-3
+                            .mb-3
                                 h4.product-tagline PRODUCT DISCOVERY <br/> FAST-TRACKED
-                            .mt-3
+                            .product-detail
                                 | Our purpose-built AI-powered conversational discovery engine makes product discovery easy and intuitive
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-secondary.bg-white
-                            .img-product.text-center
-                                img.img-fluid(src="assets/img/products/silho_isometric.png")
-                            .my-3
+                            .text-center.mb-3
+                                img.img-product(src="assets/img/products/silho_isometric.png")
+                            .mb-3
                                 img.img-product-name(src="assets/img/products/silho_title.jpg")
-                            .my-3
+                            .mb-3
                                 h4.product-tagline DIGITIZATION <br/> FAST-TRACKED
-                            .mt-3
+                            .product-detail
                                 | Our flexible Document Processing and OCR engine makes quick work of digitizing the data you need to feed into your decision making systems
 
         // Advantage
@@ -146,6 +144,7 @@ html(lang='en')
                         .py-lg-5
                             h1.font-weight-bold.mb-5 Inscripta Advantage
                             h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation. 
+                            a.btn.btn-secondary.btn-xl(href='#stack') Inscripta Stack
                     .col-lg-7.col-md-12.mx-auto
                         .row
                             .col-lg-6.col-md-6.text-center.px-3.mt-0
@@ -188,12 +187,15 @@ html(lang='en')
 
         section#stack.page-section
             .container.px-2
-                .row.gx-2.gx-lg-2.justify-content-center
+                .row.gx-2.gx-lg-2
                     .col-lg-8
                         img.img-fluid.lazyload(src="assets/img/inscripta_stack.png" alt="Inscripta Stack")
-                    .col-lg-4
-                        h1.font-weight-bold.mt-3 Inscripta Technology Stack
-                        h5.mt-5 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
+                    .col-lg-4.half-box
+                        .py-lg-5
+                            h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
+                            h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
+                            .mb-3
+                                a.btn.btn-secondary.btn-xl(href='#blogs') Read our blogs
 
 
         //Expertise
@@ -206,9 +208,6 @@ html(lang='en')
                         .col-md-8
                             h5 Our depth in NLP, machine learning, and deep learning, combined with our suit of cutting-edge products, ensures quick and effective AI prototyping and integration
                     .row.mt-4
-                        //.col-lg-2.col-md-6.col-sm-12.align-items-center.text-center
-                            .stack-heading-box 
-                                h1.font-weight-bold Our Expertise
                         .col-lg-6.col-md-6.col-sm-12
                             .product-card2.mb-4
                                 h2.mb-3.text-primary NLP

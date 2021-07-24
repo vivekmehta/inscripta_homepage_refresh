@@ -19,7 +19,7 @@ body {
 
 //- Page section styling
 .page-section {
-    padding: 8rem 0;
+    padding: 4rem 0;
 }
 
 // Custom utilities for this theme
@@ -29,6 +29,10 @@ body {
 
 .font-weight-bold {
     font-weight: 700;
+}
+
+.font-weight-extra-bold {
+  font-weight:900;
 }
 
 .align-content-center {
@@ -41,3 +45,10 @@ body {
     align-content:center;
 }
 
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
