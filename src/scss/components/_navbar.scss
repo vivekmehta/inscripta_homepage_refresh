@@ -30,9 +30,9 @@
                     color: $secondary;
                 }
 
-                /*&.active {
-                    color: $secondary !important;
-                }*/
+                &.active {
+                    color: $secondary;
+                }
             }
         }
     }
@@ -56,7 +56,11 @@
                     padding: 0 1rem;
 
                     &:hover {
-                        color: $secondary;
+                        color: $secondary!important;
+                    }
+
+                    &:active {
+                        color: $secondary!important;
                     }
                 }
 
@@ -91,7 +95,7 @@
                         }
 
                         &:active {
-                            color: $secondary;
+                            color: $secondary!important;
                         }
                     }
                 }

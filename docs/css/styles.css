@@ -10891,6 +10891,17 @@ img.img-logo {
   font-size: 1.25rem;
 }
 
+.img-main {
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.img-parseqa {
+  max-height: 500px;
+  max-width: 120%;
+  margin-left: -20%;
+}
+
 .product-card-primary {
   height: 100%;
   padding: 15px;
@@ -10955,6 +10966,16 @@ h4.product-tagline, .product-tagline.h4 {
   background-attachment: scroll !important;
 }
 
+.animation-float {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.animation-float:hover {
+  transform: translateY(-8px);
+}
+
 .mask {
   background: rgba(39, 62, 84, 0.62);
   overflow: hidden;
@@ -10986,12 +11007,39 @@ h4.product-tagline, .product-tagline.h4 {
       writing-mode: sideways-lr;
 }
 
-.team-profile-box {
+.mt-8 {
   margin-top: 8em;
+}
+
+.content-box {
+  border: 1px solid #eaecf3;
+  border-radius: 0.75rem;
+  padding: 20px;
+  box-shadow: 10px 10px 1.25rem rgba(31, 45, 61, 0.05);
+}
+
+.content-box:hover {
+  border: 1px solid #192B80;
+}
+
+.team-profile-box {
   border: 1px solid #eaecf3;
   border-radius: 0.75rem;
   padding: 25px;
   box-shadow: 10px 10px 1.25rem rgba(31, 45, 61, 0.05);
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.align-self-end-flex {
+  align-self: end !important;
+  display: flex;
+}
+
+.team-profile-box:hover {
+  border: 1px solid #192B80;
 }
 
 .team-profile-img {
@@ -11034,6 +11082,10 @@ h4.product-tagline, .product-tagline.h4 {
   border-radius: 0rem !important;
 }
 
+.btn-secondary-outline {
+  border: 0.15rem solid #DE1F26 !important;
+}
+
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
@@ -11066,11 +11118,11 @@ hr.divider-light {
   font-weight: 700;
   font-size: 1.1rem;
   padding: 0.75rem 0;
-  /*&.active {
-      color: $secondary !important;
-  }*/
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #DE1F26;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
   color: #DE1F26;
 }
 @media (min-width: 992px) {
@@ -11089,7 +11141,10 @@ hr.divider-light {
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #DE1F26;
+    color: #DE1F26 !important;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:active {
+    color: #DE1F26 !important;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -11112,7 +11167,7 @@ hr.divider-light {
     color: #DE1F26;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:active {
-    color: #DE1F26;
+    color: #DE1F26 !important;
   }
 }
 
@@ -11145,6 +11200,38 @@ header.masthead h1, header.masthead .h1 {
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 4.5rem;
+  }
+}
+
+header.prodhead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background-color: #192B80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.prodhead h1, header.prodhead .h1 {
+  font-size: 1.75rem;
+}
+@media (min-width: 992px) {
+  header.prodhead {
+    height: 50vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.prodhead p {
+    font-size: 1.15rem;
+  }
+  header.prodhead h1, header.prodhead .h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.prodhead h1, header.prodhead .h1 {
+    font-size: 3.5rem;
   }
 }
 

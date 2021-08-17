@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Inscripta AI| AI, NLP, Document Processing | AI Products | AI consulting
+        title AI, NLP, Document Processing | AI Products | AI consulting
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.png')
@@ -77,7 +77,7 @@ html(lang='en')
                             h1.font-weight-bold  Your Partner for AI Transformation
                             h5.mt-4.mb-4 Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.
                             .mt-5
-                                a.btn.btn-secondary.btn-xl(href='#products') Explore products                   
+                                a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
                     .col-lg-6.col-md-12
                             img.img-fluid.lazyload(data-src="assets/img/about_inscripta_ai.png")
                 
@@ -99,8 +99,9 @@ html(lang='en')
                                 img.img-product-name.lazyload(data-src="assets/img/products/parseqa_title.jpg")
                             .mb-3
                                 h4.product-tagline KNOWLEDGE SEARCH <br/> FAST-TRACKED
-                            .product-detail
+                            .product-detail.mb-3
                                 | Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently
+                            //a(href='parseqa.html') Know More
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-secondary.bg-white
                             .text-center.mb-3
@@ -142,29 +143,29 @@ html(lang='en')
                             h1.font-weight-bold.mb-5 Inscripta Advantage
                             h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation. 
                             mb-5
-                                a.btn.btn-secondary.btn-xl(href='#stack') Inscripta Stack
+                                a.btn.btn-secondary-outline.btn-xl(href='#stack') Inscripta Stack
                     .col-lg-7.col-md-12.mx-auto
                         .row
                             .col-lg-6.col-md-6.text-center.mt-lg-0.mt-2
-                                .feature-card.lazyload(data-bg="assets/img/advantage/custom.jpg").mb-4
+                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/custom.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold Customizable products 
                                                 | to enable quicker AI integration
-                                .feature-card.lazyload(data-bg="assets/img/advantage/noisy.jpg").mb-4
+                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/noisy.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold
                                                 | Real-world solutions
                                                 | built to handle noisy, heterogeneous data
                             .col-lg-6.col-md-6.text-center.mt-lg-5
-                                .feature-card.lazyload(data-bg="assets/img/advantage/skill.jpg").mb-4
+                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/skill.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold 
                                                 | Products designed by a highly 
                                                 | skilled and experienced AI team
-                                .feature-card.lazyload(data-bg="assets/img/advantage/papers.jpg").mb-4
+                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/papers.jpg").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold
@@ -193,7 +194,7 @@ html(lang='en')
                             h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
                             h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
                             .mb-3
-                                a.btn.btn-secondary.btn-xl(href='#blogs') Read our blogs
+                                a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
 
 
         //Expertise
@@ -309,39 +310,41 @@ html(lang='en')
                         .row
                             //h1.mb-4 Team
                             .col-lg-4.px-3
-                                .team-profile-box.mx-auto
-                                    .text-center.text-primary
+                                .team-profile-box.mt-8
+                                    .text-center
                                         img.team-profile-img.lazyload(data-src='assets/img/team/AR.jpg')
-                                        h4.mb-3 Anand Ramanathan
+                                        h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
                                         h6.mb-2 Cofounder 
-                                        a(href='https://www.linkedin.com/in/anand-ramanathan/' target='_blank')
+                                        a.img-linkedin(href='https://www.linkedin.com/in/anand-ramanathan/' target='_blank')
                                             i.fab.fa-linkedin.fa-1_25x
-                                    .text-muted.mx-3.mt-3
+                                    .text-muted.mt-3
                                         | Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
                                     
                             .col-lg-4.px-3
-                                .team-profile-box
-                                    .text-center.text-primary
+                                .team-profile-box.mt-8
+                                    .text-center
                                         img.team-profile-img.lazyload(data-src='assets/img/team/VM.jpg')
-                                        h4.mb-3 Vivek Mehta
+                                        h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
                                         h6.mb-2 Cofounder
                                         a(href='https://www.linkedin.com/in/vivek-mehta/' target='_blank')
                                             i.fab.fa-linkedin.fa-1_25x
-                                    .text-muted.mx-3.mt-3
-                                        | Vivek has 15+ years of AI/ML experience. Before starting his enxtrepreneurial journey, he worked at various startups including Flipkart. He has experience in array of problems like personalization and recommendations, handwriting recognition, fraud detection, online advertising, and few others. Vivek holds a Masters degree from Carnegie Mellon University (US).
+                                    .text-muted.mt-3
+                                        | Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and few others. Vivek holds a Masters degree from Carnegie Mellon University (US).
+                                        | <br>
+                                        | <br>
 
                                     
 
                             .col-lg-4.px-3
-                                .team-profile-box
-                                    .text-center.text-primary
+                                .team-profile-box.mt-8
+                                    .text-center
                                         img.team-profile-img.lazyload(data-src='assets/img/team/VN.jpg')
-                                        h4.mb-3 Vivek Nallur
+                                        h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
                                         h6.mb-2 Research and Academic Consultant
                                         a(href='https://www.linkedin.com/in/vivek-nallur-1b27231/' target='_blank')
                                             i.fab.fa-linkedin.fa-1_25x
-                                    .text-muted.mx-3.mt-3
-                                        | Vivek Nallur is an itinerant academic, currently working as a lecturer/assistant professor in University College Dublin. His main research interests are in simulation of complex systems, emergence, and autonomous and adaptive systems. He has worked with evolutionary computing, multi-agent systems and machine-learning for his research. He has a PhD from the University of Birmingham (UK) and a Masters from Carnegie Mellon University (US). In a previous avatar, he used to work in the Silicon Valley, for VMware Inc.
+                                    .text-muted.mt-3
+                                        | Dr Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member on the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems and machine-learning for his research. He has a PhD from the University of Birmingham (UK) and a Masters from Carnegie Mellon University (US). In a previous avatar, he used to work in the Silicon Valley, for VMware Inc.
             
 
         //section.page-section.bg-light
@@ -357,13 +360,13 @@ html(lang='en')
                 .row.gx-4.gx-lg-5.align-items-center
                     .col-lg-8
                         .contact-card.col-lg-10
-                            h3.text-primary.font-weight-bold.mx-2.my-0 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
+                            h3.text-primary.mx-4.my-3 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
                     .col-lg-4
                         h2.mt-4.mt-lg-0 Get In Touch!
                         hr.divider.bg-secondary.mx-0
-                        p.mb-3
+                        h6.mb-3
                             | Looking to add intelligence to your systems? 
-                            br
+                            hr.w-50
                             | Require customized deployment?
                         p.flex-align-content-center
                             i.fa.fa-envelope.fa-2x.sr-contact.text-primary 

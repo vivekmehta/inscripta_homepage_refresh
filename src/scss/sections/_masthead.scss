@@ -47,3 +47,48 @@ header.masthead {
         }
     }
 }
+
+// 
+// Masthead
+// 
+
+header.prodhead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - #{$navbar-height});
+
+    // replace the masthead.jpg image in the /assets/img directory to change the image
+    // if the image name change, make sure to update the url path below!
+
+    //background-image: url("../assets/img/h3.jpg");
+    background-color: $primary;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 50vh;
+        min-height: 40rem;
+        padding-top: $navbar-height;
+        padding-bottom: 0;
+
+        p {
+            font-size: 1.15rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+}

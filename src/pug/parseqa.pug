@@ -1,0 +1,165 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Want to leverage large knowledge repositories effectively?
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
+
+        //Font
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+        // Font Awesome
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+        //link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='index.html')
+                    //img.img-logo(src='assets/img/logo/logo-cs.png', alt='Inscripta AI')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link(href='#about')  ABOUT
+                        li.nav-item
+                            a.nav-link(href='#features') FEATURES
+                        //li.nav-item
+                            a.nav-link(href='#contact') HIRING
+                        li.nav-item
+                            a.nav-link(href='#contact') CONTACT
+
+        // Producthead
+        header.prodhead 
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100
+                    .col-lg-8.align-self-end    
+                        h1.text-white.font-weight-bold ParseQa
+                        h2.text-white.font-weight-bold.mt-4 KNOWLEDGE SEARCH FAST-TRACKED. 
+                    .col-lg-8.align-self-baseline.mt-4
+                        //h3.text-white.my-4
+                            | Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently
+                        //a.btn.btn-secondary.btn-xl.mt-2(href='#about') KNOW MORE
+
+
+        section#question.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-8.mx-auto.text-center
+                        h2.my-4 Ever felt like the wealth of knowledge in your organization's documents is being underused? 
+                        a.btn.btn-secondary-outline.btn-xl(href='#about') Explore Parseqa
+
+        section#about.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-6.col-md-12.half-box
+                        .col-lg-12
+                            h5.text-primary // About ParseQa
+                            h2.font-weight-bold  Leverage large knowledge repositories effectively
+                            h5.mt-4.mb-4 ParseQA goes beyond simple keyword matching by understanding the meaning behind queries expressed in natural language—it uses cutting-edge document parsing, semantic analysis, search and deep learning techniques to ferret out precise answer nuggets from masses of text.
+                            .mt-5
+                                a.btn.btn-secondary-outline.btn-xl(href='#features') Explore Key Features                   
+                    .col-lg-6.col-md-12.text-center
+                            img.img-main.lazyload(data-src="assets/img/products/parseqa_isometric_large.jpg")
+
+        section#features.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-12.col-md-12.mx-auto
+                        h1.text-center.mb-5 Go beyond off-the-shelf search engines
+                .row.gx-4.gx-lg-5.mt-4
+                    .col-lg-3.col-md-6.col-sm-12.mb-3
+                        .team-profile-box.bg-white.height-100.align-self-end
+                            .mb-3
+                            .product-detail
+                                | Find precise information from deep inside knowledge bases
+                    .col-lg-3.col-md-6.col-sm-12.mb-3
+                        .team-profile-box.bg-white.height-100.align-self-end
+                            .mb-3
+                            .product-detail
+                                | Answer ad hoc questions at different levels of granularity
+                    .col-lg-3.col-md-6.col-sm-12.mb-3
+                        .team-profile-box.bg-white.height-100.align-self-end
+                            .mb-3
+                            .product-detail
+                                | Supports variety of data sources like docs, videos, blogs, short text like reviews
+                    .col-lg-3.col-md-6.col-sm-12.mb-3
+                        .team-profile-box.bg-white.height-100.align-self-end
+                            .mb-3
+                            .product-detail
+                                | Question answering from unstructured text, tables and images
+
+        section#features.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-7.col-md-12.mx-auto
+                        img.img-parseqa.lazyload(data-src="assets/img/products/parseqa_concept.jpg")
+                    .col-lg-5.col-md-12
+                        h1.font-weight-bold.mb-5 One system, Many solutions
+                        .feature
+                            .content-box.mb-3
+                                | Ideal back-end QA engine for customer support chatbots, automated helpdesks, and more
+                            .content-box.mb-3
+                                | Generate relevant questions from data for automated FAQ creation
+                            .content-box.mb-3
+                                | Information extraction and question answering for Scientific documents
+                        //mb-5
+                            a.btn.btn-secondary-outline.btn-xl(href='#') Inscripta Stack
+                    
+        // Contact
+        section#contact.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-7
+                        .contact-card.col-lg-10
+                            h3.text-primary.mx-4.my-3 Leverage large knowledge repositories effectively with ParseQa
+                    .col-lg-5
+                        h2.mt-4.mt-lg-0 Get In Touch!
+                        hr.divider.bg-secondary.mx-0
+                        h6.mb-3
+                            | Find out what our ParseQa can do for you
+                            hr
+                            | Speak to an expert, request an assesment, demo our solutions
+                            br
+                        p.flex-align-content-center
+                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
+                            a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
+
+        // Footer
+        footer.bg-dark.py-5.text-white
+            .container.px-4.px-lg-5
+                .row
+                    .col-lg-4
+                        img.img-logo(src="assets/img/logo/logo-cs.png")
+                        .small.text-muted.mt-4
+                            | Copyright &copy; 2021 - Inscripta AI 
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // carousel
+        script(async='' src='js/carousel.js')
+
+        script(src="js/lazysizes.min.js")
+        script(src="js/ls.unveilhooks.min.js")

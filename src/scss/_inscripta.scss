@@ -14,6 +14,17 @@ img.img-logo {
     font-size: 1.25rem;
 }
 
+.img-main {
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.img-parseqa {
+  max-height: 500px;
+  max-width: 120%;
+  margin-left:  -20%;
+}
+
 .product-card-primary {
   height: 100%;
   padding: 15px;
@@ -85,6 +96,16 @@ h4.product-tagline {
   background-attachment: scroll !important;
 }
 
+.animation-float {
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.animation-float:hover {
+  transform: translateY(-8px);
+}
+
 .mask {
   background: rgba(39,62,84,0.62);
   overflow: hidden;
@@ -118,12 +139,39 @@ h4.product-tagline {
   writing-mode: sideways-lr;
 }
 
-.team-profile-box {
+.mt-8 {
   margin-top: 8em;
+}
+
+.content-box {
+  border: 1px solid #eaecf3;
+  border-radius: .75rem;
+  padding: 20px;
+  box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
+}
+
+.content-box:hover {
+  border: 1px solid $primary;
+}
+
+.team-profile-box {
   border: 1px solid #eaecf3;
   border-radius: .75rem;
   padding: 25px;
   box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.align-self-end-flex {
+  align-self: end !important;
+  display: flex;
+}
+
+.team-profile-box:hover {
+  border: 1px solid $primary;
 }
 
 .team-profile-img {
