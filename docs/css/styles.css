@@ -11011,20 +11011,39 @@ h4.product-tagline, .product-tagline.h4 {
   margin-top: 8em;
 }
 
-.content-box {
-  border: 1px solid #eaecf3;
-  border-radius: 0.75rem;
+.content-box-primary {
+  border: 2px solid #eaecf3;
   padding: 20px;
   box-shadow: 10px 10px 1.25rem rgba(31, 45, 61, 0.05);
 }
 
-.content-box:hover {
-  border: 1px solid #192B80;
+.content-box-primary:hover {
+  border: 2px solid #192B80;
+}
+
+.content-box-secondary {
+  border: 2px solid #eaecf3;
+  padding: 20px;
+  box-shadow: 10px 10px 1.25rem rgba(31, 45, 61, 0.05);
+}
+
+.content-box-secondary:hover {
+  border: 2px solid #DE1F26;
+}
+
+.content-box2-secondary {
+  height: 100%;
+  padding: 15px;
+  box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: solid #fff 7px;
+}
+
+.content-box2-secondary:hover {
+  border-bottom: solid #DE1F26 7px;
 }
 
 .team-profile-box {
   border: 1px solid #eaecf3;
-  border-radius: 0.75rem;
   padding: 25px;
   box-shadow: 10px 10px 1.25rem rgba(31, 45, 61, 0.05);
 }
@@ -11206,6 +11225,7 @@ header.masthead h1, header.masthead .h1 {
 header.prodhead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
+  background-image: url("../assets/img/prod_banner1.jpg");
   background-color: #192B80;
   background-position: center;
   background-repeat: no-repeat;
@@ -11218,7 +11238,7 @@ header.prodhead h1, header.prodhead .h1 {
 @media (min-width: 992px) {
   header.prodhead {
     height: 50vh;
-    min-height: 40rem;
+    min-height: 25rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
   }

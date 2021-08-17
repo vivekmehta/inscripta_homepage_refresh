@@ -143,20 +143,43 @@ h4.product-tagline {
   margin-top: 8em;
 }
 
-.content-box {
-  border: 1px solid #eaecf3;
-  border-radius: .75rem;
+.content-box-primary {
+  border: 2px solid #eaecf3;
+  //border-radius: .75rem;
   padding: 20px;
   box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
 }
 
-.content-box:hover {
-  border: 1px solid $primary;
+.content-box-primary:hover {
+  border: 2px solid $primary;
+}
+
+.content-box-secondary {
+  border: 2px solid #eaecf3;
+  //border-radius: .75rem;
+  padding: 20px;
+  box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
+}
+
+.content-box-secondary:hover {
+  border: 2px solid $secondary;
+}
+
+.content-box2-secondary {
+  //border: 2px solid #eaecf3;
+  height: 100%;
+  padding: 15px;
+  box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: solid $white 7px;
+}
+
+.content-box2-secondary:hover {
+  border-bottom: solid $secondary 7px;
 }
 
 .team-profile-box {
   border: 1px solid #eaecf3;
-  border-radius: .75rem;
+  //border-radius: .75rem;
   padding: 25px;
   box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
 }
