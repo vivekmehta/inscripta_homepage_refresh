@@ -11259,6 +11259,38 @@ header.prodhead h1, header.prodhead .h1 {
   }
 }
 
+header.simplehead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background-color: #192B80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.simplehead h1, header.simplehead .h1 {
+  font-size: 1.75rem;
+}
+@media (min-width: 992px) {
+  header.simplehead {
+    height: 30vh;
+    min-height: 20rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.simplehead p {
+    font-size: 1.15rem;
+  }
+  header.simplehead h1, header.simplehead .h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.simplehead h1, header.simplehead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;
 }

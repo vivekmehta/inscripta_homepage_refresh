@@ -386,15 +386,24 @@ html(lang='en')
                             i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
                             a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
 
-        
         // Footer
         footer.bg-dark.py-5.text-white
             .container.px-4.px-lg-5
                 .row
                     .col-lg-4
                         img.img-logo(src="assets/img/logo/logo-cs.png")
+                .row
+                    .col-lg-4
                         .small.text-muted.mt-4
                             | Copyright &copy; 2021 - Inscripta AI 
+                    .col-lg-4
+                        .mt-4
+                            a.small.text-muted.mx-2(href='privacy')
+                                | Privacy Policy
+                            a.small.text-muted
+                                | Terms of Service
+
+
 
                     //.col-lg-2
                         h6 About Inscripta
@@ -415,16 +424,8 @@ html(lang='en')
         // carousel
         script(async='' src='js/carousel.js')
 
-
         script(src="js/lazysizes.min.js")
         script(src="js/ls.unveilhooks.min.js")
-
-        //script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-EFFNZ2DL25')
-        //script.
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-EFFNZ2DL25');
 
         
         script(type='text/javascript' data-cfasync='false' async='').
