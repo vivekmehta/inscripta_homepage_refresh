@@ -229,3 +229,38 @@ h4.product-tagline {
 .blog-link {
     text-decoration: none;
 }
+
+.blog {
+  line-height: 1.6;
+  margin-top: 1.7rem;
+}
+
+.blog-img {
+  max-width: 100%;
+}
+
+.blog-text {
+  font-size: 1.25rem;
+}
+
+.blog-tag {
+  display: inline-block;
+  background-color: #d9d9d9;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.25rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.blog-author {
+  font-size: 0.9rem;
+}
+
+.blog-date {
+  font-size: 0.9rem;
+}
+
+
+
