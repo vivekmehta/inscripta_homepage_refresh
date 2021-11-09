@@ -1,0 +1,185 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Blog | Parseqa | Inscripta AI
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='../assets/favicon.png')
+
+        //Font
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+
+        // SimpleLightbox plugin CSS
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='../css/styles.css', rel='stylesheet')
+
+        // Font Awesome
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+        //link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
+
+        // Google Tag Manager
+        script.
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5XQVFGS');
+        // End Google Tag Manager
+
+
+    body#page-top
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='../index.html')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                //#navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link(href='../index.html') HOME
+                        li.nav-item
+                            a.nav-link(href='index.html') BLOG HOME
+
+        // Producthead
+        header.simplehead 
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100
+                    .col-lg-8.align-self-end    
+                        h1.text-white.font-weight-bold Inscripta Blog
+                    .col-lg-8.align-self-baseline.mt-4
+
+        //Expertise
+        section#expertise.page-section.bg-light
+            .container.px-2.px-lg-2
+                .row.gx-2.gx-lg-4.mb-5
+                    .col-lg-4.col-md-6.col-sm-12.my-4
+                        .image-card.mx-2
+                            a.blog-link(target='new' href='parseqa-pushing-boundaries.html')
+                                .card-box
+                                    img.lazyload(data-src='../assets/img/products/parseqa_isometric_large.jpg', style="width: 100%")
+                                h5.font-weight-bold.mx-3.my-4 ParseQa: Pushing the Boundaries of Knowledge Search
+                            .mx-3
+                                p.mb-3 Sep 27, 2021 · 3 min read
+                                .mb-3
+                                    .blog-tag-small Natural Language Processing
+                                    .blog-tag-small AI
+                                    .blog-tag-small Knowledge Management
+                                    .blog-tag-small Search
+                                    .blog-tag-small Question Answering
+
+                    .col-lg-4.col-md-6.col-sm-12.my-4
+                        .image-card.mx-2
+                            a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
+                                .card-box
+                                    img.lazyload(data-src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%")
+                                h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
+                            .mx-3
+                                p.mb-3 Nov 29, 2019 · 5 min read
+                                .mb-3
+                                    .blog-tag-small Artificial Intelligence
+                                    .blog-tag-small NLP
+                                    .blog-tag-small Consulting
+                                    .blog-tag-small Strategy
+                                    .blog-tag-small Digital Transformation
+
+                    .col-lg-4.col-md-6.col-sm-12.my-4
+                        .image-card.mx-2
+                            a.blog-link(target='new' href='https://medium.com/inscripta/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer-74adbafe48c1')
+                                .card-box
+                                    img.lazyload(data-src='https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg', style="width: 100%")
+                                h5.font-weight-bold.mx-3.my-4 Teaching computers how humans think by creating questions...
+                            .mx-3
+                                p.mb-3 Aug 31, 2019 · 3 min read
+                                .mb-3
+                                    .blog-tag-small Artificial Intelligence
+                                    .blog-tag-small Chatbots
+                                    .blog-tag-small Conversational UI
+
+                    .col-lg-4.col-md-6.col-sm-12.my-4
+                        .image-card.mx-2
+                            a.blog-link(target='new' href='https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede')
+                                .card-box
+                                    img.lazyload(data-src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%")
+                                h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
+                            .mx-3
+                                p.mb-3 Aug 13, 2019 · 6 min read
+                                .mb-3
+                                    .blog-tag-small Artificial Intelligence
+                                    .blog-tag-small Chatbots
+                                    .blog-tag-small Conversational AI
+                                    .blog-tag-small Natural Language Processing
+                                    .blog-tag-small Ethics
+
+
+                    .col-lg-4.col-md-6.col-sm-12.my-4    
+                        .image-card.mx-2
+                            a.blog-link(target='new' href='https://medium.com/inscripta/product-search-is-broken-heres-how-99e08504bdd9')
+                                .card-box
+                                    img.lazyload(data-src='https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png', style="width: 100%")
+                                h5.font-weight-bold.mx-3.my-4 Product Search is Broken: Here is How
+                                br 
+
+                            .mx-3
+                                p.mb-3 Jul 3, 2019 · 5 min read
+                                .mb-3
+                                    .blog-tag-small Artificial Intelligence
+                                    .blog-tag-small Chatbots
+                                    .blog-tag-small Conversational UI
+                                    .blog-tag-small Search
+                                    .blog-tag-small Online Retail
+
+        // Footer
+        footer.bg-dark.py-5.text-white
+            .container.px-4.px-lg-5
+                .row
+                    .col-lg-4
+                        img.img-logo(src="../assets/img/logo/logo-cs.png")
+                .row
+                    .col-lg-4
+                        .small.text-muted.mt-4
+                            | Copyright &copy; 2021 - Inscripta AI 
+                    .col-lg-4
+                        .mt-4
+                            a.small.text-muted.mx-2(href='privacy')
+                                | Privacy Policy
+                            a.small.text-muted
+                                | Terms of Service
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
+
+        // SimpleLightbox plugin JS
+        // script(async='' src='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js')
+
+        // Core theme JS
+        script(src='../js/scripts.js')
+
+        // carousel
+        script(async='' src='../js/carousel.js')
+
+        script(src="../js/lazysizes.min.js")
+        script(src="../js/ls.unveilhooks.min.js")
+
+        
+        script(type='text/javascript' data-cfasync='false' async='').
+            window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();

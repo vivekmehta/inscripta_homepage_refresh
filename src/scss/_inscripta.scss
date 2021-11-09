@@ -245,14 +245,26 @@ h4.product-tagline {
 
 .blog-tag {
   display: inline-block;
-  background-color: #d9d9d9;
-  padding: 0.5rem 0.5rem;
+  background-color: #efefef;
+  padding: 0.3rem 0.4rem;
   font-size: 0.75rem;
   text-transform: uppercase;
   border: none;
   border-radius: 0.25rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.35rem !important;
 }
+
+.blog-tag-small {
+  display: inline-block;
+  background-color: #efefef;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.75rem;
+  //text-transform: uppercase;
+  border: none;
+  border-radius: 0.25rem !important;
+  margin-bottom: 0.35rem !important;
+}
+
 
 .blog-author {
   font-size: 0.9rem;
