@@ -60,11 +60,10 @@ function _processFile(filePath, watchEvent) {
         return renderAssets();
     }
 
-		if (filePath.match(/src\/CNAME/)) {
+	if (filePath.match(/src\/CNAME/)) {
         return renderCname();
     }
-
-}
+}x
 
 function _handlePug(filePath, watchEvent) {
     if (watchEvent === 'change') {
