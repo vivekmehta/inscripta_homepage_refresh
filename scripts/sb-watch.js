@@ -63,7 +63,7 @@ function _processFile(filePath, watchEvent) {
 	if (filePath.match(/src\/CNAME/)) {
         return renderCname();
     }
-}x
+}
 
 function _handlePug(filePath, watchEvent) {
     if (watchEvent === 'change') {
