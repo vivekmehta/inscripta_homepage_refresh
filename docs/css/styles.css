@@ -10896,6 +10896,17 @@ img.img-logo {
   max-width: 100%;
 }
 
+.img-box {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.feature-heading {
+  line-heigh: 1.35em;
+  min-height: 2.7em;
+}
+
 /*.img-parseqa {
   max-height: 500px;
   max-width: 120%;

@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='ParseQa can be used to enhance the capabilities of a wide range of enterprise applications such as automated helpdesks, FAQ chatbots, review-insight dashboards, product discovery tools and knowledge search, and can help to leverage the true potential of heterogeneous knowledge repositories of any size.')
         meta(name='author', content='Team Inscripta')
 
-        title Knowledge search | Text minning | Question Answering System
+        title Knowledge search | Text mining | Question Answering System
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='../assets/favicon.png')
@@ -72,9 +72,6 @@ html(lang='en')
                         h1.text-white.font-weight-bold ParseQa
                         h5.text-white.mt-4 KNOWLEDGE SEARCH FAST-TRACKED. 
                     .col-lg-8.align-self-baseline.mt-4
-                        //h3.text-white.my-4
-                            | Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently
-                        //a.btn.btn-secondary.btn-xl.mt-2(href='#about') KNOW MORE
 
 
         section#question.page-section.bg-light
@@ -101,20 +98,19 @@ html(lang='en')
         section#about.page-section
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
-                    .col-lg-6.col-md-12.half-box
-                        .col-lg-12
-                            //h5.text-primary // About ParseQa
+                    .col-xs-12.col-md-6.order-md-2
+                        .img-box.text-center.mb-3
+                            img.img-main.lazyload(data-src="../assets/img/products/parseqa_isometric_large.jpg")
+
+                    .col-xs-12.col-md-6.half-box
                             h2.font-weight-bold.text-primary  Extract information nuggets from
                                 br 
                                 .span.text-secondary large knowledge bases efficiently
-                            h5.mt-4.mb-4 ParseQa is a state-of-the-art NLP system that combines information extraction, semantic search and question answering to leverage large heterogeneous knowledge repositories effectively. 
-                                br 
-                                br 
-                                | ParseQa can alter the way content management systems are perceived and used in organizations. 
+                            h5.mt-4 ParseQa is a state-of-the-art NLP system that combines information extraction, semantic search and question answering to leverage large heterogeneous knowledge repositories effectively. 
+                            h5.mt-2 ParseQa can alter the way content management systems are perceived and used in organizations. 
                             .mt-5
                                 a.btn.btn-primary-outline.btn-xl(href='#features') Explore Key Features                   
-                    .col-lg-6.col-md-12.text-center
-                            img.img-main.lazyload(data-src="../assets/img/products/parseqa_isometric_large.jpg")
+                    
 
 
         section#features.page-section
@@ -127,9 +123,11 @@ html(lang='en')
                         .content-box-primary.bg-white.h-100
                             .mb-3
                                 .i.fas.fa-3x.fa-list.text-primary
-                            .h4.font-weight-bold.mb-3 Extract valuable insights
+                            .h4.font-weight-bold.mb-3 
+                                | Extract valuable insights
                             .product-detail
                                 | Find precise information from deep inside knowledge bases
+
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .content-box-secondary.bg-white.h-100
                             .mb-3
@@ -156,15 +154,15 @@ html(lang='en')
         section#key-challenge.page-section
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
-                    .col-lg-6.col-md-12
-                        img.img-main.lazyload(data-src="../assets/img/document_examples.png")
-                    .col-lg-6.col-md-12
-                        .col-lg-12
-                            h5.text-primary // Key Challenges Addressed by ParseQa
-                            h2.font-weight-bold ParseQa: Pushing the Boundaries of Knowledge Search
-                            h5.mt-4 Most organizations have crucial knowledge scattered across a large number of documents, such as, technical manuals, knowledge articles, patents, policy documents, contracts and scientific publications, often in varied formats. Huge value is created by making this knowledge searchable and extracting the valuable insights therein. To this end, Inscripta’s ParseQa suite of libraries builds on the latest research in Document Processing, NLP and Search to create cutting-edge solutions that can be customized for a variety of domains and use-cases with little effort. 
-                            .mt-4
-                                a(href='../blog/parseqa-pushing-boundaries.html') Read the Blog
+                    .col-xs-12.col-md-6
+                        .img-box.text-center.mb-3
+                            img.img-main.lazyload(data-src="../assets/img/document_examples.png")
+                    .col-xs-12.col-md-6
+                        h5.text-primary // Key Challenges Addressed by ParseQa
+                        h2.font-weight-bold ParseQa: Pushing the Boundaries of Knowledge Search
+                        h5.mt-4 Most organizations have crucial knowledge scattered across a large number of documents, such as, technical manuals, knowledge articles, patents, policy documents, contracts and scientific publications, often in varied formats. Huge value is created by making this knowledge searchable and extracting the valuable insights therein. To this end, Inscripta’s ParseQa suite of libraries builds on the latest research in Document Processing, NLP and Search to create cutting-edge solutions that can be customized for a variety of domains and use-cases with little effort. 
+                        .mt-4
+                            a(href='../blog/parseqa-pushing-boundaries.html') Read the Blog
                     
 
         section#domain.page-section
@@ -180,7 +178,8 @@ html(lang='en')
                             .content-box-primary.mb-3
                                 | Information extraction and question answering for scientific documents
                     .col-lg-7.col-md-12.mx-auto
-                        img.img-main.lazyload(data-src="../assets/img/parseqa_reviews.jpg")
+                        .img-box.text-center.mb-3
+                            img.img-main.lazyload(data-src="../assets/img/parseqa_reviews.jpg")
 
         
         section#case-study.page-section.bg-primary
@@ -192,8 +191,9 @@ html(lang='en')
                     .content-box
                         .row
                             .col-lg-6.col-md-12.mx-auto
-                                img.img-main.lazyload(data-src="../assets/img/parseqa_clinical.png")
-                            .col-lg-6.col-md-12.mx-auto
+                                .img-box.text-center.mb-5
+                                    img.img-main.lazyload(data-src="../assets/img/parseqa_clinical.png")
+                            .col-lg-6.col-md-12
                                 h5.text-primary // Life Sciences | Pharma
                                 h2 Insights from clinical trials data
 
@@ -210,7 +210,7 @@ html(lang='en')
                 .row.gx-4.gx-lg-5.mt-5
                     .content-box
                         .row
-                            .col-lg-6.col-md-12.mx-auto
+                            .col-lg-6.col-md-12
                                 h5.text-primary // IT | Fintech | Legal 
                                 h2 FAQ Bot
 
@@ -224,8 +224,9 @@ html(lang='en')
                                         .highlight-box2-secondary.height-100 Provide answers at the right level of granularity
                                     .col-lg-6.mb-4
                                         .highlight-box2-secondary.height-100 Quick customization for different domains
-                            .col-lg-6.col-md-12.mx-auto
-                                img.img-main.lazyload(data-src="../assets/img/products/parseqa_concept.jpg")
+                            .col-lg-6.col-md-12.text-center
+                                .img-box.text-center
+                                    img.img-main.lazyload(data-src="../assets/img/products/parseqa_concept.jpg")
                     
         // Contact
         section#contact.page-section
