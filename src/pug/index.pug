@@ -14,11 +14,11 @@ html(lang='en')
         link(rel='icon', type='image/x-icon', href='assets/favicon.png')
 
         //Font
-        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i', rel='stylesheet')
 
-        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' as='font' onload="this.onload=null;this.rel='stylesheet'")
         noscript
-            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i', rel='stylesheet')
 
         // SimpleLightbox plugin CSS
         //link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet' )
@@ -27,7 +27,7 @@ html(lang='en')
         link(href='css/styles.css', rel='stylesheet')
 
         // Font Awesome
-        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='font' onload="this.onload=null;this.rel='stylesheet'")
         noscript
             link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
 
@@ -84,7 +84,8 @@ html(lang='en')
                     .col-lg-8.align-self-baseline.mt-5
                         h3.text-white.mb-5
                             | Fast-track AI transformation through high-quality, customizable products built using NLP, OCR and Document Processing techniques
-                        a.btn.btn-secondary.btn-xl.mt-2(href='#about') KNOW MORE
+                        .mt-2
+                            a.btn.btn-xl.btn-secondary(href='#about') KNOW MORE
 
         section#about.page-section
             .container.px-4.px-lg-5
@@ -97,7 +98,7 @@ html(lang='en')
                             .mt-5
                                 a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
                     .col-lg-6.col-md-12
-                            img.img-fluid.lazyload(data-src="assets/img/about_inscripta_ai.png")
+                            img.img-fluid.lazyload(data-src="assets/img/about_inscripta_ai.png" alt="AI in action")
                 
 
         section#products.page-section.bg-light
@@ -112,9 +113,9 @@ html(lang='en')
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-primary.bg-white
                             .text-center.mb-3
-                                img.img-product.lazyload(data-src="assets/img/products/parseqa_isometric.png")
+                                img.img-product.lazyload(data-src="assets/img/products/parseqa_isometric.png" alt="Knowledge search image")
                             .mb-3
-                                img.img-product-name.lazyload(data-src="assets/img/products/parseqa_title.jpg")
+                                img.img-product-name.lazyload(data-src="assets/img/products/parseqa_title.jpg" alt="ParseQa Title")
                             .mb-3
                                 h4.product-tagline KNOWLEDGE SEARCH <br/> FAST-TRACKED
                             .product-detail.mb-3
@@ -123,9 +124,9 @@ html(lang='en')
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-secondary.bg-white
                             .text-center.mb-3
-                                img.img-product.lazyload(data-src="assets/img/products/deckster_isometric.png")
+                                img.img-product.lazyload(data-src="assets/img/products/deckster_isometric.png" alt="Presentation creation image")
                             .mb-3
-                                img.img-product-name.lazyload(data-src="assets/img/products/deckster_title.jpg")
+                                img.img-product-name.lazyload(data-src="assets/img/products/deckster_title.jpg" alt="Deckster title")
                             .mb-3
                                 h4.product-tagline PRESENTATIONS <br/> FAST-TRACKED
                             .product-detail
@@ -133,9 +134,9 @@ html(lang='en')
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-primary.bg-white
                             .text-center.mb-3
-                                img.img-product.lazyload(data-src="assets/img/products/revlo_isometric.png")
+                                img.img-product.lazyload(data-src="assets/img/products/revlo_isometric.png" alt="Product discovery image")
                             .mb-3
-                                img.img-product-name.lazyload(data-src="assets/img/products/revlo_title.jpg")
+                                img.img-product-name.lazyload(data-src="assets/img/products/revlo_title.jpg" alt ="Revlo title")
                             .mb-3
                                 h4.product-tagline PRODUCT DISCOVERY <br/> FAST-TRACKED
                             .product-detail
@@ -143,9 +144,9 @@ html(lang='en')
                     .col-lg-3.col-md-6.col-sm-12.mb-3
                         .product-card-secondary.bg-white
                             .text-center.mb-3
-                                img.img-product.lazyload(data-src="assets/img/products/silho_isometric.png")
+                                img.img-product.lazyload(data-src="assets/img/products/silho_isometric.png" alt ="Digitization image")
                             .mb-3
-                                img.img-product-name.lazyload(data-src="assets/img/products/silho_title.jpg")
+                                img.img-product-name.lazyload(data-src="assets/img/products/silho_title.jpg" alt ="Silhoutte title")
                             .mb-3
                                 h4.product-tagline DIGITIZATION <br/> FAST-TRACKED
                             .product-detail
@@ -165,25 +166,25 @@ html(lang='en')
                     .col-lg-7.col-md-12.mx-auto
                         .row
                             .col-lg-6.col-md-6.text-center.mt-lg-0.mt-2
-                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/custom.jpg").mb-4
+                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/custom.jpg" alt="cutomization").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold Customizable products 
                                                 | to enable quicker AI integration
-                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/noisy.jpg").mb-4
+                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/noisy.jpg" alt="Noisy data").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold
                                                 | Real-world solutions
                                                 | built to handle noisy, heterogeneous data
                             .col-lg-6.col-md-6.text-center.mt-lg-5
-                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/skill.jpg").mb-4
+                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/skill.jpg" alt="Skill").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold 
                                                 | Products designed by a highly 
                                                 | skilled and experienced AI team
-                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/papers.jpg").mb-4
+                                .feature-card.animation-float.lazyload(data-bg="assets/img/advantage/papers.jpg" alt="Reasearch").mb-4
                                     .mask
                                         .mx-5.my-5
                                             h3.font-weight-bold
@@ -291,7 +292,7 @@ html(lang='en')
                             .col-lg-4.px-3
                                 .team-profile-box.mt-8
                                     .text-center
-                                        img.team-profile-img.lazyload(data-src='assets/img/team/AR.jpg')
+                                        img.team-profile-img.lazyload(data-src='assets/img/team/AR.jpg' alt="Anand's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
                                         h6.mb-2 Cofounder 
                                         a.img-linkedin(href='https://www.linkedin.com/in/anand-ramanathan/' target='_blank')
@@ -302,7 +303,7 @@ html(lang='en')
                             .col-lg-4.px-3
                                 .team-profile-box.mt-8
                                     .text-center
-                                        img.team-profile-img.lazyload(data-src='assets/img/team/VM.jpg')
+                                        img.team-profile-img.lazyload(data-src='assets/img/team/VM.jpg' alt="VM's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
                                         h6.mb-2 Cofounder
                                         a(href='https://www.linkedin.com/in/vivek-mehta/' target='_blank')
@@ -317,7 +318,7 @@ html(lang='en')
                             .col-lg-4.px-3
                                 .team-profile-box.mt-8
                                     .text-center
-                                        img.team-profile-img.lazyload(data-src='assets/img/team/VN.jpg')
+                                        img.team-profile-img.lazyload(data-src='assets/img/team/VN.jpg' alt="VN's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
                                         h6.mb-2 Research and Academic Consultant
                                         a(href='https://www.linkedin.com/in/vivek-nallur-1b27231/' target='_blank')
@@ -356,7 +357,7 @@ html(lang='en')
             .container.px-4.px-lg-5
                 .row
                     .col-lg-4
-                        img.img-logo(src="assets/img/logo/logo-cs.png")
+                        img.img-logo(src="assets/img/logo/logo-cs.png" alt="Inscripta logo")
                 .row
                     .col-lg-4
                         .small.text-muted.mt-4
