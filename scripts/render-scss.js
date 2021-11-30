@@ -6,9 +6,10 @@ const upath = require('upath');
 const postcss = require('postcss')
 const sass = require('sass');
 const sh = require('shelljs');
+const CleanCSS = require("clean-css");
 
 const stylesPath = '../src/scss/styles.scss';
-const destPath = upath.resolve(upath.dirname(__filename), '../docs/css/styles.css');
+const destPath = upath.resolve(upath.dirname(__filename), '../docs/css/styles.min.css');
 
 module.exports = function renderSCSS() {
     
@@ -28,7 +29,9 @@ module.exports = function renderSCSS() {
         result.warnings().forEach(warn => {
             console.warn(warn.toString())
         })
-        fs.writeFileSync(destPath, result.css.toString());
+		const minifiedOutput = new CleanCSS().minify(result.css.toString())
+        //fs.writeFileSync(destPath, result.css.toString());
+        fs.writeFileSync(destPath, minifiedOutput.styles);
     })
 
 };
