@@ -159,34 +159,7 @@ html(lang='en')
                                     .blog-tag-small Online Retail
 
         // Footer
-        footer.bg-dark.py-5.text-white
-            .container.px-4.px-lg-5
-                .row
-                    .col-lg-4
-                        img.img-logo(src="/assets/img/logo/logo-cs.png")
-                .row
-                    .col-lg-4
-                        .small.text-muted.mt-4
-                            | Copyright &copy; 2021 - Inscripta AI 
-                    .col-lg-4
-                        .mt-4
-                            a.small.text-muted.mx-2(href='/privacy/')
-                                | Privacy Policy
-                            a.small.text-muted
-                                | Terms of Service
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='/js/scripts.js')
-
-        // carousel
-        script(async='' src='/js/carousel.js')
-
-        script(src="/js/lazysizes.min.js")
-        script(src="/js/ls.unveilhooks.min.js")
-
+        include /pug/includes/footer.pug
         
         script(type='text/javascript' data-cfasync='false' async='').
             window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();

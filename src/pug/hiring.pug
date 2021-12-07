@@ -212,25 +212,5 @@ html(lang='en')
                        
 
         // Footer
-        footer.bg-dark.py-5.text-white
-            .container.px-4.px-lg-5
-                .row
-                    .col-lg-4
-                        img.img-logo(src="/assets/img/logo/logo-cs.png")
+        include /pug/includes/footer.pug
 
-                .row
-                    .col-lg-4
-                        .small.text-muted.mt-4
-                            | Copyright &copy; 2021 - Inscripta AI 
-                    .col-lg-4
-                        .mt-4
-                            a.small.text-muted.mx-2(href='/privacy/')
-                                | Privacy Policy
-                            a.small.text-muted
-                                | Terms of Service
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='/js/scripts.js')
