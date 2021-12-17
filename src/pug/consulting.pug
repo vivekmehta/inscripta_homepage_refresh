@@ -1,0 +1,363 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='Team Inscripta')
+
+        title AI, NLP, Document Processing | AI Products | AI consulting
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
+
+        //Font
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='../css/styles.min.css', rel='stylesheet')
+
+        // Font Awesome
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+        //link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
+
+        // Google Tag Manager
+        script.
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5XQVFGS');
+        // End Google Tag Manager
+
+
+    body#page-top
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='/')
+                    //img.img-logo(src='assets/img/logo/logo-cs.png', alt='Inscripta AI')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link(href='/') PRODUCTS
+                        li.nav-item
+                            a.nav-link(href='/blog/') BLOG
+                        li.nav-item
+                            a.nav-link(href='/hiring.html') HIRING
+                        li.nav-item
+                            a.nav-link(href='#contact') CONTACT
+
+        // Producthead
+        header.simplehead 
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100
+                    .col-lg-8.align-self-end    
+                        h1.text-white.font-weight-bold Inscripta Consulting
+                    .col-lg-8.align-self-baseline.mt-4
+
+        section#intro.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-8.mx-auto.text-center
+                        h1.my-5 Our depth in AI, NLP combined with our suit of cutting-edge products, ensures quick and effective AI prototyping and integration 
+                        a.mb-3.btn.btn-secondary-outline.btn-xl(href='#about') Know More
+
+
+        section#about.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-xs-12.col-md-6.order-md-2
+                        .img-box.text-center.mb-3
+                            //img.img-main.lazyload(data-src="/assets/img/products/parseqa_isometric_large.jpg")
+
+                    .col-xs-12.col-md-6.half-box
+                            h2.font-weight-bold.text-primary  Make AI work for you
+                            h5.mt-4 Studies show that only 10% managed to achieve significant financial benefit from AI deployments! Why is this?  AI is not magic dust that can be sprinkled over existing businesses to transform them overnight. Most headline-making AI technologies are software that has been tuned for a particular purpose. If the AI that your company is investing in has not been tuned to the problems that you face, the results are more than likely to be underwhelming. The key to successful AI deployment is tailoring.
+
+                            .mt-5
+                                a.btn.btn-primary-outline.btn-xl(href='#features') Explore Key Features                   
+                    
+
+        // Advantage
+        section#advantage.page-section 
+            //.advantage-img-masked.text-white
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-4.col-md-12
+                        .py-lg-5
+                            h1.font-weight-bold.mb-5 Inscripta Advantage
+                            h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation. 
+                            mb-5
+                                a.btn.btn-secondary-outline.btn-xl(href='#') 
+                    .col-lg-7.col-md-12.mx-auto
+                        .row
+                            .col-lg-6.col-md-6.text-center.mt-lg-0.mt-2
+                                .feature-card-old.animation-float.mb-4  
+                                    .mx-4.my-4
+                                        h3.font-weight-bold.mb-4 
+                                            | Quick Wins
+                                        h5.font-weight-bold
+                                            | Don’t reinvent the wheel--leverage Inscripta’s industry-tested, customizable products and pre-built libraries to focus and expedite your first pilots
+
+                                .feature-card-old.animation-float.mb-4 
+                                        .mx-4.my-4
+                                            h3.font-weight-bold.mb-4 
+                                                | Expertise 
+                                            h5.font-weight-bold
+                                                | Based on our extensive end-to-end AI deployment experience, we create bespoke solutions that originate within your organization and thereby take deep roots within your workflows
+
+                            .col-lg-6.col-md-6.text-center.mt-lg-5
+                                .mb-4
+                                    .feature-card-old.animation-float.mb-4 
+                                        .mx-4.my-4
+                                            h3.font-weight-bold.mb-4 
+                                                | Battle-tested
+                                            h5.font-weight-bold
+                                                | Bank on our years of top-class, real-world AI & NLP experience to avoid common pitfalls in deploying enterprise AI solutions
+
+                                    .feature-card-old.animation-float.mb-4 
+                                        .mx-4.my-4
+                                            h3.font-weight-bold.mb-4 
+                                                | Start building before hiring
+                                            h5.font-weight-bold
+                                                | Retain a sense of control through sustainable and truly extendable solutions that are owned by your teams. Approach hiring and solutioning as parallel, complementary processes 
+
+        section#features.page-section
+            .container.px-4.px-lg-4
+                .row.mb-4
+                    .col-md-4
+                        h1.font-weight-bold Inscripta Advantage
+                    .col-md-8
+                        h5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.
+                .row.gx-4.gx-lg-4.mt-5
+                    .col-lg-3.col-md-6.col-sm-12.mb-3
+                        .content-box-primary.bg-white.h-100
+                        
+                            //.mb-4
+                                .i.fas.fa-3x.fa-list.text-primary
+                            .h3.font-weight-bold.mb-4 
+                                | Quick Wins
+                            .product-detail
+                                | Don’t reinvent the wheel--leverage Inscripta’s industry-tested, customizable products and pre-built libraries to focus and expedite your first pilots
+
+                    .col-lg-3.col-md-6.col-sm-12.mb-3
+                        .content-box-secondary.bg-white.h-100
+                            //.mb-4
+                                .i.fas.fa-3x.fa-cogs.text-primary
+                            .h3.font-weight-bold.mb-4 Battle-tested
+                            .product-detail
+                                | Bank on our years of top-class, real-world AI & NLP experience to avoid common pitfalls in deploying enterprise AI solutions. 
+                    .col-lg-3.col-md-6.col-sm-12.mb-3
+                        .content-box-primary.bg-white.h-100
+                            //.mb-4
+                                i.fas.fa-3x.fa-file-invoice.text-primary 
+                            .h3.font-weight-bold.mb-4 Expertise  
+                            .product-detail
+                                | Based on our extensive end-to-end AI deployment experience, we create bespoke solutions that originate within your organization and thereby take deep roots within your workflows
+
+                    .col-lg-3.col-md-6.col-sm-12.mb-3
+                        .content-box-secondary.bg-white.h-100
+                            //.mb-4
+                                i.fas.fa-3x.fa-comments.text-primary
+                            .h3.font-weight-bold.mb-4 
+                                | Start building before hiring
+                            .product-detail
+                                | Retain a sense of control through sustainable and truly extendable solutions that are owned by your teams. Approach hiring and solutioning as parallel, complementary processes 
+
+
+
+        //Expertise
+        section#expertise.page-section.bg-light
+            .container.px-2.px-lg-2
+                .col-lg-11.col-md-6.col-sm-12.row.mx-auto
+                    .row.mb-4
+                        .col-md-4
+                                h1.font-weight-bold Our Expertise
+                        .col-md-8
+                            h5 Our depth in NLP, machine learning, and deep learning, combined with our suit of cutting-edge products, ensures quick and effective AI prototyping and integration
+                    .row.mt-4
+                        .col-lg-6.col-md-6.col-sm-12
+                            .expertise-card.mb-4
+                                h2.mb-3.text-primary NLP
+                                p Extensive experience in various NLP technology
+                                    li question answering & semantic search 
+                                    li domain-specific opinion mining, 
+                                    li aspect-sentiment analysis,
+                                    li information extraction
+                                    li summarization 
+                                p Deep understanding of the nuances of different data sources (blogs, video reviews, news, etc.) in various domains (E-commerce, Pharma, IT, Finance, and more)
+                                p Ability to handle real-world, noisy, heterogeneous data
+                                p Cutting-edge technology: Solutions built around state-of-the-art deep learning models such as Transformer (BERT variants) and LSTM at the core
+
+                            .expertise-card
+                                h2.mb-3.text-primary Image Processing
+                                p Combining cutting-edge image recognition and NLP techniques for high accuracy
+                                p Ready modules for multiple use cases: 
+                                p Object detection and masking for GDPR compliance
+                        .col-lg-6.col-md-6.col-sm-12
+                            .expertise-card.mb-4.mx-2.mt-5
+                                h2.mb-3.text-primary Conversational AI
+                                p Task-oriented dialog agents that stand out from run-of-the-mill chatbots
+                                p Purpose-built for product discovery engines, support assistants, and FAQ bots
+                                p Bootstrapped from available data sources (reviews, blogs, knowledge articles) for quick deployment
+                                p Easily adaptable to various domains
+                            .expertise-card.mx-2
+                                h2.mb-3.text-primary Ethical AI
+                                p point 1
+                                p point 2
+                                p point 3
+                                p point 4
+
+        section#expertise.page-section
+            .container.px-2.px-lg-2
+                .col-lg-11.col-md-6.col-sm-12.row.mx-auto
+                    .row.mb-4
+                        .col-md-4
+                                h1.font-weight-bold Our Expertise
+                        .col-md-8
+                            h5 Our depth in NLP, Image processing, Conversation AI, combined with our suit of cutting-edge products, ensures quick and effective AI prototyping and integration
+                    .row.mt-5
+                            .col-xs-12.col-md-6.text-center
+                                .img-box.text-center
+                                    //img.img-main.lazyload(data-src="/assets/img/products/parseqa_concept.jpg")
+                            .col-lg-6.col-md-12
+                                h2.my-3.text-primary Natural Language Processing (NLP)
+
+                                p Extensive experience in various NLP technology
+                                    li question answering & semantic search 
+                                    li domain-specific opinion mining, 
+                                    li aspect-sentiment analysis,
+                                    li information extraction
+                                    li summarization 
+                                p Deep understanding of the nuances of different data sources (blogs, video reviews, news, etc.) in various domains (E-commerce, Pharma, IT, Finance, and more)
+                                p Ability to handle real-world, noisy, heterogeneous data
+                                p Cutting-edge technology: Solutions built around state-of-the-art deep learning models such as Transformer (BERT variants) and LSTM at the core
+
+                    .row.mt-5
+                            .col-xs-12.col-md-6.text-center.order-md-2
+                                .img-box.text-center
+                                    //img.img-main.lazyload(data-src="/assets/img/products/parseqa_concept.jpg")
+                            .col-lg-6.col-md-12
+                                h2.my-3.text-primary Conversational AI
+
+                                p Task-oriented dialog agents that stand out from run-of-the-mill chatbots
+                                p Purpose-built for product discovery engines, support assistants, and FAQ bots
+                                p Bootstrapped from available data sources (reviews, blogs, knowledge articles) for quick deployment
+                                p Easily adaptable to various domains such as Travel, E-commerce/Retail, Finance, IT and Pharma
+
+
+                    .row.mt-5
+                            .col-xs-12.col-md-6.text-center
+                                .img-box.text-center
+                                    //img.img-main.lazyload(data-src="/assets/img/products/parseqa_concept.jpg")
+                            .col-lg-6.col-md-12
+                                h2.my-3.text-primary Document Processing
+
+                                p Combining cutting-edge image recognition and NLP techniques for high accuracy
+                                p Ready modules for multiple use cases:
+                                    li Automatic vehicle detection & tracking
+                                    li Invoice & PO scanning
+                                    li KYC document scanner?
+                                    li Object detection and masking for GDPR compliance
+
+                    .row.mt-5
+                            .col-xs-12.col-md-6.text-center.order-md-2
+                                .img-box.text-center
+                                    //img.img-main.lazyload(data-src="/assets/img/products/parseqa_concept.jpg")
+                            .col-lg-6.col-md-12
+                                h2.my-3.text-primary Ethical AI
+
+                                p Task-oriented dialog agents that stand out from run-of-the-mill chatbots
+                                p Purpose-built for product discovery engines, support assistants, and FAQ bots
+                                p Bootstrapped from available data sources (reviews, blogs, knowledge articles) for quick deployment
+                                p Easily adaptable to various domains such as Travel, E-commerce/Retail, Finance, IT and Pharma
+
+        // Blog
+        section#blogs.bg-primary.text-white.page-section
+                .container.px-4.px-lg-5.text-center
+                    .col-lg-10.mx-auto.text-center
+                        h1.font-weight-bold.mt-0.mb-5 Blog
+                .container-fluid    
+                    #myCarousel.carousel.slide(data-bs-ride="carousel").mx-auto
+                        .carousel-inner.row.mx-auto.col-lg-10
+                            .carousel-item.active
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
+                                            .card-box
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%" alt="Blog image")
+                                            h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
+
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-2
+                                        a.blog-link(target='new' href='/blog/nlp-seven-misplaced-passions.html')
+                                            .card-box
+                                                img.lazyload(data-src='/assets/img/blog/nlp-seven-misplaced-passions/JoeDavisonTweetNew.jpg', style="width: 100%")
+                                            h5.font-weight-bold.mx-3.my-4 NLP for Business in the Time of BERTera: Seven Misplaced Passions
+
+
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='')
+                                            .card-box
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%" alt="Blog image")
+                                            h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
+
+
+                        a.carousel-control-prev(href='#myCarousel' role='button' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.sr-only Previous
+                        a.carousel-control-next(href='#myCarousel' role='button' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.sr-only Next
+
+        section#process.bg-dark.text-white.page-section
+            .container.px-4.px-lg-5.text-center
+                    .col-lg-10.mx-auto.text-center
+                        h1.font-weight-bold.mt-0.mb-5 Consulting Process
+                        img.image-box(src='/assets/img/inscripta-process.png' alt='Process timeline')
+
+
+        // Contact
+        section#contact.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-8
+                        .contact-card.col-lg-10
+                            h3.text-primary.mx-4.my-3 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
+                    .col-lg-4
+                        h2.mt-4.mt-lg-0 Get In Touch!
+                        hr.divider.bg-secondary.mx-0
+                        h6.mb-3
+                            | Looking to add intelligence to your systems? 
+                            hr.w-50
+                            | Require customized deployment?
+                        p.flex-align-content-center
+                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
+                            a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
+
+        // Footer
+        include /pug/includes/footer.pug
+
+        // carousel
+        script(async='' src='/js/carousel.js')
+        
+        script(type='text/javascript' data-cfasync='false' async='').
+            window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
