@@ -73,7 +73,15 @@ img.img-logo {
 }
 
 .product-detail {
+  font-size: 1.1rem;
   line-height: 1.3;
+  margin: 0px;
+}
+
+.detail {
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin: 0px;
 }
 
 h4.product-tagline {
@@ -161,7 +169,13 @@ h4.product-tagline {
 .content-box {
   //border: 2px solid #eaecf3;
   padding: 2.5em;
-  box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
+  //box-shadow: 10px 10px 1.25rem rgba(31,45,61,.05);
+  background-color: white;
+}
+
+.content-box-border {
+  border: 2px solid #eaecf3;
+  padding: 2.5em;
   background-color: white;
 }
 

@@ -13,3 +13,10 @@ hr.divider {
 hr.divider-light {
     background-color: $white;
 }
+
+hr.list-divider {
+    height: 1px;
+    margin: 0.7rem auto;
+    background-color: $secondary;
+    opacity: 1;
+}
