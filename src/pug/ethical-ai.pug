@@ -1,0 +1,251 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='Team Inscripta')
+
+        title AI, NLP, Document Processing | AI Products | AI consulting
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
+
+        //Font
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='../css/styles.min.css', rel='stylesheet')
+
+        // Font Awesome
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+        //link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
+
+        // Google Tag Manager
+        script.
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5XQVFGS');
+        // End Google Tag Manager
+
+
+    body#page-top
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='/')
+                    //img.img-logo(src='assets/img/logo/logo-cs.png', alt='Inscripta AI')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link(href='/') PRODUCTS
+                        li.nav-item
+                            a.nav-link(href='/blog/') BLOG
+                        //li.nav-item
+                            a.nav-link(href='/hiring.html') HIRING
+                        li.nav-item
+                            a.nav-link(href='#contact') CONTACT
+
+        // Producthead
+        header.simplehead 
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100
+                    .col-lg-8.align-self-end    
+                        h1.text-white.font-weight-bold Ethical AI
+                    .col-lg-8.align-self-baseline.mt-4
+
+        //section#intro.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-8.mx-auto.text-center
+                        h1.my-5 Some statement
+                        a.mb-3.btn.btn-secondary-outline.btn-xl(href='#about') Know More
+
+        section#about.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-xs-12.col-md-6.order-md-2
+                        .img-box.text-center.mb-3
+                            img.img-main.lazyload(data-src="/assets/img/ai_wip.jpg")
+
+                    .col-xs-12.col-md-6
+                        .img-box
+                            h2.font-weight-bold.text-primary.mb-4  Ethical AI: Why?
+                            h5.mb-3 To say that AI affects society and that unethical software could be responsible for worsening injustice, is stating the obvious. The sheer scale that can be achieved by AI solutions impacts thousands of people at lightning speed. Built using datasets that have embedded biases, Machine Learning systems often have unintended effects on already disadvantaged groups.
+ 
+                            h5.mb-3 Unfortunately, there is no magic bullet or algorithm to rid your AI of biases. You clean your datasets, measure the bias in the decisions and hire conscientious data scientists. But it could all still go wrong, if you don’t do all the right things, in the right order.  However, there are certain processes that could help mitigate these risks, and prevent them from occurring every time that you develop/deploy an AI solution.
+                            //.mb-3
+                                a.btn.btn-primary-outline.btn-xl(href='#advantage') Inscripta Advantage 
+        section#intro.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-xs-12.col-md-8.mx-auto.text-center
+                            //.product-card-primary      
+                            h2.font-weight-bold.text-primary.my-4  How Inscripta can Help
+                            h5.mt-2 We have helped organizations map out and implement their ethical AI strategy, to deal with overarching, recurrent and complex problems. We helped them set up an AI governance structure, with operational procedures and guiding materials to ensure ethical decision-making at all levels in your AI team.
+                            .mt-5
+                                a.btn.btn-primary-outline.btn-xl(href='#advantage') What next                  
+                    
+
+        // Advantage
+        section#advantage.page-section 
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-4.col-md-12
+                        .py-lg-5
+                            h1.font-weight-bold.mb-5 What needs to be done
+                            h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of Ethical AI implementation.
+                            mb-5
+                                a.btn.btn-secondary-outline.btn-xl(href='#expertise') Our Offering
+                    .col-lg-7.col-md-12.mx-auto
+                        .row
+                            .col-lg-6.col-md-6.text-center.mt-lg-0.mt-2
+                                .feature-card-old.animation-float.mb-4  
+                                    .mx-4.my-4
+                                        h3.font-weight-bold.mb-4 
+                                            | 1
+                                        h5
+                                            | Ensure that your organization is free of unintentional bias in hiring
+
+                                .feature-card-old.animation-float.mb-4 
+                                        .mx-4.my-4
+                                            h3.font-weight-bold.mb-4 
+                                                | 2
+                                            h5
+                                                | Create an ethically aware data-science workflow
+
+                            .col-lg-6.col-md-6.text-center.mt-lg-5
+                                .mb-4
+                                    .feature-card-old.animation-float.mb-4 
+                                        .mx-4.my-4
+                                            h3.font-weight-bold.mb-4 
+                                                | 3
+                                            h5
+                                                | Learn about how to watch out for, and mitigate the effects of entrenched, hidden biases in your datasets
+
+                                    .feature-card-old.animation-float.mb-4 
+                                        .mx-4.my-4
+                                            h3.font-weight-bold.mb-4 
+                                                |  4
+                                            h5
+                                                | Learn about how to watch out for, and mitigate the effects of entrenched, hidden biases in your datasets
+
+                                            
+
+        section#benefits.page-section
+            .container.px-4.px-lg-4
+                .col-md-11.mx-auto
+                    .row.mb-4
+                        .col-sm-12.text-center
+                            h1.font-weight-bold Our offerings
+                    .row.px-4.gx-4.gx-lg-4
+                        .col-sm-12.col-md-4.mb-3
+                            .content-box-primary.bg-white.h-100
+                            
+                                //.mb-4
+                                    .i.fas.fa-3x.fa-list.text-primary
+                                .h3.font-weight-bold.mb-4 1
+                                .product-detail
+                                    | Ethical design workshops for your leaders/managers by an internationally renowned expert
+
+                        .col-sm-12.col-md-4.mb-3
+                            .content-box-primary.bg-white.h-100
+                            
+                                //.mb-4
+                                    .i.fas.fa-3x.fa-list.text-primary
+                                .h3.font-weight-bold.mb-4 2
+                                .product-detail
+                                    | Mentoring to create ethically aware data-science workflow
+
+                        .col-sm-12.col-md-4.mb-3
+                            .content-box-secondary.bg-white.h-100
+                                //.mb-4
+                                    .i.fas.fa-3x.fa-cogs.text-primary
+                                .h3.font-weight-bold.mb-4 3
+                                .product-detail Mentoring to create ethically aware data-science workflow
+
+
+        // Blog
+        section#blogs.bg-primary.text-white.page-section
+                .container.px-4.px-lg-5.text-center
+                    .col-lg-10.mx-auto.text-center
+                        h1.font-weight-bold.mt-0.mb-5 Blog
+                .container-fluid    
+                    #myCarousel.carousel.slide(data-bs-ride="carousel").mx-auto
+                        .carousel-inner.row.mx-auto.col-lg-10
+                            .carousel-item.active
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
+                                            .card-box
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%" alt="Blog image")
+                                            h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
+
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-2
+                                        a.blog-link(target='new' href='/blog/nlp-seven-misplaced-passions.html')
+                                            .card-box
+                                                img.lazyload(data-src='/assets/img/blog/nlp-seven-misplaced-passions/JoeDavisonTweetNew.jpg', style="width: 100%")
+                                            h5.font-weight-bold.mx-3.my-4 NLP for Business in the Time of BERTera: Seven Misplaced Passions
+
+
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='')
+                                            .card-box
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%" alt="Blog image")
+                                            h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
+
+
+                        a.carousel-control-prev(href='#myCarousel' role='button' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.sr-only Previous
+                        a.carousel-control-next(href='#myCarousel' role='button' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.sr-only Next
+
+
+        // Contact
+        section#contact.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-8
+                        .contact-card.col-lg-10
+                            h3.text-primary.mx-4.my-3 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
+                    .col-lg-4
+                        h2.mt-4.mt-lg-0 Get In Touch!
+                        hr.divider.bg-secondary.mx-0
+                        h6.mb-3
+                            | Looking to add intelligence to your systems? 
+                            hr.w-50
+                            | Require customized deployment?
+                        p.flex-align-content-center
+                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
+                            a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
+
+        // Footer
+        include /pug/includes/footer.pug
+
+        // carousel
+        script(async='' src='/js/carousel.js')
+        
+        script(type='text/javascript' data-cfasync='false' async='').
+            window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
