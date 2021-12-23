@@ -101,6 +101,12 @@ h4.product-tagline {
     font-weight:700;
 }
 
+h3.card-heading {
+  margin-bottom: 1.5rem!important;
+  color: #fff!important;
+  font-weight: 700;
+}
+
 .advantage-img-masked {
   background: linear-gradient(to bottom,
         #{fade-out($primary, 0.4)} 0%,
@@ -114,11 +120,15 @@ h4.product-tagline {
 }
 
 .feature-card-old {
-  padding: 15px;
+  padding: 30px;
   //background: #081444;
   background: $primary;
   color: rgba(255,255,255,0.8);
   box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+
+a.feature-card {
+  color: rgba(255,255,255,0.8);
 }
 
 .feature-card {
