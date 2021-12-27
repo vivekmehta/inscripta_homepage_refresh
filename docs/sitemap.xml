@@ -10,17 +10,17 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://inscripta.ai/products/parseqa</loc>
+  <loc>https://inscripta.ai/products/parseqa.html</loc>
   <lastmod>2021-12-19</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inscripta.ai/consulting</loc>
+  <loc>https://inscripta.ai/consulting.html</loc>
   <lastmod>2021-12-23</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inscripta.ai/case-study/parseqa-life-sciences</loc>
+  <loc>https://inscripta.ai/case-study/parseqa-life-sciences.html</loc>
   <lastmod>2021-12-07</lastmod>
   <priority>0.80</priority>
 </url>
@@ -30,12 +30,12 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inscripta.ai/blog/parseqa-pushing-boundaries</loc>
+  <loc>https://inscripta.ai/blog/parseqa-pushing-boundaries.html</loc>
   <lastmod>2021-12-07</lastmod>
   <priority>0.6</priority>
 </url>
 <url>
-  <loc>https://inscripta.ai/blog/nlp-seven-misplaced-passions</loc>
+  <loc>https://inscripta.ai/blog/nlp-seven-misplaced-passions.html</loc>
   <lastmod>2021-12-07</lastmod>
   <priority>0.6</priority>
 </url>
