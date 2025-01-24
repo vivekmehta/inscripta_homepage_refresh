@@ -1,0 +1,360 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products built using NLP, OCR and Document Processing techniques')
+        meta(name='author', content='Team Inscripta')
+
+        title High-quality, customizable AI & NLP products 
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='/assets/favicon.png')
+
+        //Font
+        link(rel="preconnect" href="https://fonts.gstatic.com") 
+
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
+
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='/css/critical.css', rel='stylesheet')
+        
+        // Font Awesome
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+        
+
+        // Google Tag Manager
+        script.
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5XQVFGS');
+        // End Google Tag Manager
+
+
+    body#page-top
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='#page-top')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link(href='#products') PRODUCTS
+                        //li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown') Test
+                            .dropdown-menu
+                                a.dropdown-item(href='#') Test1
+                                a.dropdown-item(href='#') Test2
+                                a.dropdown-item(href='#') Test3
+ 
+                        li.nav-item
+                            a.nav-link(href='#advantage') ADVANTAGE
+                        li.nav-item
+                            a.nav-link(href='/consulting.html') CONSULTING
+                        li.nav-item
+                            a.nav-link(href='/blog/') BLOG
+                        li.nav-item
+                            a.nav-link(href='#team') TEAM
+                        //li.nav-item
+                            a.nav-link(href='/hiring.html') HIRING
+                        li.nav-item
+                            a.nav-link(href='#contact') CONTACT
+
+        // Masthead
+        header.masthead
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100
+                    .col-lg-8.align-self-end
+                        h1.text-white.font-weight-bold AI INTEGRATION.<br>FAST-TRACKED. 
+                    .col-lg-8.align-self-baseline.mt-5
+                        h3.text-white.mb-5
+                            | Fast-track AI transformation through high-quality, customizable products built using Natural Language Processing(NLP), OCR and Document Processing techniques
+                        .mt-2
+                            a.btn.btn-xl.btn-secondary(href='#about') KNOW MORE
+
+        section#about.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-6.col-md-12.half-box
+                        .col-lg-10
+                            h5.text-primary // About Inscripta
+                            h1.font-weight-bold  Your Partner for AI Transformation
+                            h5.mt-4.mb-4 Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.
+                            .mt-5
+                                a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
+                    .col-lg-6.col-md-12
+                            img.img-fluid.lazyload(data-src="/assets/img/about_inscripta_ai.png" alt="AI in action")
+                
+
+        section#products.page-section.bg-light
+            .container.px-4.px-lg-2
+                .row.gx-4.gx-lg-5.mb-5
+                    .col-lg-5.col-md-5
+                        h1.font-weight-bold Inscripta's AI Products
+                    .col-lg-7.col-md-7
+                        h5 Our products, built using state-of-the-art NLP, OCR and Document Processing techniques, can be customized quickly for a variety of business domains. 
+                //hr.divider.bg-light.mb-5 
+                .row.gx-4.gx-lg-5.mt-4
+                    .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .product-card-primary.bg-white
+                            .text-center.mb-3
+                                //img.img-product.lazyload(data-src="/assets/img/products/parseqa_isometric.png" alt="Knowledge search image")
+                            .mb-3
+                                img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
+                            .mb-3
+                                h4.product-tagline QUESTION ANSWERING <br/> FAST-TRACKED
+                            .product-detail.mb-3
+                                | Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently
+                            a(href='/products/parseqa.html') Explore More
+                    .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .product-card-secondary.bg-white
+                            .text-center.mb-3
+                                //img.img-product.lazyload(data-src="/assets/img/products/deckster_isometric.png" alt="Presentation creation image")
+                            .mb-3
+                                img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_title.jpg" alt="ParseQa CT")
+                            .mb-3
+                                h4.product-tagline  DATA CURATION <br/> FAST-TRACKED
+                            .product-detail
+                                | Our AI-driven presentation builder speeds up content reuse letting you focus on getting the message right
+                    .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .product-card-primary.bg-white
+                            .text-center.mb-3
+                                //img.img-product.lazyload(data-src="/assets/img/products/revlo_isometric.png" alt="Product discovery image")
+                            .mb-3
+                                img.img-product-name.lazyload(data-src="/assets/img/products/revlo_title.jpg" alt ="Revlo title")
+                            .mb-3
+                                h4.product-tagline Domain-ptimised Search <br/> FAST-TRACKED
+                            .product-detail
+                                | Our purpose-built AI-powered conversational discovery engine makes product discovery easy and intuitive
+
+        // Advantage
+        section#advantage.page-section 
+            //.advantage-img-masked.text-white
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-4.col-md-12
+                        .py-lg-5
+                            h1.font-weight-bold.mb-5 Inscripta Advantage
+                            h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation. 
+                            mb-5
+                                a.btn.btn-secondary-outline.btn-xl(href='#stack') Inscripta Stack
+                    .col-lg-7.col-md-12.mx-auto
+                        .row
+                            .col-lg-6.col-md-6.text-center.mt-lg-0.mt-2
+                                .feature-card.animation-float.lazyload(data-bg="/assets/img/advantage/custom.jpg" alt="cutomization").mb-4
+                                    .mask
+                                        .mx-5.my-5
+                                            h3.font-weight-bold 
+                                                | Customizable products to enable quicker AI integration
+                                .feature-card.animation-float.lazyload(data-bg="/assets/img/advantage/noisy.jpg" alt="Noisy data").mb-4
+                                    .mask
+                                        .mx-5.my-5
+                                            h3.font-weight-bold
+                                                | Real-world solutions built to handle noisy, heterogeneous data
+                            .col-lg-6.col-md-6.text-center.mt-lg-5
+                                .feature-card.animation-float.lazyload(data-bg="/assets/img/advantage/skill.jpg" alt="Skill").mb-4
+                                    .mask
+                                        .mx-5.my-5
+                                            h3.font-weight-bold 
+                                                | Products designed by a highly skilled and experienced AI team
+                                .feature-card.animation-float.lazyload(data-bg="/assets/img/advantage/papers.jpg" alt="Reasearch").mb-4
+                                    .mask
+                                        .mx-5.my-5
+                                            h3.font-weight-bold
+                                                | Building on the latest research to deliver cutting-edge solutions
+
+
+        //section#stack.page-section
+            .container.px-2
+                .row.gx-2.gx-lg-2.justify-content-center
+                    .col-lg-11.text-center
+                        h3.mt-0.mb-5 Our products, built using state-of-the-art NLP, OCR and Document Processing techniques
+                        //hr.divider.mb-5
+                        //p.text-white-75.mb-4
+
+                    .col-lg-10.text-center
+                        img.img-fluid(src="assets/img/inscripta_stack.png" alt="Inscripta Stack")
+
+        section#stack.page-section
+            .container.px-4.px-lg-2
+                .row.gx-2.gx-lg-4
+                    .col-lg-8
+                        img.img-fluid.lazyload(data-src="/assets/img/inscripta_stack.png" alt="Inscripta Stack")
+                    .col-lg-4
+                        .py-lg-5.mx-2
+                            h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
+                            h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
+                            .mb-3
+                                a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
+
+        // Blog
+        section#blogs.bg-primary.text-white.page-section
+                .container.px-4.px-lg-5.text-center
+                    .col-lg-10.mx-auto.text-center
+                        h1.font-weight-bold.mt-0.mb-5 BLOGS
+                .container-fluid    
+                    #myCarousel.carousel.slide(data-bs-ride="carousel").mx-auto
+                        .carousel-inner.row.mx-auto.col-lg-10
+                            .carousel-item.active
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
+                                            .card-box
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%" alt="Blog image")
+                                            h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://medium.com/inscripta/product-search-is-broken-heres-how-99e08504bdd9')
+                                            .card-box
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png', style="width: 100%" alt="Blog image")
+                                            h5.font-weight-bold.mx-3.my-4 Product Search is Broken: Here&rsquo;s How
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede')
+                                            .card-box
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%" alt="Blog image")
+                                            h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://medium.com/inscripta/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer-74adbafe48c1')
+                                            .card-box
+                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg', style="width: 100%" alt="Blog image")
+                                            h5.font-weight-bold.mx-3.my-4 Teaching computers how humans think ...
+                        a.carousel-control-prev(href='#myCarousel' role='button' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.sr-only Previous
+                        a.carousel-control-next(href='#myCarousel' role='button' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.sr-only Next
+
+        // Team
+        section#team.page-section.bg-light
+            .container.px-4.px-lg-2
+                .col-lg-11.mx-auto 
+                    .row.mb-5
+                        .col-md-3
+                            h1.font-weight-bold The Team
+                        .col-md-9.mx-auto
+                            h5  Having worked at organizations such as IBM Research, Flipkart, VMware, Reliance, Schlumberger, multiple startups and research labs, we are equipped with deep, real-world AI expertise. Our team consists of Masters and PhDs from top universities like IIT Bombay, CMU and University of Birmingham (UK).
+
+            .container
+                    //h1.font-weight-bold.mt-0.mb-5.text-center The Team
+                    //.col-lg-10.mx-auto
+                        .row.mb-5
+                            .col-lg-6.px-3
+                                        //.team-profile-box
+                                        //h1.mb-4 Team
+                                        //h2.mb-0.text-primary.font-weight-extra-bold(style='text-transform: uppercase') Experience
+                                        .highlight-box.bg-primary.text-white
+                                        
+                                            | IBM Research, Flipkart, VMware, Reliance, Schlumberger, NCST (Govt of India research lab), multiple startups and University College Dublin. Masters/PhDs from top universities like IIT Bombay, Carnegie Mellon University (US) and University of Birmingham (UK)
+                            .col-lg-6.px-3
+                                        //.team-profile-box.mx-auto
+                                        //h2.mb-0.text-secondary.font-weight-extra-bold(style='text-transform: uppercase') Exposure
+                                        .highlight-box.bg-secondary.text-white
+                                            //.highlight-box
+                                            | Having witnessed the way the landscape of problems and solutions has evolved over nearly two decades, we understand precisely how AI can have a deep impact on your business, and have the expertise to offer you pragmatic and effective ways to turn your ideas into reality.
+                                   
+                    .col-lg-12.mx-auto
+                        .row
+                            //h1.mb-4 Team
+                            .col-lg-4.px-3
+                                .team-profile-box.mt-8
+                                    .text-center
+                                        img.team-profile-img.lazyload(data-src='/assets/img/team/AR.jpg' alt="Anand's Profile Photo")
+                                        h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
+                                        h6.mb-2 Cofounder 
+                                        a.img-linkedin(href='https://www.linkedin.com/in/anand-ramanathan/' target='_blank' rel="noopener")
+                                            i.fab.fa-linkedin.fa-1_25x
+                                            span.sr-only LinkedIn
+                                    .text-muted.mt-3
+                                        | Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
+                                    
+                            .col-lg-4.px-3
+                                .team-profile-box.mt-8
+                                    .text-center
+                                        img.team-profile-img.lazyload(data-src='/assets/img/team/VM.jpg' alt="VM's Profile Photo")
+                                        h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
+                                        h6.mb-2 Cofounder
+                                        a(href='https://www.linkedin.com/in/vivek-mehta/' target='_blank' rel="noopener")
+                                            i.fab.fa-linkedin.fa-1_25x
+                                            span.sr-only LinkedIn
+                                    .text-muted.mt-3
+                                        | Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and few others. Vivek holds a Masters degree from Carnegie Mellon University (US).
+                                        | <br>
+                                        | <br>
+
+                                    
+
+                            .col-lg-4.px-3
+                                .team-profile-box.mt-8
+                                    .text-center
+                                        img.team-profile-img.lazyload(data-src='/assets/img/team/VN.jpg' alt="VN's Profile Photo")
+                                        h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
+                                        h6.mb-2 Research and Academic Consultant
+                                        a(href='https://www.linkedin.com/in/vivek-nallur-1b27231/' target='_blank' rel="noopener")
+                                            i.fab.fa-linkedin.fa-1_25x
+                                            span.sr-only LinkedIn
+                                    .text-muted.mt-3
+                                        | Dr Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member on the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems and machine-learning for his research. He has a PhD from the University of Birmingham (UK) and a Masters from Carnegie Mellon University (US). In a previous avatar, he used to work in the Silicon Valley, for VMware Inc.
+            
+
+        //section.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-lg-10.text-center
+                        h2.mb-4 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
+
+
+        // Contact
+        section#contact.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-8
+                        .contact-card.col-lg-10
+                            h3.text-primary.mx-4.my-3 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
+                    .col-lg-4
+                        h2.mt-4.mt-lg-0 Get In Touch!
+                        hr.divider.bg-secondary.mx-0
+                        h6.mb-3
+                            | Looking to add intelligence to your systems? 
+                            hr.w-50
+                            | Require customized deployment?
+                        p.flex-align-content-center
+                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
+                            a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
+
+        // Footer
+        include /pug/includes/footer.pug
+
+        link(rel='preload' href='/css/styles.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='/css/styles.min.css', rel='stylesheet')
+
+        // carousel
+        script(async='' src='/js/carousel.js')
+
+        
+        script(type='text/javascript' data-cfasync='false' async='').
+            window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
