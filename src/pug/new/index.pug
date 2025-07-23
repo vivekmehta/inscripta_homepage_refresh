@@ -56,14 +56,12 @@ html(lang='en')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
-                        li.nav-item
-                            a.nav-link(href='#products') PRODUCTS
-                        //li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown') Test
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown') PRODUCTS
                             .dropdown-menu
-                                a.dropdown-item(href='#') Test1
-                                a.dropdown-item(href='#') Test2
-                                a.dropdown-item(href='#') Test3
+                                a.dropdown-item(href='/products/parseqa.html') ParseQa QABot
+                                a.dropdown-item(href='#') ParseQa Curate
+                                a.dropdown-item(href='#') Norg AI
  
                         li.nav-item
                             a.nav-link(href='#advantage') ADVANTAGE
@@ -114,22 +112,23 @@ html(lang='en')
                 //hr.divider.bg-light.mb-5 
                 .row.gx-4.gx-lg-5.mt-4
                     .col-lg-4.col-md-6.col-sm-12.mb-3
-                        .product-card-primary.bg-white
-                            .text-center.mb-3
-                                //img.img-product.lazyload(data-src="/assets/img/products/parseqa_isometric.png" alt="Knowledge search image")
-                            .mb-3
-                                img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
-                            .mb-3
-                                h4.product-tagline QUESTION ANSWERING <br/> FAST-TRACKED
-                            .product-detail.mb-3
-                                | Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently
-                            a(href='/products/parseqa.html') Explore More
+                        a.text-decoration-none.text-reset(href='/products/parseqa.html')
+                            .product-card-primary.bg-white
+                                .text-center.mb-3
+                                    //img.img-product.lazyload(data-src="/assets/img/products/parseqa_isometric.png" alt="Knowledge search image")
+                                .mb-3
+                                    img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
+                                .mb-3
+                                    h4.product-tagline QUESTION ANSWERING <br/> FAST-TRACKED
+                                .product-detail.mb-3
+                                    | Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently
+                            
                     .col-lg-4.col-md-6.col-sm-12.mb-3
                         .product-card-secondary.bg-white
                             .text-center.mb-3
                                 //img.img-product.lazyload(data-src="/assets/img/products/deckster_isometric.png" alt="Presentation creation image")
                             .mb-3
-                                img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_title.jpg" alt="ParseQa CT")
+                                img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT")
                             .mb-3
                                 h4.product-tagline  DATA CURATION <br/> FAST-TRACKED
                             .product-detail
@@ -139,11 +138,11 @@ html(lang='en')
                             .text-center.mb-3
                                 //img.img-product.lazyload(data-src="/assets/img/products/revlo_isometric.png" alt="Product discovery image")
                             .mb-3
-                                img.img-product-name.lazyload(data-src="/assets/img/products/revlo_title.jpg" alt ="Revlo title")
+                                img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="Norg AI title")
                             .mb-3
-                                h4.product-tagline Domain-ptimised Search <br/> FAST-TRACKED
+                                h4.product-tagline Document AI Assistant <br/> FAST-TRACKED
                             .product-detail
-                                | Our purpose-built AI-powered conversational discovery engine makes product discovery easy and intuitive
+                                | Our intelligent document assistant
 
         // Advantage
         section#advantage.page-section 
@@ -197,13 +196,42 @@ html(lang='en')
             .container.px-4.px-lg-2
                 .row.gx-2.gx-lg-4
                     .col-lg-8
-                        img.img-fluid.lazyload(data-src="/assets/img/inscripta_stack.png" alt="Inscripta Stack")
+                        img.img-fluid.lazyload(data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack")
                     .col-lg-4
                         .py-lg-5.mx-2
                             h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
                             h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
                             .mb-3
                                 a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
+
+        // Benchmarking
+        section#about.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-6.col-md-12.half-box
+                        .col-lg-10
+                            h5.text-primary // Benchmarking
+                            h1.font-weight-bold ParseQa outperforms custom GPT by 50% on complex data extraction & question answering
+                            ul
+                                li.mt-1 Better performance even with much smaller local models.
+                                li.mt-1 Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.
+                                li.mt-1 Ideal for technical manuals and scientific publications.
+                    .col-lg-6.col-md-12
+                        img.img-fluid.lazyload(data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa")
+            .container.px-4.px-lg-6.mt-5
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-6.col-md-12
+                        img.img-fluid.lazyload(data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal")
+                    .col-lg-6.col-md-12.half-box
+                        .col-lg-10
+                            h5.text-primary // Benchmarking
+                            h1.font-weight-bold Multimodal data performance
+                            ul
+                                li.mt-1 Significantly better answers from tables and diagrams.
+                                li.mt-1 More reliable across the board.
+                                li.mt-1 Navigate top-3 results with the UI for 100% quality assurance.
+                    
 
         // Blog
         section#blogs.bg-primary.text-white.page-section
@@ -278,46 +306,54 @@ html(lang='en')
                                    
                     .col-lg-12.mx-auto
                         .row
-                            //h1.mb-4 Team
+                            // Anand Ramathan
                             .col-lg-4.px-3
-                                .team-profile-box.mt-8
-                                    .text-center
+                                .team-profile-box.mt-8(style="position: relative;")
+                                    .text-center(
+                                        onmouseover="this.querySelector('.hover-details').style.display='block';"
+                                        onmouseout="this.querySelector('.hover-details').style.display='none';"
+                                    )
                                         img.team-profile-img.lazyload(data-src='/assets/img/team/AR.jpg' alt="Anand's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
                                         h6.mb-2 Cofounder 
                                         a.img-linkedin(href='https://www.linkedin.com/in/anand-ramanathan/' target='_blank' rel="noopener")
                                             i.fab.fa-linkedin.fa-1_25x
                                             span.sr-only LinkedIn
-                                    .text-muted.mt-3
-                                        | Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
-                                    
+                                        .hover-details.text-muted.mt-3(style="display: none;")
+                                            | Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
+
+                            // Vivek Mehta
                             .col-lg-4.px-3
-                                .team-profile-box.mt-8
-                                    .text-center
+                                .team-profile-box.mt-8(style="position: relative;")
+                                    .text-center(
+                                        onmouseover="this.querySelector('.hover-details').style.display='block';"
+                                        onmouseout="this.querySelector('.hover-details').style.display='none';"
+                                    )
                                         img.team-profile-img.lazyload(data-src='/assets/img/team/VM.jpg' alt="VM's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
                                         h6.mb-2 Cofounder
                                         a(href='https://www.linkedin.com/in/vivek-mehta/' target='_blank' rel="noopener")
                                             i.fab.fa-linkedin.fa-1_25x
                                             span.sr-only LinkedIn
-                                    .text-muted.mt-3
-                                        | Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and few others. Vivek holds a Masters degree from Carnegie Mellon University (US).
-                                        | <br>
-                                        | <br>
+                                        .hover-details.text-muted.mt-3(style="display: none;")
+                                            | Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).
 
-                                    
-
+                            // Vivek Nallur
                             .col-lg-4.px-3
-                                .team-profile-box.mt-8
-                                    .text-center
+                                .team-profile-box.mt-8(style="position: relative;")
+                                    .text-center(
+                                        onmouseover="this.querySelector('.hover-details').style.display='block';"
+                                        onmouseout="this.querySelector('.hover-details').style.display='none';"
+                                    )
                                         img.team-profile-img.lazyload(data-src='/assets/img/team/VN.jpg' alt="VN's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
                                         h6.mb-2 Research and Academic Consultant
                                         a(href='https://www.linkedin.com/in/vivek-nallur-1b27231/' target='_blank' rel="noopener")
                                             i.fab.fa-linkedin.fa-1_25x
                                             span.sr-only LinkedIn
-                                    .text-muted.mt-3
-                                        | Dr Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member on the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems and machine-learning for his research. He has a PhD from the University of Birmingham (UK) and a Masters from Carnegie Mellon University (US). In a previous avatar, he used to work in the Silicon Valley, for VMware Inc.
+                                        .hover-details.text-muted.mt-3(style="display: none;")
+                                            | Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning  for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.
+
             
 
         //section.page-section.bg-light
@@ -333,7 +369,7 @@ html(lang='en')
                 .row.gx-4.gx-lg-5.align-items-center
                     .col-lg-8
                         .contact-card.col-lg-10
-                            h3.text-primary.mx-4.my-3 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
+                            h4.text-primary.mx-4.my-3 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
                     .col-lg-4
                         h2.mt-4.mt-lg-0 Get In Touch!
                         hr.divider.bg-secondary.mx-0

@@ -40,22 +40,23 @@
     },
     "dependencies": {
         "ansi-regex": "^6.0.1",
-        "axios": "^0.23.0",
+        "axios": "^1.10.0",
         "bootstrap": "5.0.1",
-        "npm": "^8.1.0",
-        "slick-carousel": "^1.8.1"
+        "npm": "^10.9.3",
+        "slick-carousel": "^1.8.1",
+        "startbootstrap-creative": "^7.0.7"
     },
     "devDependencies": {
         "autoprefixer": "10.2.6",
-        "browser-sync": "2.26.14",
+        "browser-sync": "^3.0.4",
         "chokidar": "3.5.1",
         "clean-css": "^5.2.2",
         "concurrently": "6.2.0",
-        "postcss": "8.3.0",
+        "postcss": "^8.5.6",
         "prettier": "2.3.1",
-        "pug": "3.0.2",
+        "pug": "^3.0.3",
         "sass": "1.34.1",
-        "shelljs": "0.8.4",
+        "shelljs": "^0.8.5",
         "upath": "2.0.1"
     }
 }

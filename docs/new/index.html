@@ -44,13 +44,14 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#products">PRODUCTS</a></li>
-                        <!--li.nav-item.dropdowna.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown') Test
-.dropdown-menu
-    a.dropdown-item(href='#') Test1
-    a.dropdown-item(href='#') Test2
-    a.dropdown-item(href='#') Test3
--->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/products/parseqa.html">ParseQa QABot</a>
+                                <a class="dropdown-item" href="#">ParseQa Curate</a>
+                                <a class="dropdown-item" href="#">Norg AI</a>
+                            </div>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#advantage">ADVANTAGE</a></li>
                         <li class="nav-item"><a class="nav-link" href="/consulting.html">CONSULTING</a></li>
                         <li class="nav-item"><a class="nav-link" href="/blog/">BLOG</a></li>
@@ -103,24 +104,25 @@
                 <!--hr.divider.bg-light.mb-5 -->
                 <div class="row gx-4 gx-lg-5 mt-4">
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div class="product-card-primary bg-white">
-                            <div class="text-center mb-3"><!--img.img-product.lazyload(data-src="/assets/img/products/parseqa_isometric.png" alt="Knowledge search image")--></div>
-                            <div class="mb-3"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot" /></div>
-                            <div class="mb-3">
-                                <h4 class="product-tagline">
-                                    QUESTION ANSWERING
-                                    <br />
-                                    FAST-TRACKED
-                                </h4>
+                        <a class="text-decoration-none text-reset" href="/products/parseqa.html">
+                            <div class="product-card-primary bg-white">
+                                <div class="text-center mb-3"><!--img.img-product.lazyload(data-src="/assets/img/products/parseqa_isometric.png" alt="Knowledge search image")--></div>
+                                <div class="mb-3"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot" /></div>
+                                <div class="mb-3">
+                                    <h4 class="product-tagline">
+                                        QUESTION ANSWERING
+                                        <br />
+                                        FAST-TRACKED
+                                    </h4>
+                                </div>
+                                <div class="product-detail mb-3">Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently</div>
                             </div>
-                            <div class="product-detail mb-3">Our deep-insight semantic search engine extracts fine-grained answers from large knowledge bases efficiently</div>
-                            <a href="/products/parseqa.html">Explore More</a>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
                         <div class="product-card-secondary bg-white">
                             <div class="text-center mb-3"><!--img.img-product.lazyload(data-src="/assets/img/products/deckster_isometric.png" alt="Presentation creation image")--></div>
-                            <div class="mb-3"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_title.jpg" alt="ParseQa CT" /></div>
+                            <div class="mb-3"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT" /></div>
                             <div class="mb-3">
                                 <h4 class="product-tagline">
                                     DATA CURATION
@@ -134,15 +136,15 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
                         <div class="product-card-primary bg-white">
                             <div class="text-center mb-3"><!--img.img-product.lazyload(data-src="/assets/img/products/revlo_isometric.png" alt="Product discovery image")--></div>
-                            <div class="mb-3"><img class="img-product-name lazyload" data-src="/assets/img/products/revlo_title.jpg" alt="Revlo title" /></div>
+                            <div class="mb-3"><img class="img-product-name lazyload" data-src="/assets/img/products/norg_ai_title.png" alt="Norg AI title" /></div>
                             <div class="mb-3">
                                 <h4 class="product-tagline">
-                                    Domain-ptimised Search
+                                    Document AI Assistant
                                     <br />
                                     FAST-TRACKED
                                 </h4>
                             </div>
-                            <div class="product-detail">Our purpose-built AI-powered conversational discovery engine makes product discovery easy and intuitive</div>
+                            <div class="product-detail">Our intelligent document assistant</div>
                         </div>
                     </div>
                 </div>
@@ -204,12 +206,48 @@
         <section class="page-section" id="stack">
             <div class="container px-4 px-lg-2">
                 <div class="row gx-2 gx-lg-4">
-                    <div class="col-lg-8"><img class="img-fluid lazyload" data-src="/assets/img/inscripta_stack.png" alt="Inscripta Stack" /></div>
+                    <div class="col-lg-8"><img class="img-fluid lazyload" data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack" /></div>
                     <div class="col-lg-4">
                         <div class="py-lg-5 mx-2">
                             <h1 class="font-weight-bold mt-3 mb-4">Inscripta Technology Stack</h1>
                             <h5 class="mb-4">State-of-the-Art Technologies. Flexible Libraries. Customizable Products.</h5>
                             <div class="mb-3"><a class="btn btn-secondary-outline btn-xl" href="#blogs">Read our blogs</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Benchmarking-->
+        <section class="page-section" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-6 col-md-12 half-box">
+                        <div class="col-lg-10">
+                            <h5 class="text-primary">// Benchmarking</h5>
+                            <h1 class="font-weight-bold">ParseQa outperforms custom GPT by 50% on complex data extraction & question answering</h1>
+                            <ul>
+                                <li class="mt-1">Better performance even with much smaller local models.</li>
+                                <li class="mt-1">Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.</li>
+                                <li class="mt-1">Ideal for technical manuals and scientific publications.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12"><img class="img-fluid lazyload" data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa" /></div>
+                </div>
+            </div>
+            <div class="container px-4 px-lg-6 mt-5"></div>
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-6 col-md-12"><img class="img-fluid lazyload" data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal" /></div>
+                    <div class="col-lg-6 col-md-12 half-box">
+                        <div class="col-lg-10">
+                            <h5 class="text-primary">// Benchmarking</h5>
+                            <h1 class="font-weight-bold">Multimodal data performance</h1>
+                            <ul>
+                                <li class="mt-1">Significantly better answers from tables and diagrams.</li>
+                                <li class="mt-1">More reliable across the board.</li>
+                                <li class="mt-1">Navigate top-3 results with the UI for 100% quality assurance.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -304,10 +342,10 @@
            -->
                 <div class="col-lg-12 mx-auto">
                     <div class="row">
-                        <!--h1.mb-4 Team-->
+                        <!-- Anand Ramathan-->
                         <div class="col-lg-4 px-3">
-                            <div class="team-profile-box mt-8">
-                                <div class="text-center">
+                            <div class="team-profile-box mt-8" style="position: relative">
+                                <div class="text-center" onmouseover="this.querySelector('.hover-details').style.display='block';" onmouseout="this.querySelector('.hover-details').style.display='none';">
                                     <img class="team-profile-img lazyload" data-src="/assets/img/team/AR.jpg" alt="Anand's Profile Photo" />
                                     <h4 class="text-primary font-weight-bold mb-2">Anand Ramanathan</h4>
                                     <h6 class="mb-2">Cofounder</h6>
@@ -315,13 +353,14 @@
                                         <i class="fab fa-linkedin fa-1_25x"></i>
                                         <span class="sr-only">LinkedIn</span>
                                     </a>
+                                    <div class="hover-details text-muted mt-3" style="display: none">Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.</div>
                                 </div>
-                                <div class="text-muted mt-3">Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.</div>
                             </div>
                         </div>
+                        <!-- Vivek Mehta-->
                         <div class="col-lg-4 px-3">
-                            <div class="team-profile-box mt-8">
-                                <div class="text-center">
+                            <div class="team-profile-box mt-8" style="position: relative">
+                                <div class="text-center" onmouseover="this.querySelector('.hover-details').style.display='block';" onmouseout="this.querySelector('.hover-details').style.display='none';">
                                     <img class="team-profile-img lazyload" data-src="/assets/img/team/VM.jpg" alt="VM's Profile Photo" />
                                     <h4 class="text-primary font-weight-bold mb-2">Vivek Mehta</h4>
                                     <h6 class="mb-2">Cofounder</h6>
@@ -329,17 +368,14 @@
                                         <i class="fab fa-linkedin fa-1_25x"></i>
                                         <span class="sr-only">LinkedIn</span>
                                     </a>
-                                </div>
-                                <div class="text-muted mt-3">
-                                    Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and few others. Vivek holds a Masters degree from Carnegie Mellon University (US).
-                                    <br />
-                                    <br />
+                                    <div class="hover-details text-muted mt-3" style="display: none">Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).</div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Vivek Nallur-->
                         <div class="col-lg-4 px-3">
-                            <div class="team-profile-box mt-8">
-                                <div class="text-center">
+                            <div class="team-profile-box mt-8" style="position: relative">
+                                <div class="text-center" onmouseover="this.querySelector('.hover-details').style.display='block';" onmouseout="this.querySelector('.hover-details').style.display='none';">
                                     <img class="team-profile-img lazyload" data-src="/assets/img/team/VN.jpg" alt="VN's Profile Photo" />
                                     <h4 class="text-primary font-weight-bold mb-2">Vivek Nallur</h4>
                                     <h6 class="mb-2">Research and Academic Consultant</h6>
@@ -347,8 +383,8 @@
                                         <i class="fab fa-linkedin fa-1_25x"></i>
                                         <span class="sr-only">LinkedIn</span>
                                     </a>
+                                    <div class="hover-details text-muted mt-3" style="display: none">Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.</div>
                                 </div>
-                                <div class="text-muted mt-3">Dr Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member on the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems and machine-learning for his research. He has a PhD from the University of Birmingham (UK) and a Masters from Carnegie Mellon University (US). In a previous avatar, he used to work in the Silicon Valley, for VMware Inc.</div>
                             </div>
                         </div>
                     </div>
@@ -366,7 +402,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-lg-8">
-                        <div class="contact-card col-lg-10"><h3 class="text-primary mx-4 my-3">Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain</h3></div>
+                        <div class="contact-card col-lg-10"><h4 class="text-primary mx-4 my-3">Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain</h4></div>
                     </div>
                     <div class="col-lg-4">
                         <h2 class="mt-4 mt-lg-0">Get In Touch!</h2>
@@ -386,17 +422,63 @@
         </section>
         <!-- Footer-->
         <!-- Footer-->
-        <footer class="bg-dark py-5 text-white">
+        <footer class="bg-primary py-5 text-white">
             <div class="container px-4 px-lg-5">
                 <div class="row">
-                    <div class="col-lg-4"><img class="img-logo" src="/assets/img/logo/logo-cs.png" /></div>
+                    <!-- Left section: Logo and description-->
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img class="img-logo mb-3" src="/assets/img/logo/logo-cs.png" alt="Inscripta AI Logo" />
+                        <p class="small text-muted mb-3">Inscripta is a trusted AI consulting partner helping enterprises modernize data infrastructure and accelerate AI adoption. With deep expertise, we specialize in scalable solutions for NLP, OCR, Document AI, and more.</p>
+                        <div class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a class="text-info text-decoration-none" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fab fa-linkedin fa-lg text-info me-2"></i>
+                            <a class="text-info text-decoration-none" href="https://www.linkedin.com/company/inscripta-ai/" target="_blank">LinkedIn</a>
+                        </div>
+                        <!--.mb-2i.fas.fa-phone.me-2
+span.text-info +1-555-123-4567
+-->
+                    </div>
+                    <!-- Right sections: Products, Resources, Contact-->
+                    <div class="col-lg-7 offset-lg-1">
+                        <div class="row">
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Products</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-muted text-decoration-none" href="/products/parseqa.html">ParseQa QABot</a></li>
+                                    <li><a class="text-muted text-decoration-none">ParseQa Curate</a></li>
+                                    <li><a class="text-muted text-decoration-none">Norg AI</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Resources</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-muted text-decoration-none" href="/blog/">Blogs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Advantages</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-muted text-decoration-none">Solution</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Contact</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-muted text-decoration-none" href="mailto:sales@inscripta.ai">Email Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4"><div class="small text-muted mt-4">Copyright &copy; 2021 - Inscripta AI</div></div>
-                    <div class="col-lg-4">
-                        <div class="mt-4">
-                            <a class="small text-muted mx-2" href="/legal/privacy">Privacy Policy</a>
-                            <a class="small text-muted">Terms of Service</a>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <div class="small text-muted mt-2">
+                            &copy; 2025 Inscripta AI. All Rights Reserved.
+                            <a class="text-muted mx-2">Terms of Service</a>
+                            <a class="text-muted mx-2" href="/legal/privacy">Privacy Policy</a>
                         </div>
                     </div>
                 </div>
