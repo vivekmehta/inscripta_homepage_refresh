@@ -38,7 +38,7 @@ img.img-logo {
 }
 
 .feature-heading {
-  line-heigh: 1.35em;
+  line-height: 1.35em;
   min-height: 2.7em;
 }
 
@@ -359,5 +359,141 @@ a.feature-card {
 
 
 
+.feature-tile {
+  border: 2px solid #192b80;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #fff;
+  height: 100%;
+}
 
+.feature-tile:hover {
+    box-shadow: 0 0 15px #df1618;
+    transform: translateY(-4px);
+}
+
+.adv-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-space {
+    width: 33%;
+    padding-right: 32px;
+}
+.card-grid {
+    width: 67%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+.adv-card {
+    border: 2px solid #192b80 ;
+    border-radius: 16px;
+    padding: 24px;
+    background: white;
+    transition: all 0.3s ease;
+}
+.adv-card:hover {
+    box-shadow: 0 0 16px rgba(255, 0, 0, 0.6);
+    border-color: red;
+}
+.adv-heading {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+.adv-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+// team members
+
+.team-profile-box {
+    height: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    justify-content: flex-start;
+    padding: 15px;
+    background: #f8f9fa;
+    overflow-y: auto;
+}
+
+.card-front-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card-front-content h4,
+.card-front-content h6 {
+    margin: 0;
+}
+
+.card-back h5 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.card-back p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+a i.fab.fa-linkedin {
+    color: #0077b5;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+
+// case study
+.highlight-grid-box {
+    border: 2px solid #192b80;
+    border-radius: 30px;
+    padding: 16px;
+    background: white;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 12px 2px #df1618;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
 
