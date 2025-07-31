@@ -408,6 +408,8 @@ a.feature-card {
     color: #333;
 }
 
+
+
 // team members
 
 .team-profile-box {
@@ -497,3 +499,47 @@ a i.fab.fa-linkedin {
     cursor: pointer;
 }
 
+
+
+// valued customers
+.customer-marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.customer-marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  padding: 0 20px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.customer-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+
+// red bullet points in parseqa curate
+.red-bullets li::marker {
+  color: #df1618;
+}
+
+// key features in parseqa curate
+.ml-4 {
+  margin-left: 1.5rem !important;
+}

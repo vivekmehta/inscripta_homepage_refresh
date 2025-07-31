@@ -1,0 +1,102 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='ParseQa can be used to enhance the capabilities of a wide range of enterprise applications such as automated helpdesks, FAQ chatbots, review-insight dashboards, product discovery tools and knowledge search, and can help to leverage the true potential of heterogeneous knowledge repositories of any size.')
+        meta(name='author', content='Team Inscripta')
+
+        title Knowledge search | Text mining | Question Answering System
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
+
+        //Font
+        link(rel="preconnect" href="https://fonts.gstatic.com") 
+
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
+
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='/css/critical.css', rel='stylesheet')
+        
+        // Font Awesome
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+
+        // Google Tag Manager
+        script.
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5XQVFGS');
+        // End Google Tag Manager
+
+    body#page-top
+
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
+
+        // Navigation
+        include /pug/includes/menu.pug
+
+
+        // Producthead
+        header.prodhead 
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100
+                    .col-lg-8.align-self-end    
+                        h1.text-white.font-weight-bold Norg AI
+                        h5.text-white.mt-4 Beyond GPT: Purpose-Built for PS Teams
+                    .col-lg-8.align-self-baseline.mt-4
+                    
+        
+        
+
+
+
+
+
+
+        
+        // Contact
+        section#contact.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center.mb-5
+                    .col-lg-7
+                        .contact-card.col-lg-10
+                            h3.text-primary.mx-4.my-3 Gen AI for Professional Services
+                    .col-lg-5
+                        h2.mt-4.mt-lg-0 Get In Touch!
+                        hr.divider.bg-secondary.mx-0
+                        h6.mb-4
+                            | Find out what NorgAI can do for you
+                            hr.w-50
+                            | Speak to an expert, request an assesment, see the demo of solutions
+                            br
+                        p.flex-align-content-center
+                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
+                            a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
+
+
+
+        // Footer
+        include /pug/includes/footer_new.pug
+
+        link(rel='preload' href='/css/styles.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='/css/styles.min.css', rel='stylesheet')
+        
+        script(type='text/javascript' data-cfasync='false' async='').
+            window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
+
