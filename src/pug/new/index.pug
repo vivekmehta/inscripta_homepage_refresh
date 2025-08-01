@@ -49,36 +49,7 @@ html(lang='en')
 
 
         // Navigation
-<<<<<<< HEAD
-        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
-            .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top')
-                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    span.navbar-toggler-icon
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ms-auto.my-2.my-lg-0
-                        li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown') PRODUCTS
-                            .dropdown-menu
-                                a.dropdown-item(href='/products/parseqa.html') ParseQa QABot
-                                a.dropdown-item(href='#') ParseQa Curate
-                                a.dropdown-item(href='#') Norg AI
- 
-                        li.nav-item
-                            a.nav-link(href='#advantage') ADVANTAGE
-                        li.nav-item
-                            a.nav-link(href='/consulting.html') CONSULTING
-                        li.nav-item
-                            a.nav-link(href='/blog/') BLOG
-                        li.nav-item
-                            a.nav-link(href='#team') TEAM
-                        //li.nav-item
-                            a.nav-link(href='/hiring.html') HIRING
-                        li.nav-item
-                            a.nav-link(href='#contact') CONTACT
-=======
         include /pug/includes/menu.pug
->>>>>>> 955c9691d9b7cab2871689b9b29c793055953570
 
         // Masthead
         header.masthead
@@ -106,10 +77,7 @@ html(lang='en')
                                 a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
                     .col-lg-6.col-md-12
                             img.img-fluid.lazyload(data-src="/assets/img/about_inscripta_ai.png" alt="AI in action")
-                
-<<<<<<< HEAD
-=======
-        
+                 
 
         // Customers
         section#customers.bg-white.py-5
@@ -125,8 +93,7 @@ html(lang='en')
                             img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
 
 
-        
->>>>>>> 955c9691d9b7cab2871689b9b29c793055953570
+
         // PRODUCTS 
         section#products.page-section.bg-light
             .container.px-4.px-lg-2
@@ -138,15 +105,8 @@ html(lang='en')
                 //hr.divider.bg-light.mb-5 
                 .row.gx-4.gx-lg-5.mt-4
                     .col-lg-4.col-md-6.col-sm-12.mb-3
-<<<<<<< HEAD
-                        a.text-decoration-none.text-reset(href='/products/parseqa.html')
-                            .product-card-primary.bg-white
-                                .text-center.mb-3
-                                    //img.img-product.lazyload(data-src="/assets/img/products/parseqa_isometric.png" alt="Knowledge search image")
-=======
                         a.text-decoration-none.text-reset(href='/products/parseqa_qabot.html')
                             .product-card-primary.bg-white
->>>>>>> 955c9691d9b7cab2871689b9b29c793055953570
                                 .mb-3
                                     img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
                                 .product-detail.mb-3
@@ -158,38 +118,6 @@ html(lang='en')
                                         li Answer is at your fingertips, without having to download, read, and manually sift through content.
                             
                     .col-lg-4.col-md-6.col-sm-12.mb-3
-<<<<<<< HEAD
-                        .product-card-secondary.bg-white
-                            .text-center.mb-3
-                                //img.img-product.lazyload(data-src="/assets/img/products/deckster_isometric.png" alt="Presentation creation image")
-                            .mb-3
-                                img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT")
-                            .product-detail
-                                | Contextual data extraction & curation from a wide variety of documents.
-                                <br>
-                                <br>
-                                | Extract data into Excel/CSV/JSON, or simply ask questions to get relevant answers from mountains of large documents in a matter of minutes.
-                    
-                    .col-lg-4.col-md-6.col-sm-12.mb-3
-                        .product-card-primary.bg-white
-                            .text-center.mb-3
-                                //img.img-product.lazyload(data-src="/assets/img/products/revlo_isometric.png" alt="Product discovery image")
-                            .mb-3
-                                img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="Norg AI title")
-                            .product-detail
-                                | GenAI assistant for Professional Services teams. Automates delivery workflows for faster, more consistent go-lives outcomes.
-                                <br>
-                                ul
-                                    li Built for PS workflows - all in a single, dedicated PS workspace - no tool switching
-                                    li More reliable, relevant, and consistent outputs than GPT
-
-        // Advantage
-        //section#advantage.page-section 
-            //.advantage-img-masked.text-white
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.align-items-center
-                    .col-lg-4.col-md-12
-=======
                         a.text-decoration-none.text-reset(href='/products/parseqa_curate.html')
                             .product-card-secondary.bg-white
                                 .mb-3
@@ -220,7 +148,6 @@ html(lang='en')
                 .adv-container
                     // Left side: Inscripta Advantage section
                     .left-space
->>>>>>> 955c9691d9b7cab2871689b9b29c793055953570
                         .py-lg-5
                             h1.font-weight-bold.mb-5 Inscripta Advantage
                             h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.
@@ -380,13 +307,9 @@ html(lang='en')
                         .adv-text We help you move beyond dashboards—accelerating AI readiness, deploying GenAI and enterprise AI agents, and enabling intelligent automation across your data ecosystem.
 
 
-<<<<<<< HEAD
-
-        section#stack.page-section
-=======
         // Inscripta Stack
         section#stack.page-section.bg-light
->>>>>>> 955c9691d9b7cab2871689b9b29c793055953570
+
             .container.px-4.px-lg-2
                 .row.gx-2.gx-lg-4
                     .col-lg-8
@@ -398,15 +321,10 @@ html(lang='en')
                             .mb-3
                                 a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
 
-<<<<<<< HEAD
-        // Benchmarking
-        section#about.page-section
-=======
-
 
         // Benchmarking
         section#benchmarking.page-section
->>>>>>> 955c9691d9b7cab2871689b9b29c793055953570
+
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
                     .col-lg-6.col-md-12.half-box
@@ -487,61 +405,14 @@ html(lang='en')
                         .col-md-3
                             h1.font-weight-bold The Team
                         .col-md-9.mx-auto
-<<<<<<< HEAD
-                            h5  Having worked at organizations such as IBM Research, Flipkart, VMware, Reliance, Schlumberger, multiple startups and research labs, we are equipped with deep, real-world AI expertise. Our team consists of Masters and PhDs from top universities like IIT Bombay, CMU and University of Birmingham (UK).
-=======
                             h5 
                                 | Having worked at organizations such as IBM Research, Flipkart, VMware, Reliance, Schlumberger, multiple startups and research labs, we are equipped with deep, real-world AI expertise. 
                                 | Our team consists of Masters and PhDs from top universities like IIT Bombay, CMU and University of Birmingham (UK).
->>>>>>> 955c9691d9b7cab2871689b9b29c793055953570
+
             .container
                 .row
                     // === Anand Ramanathan ===
                     .col-lg-4.px-3
-<<<<<<< HEAD
-                        .team-profile-box.mt-6(style="height: 350px; border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: white; perspective: 1000px;")
-                            .card-inner(style="position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer;" onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
-                                .card-front(style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; backface-visibility: hidden; display: flex; justify-content: center; align-items: center; text-align: center;")
-                                    .card-front-content(style="display: flex; flex-direction: column; justify-content: center; align-items: center;")
-                                        img.lazyload(data-src="/assets/img/team/AR.jpg" alt="Anand's Profile Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;")
-                                        h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
-                                        h6.mb-2 Cofounder
-                                        a(href="https://www.linkedin.com/in/anand-ramanathan/" target="_blank" rel="noopener" style="color: #0077b5; text-decoration: none; margin-top: 10px;")
-                                            i.fab.fa-linkedin.fa-1_25x
-                                .card-back(style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: rotateY(180deg); backface-visibility: hidden; display: flex; flex-direction: column; justify-content: flex-start; padding: 15px; background: #f8f9fa; overflow-y: auto;")
-                                    h5(style="text-align: center; margin-bottom: 15px; font-weight: bold;") Anand Ramanathan
-                                    p(style="font-size: 14px; line-height: 1.4; text-align: justify;") Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
-
-                    // === Vivek Mehta ===
-                    .col-lg-4.px-3
-                        .team-profile-box.mt-6(style="height: 350px; border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: white; perspective: 1000px;")
-                            .card-inner(style="position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer;" onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
-                                .card-front(style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; backface-visibility: hidden; display: flex; justify-content: center; align-items: center; text-align: center;")
-                                    .card-front-content(style="display: flex; flex-direction: column; justify-content: center; align-items: center;")
-                                        img.lazyload(data-src="/assets/img/team/VM.jpg" alt="Vivek Mehta's Profile Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;")
-                                        h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
-                                        h6.mb-2 Cofounder
-                                        a(href="https://www.linkedin.com/in/vivek-mehta/" target="_blank" rel="noopener" style="color: #0077b5; text-decoration: none; margin-top: 10px;")
-                                            i.fab.fa-linkedin.fa-1_25x
-                                .card-back(style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: rotateY(180deg); backface-visibility: hidden; display: flex; flex-direction: column; justify-content: flex-start; padding: 15px; background: #f8f9fa; overflow-y: auto;")
-                                    h5(style="text-align: center; margin-bottom: 15px; font-weight: bold;") Vivek Mehta
-                                    p(style="font-size: 14px; line-height: 1.4; text-align: justify;") Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).
-
-                    // === Vivek Nallur ===
-                    .col-lg-4.px-3
-                        .team-profile-box.mt-6(style="height: 350px; border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: white; perspective: 1000px;")
-                            .card-inner(style="position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer;" onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
-                                .card-front(style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; backface-visibility: hidden; display: flex; justify-content: center; align-items: center; text-align: center;")
-                                    .card-front-content(style="display: flex; flex-direction: column; justify-content: center; align-items: center;")
-                                        img.lazyload(data-src="/assets/img/team/VN.jpg" alt="Vivek Nallur's Profile Photo" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;")
-                                        h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
-                                        h6.mb-2 Research and Academic Consultant
-                                        a(href="https://www.linkedin.com/in/vivek-nallur-1b27231/" target="_blank" rel="noopener" style="color: #0077b5; text-decoration: none; margin-top: 10px;")
-                                            i.fab.fa-linkedin.fa-1_25x
-                                .card-back(style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: rotateY(180deg); backface-visibility: hidden; display: flex; flex-direction: column; justify-content: flex-start; padding: 15px; background: #f8f9fa; overflow-y: auto;")
-                                    h5(style="text-align: center; margin-bottom: 15px; font-weight: bold;") Vivek Nallur
-                                    p(style="font-size: 14px; line-height: 1.4; text-align: justify;") Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.
-=======
                         .team-profile-box.mt-6
                             .card-inner(onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
                                 .card-front
@@ -587,7 +458,6 @@ html(lang='en')
                                     h5 Vivek Nallur
                                     p 
                                         | Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.
->>>>>>> 955c9691d9b7cab2871689b9b29c793055953570
 
 
         // Contact
