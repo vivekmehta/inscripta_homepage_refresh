@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="This article is a brief summary of our observations on some common client misperceptions with respect to recent developments in NLP, especially the use of large-scale models and datasets." />
+        <meta name="author" content="" />
+        <title>Blog | NLP for Business in the Time of BERTera</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+        <!--Font-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.min.css" rel="stylesheet" />
+        <!-- Font Awesome-->
+        <link rel="preload" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" /></noscript>
+        <!-- Google Tag Manager-->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5XQVFGS');
+        </script>
+        <!-- End Google Tag Manager-->
+    </head>
+    <body id="page-top">
+        <!-- Google Tag Manager (noscript)-->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript)-->
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/new/"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/products/parseqa_qabot.html">ParseQa QABot</a>
+                                <a class="dropdown-item" href="/products/parseqa_curate.html">ParseQa Curate</a>
+                                <a class="dropdown-item" href="/products/norg_ai.html">Norg AI</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#advantages">ADVANTAGE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/consulting.html">CONSULTING</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog/">BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">TEAM</a></li>
+                        <!-- li.nav-item-->
+                        <!--     a.nav-link(href='/hiring.html') HIRING-->
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Producthead-->
+        <header class="simplehead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100">
+                    <div class="col-lg-8 align-self-end"><h1 class="text-white font-weight-bold">Inscripta Blog</h1></div>
+                    <div class="col-lg-8 align-self-baseline mt-4"></div>
+                </div>
+            </div>
+        </header>
+        <!--Expertise-->
+        <section class="page-section" id="expertise">
+            <div class="container px-2 px-lg-2">
+                <div class="col-lg-7 col-md-8 col-sm-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="font-weight-bold">NLP for Business in the Time of BERTera: Seven Misplaced Passions</h1>
+                            <div class="mt-3">
+                                <div class="blog-author">By Team Inscripta</div>
+                                <div class="blog-date">Nov 2, 2021 · 6 min read</div>
+                            </div>
+                            <div class="mt-4">
+                                <div class="blog-tag">AI Outsourcing</div>
+                                <div class="blog-tag">Text Mining</div>
+                                <div class="blog-tag">Natural Language Processing Products</div>
+                                <div class="blog-tag">AI Solutions</div>
+                                <div class="blog-tag">Question Answering System</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="text-center mt-4 mx-4">
+                                <img class="blog-img img-border lazyload" data-src="/assets/img/blog/nlp-seven-misplaced-passions/JoeDavisonTweet.png" />
+                                <div class="blog-caption mt-2"><a class="blog" target="_blank" href="https://twitter.com/joeddav/status/1329229948247224325" rel="noopener ugc nofollow">Joe Davison on Twitter</a></div>
+                            </div>
+                            <div class="blog blog-text">For the past two years, we, at Inscripta AI, have been working with organizations looking to integrate NLP/AI into their workflows and solutions (“Fast-tracking AI Integration” is our mission!). This article is a brief summary of our observations on some common client misperceptions with respect to recent developments in NLP, especially the use of large-scale models and datasets. As such, these points are relevant primarily to business contexts where AI integration is in its early stages, and not to research projects, or situations where it is a mature component of the solution. A better appreciation of these issues, we believe, can significantly improve the chances of successful AI implementation in businesses, whether executed in-house or outsourced.</div>
+                            <br />
+                            <div class="blog h3 font-weight-bold mt-5">BERT isn’t all you need</div>
+                            <div class="blog blog-text">
+                                With deep learning, and the transformers revolution (BERT, GPT, etc.), off-the-shelf models are substantially better than they were around 5 years ago. The threshold for business viability is therefore breached more often. Nevertheless, in our experience, these models can almost always be substantially improved for a specific business problem (
+                                <a class="blog" href="https://arxiv.org/abs/2110.07574" target="_blank" rel="noopener ugc nofollow">a recent example from an ethical NLP paper by Jiang et al.</a>
+                                ). Clients often ask us whether we have a BERT solution (a decade ago, it used to be statistical or Bayesian models), and whether we could quickly try it on their problem: “Does BERT work on this problem? Yes or no?”. Unfortunately, this sometimes leads to a premature “no” when the answer may well have been “yes”, with a few weeks’ effort. BERT by itself is no panacea, and transformers are not a competitive advantage. Moreover, deploying such models without the right safeguards may even lead to disastrous consequences, as when a GPT-3-based chatbot told a mock patient to kill himself, leading Yann LeCun to
+                                <a class="blog" href="https://futurism.com/the-byte/godfather-ai-trashed-gpt3" target="_blank" rel="noopener ugc nofollow">comment</a>
+                                that “people have completely unrealistic expectations about what large-scale language models such as GPT-3 can do”. Worth paying attention.
+                            </div>
+                            <div class="text-center mx-4 mt-4">
+                                <img class="blog-img lazyload" data-src="/assets/img/blog/nlp-seven-misplaced-passions/chatbot_advice.png" />
+                                <div class="blog-caption mt-2"><a class="blog" target="blank" href="https://www.nabla.com/blog/gpt-3/">Life-transforming advice from a medical chatbot (demo)!</a></div>
+                            </div>
+                            <br />
+                            <div class="blog h3 font-weight-bold mt-5">The original metric is not the eternal metric</div>
+                            <div class="blog blog-text">
+                                Transfer-learning and cross application of large prebuilt models lead to faster system development and deployment. However, the base models are often trained on tasks slightly different from the target application, resulting in lower accuracies. For instance,
+                                <a class="blog" href="https://aclanthology.org/2021.acl-short.99.pdf" target="_blank" rel="noopener ugc nofollow">recent research) recent research</a>
+                                shows that large NLI models that are commonly used for classification depend on spurious patterns, which may impede real-world performance. Another common scenario we encounter is where the business workflow requires near-100% recall at an extraction or search task with best possible precision, or vice-versa, and the off-the-shelf model is tuned on a different metric (say, F1), again resulting in poor task performance. Domain experts and NLP specialists should work together, fairly early in the project, on developing a metric that is suitable to the task at hand.
+                            </div>
+                            <br />
+                            <div class="blog h3 font-weight-bold mt-5">More data is neither good nor bad, but curation makes it so</div>
+                            <div class="blog blog-text">
+                                The incremental value of training data is uncertain. Collecting and annotating a lot of data haphazardly and uncritically (“take it as it comes” from the internet), or simply amassing historical and potentially irrelevant data, might sometimes produce passable results. Nonetheless, a keen eye to the
+                                <a class="blog" href="https://www.ibm.com/downloads/cas/VBMPEQLN" target="_blank" rel="noopener ugc nofollow">task-appropriateness</a>
+                                of collected data and the effectiveness of planned annotation is crucial to avoiding useless data collection. In one instance, we discovered that a poorly performing helpdesk chatbot had arbitrary conversational data from movie scripts and the Ubuntu dialogue dataset as part of its training data (We suspect the chatbot “frankly didn’t give a damn” about user problems). Other problems that emanate from
+                                <a class="blog" href="https://arxiv.org/abs/2006.16923" target="_blank" rel="noopener ugc nofollow">learning-from-the-crowd</a>
+                                include: the NLP algorithm learning, at best, useless, but potentially hateful conversational speech. Yet another problem could be
+                                <a class="blog" rel="noopener" href="https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede">learnt biases</a>
+                                in recommendations, which might end up having a detrimental (even life-changing) effect on the individuals affected by the bias. Given the potential for scaling effects, this could affect entire sub-communities, with little or no recourse to recompense.
+                            </div>
+                            <div class="text-center mx-4 mt-4">
+                                <img class="blog-img lazyload" data-src="/assets/img/blog/nlp-seven-misplaced-passions/chatbotBiases.png" />
+                                <div class="blog-caption mt-2">Errors/biases that are inevitable even in cutting-edge models might not be acceptable in business applications</div>
+                            </div>
+                            <br />
+                            <div class="blog h3 font-weight-bold mt-5">Endless tinkering with technique yields poor returns</div>
+                            <div class="blog blog-text">
+                                Experimenting with different data, adapting business workflows or exploring the space of viable business solutions (using some technique that works reasonably well) is often more potent than spending too much time on the basic techniques or models used. A recent example from
+                                <a class="blog" href="https://www.rmit.edu.au/news/media-releases-and-expert-comments/2021/oct/investor-mood-stock-photos" target="_blank" rel="noopener ugc nofollow">stock market prediction</a>
+                                research shows how rethinking data and process can be effective. A caricature but mostly true: Once a problem is formulated and benchmark data is established, workflow and data are held constant while technique is experimented with (e.g., most research work), while at the beginning of an NLP/AI pilot or integration, it is useful to think of technique as fixed and data/processes as variable (Listen to
+                                <a class="blog" href="https://www.youtube.com/watch?v=06-AZXmwHjo" target="_blank" rel="noopener ugc nofollow">Andrew Ng</a>
+                                making this point about moving from model-centric to data-centric AI). Reimagining business processes calls for greater efforts at convincing stakeholders, but is usually far more transformative than following
+                                <a class="blog" rel="noopener" href="https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d">a plug-and-play approach to AI integration</a>
+                                .
+                            </div>
+                            <br />
+                            <div class="blog h3 font-weight-bold mt-5">All NLP and no domain expertise makes a mere toy</div>
+                            <div class="blog blog-text">
+                                The evolution of data science and data scientists was based on the realization that good business solutions result from interweaving domain and technological expertise. In practice this is
+                                <a class="blog" rel="noopener" href="https://medium.com/@anandr42/the-data-science-delusion-7759f4eaac8e">this is rarely achieved</a>
+                                , especially at the early stages of an NLP/AI integration project. Therefore, simply handing off the problem to the tech team and waiting to evaluate at the end of the project, is most likely a recipe for failure, or a path to a generic solution that probably won’t create competitive advantage. Domain understanding
+                                <a class="em hf" href="https://solosegment.com/blog/forget-ai-expertise-you-need-domain-expertise-to-succeed/" target="_blank" rel="noopener ugc nofollow">precedes choice of technology</a>
+                                , sources of data, and metrics for evaluation. We have found that incorporating business judgments at every stage has been key to our success at complex projects. While modern NLP tools have impressive off-the-shelf performance, the importance of a deep learning of the domain should not be overlooked.
+                            </div>
+                            <div class="text-center mx-4 mt-4">
+                                <img class="blog-img lazyload" data-src="/assets/img/blog/nlp-seven-misplaced-passions/dilbert.png" />
+                                <div class="blog-caption mt-2">Don’t let the technology consultant do your thinking (From: DILBERT by Scott Adams)</div>
+                            </div>
+                            <br />
+                            <div class="blog h3 font-weight-bold mt-5">Premature data-drivenness is the root of all … well, it’s sometimes counterproductive</div>
+                            <div class="blog blog-text">
+                                Most people are on the data-driven bandwagon these days, and the risks of not being data-driven are fairly well-understood. Overzealous data-drivenness, on the other hand, is a silent threat. We are often asked to estimate the accuracy of our baseline model right at the outset, when it is not clear that the available test data is good enough for a reliable evaluation. For instance, we were once asked to measure the accuracy of a sentiment classifier on test data where annotator disagreement turned out to be over 20%. It is important to understand that creating effective benchmarking data
+                                <a class="blog" href="https://www.protocol.com/enterprise/data-driven-enterprise-strategy" target="_blank" rel="noopener ugc nofollow">is arduous work</a>
+                                . Being data-driven with bad-quality data is not such a great idea.
+                            </div>
+                            <br />
+                            <div class="blog h3 font-weight-bold mt-5">There is no penalty for simplicity</div>
+                            <div class="blog blog-text">
+                                Porting and generalizing existing deep (supervised) learning models to
+                                <a class="blog" href="https://arxiv.org/abs/2011.03395" target="_blank" rel="noopener ugc nofollow">real-world deployments is fraught with problems</a>
+                                . While there are growing efforts at integrating deep learning with reinforcement learning,
+                                <a class="blog" href="http://proceedings.mlr.press/v97/wang19e/wang19e.pdf" target="_blank" rel="noopener ugc nofollow">logical reasoning</a>
+                                ,
+                                <a class="blog" href="https://arxiv.org/abs/2102.11107" target="_blank" rel="noopener ugc nofollow">causality</a>
+                                , etc., in most business contexts today, it is still useful to
+                                <a class="blog" href="https://bdtechtalks.com/2019/11/11/martin-ford-architects-of-intelligence-ai/" target="_blank" rel="noopener ugc nofollow">employ</a>
+                                certain traditional techniques for multi-step reasoning, cross-component checks, bias correction and other business logic, combined with deep learning models for core prediction tasks. Moreover, for components that are “easy” from a machine learning perspective, or at the early stages of development, it might be helpful to use simpler (preferably explainable) models and heuristics that can be replaced at a later stage with more complex and powerful black-box models if the trade-offs are meaningful.
+                            </div>
+                            <div class="text-center mx-4 mt-4">
+                                <img class="blog-img img-border lazyload" data-src="/assets/img/blog/nlp-seven-misplaced-passions/simplicity.png" />
+                                <div class="blog-caption mt-2"><a target="blank" href="https://twitter.com/rao2z/status/1300866254685614081">Subbarao Kambhampati on Twitter</a></div>
+                            </div>
+                            <br />
+                            <div class="blog h3 mt-5">Get in Touch</div>
+                            <div class="blog blog-text">
+                                Explore more about
+                                <a href="/">Inscripta's AI products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <!-- Footer-->
+        <footer class="bg-dark py-5 text-white">
+            <div class="container px-4 px-lg-5">
+                <div class="row">
+                    <!-- Left section: Logo and description-->
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img class="img-logo mb-3" src="/assets/img/logo/logo-cs.png" alt="Inscripta AI Logo" />
+                        <p class="small text-light mb-3">Inscripta is a trusted AI consulting partner helping enterprises modernize data infrastructure and accelerate AI adoption. With deep expertise, we specialize in scalable solutions for NLP, OCR, Document AI, and more.</p>
+                        <div class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a class="text-info text-decoration-none" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fab fa-linkedin fa-lg text-info me-2"></i>
+                            <a class="text-info text-decoration-none" href="https://www.linkedin.com/company/inscripta-ai/" target="_blank">LinkedIn</a>
+                        </div>
+                        <!--.mb-2i.fas.fa-phone.me-2
+span.text-info +1-555-123-4567
+-->
+                    </div>
+                    <!-- Right sections: Products, Resources, Contact-->
+                    <div class="col-lg-7 offset-lg-1">
+                        <div class="row">
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Products</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light text-decoration-none" href="/products/parseqa_qabot.html">ParseQa QABot</a></li>
+                                    <li><a class="text-light text-decoration-none" href="/products/parseqa_curate.html">ParseQa Curate</a></li>
+                                    <li><a class="text-light text-decoration-none" href="/products/norg_ai.html">Norg AI</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Resources</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light text-decoration-none" href="/blog/">Blogs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Advantages</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light text-decoration-none">Solution</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Contact</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light text-decoration-none" href="mailto:sales@inscripta.ai">Email Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <div class="small text-light mt-2">
+                            &copy; 2025 Inscripta AI. All Rights Reserved.
+                            <a class="text-light mx-2">Terms of Service</a>
+                            <a class="text-light mx-2" href="/legal/privacy.html">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+        <!-- For loading images lazily-->
+        <script src="/js/lazysizes.min.js"></script>
+        <script src="/js/ls.unveilhooks.min.js"></script>
+        <script type="text/javascript" data-cfasync="false" async="">
+            window.purechatApi = {
+                l: [],
+                t: [],
+                on: function () {
+                    this.l.push(arguments);
+                },
+            };
+            (function () {
+                var done = false;
+                var script = document.createElement('script');
+                script.async = true;
+                script.type = 'text/javascript';
+                script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+                document.getElementsByTagName('HEAD').item(0).appendChild(script);
+                script.onreadystatechange = script.onload = function (e) {
+                    if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+                        var w = new PCWidget({ c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true });
+                        done = true;
+                    }
+                };
+            })();
+        </script>
+    </body>
+</html>
