@@ -57,15 +57,134 @@ html(lang='en')
                 .row.gx-4.gx-lg-5.h-100
                     .col-lg-8.align-self-end    
                         h1.text-white.font-weight-bold Norg AI
-                        h5.text-white.mt-4 Beyond GPT: Purpose-Built for PS Teams
+                        h5.text-white.mt-4 Go beyond GPT with a PS-specific assistant
                     .col-lg-8.align-self-baseline.mt-4
+
+
+
+
+        // About
+        section#about.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-7
+                        h2.text-secondary.fw-bold.mb-4 What is Norg AI?
+                        h5.fw-normal.mb-4 Norg AI is a GenAI assistant for Professional Services teams. Automates delivery workflows for faster, more consistent go-lives outcomes.
+                        ul.red-bullets
+                            li.mb-2
+                                span.fw-bold.text-primary Build for PS Workflows
+                                | - all in a single, dedicated PS workspace, no tool switching.
+                            li.mb-2
+                                span.fw-bold.text-primary More reliable, relevant, and consistent outputs than GPT.
+                            li.mb-2
+                                span.fw-bold.text-primary Hierarchical memory
+                                | - stores preferences at individual, team, and client levels.
+                        .mt-5
+                            a.btn.btn-primary-outline.btn-xl(href='#features') Explore Features
+                    .col-lg-5.text-center
+                        img.img-main.lazyload(src='/assets/img/products/silho_isometric.png', alt='Norg AI')
+
+
+
+
+        // Features
+        section#features.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-4.col-md-12.mb-4.d-flex.align-items-center
+                        h3.font-weight-bold.text-primary.mb-0 What PS tasks can NorgAI handle?
+                            .mt-4
+                                a.btn.btn-primary-outline.btn-xl(href='#comparison') Explore Comparison
+                    .col-lg-8.col-md-12
+                        .row
+                            .col-lg-4.col-md-6.col-sm-12.mb-3
+                                .content-box-secondary.bg-white.h-100
+                                    .mb-4.text-center
+                                        i.fas.fa-file-alt.fa-3x.text-primary
+                                    .product-detail
+                                        | Generate use cases & FSDs from client RFPs and notes.
+                            .col-lg-4.col-md-6.col-sm-12.mb-3
+                                .content-box-primary.bg-white.h-100
+                                    .mb-4.text-center
+                                        i.fas.fa-lightbulb.fa-3x.text-primary 
+                                    .product-detail
+                                        | Draft implementation plans & proposals tailored to each client.
+                            .col-lg-4.col-md-6.col-sm-12.mb-3
+                                .content-box-secondary.bg-white.h-100
+                                    .mb-4.text-center
+                                        i.fas.fa-rocket.fa-3x.text-primary
+                                    .product-detail
+                                        | Produce go-live docs & UAT assets like test cases, training guides, and demo scripts.
+
+
+
+
+        // Comparison
+        section#comparison.page-section.bg-white
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center.mb-4
+                    .col-12
+                        h2.text-center.fw-bold.text-secondary.mb-3 How NorgAI does what ChatGPT can't
+                .d-flex.flex-wrap.justify-content-center.g-4
+                    // Box 1
+                    .p-2(style="flex: 0 0 20%; max-width: 20%;" class="col-sm-6 col-12")
+                        .content-box-primary.bg-light.h-100.p-4.rounded.shadow-sm.text-center.d-flex.flex-column.justify-content-start
+                            i.fas.fa-shield-alt.fa-2x.text-primary.mb-3
+                            h5.fw-semibold.text-dark.mb-2 Eliminates hallucinations
+                            p.text-muted.mb-0.flex-grow-1 Captures all client inputs, even in complex workflows.
+                    // Box 2
+                    .p-2(style="flex: 0 0 20%; max-width: 20%;" class="col-sm-6 col-12")
+                        .content-box-secondary.bg-light.h-100.p-4.rounded.shadow-sm.text-center.d-flex.flex-column.justify-content-start
+                            i.fas.fa-link.fa-2x.text-primary.mb-3
+                            h5.fw-semibold.text-dark.mb-2 Fine-grained traceability
+                            p.text-muted.mb-0.flex-grow-1 Links every section to its exact source.
+                    // Box 3
+                    .p-2(style="flex: 0 0 20%; max-width: 20%;" class="col-sm-6 col-12")
+                        .content-box-primary.bg-light.h-100.p-4.rounded.shadow-sm.text-center.d-flex.flex-column.justify-content-start
+                            i.fas.fa-sync-alt.fa-2x.text-primary.mb-3
+                            h5.fw-semibold.text-dark.mb-2 Continuously tuned for PS
+                            p.text-muted.mb-0.flex-grow-1 Keeps teams aligned with best practices.
+                    // Box 4
+                    .p-2(style="flex: 0 0 20%; max-width: 20%;" class="col-sm-6 col-12")
+                        .content-box-secondary.bg-light.h-100.p-4.rounded.shadow-sm.text-center.d-flex.flex-column.justify-content-start
+                            i.fas.fa-file-signature.fa-2x.text-primary.mb-3
+                            h5.fw-semibold.text-dark.mb-2 Adaptive templates
+                            p.text-muted.mb-0.flex-grow-1 Enforces and evolves company-wide PS standards.
+                    // Box 5
+                    .p-2(style="flex: 0 0 20%; max-width: 20%;" class="col-sm-6 col-12")
+                        .content-box-primary.bg-light.h-100.p-4.rounded.shadow-sm.text-center.d-flex.flex-column.justify-content-start
+                            i.fas.fa-exclamation-triangle.fa-2x.text-primary.mb-3
+                            h5.fw-semibold.text-dark.mb-2 Catches critical gaps
+                            p.text-muted.mb-0.flex-grow-1 Identifies omissions and inconsistencies between deliverables and source documents.
+
+
+
+        // Advantage Section
+        section#advantage.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-8.col-md-12
+                        .row.text-center
+                            .col-lg-4.col-md-6.col-sm-12.mb-4
+                                .circle-progress-wrapper
+                                    .circle-progress(style="--value: 55") 50-60%
+                                h5.mt-3.fw-bold.text-primary Document Automation
+                                p.mt-3 Frees teams to focus on higher-value work
+
+                            .col-lg-4.col-md-6.col-sm-12.mb-4
+                                .circle-progress-wrapper
+                                    .circle-progress(style="--value: 25") 20-30%
+                                h5.mt-3.fw-bold.text-primary Reduced Rework
+                                p.mt-3 Through improved quality and consistency
+
+                            .col-lg-4.col-md-6.col-sm-12.mb-4
+                                .circle-progress-wrapper
+                                    .circle-progress(style="--value: 30") 30%
+                                h5.mt-3.fw-bold.text-primary Faster Onboarding
+                                p.mt-3 By enabling effective knowledge reuse
+                    .col-lg-4.col-md-12.mb-4.d-flex.align-items-center
+                        h3.font-weight-bold.text-secondary.mb-0 Why PS leaders choose NorgAI            
                     
-        
-        
-
-
-
-
 
 
         
@@ -75,7 +194,7 @@ html(lang='en')
                 .row.gx-4.gx-lg-5.align-items-center.mb-5
                     .col-lg-7
                         .contact-card.col-lg-10
-                            h3.text-primary.mx-4.my-3 Gen AI for Professional Services
+                            h3.text-primary.mx-4.my-3 Save weeks of PS effort per project - improve quality, consistency, and client confidence.
                     .col-lg-5
                         h2.mt-4.mt-lg-0 Get In Touch!
                         hr.divider.bg-secondary.mx-0
