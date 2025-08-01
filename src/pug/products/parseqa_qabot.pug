@@ -1,0 +1,291 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='ParseQa can be used to enhance the capabilities of a wide range of enterprise applications such as automated helpdesks, FAQ chatbots, review-insight dashboards, product discovery tools and knowledge search, and can help to leverage the true potential of heterogeneous knowledge repositories of any size.')
+        meta(name='author', content='Team Inscripta')
+
+        title Knowledge search | Text mining | Question Answering System
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
+
+        //Font
+        link(rel="preconnect" href="https://fonts.gstatic.com") 
+
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
+
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='/css/critical.css', rel='stylesheet')
+        
+        // Font Awesome
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+
+        // Google Tag Manager
+        script.
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5XQVFGS');
+        // End Google Tag Manager
+
+    body#page-top
+
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
+
+        // Navigation
+        include /pug/includes/menu.pug
+
+
+        // Producthead
+        header.prodhead 
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100
+                    .col-lg-8.align-self-end    
+                        h1.text-white.font-weight-bold ParseQa QABot
+                        h5.text-white.mt-4 Unlock the Power of Your Organization's Knowledge.
+                    .col-lg-8.align-self-baseline.mt-4
+        
+
+        // About
+        section#about.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-6.col-md-12
+                        h2.font-weight-bold.text-primary Extract information nuggets from
+                            br 
+                            .span.text-secondary large knowledge bases efficiently
+                        h5.mt-4 On-prem AI Agents to automate summarization, data curation, question-answering and more. Unlock the potential of your knowledge repositories.
+                        //h5.mt-4 ParseQa is a state-of-the-art Natural Language Processing (NLP) system that combines information extraction, semantic search and question answering to leverage large heterogeneous knowledge repositories effectively. 
+                        //h5.mt-4 ParseQa can alter the way content management systems are perceived and used in organizations. 
+                        .mt-5
+                            a.btn.btn-primary-outline.btn-xl(href='#key-features') Explore Features
+                    .col-lg-6.col-md-12
+                        .responsive-video-wrapper(style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;")
+                            video#parseqa-qabot-video(
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px;"
+                                controls
+                                preload="metadata"
+                            )
+                                source(src="/assets/video/parseqa-qabot-about.mp4" type="video/mp4")
+                                | Your browser does not support the video tag.
+                    
+        
+
+        // USP
+        section#usp.page-section.bg-light
+            .container.px-4.px-lg-4
+                .row
+                    .col-lg-12.col-md-12.mx-auto
+                        h1.font-weight-bold.text-center.mb-5 USP
+                .row.gx-4.gx-lg-4
+                    .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .content-box-primary.bg-white.h-100
+                            .text-center.mb-4
+                                img.img-fluid.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-1.png")
+                            .h3.font-weight-bold.text-center.text-primary.mb-4 On-Prem
+                            .product-detail No external APIs in use. All models (including LLMs) are used in offline mode, safeguarding sensitive information
+                    .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .content-box-secondary.bg-white.h-100
+                            .text-center.mb-4
+                                img.img-fluid.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-2.png")
+                            .h3.font-weight-bold.text-center.text-primary.mb-4 Configurable
+                            .product-detail Effortlessly adapt the solution to align with your document types, knowledge bases and curation targets. 
+                    .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .content-box-primary.bg-white.h-100
+                            .text-center.mb-4
+                                img.img-fluid.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-3.png")
+                            .h3.font-weight-bold.text-center.text-primary.mb-4 Task Specific
+                            .product-detail AI solutions optimized for specific tasks, delivering high accuracy and efficiency for your unique business needs.
+
+
+
+
+        // Key Features
+        section#key-features.bg-white.page-section
+            .container
+                h2.text-center.mb-6.fw-bold.fs-2.mb-4 Key Features
+                .row.justify-content-center
+                    .col-6
+                        img.img-fluid.lazyload(src="/assets/img/products/parseqa-qabot/key-features-1.png")
+                    .col-6
+                        img.img-fluid.lazyload(src="/assets/img/products/parseqa-qabot/key-features-2.png")
+
+
+
+        // Demo Video
+        section#parseqa-qabot-demo.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center
+                    .col-lg-8.col-md-12
+                        .responsive-video-wrapper(style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;")
+                            video#parseqa-qabot-demo-video(
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 30px;"
+                                controls
+                                preload="metadata"
+                            )
+                                source(src="/assets/video/parseqa-ct-with-login.mp4" type="video/mp4")
+                                | Your browser does not support the video tag.
+                    .col-lg-4.col-md-12
+                        h5.text-primary // Demo
+                        h2.font-weight-bold Watch ParseQA QABot in action
+
+
+
+        // Impact
+        section#impact.page-section.bg-white
+            .container
+                .row.g-0.flex-column.flex-md-row
+                    .col-md-6.bg-primary.text-white.d-flex.align-items-center.justify-content-center.p-5
+                        h2.fw-bold.fs-1.text-center.mb-0 Impact
+                    .col-md-6.bg-white.p-4.p-md-5.text-center.text-md-start
+                        p.fs-5.mb-4
+                            span.fw-bold.text-secondary 70%
+                            |  time savings in retrieving required information from large knowledge repositories
+                        hr(style="border-top: 2px solid var(--bs-secondary); width: 91%;")
+                        p.fs-5.mt-4
+                            span.fw-bold.text-secondary 40%
+                            |  productivity enhancement for support teams
+
+
+
+
+        // Benchmarking
+        section#benchmarking.page-section.bg-light
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-6.col-md-12.half-box
+                        .col-lg-10
+                            h5.text-primary // Benchmarking
+                            h2.font-weight-bold ParseQa outperforms custom GPT by 50% on complex data extraction & question answering
+                            ul
+                                li.mt-1 Better performance even with much smaller local models.
+                                li.mt-1 Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.
+                                li.mt-1 Ideal for technical manuals and scientific publications.
+                    .col-lg-6.col-md-12
+                        img.img-fluid.lazyload(data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa")
+            .container.px-4.px-lg-6.mt-5
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-6.col-md-12
+                        img.img-fluid.lazyload(data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal")
+                    .col-lg-6.col-md-12.half-box
+                        .col-lg-10
+                            h5.text-primary // Benchmarking
+                            h2.font-weight-bold Multimodal data performance
+                            ul
+                                li.mt-1 Significantly better answers from tables and diagrams.
+                                li.mt-1 More reliable across the board.
+                                li.mt-1 Navigate top-3 results with the UI for 100% quality assurance.
+
+
+
+        // Case Study
+        section#case-study.page-section.bg-primary
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-12.col-md-12.mx-auto
+                        h1.font-weight-bold.text-white.text-center.mb-5 Case Studies
+
+                // Life Science | Pharma
+                .row.gx-4.gx-lg-5.mt-4
+                    .content-box
+                        .row
+                            .col-lg-6.col-md-12.mx-auto
+                                .img-box.text-center.mb-5
+                                    img.img-main.lazyload(data-src="/assets/img/parseqa_clinical.png")
+                            .col-lg-6.col-md-12
+                                h5.text-primary // Life Sciences | Pharma
+                                h2 Insights from clinical trials data
+                                .row.mt-4
+                                    .col-12
+                                        .row.g-3
+                                            .col-12
+                                                .highlight-grid-box.hover-glow
+                                                    h5.text-secondary.font-weight-bold Problem
+                                                    p Extracting structured clinical data from dense and complex medical research papers and articles.
+                                            .col-12
+                                                .highlight-grid-box.hover-glow
+                                                    h5.text-secondary.font-weight-bold Solution
+                                                    p ParseQa extracts quantitative/qualitative data from unstructured text, tables, images and provides NL-based querying.
+                                            .col-12
+                                                .highlight-grid-box.hover-glow
+                                                    h5.text-secondary.font-weight-bold Impact
+                                                    p Enabled faster insights, reduced manual effort, and improved decision-making in life sciences R&D.
+                                .mt-4
+                                    a(href='/case-study/parseqa-life-sciences.html') Read full case study
+
+                // IT | Fintech | Legal
+                .row.gx-4.gx-lg-5.mt-5
+                    .content-box
+                        .row
+                            .col-lg-6.col-md-12
+                                h5.text-primary // IT | Fintech | Legal 
+                                h2 FAQ Bot
+                                .row.mt-4
+                                    .col-12
+                                        .row.g-3
+                                            .col-12
+                                                .highlight-grid-box.hover-glow
+                                                    h5.text-secondary.font-weight-bold Problem
+                                                    p Traditional FAQ bots rely on keyword matching and lack understanding of document semantics.
+                                            .col-12
+                                                .highlight-grid-box.hover-glow
+                                                    h5.text-secondary.font-weight-bold Solution
+                                                    p ParseQa enables semantic indexing of unstructured content across formats for intelligent question answering.
+                                            .col-12
+                                                .highlight-grid-box.hover-glow
+                                                    h5.text-secondary.font-weight-bold Impact
+                                                    p Delivered a dynamic FAQBot that's intuitive, scalable, and quickly customizable across domains.
+                            .col-lg-6.col-md-12.text-center
+                                .img-box.text-center
+                                    img.img-main.lazyload(data-src="/assets/img/products/parseqa_concept.jpg")
+
+
+
+
+        // Contact
+        section#contact.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.align-items-center.mb-5
+                    .col-lg-7
+                        .contact-card.col-lg-10
+                            h3.text-primary.mx-4.my-3 Leverage large knowledge repositories effectively with ParseQa QABot
+                    .col-lg-5
+                        h2.mt-4.mt-lg-0 Get In Touch!
+                        hr.divider.bg-secondary.mx-0
+                        h6.mb-4
+                            | Find out what ParseQa QABot can do for you
+                            hr.w-50
+                            | Speak to an expert, request an assesment, see the demo of solutions
+                            br
+                        p.flex-align-content-center
+                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
+                            a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
+
+
+
+        // Footer
+        include /pug/includes/footer_new.pug
+
+        link(rel='preload' href='/css/styles.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='/css/styles.min.css', rel='stylesheet')
+        
+        script(type='text/javascript' data-cfasync='false' async='').
+            window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
+

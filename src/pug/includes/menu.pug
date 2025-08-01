@@ -1,0 +1,34 @@
+//- menu.pug
+nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+    .container.px-4.px-lg-5
+        a.navbar-brand(href='/new/')
+        button.navbar-toggler.navbar-toggler-right(
+            type='button',
+            data-bs-toggle='collapse',
+            data-bs-target='#navbarResponsive',
+            aria-controls='navbarResponsive',
+            aria-expanded='false',
+            aria-label='Toggle navigation'
+        )
+            span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto.my-2.my-lg-0
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown') PRODUCTS
+                    .dropdown-menu
+                        a.dropdown-item(href='/products/parseqa_qabot.html') ParseQa QABot
+                        a.dropdown-item(href='/products/parseqa_curate.html') ParseQa Curate
+                        a.dropdown-item(href='/products/norg_ai.html') Norg AI
+                li.nav-item
+                    a.nav-link(href='#advantages') ADVANTAGE
+                li.nav-item
+                    a.nav-link(href='/consulting.html') CONSULTING
+                li.nav-item
+                    a.nav-link(href='/blog/') BLOG
+                li.nav-item
+                    a.nav-link(href='#team') TEAM
+                //- Uncomment below line when hiring page is ready
+                // li.nav-item
+                //     a.nav-link(href='/hiring.html') HIRING
+                li.nav-item
+                    a.nav-link(href='#contact') CONTACT

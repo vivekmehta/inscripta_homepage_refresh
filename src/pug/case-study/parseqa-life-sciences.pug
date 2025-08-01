@@ -45,17 +45,7 @@ html(lang='en')
 
 
         // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
-            .container.px-4.px-lg-5
-                a.navbar-brand(href='/')
-                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    span.navbar-toggler-icon
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ms-auto.my-2.my-lg-0
-                        li.nav-item
-                            a.nav-link(href='/blog/') Check Blog
-                        li.nav-item
-                            a.nav-link(href='/products/parseqa.html') ParseQa
+        include /pug/includes/menu.pug
 
         // Producthead
         header.simplehead 
@@ -152,7 +142,7 @@ html(lang='en')
 
 
         // Footer
-        include /pug/includes/footer.pug
+        include /pug/includes/footer_new.pug
 
         
         script(type='text/javascript' data-cfasync='false' async='').
