@@ -412,7 +412,7 @@ a.feature-card {
 
 // team members
 
-.team-profile-box {
+.team-profile-box-new{
     height: 350px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -542,4 +542,29 @@ a i.fab.fa-linkedin {
 // key features in parseqa curate
 .ml-4 {
   margin-left: 1.5rem !important;
+}
+
+
+// Norg AI advantage
+.circle-progress-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100px;
+}
+
+.circle-progress {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(#192b80 calc(var(--value) * 1%), #d1cdcd 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
 }
