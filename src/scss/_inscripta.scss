@@ -539,13 +539,17 @@ a i.fab.fa-linkedin {
   color: #df1618;
 }
 
+.blue-bullets li::marker {
+  color: #192b80;
+}
+
 // key features in parseqa curate
 .ml-4 {
   margin-left: 1.5rem !important;
 }
 
 
-// Norg AI advantage
+// NorgAI advantage
 .circle-progress-wrapper {
     display: flex;
     justify-content: center;
