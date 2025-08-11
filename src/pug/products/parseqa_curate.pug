@@ -140,8 +140,39 @@ html(lang='en')
         
 
 
+        // Benchmarking
+        section#benchmarking.page-section.bg-light
+
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-6.col-md-12.half-box
+                        .col-lg-10
+                            h5.text-primary // Benchmarking
+                            h2.font-weight-bold ParseQa outperforms custom GPT by 50% on complex data extraction & question answering
+                            ul
+                                li.mt-1 Better performance even with much smaller local models.
+                                li.mt-1 Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.
+                                li.mt-1 Ideal for technical manuals and scientific publications.
+                    .col-lg-6.col-md-12
+                        img.img-fluid.lazyload(data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa")
+            .container.px-4.px-lg-6.mt-5
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5
+                    .col-lg-6.col-md-12
+                        img.img-fluid.lazyload(data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal")
+                    .col-lg-6.col-md-12.half-box
+                        .col-lg-10
+                            h5.text-primary // Benchmarking
+                            h2.font-weight-bold Multimodal data performance
+                            ul
+                                li.mt-1 Significantly better answers from tables and diagrams.
+                                li.mt-1 More reliable across the board.
+                                li.mt-1 Navigate top-3 results with the UI for 100% quality assurance.
+        
+
+
         // Case Study
-        section#case-study.page-section.bg-light
+        section#case-study.page-section
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center
                     img(src="/assets/img/products/parseqa-curate/case-study.png", alt="Case Study", width="925", height="600")
@@ -151,7 +182,7 @@ html(lang='en')
 
 
         // Contact
-        section#contact.page-section
+        section#contact.page-section.bg-light
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center.mb-5
                     .col-lg-7
