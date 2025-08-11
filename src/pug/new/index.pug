@@ -59,7 +59,10 @@ html(lang='en')
                         h1.text-white.font-weight-bold AI INTEGRATION.<br>FAST-TRACKED. 
                     .col-lg-8.align-self-baseline.mt-5
                         h3.text-white.mb-5
-                            | Fast-track AI transformation through high-quality, customizable products built using Natural Language Processing(NLP), OCR and Document Processing techniques
+                            span.fw-bold.text-secondary On-prem AI Agents
+                            | to 
+                            span.fw-bold.text-secondary automate 
+                            | data curation, question-answering, document generation, and more.
                         .mt-2
                             a.btn.btn-xl.btn-secondary(href='#about') KNOW MORE
 
@@ -73,6 +76,7 @@ html(lang='en')
                             h5.text-primary // About Inscripta
                             h1.font-weight-bold  Your Partner for AI Transformation
                             h5.mt-4.mb-4 Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.
+                            h5.mt-4.mb-4 Across industries, multiple companies have adopted our AI technologies to elevate their offerings and streamline workflows.
                             .mt-5
                                 a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
                     .col-lg-6.col-md-12
@@ -101,7 +105,7 @@ html(lang='en')
                     .col-lg-5.col-md-5
                         h1.font-weight-bold Inscripta's AI Products
                     .col-lg-7.col-md-7
-                        h5 Our products, built using state-of-the-art NLP, OCR and Document Processing techniques, can be customized quickly for a variety of business domains. 
+                        h5 Our products, built using cutting-edge Gen AI, LLMs, NLP, OCR and Document Processing techniques, can be customized quickly for a variety of business domains. 
                 //hr.divider.bg-light.mb-5 
                 .row.gx-4.gx-lg-5.mt-4
                     .col-lg-4.col-md-6.col-sm-12.mb-3
@@ -109,13 +113,13 @@ html(lang='en')
                             .product-card-primary.bg-white
                                 .mb-3.text-center
                                     img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
-                                .product-detail.mb-3
-                                    | Ask questions of your knowledge base and get relevant answers quickly and get relevant answers quickly. 
-                                    <br>
-                                    ul
+                                .product-detail
+                                    | Ask questions of your knowledge base and get relevant answers quickly. 
+                                    <br><br>
+                                    ul.blue-bullets
                                         li No more scouring documents for keywords, locations, or specific sections
                                         li No need to know where the information resides. 
-                                        li Answer is at your fingertips, without having to download, read, and manually sift through content.
+                                        li No more hallucinations: high accuracy and fidelity to source documents.
                             
                     .col-lg-4.col-md-6.col-sm-12.mb-3
                         a.text-decoration-none.text-reset(href='/products/parseqa_curate.html')
@@ -124,21 +128,24 @@ html(lang='en')
                                     img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT")
                                 .product-detail
                                     | Contextual data extraction & curation from a wide variety of documents.
-                                    <br>
-                                    <br>
-                                    | Extract data into Excel/CSV/JSON, or simply ask questions to get relevant answers from mountains of large documents in a matter of minutes.
+                                    <br><br>
+                                    ul.red-bullets
+                                        li Verifiable and adaptive extraction.
+                                        li Human-in-the-loop validation for 100% reliability.
+                                        li Robust extraction of tables/images from PDFs.
                     
                     .col-lg-4.col-md-6.col-sm-12.mb-3
                         a.text-decoration-none.text-reset(href='/products/norg_ai.html')
                             .product-card-primary.bg-white
                                 .mb-3.text-center
-                                    img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="Norg AI title")
+                                    img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="NorgAI title")
                                 .product-detail
                                     | GenAI assistant for Professional Services teams. Automates delivery workflows for faster, more consistent go-lives outcomes.
-                                    <br>
-                                    ul
-                                        li Built for PS workflows - all in a single, dedicated PS workspace - no tool switching
-                                        li More reliable, relevant, and consistent outputs than GPT
+                                    <br><br>
+                                    ul.blue-bullets
+                                        li Built for PS workflows - all in a single, dedicated PS workspace - no tool switching.
+                                        li More reliable, relevant, and consistent outputs than GPT.
+                                        li Catches critical gaps between sources and deliverables.
 
 
 
@@ -165,7 +172,7 @@ html(lang='en')
 
                         .adv-card
                             .adv-heading.h4.font-weight-bold Robust Against Real-World Data
-                            .adv-text Purpose-built to handle messy, noisy, and diverse data types, our products thrive in complex, real-world scenarios where traditional tools fall short.
+                            .adv-text Engineered to handle messy, noisy, and diverse data, our products excel in complex, real-world scenarios where off-the-shelf tools and LLMs struggle.
 
                         .adv-card
                             .adv-heading.h4.font-weight-bold Powered by the Latest Research
@@ -189,13 +196,12 @@ html(lang='en')
 
         // Benchmarking
         section#benchmarking.page-section
-
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
                     .col-lg-6.col-md-12.half-box
                         .col-lg-10
                             h5.text-primary // Benchmarking
-                            h1.font-weight-bold ParseQa outperforms custom GPT by 50% on complex data extraction & question answering
+                            h2.font-weight-bold ParseQa outperforms custom GPT by 50% on complex data extraction & question answering
                             ul
                                 li.mt-1 Better performance even with much smaller local models.
                                 li.mt-1 Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.
@@ -210,7 +216,7 @@ html(lang='en')
                     .col-lg-6.col-md-12.half-box
                         .col-lg-10
                             h5.text-primary // Benchmarking
-                            h1.font-weight-bold Multimodal data performance
+                            h2.font-weight-bold Multimodal data performance
                             ul
                                 li.mt-1 Significantly better answers from tables and diagrams.
                                 li.mt-1 More reliable across the board.
