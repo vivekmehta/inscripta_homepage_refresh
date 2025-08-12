@@ -85,6 +85,8 @@ img.img-logo {
 }
 
 .product-detail {
+  align-items: center;
+  padding: 10px;
   font-size: 1.1rem;
   line-height: 1.3;
   margin: 0px;
@@ -571,4 +573,38 @@ a i.fab.fa-linkedin {
     font-weight: 600;
     font-size: 1.1rem;
     color: #333;
+}
+
+/* customers marquee */
+.satisfied-customers-heading {
+    background: linear-gradient(
+        to right,
+        #192b80, /* Primary Deep Blue */
+        #274dcc, /* Bright Blue */
+        #1fa1ff, /* Vibrant Cyan-Blue */
+        #df1618, /* Secondary Vibrant Red */
+        #ff4d4f, /* Bright Red-Orange */
+        #ff7a45, /* Vivid Orange */
+        #ffd54f, /* Warm Yellow for brightness */
+        #df1618, /* Back to Red */
+        #192b80  /* Back to Blue */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    background-size: 300% 300%;
+    animation: primary-secondary-vibrant-flow 3s ease-in-out infinite;
+}
+
+@keyframes primary-secondary-vibrant-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

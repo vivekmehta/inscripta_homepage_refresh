@@ -83,20 +83,6 @@ html(lang='en')
                             img.img-fluid.lazyload(data-src="/assets/img/about_inscripta_ai.png" alt="AI in action")
                  
 
-        // Customers
-        section#customers.bg-white.py-5
-            // Marquee Wrapper
-            .customer-marquee-wrapper.overflow-hidden.mb-4
-                .customer-marquee.d-flex.align-items-center
-                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
-                        .logo-item.mx-4
-                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
-                    // Repeat the same list for seamless loop
-                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
-                        .logo-item.mx-4
-                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
-
-
 
         // PRODUCTS 
         section#products.page-section.bg-light
@@ -115,12 +101,13 @@ html(lang='en')
                                     img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
                                 .product-detail
                                     | Ask questions of your knowledge base and get relevant answers quickly. 
-                                    <br><br>
+                                    br
+                                    br
                                     ul.blue-bullets
-                                        li No more scouring documents for keywords, locations, or specific sections
-                                        li No need to know where the information resides. 
-                                        li No more hallucinations: high accuracy and fidelity with respect to source documents.
-                            
+                                        li.mb-3 No more scouring documents for keywords, locations, or specific sections
+                                        li.mb-3 No need to know where the information resides. 
+                                        li.mb-3 No more hallucinations: high accuracy and fidelity with respect to source documents.
+
                     .col-lg-4.col-md-6.col-sm-12.mb-3
                         a.text-decoration-none.text-reset(href='/products/parseqa_curate.html')
                             .product-card-secondary.bg-white
@@ -128,11 +115,12 @@ html(lang='en')
                                     img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT")
                                 .product-detail
                                     | Contextual data extraction & curation from a wide variety of documents.
-                                    <br><br>
+                                    br
+                                    br
                                     ul.red-bullets
-                                        li Verifiable and adaptive extraction.
-                                        li Human-in-the-loop validation for 100% reliability.
-                                        li Robust extraction of tables/images from PDFs.
+                                        li.mb-3 Verifiable and adaptive extraction.
+                                        li.mb-3 Human-in-the-loop validation for 100% reliability.
+                                        li.mb-3 Robust extraction of tables/images from PDFs.
                     
                     .col-lg-4.col-md-6.col-sm-12.mb-3
                         a.text-decoration-none.text-reset(href='/products/norg_ai.html')
@@ -141,12 +129,29 @@ html(lang='en')
                                     img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="NorgAI title")
                                 .product-detail
                                     | GenAI assistant for Professional Services (PS) teams. Automates delivery workflows for faster, more consistent go-lives outcomes.
-                                    <br><br>
+                                    br
+                                    br
                                     ul.blue-bullets
-                                        li Built for PS workflows - all in a single, dedicated PS workspace - no tool switching.
-                                        li More reliable, relevant, and consistent outputs than GPT.
-                                        li Catches critical gaps between sources and deliverables.
+                                        li.mb-3 Built for PS workflows - all in a single, dedicated PS workspace - no tool switching.
+                                        li.mb-3 More reliable, relevant, and consistent outputs than GPT.
+                                        li.mb-3 Catches critical gaps between sources and deliverables.
 
+
+
+        // Customers
+        section#customers.bg-white.py-5
+            h5.text-center.mb-5.satisfied-customers-heading Powering AI Innovation Across Industries
+            // Marquee Wrapper
+            .customer-marquee-wrapper.overflow-hidden.mb-4
+                .customer-marquee.d-flex.align-items-center
+                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
+                        .logo-item.mx-4
+                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
+                    // Repeat the same list for seamless loop
+                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
+                        .logo-item.mx-4
+                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
+                    
 
 
         // Advantages
