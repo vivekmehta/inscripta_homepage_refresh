@@ -580,12 +580,11 @@ a i.fab.fa-linkedin {
     background: linear-gradient(
         to right,
         #192b80, /* Primary Deep Blue */
-        #274dcc, /* Bright Blue */
-        #1fa1ff, /* Vibrant Cyan-Blue */
+        #3a5fb5, /* Softer Bright Blue */
+        #4fb7ff, /* Soft Cyan-Blue */
         #df1618, /* Secondary Vibrant Red */
-        #ff4d4f, /* Bright Red-Orange */
-        #ff7a45, /* Vivid Orange */
-        #ffd54f, /* Warm Yellow for brightness */
+        #ff6b6d, /* Softened Red-Orange */
+        #ff9f6e, /* Warm Orange */
         #df1618, /* Back to Red */
         #192b80  /* Back to Blue */
     );
@@ -593,8 +592,8 @@ a i.fab.fa-linkedin {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: bold;
-    background-size: 300% 300%;
-    animation: primary-secondary-vibrant-flow 3s ease-in-out infinite;
+    background-size: 400% 400%;
+    animation: primary-secondary-vibrant-flow 6s ease-in-out infinite;
 }
 
 @keyframes primary-secondary-vibrant-flow {
