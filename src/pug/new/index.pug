@@ -84,6 +84,22 @@ html(lang='en')
                  
 
 
+        // Customers
+        section#customers.bg-white.py-5
+            h4.text-center.mb-5.satisfied-customers-heading Powering AI Innovation Across Industries
+            // Marquee Wrapper
+            .customer-marquee-wrapper.overflow-hidden.mb-4
+                .customer-marquee.d-flex.align-items-center
+                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
+                        .logo-item.mx-4
+                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
+                    // Repeat the same list for seamless loop
+                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
+                        .logo-item.mx-4
+                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
+
+
+
         // PRODUCTS 
         section#products.page-section.bg-light
             .container.px-4.px-lg-2
@@ -118,9 +134,9 @@ html(lang='en')
                                     br
                                     br
                                     ul.red-bullets
-                                        li.mb-3 Verifiable and adaptive extraction.
                                         li.mb-3 Human-in-the-loop validation for 100% reliability.
                                         li.mb-3 Robust extraction of tables/images from PDFs.
+                                        li.mb-3 Verifiable and adaptive extraction.
                     
                     .col-lg-4.col-md-6.col-sm-12.mb-3
                         a.text-decoration-none.text-reset(href='/products/norg_ai.html')
@@ -128,29 +144,14 @@ html(lang='en')
                                 .mb-3.text-center
                                     img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="NorgAI title")
                                 .product-detail
-                                    | GenAI assistant for Professional Services (PS) teams. Automates delivery workflows for faster, more consistent go-lives outcomes.
+                                    | GenAI assistant for Professional Services (PS) teams.
                                     br
                                     br
                                     ul.blue-bullets
-                                        li.mb-3 Built for PS workflows - all in a single, dedicated PS workspace - no tool switching.
                                         li.mb-3 More reliable, relevant, and consistent outputs than GPT.
                                         li.mb-3 Catches critical gaps between sources and deliverables.
-
-
-
-        // Customers
-        section#customers.bg-white.py-5
-            h5.text-center.mb-5.satisfied-customers-heading Powering AI Innovation Across Industries
-            // Marquee Wrapper
-            .customer-marquee-wrapper.overflow-hidden.mb-4
-                .customer-marquee.d-flex.align-items-center
-                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
-                        .logo-item.mx-4
-                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
-                    // Repeat the same list for seamless loop
-                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
-                        .logo-item.mx-4
-                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
+                                        li.mb-3 Automates delivery workflows for faster, more consistent go-lives outcomes.
+                                        li.mb-3 Built for PS workflows - all in a single, dedicated PS workspace - no tool switching.
                     
 
 
@@ -189,11 +190,11 @@ html(lang='en')
             .container.px-4.px-lg-2
                 .row.gx-2.gx-lg-4
                     .col-lg-7
-                        img.img-fluid.lazyload(data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack")
+                        img.img-fluid.lazyload(data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack", width="730px")
                     .col-lg-5
                         h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
                         h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
-                        .mb-3
+                        //.mb-3
                             a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
 
 
@@ -227,7 +228,7 @@ html(lang='en')
                     
 
         // Blog
-        section#blogs.bg-primary.text-white.page-section
+        section#blogs.text-white.page-section(style="background: url('/assets/img/h2.jpg') no-repeat center center; background-size: cover;")
             .container.px-4.px-lg-5.text-center
                 .col-lg-10.mx-auto.text-center
                     h1.font-weight-bold.mt-0.mb-5 BLOGS
