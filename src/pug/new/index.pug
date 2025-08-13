@@ -116,13 +116,13 @@ html(lang='en')
                                 .mb-3.text-center
                                     img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
                                 .product-detail
-                                    | Ask questions of your knowledge base and get relevant answers quickly. 
+                                    | Ask questions of your knowledge base and get relevant answers quickly.
                                     br
                                     br
                                     ul.blue-bullets
                                         li.mb-3 No more scouring documents for keywords, locations, or specific sections
-                                        li.mb-3 No need to know where the information resides. 
-                                        li.mb-3 No more hallucinations: high accuracy and fidelity with respect to source documents.
+                                        li.mb-3 No need to know where the information resides
+                                        li.mb-3 No more hallucinations: high accuracy and fidelity to source documents
 
                     .col-lg-4.col-md-6.col-sm-12.mb-3
                         a.text-decoration-none.text-reset(href='/products/parseqa_curate.html')
@@ -134,9 +134,9 @@ html(lang='en')
                                     br
                                     br
                                     ul.red-bullets
-                                        li.mb-3 Human-in-the-loop validation for 100% reliability.
-                                        li.mb-3 Robust extraction of tables/images from PDFs.
-                                        li.mb-3 Verifiable and adaptive extraction.
+                                        li.mb-3 Verifiable and adaptive extraction with fine-grained source tracing
+                                        li.mb-3 Human-in-the-loop validation for 100% reliability
+                                        li.mb-3 Robust extraction of tables and images from PDFs
                     
                     .col-lg-4.col-md-6.col-sm-12.mb-3
                         a.text-decoration-none.text-reset(href='/products/norg_ai.html')
@@ -148,26 +148,25 @@ html(lang='en')
                                     br
                                     br
                                     ul.blue-bullets
-                                        li.mb-3 More reliable, relevant, and consistent outputs than GPT.
-                                        li.mb-3 Catches critical gaps between sources and deliverables.
-                                        li.mb-3 Automates delivery workflows for faster, more consistent go-lives outcomes.
-                                        li.mb-3 Built for PS workflows - all in a single, dedicated PS workspace - no tool switching.
+                                        li.mb-3 More reliable, relevant, and consistent outputs than leading GenAI tools
+                                        li.mb-3 Catches critical gaps between sources and deliverables
+                                        li.mb-3 Purpose-built for PS workflows — one dedicated workspace, no tool switching
                     
 
 
         // Advantages
         section#advantages.page-section.bg-white.py-5
             .container
-                .adv-container
+                .row
                     // Left side: Inscripta Advantage section
-                    .left-space
+                    .col-lg-4.col-md-12.mb-4
                         .py-lg-5
                             h1.font-weight-bold.mb-5 Inscripta Advantage
                             h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.
                             a.btn.btn-secondary-outline.btn-xl(href='#stack') Inscripta Stack
 
                     // Right side: Feature Cards
-                    .card-grid
+                    .card-grid.col-lg-8.col-md-12
                         .adv-card
                             .adv-heading.h4.font-weight-bold Customizable AI Products
                             .adv-text Our agent-driven product suite accelerates AI adoption tailored to your specific workflows, data environments, and business goals.
@@ -189,7 +188,7 @@ html(lang='en')
         section#stack.page-section.bg-light
             .container.px-4.px-lg-2
                 .row.gx-2.gx-lg-4
-                    .col-lg-7
+                    .col-lg-7.mb-4
                         img.img-fluid.lazyload(data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack", width="730px")
                     .col-lg-5
                         h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
@@ -210,12 +209,12 @@ html(lang='en')
                                 li.mt-1 Better performance even with much smaller local models.
                                 li.mt-1 Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.
                                 li.mt-1 Ideal for technical manuals and scientific publications.
-                    .col-lg-6.col-md-12
+                    .col-lg-6.col-md-12.mb-4
                         img.img-fluid.lazyload(data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa")
             .container.px-4.px-lg-6.mt-5
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
-                    .col-lg-6.col-md-12
+                    .col-lg-6.col-md-12.mb-4
                         img.img-fluid.lazyload(data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal")
                     .col-lg-6.col-md-12.half-box
                         .col-lg-10
@@ -287,7 +286,7 @@ html(lang='en')
             .container
                 .row
                     // === Anand Ramanathan ===
-                    .col-lg-4.px-3
+                    .col-lg-4.px-3.mb-4
                         .team-profile-box-new.mt-6
                             .card-inner(onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
                                 .card-front
@@ -303,7 +302,7 @@ html(lang='en')
                                         | Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
 
                     // === Vivek Mehta ===
-                    .col-lg-4.px-3
+                    .col-lg-4.px-3.mb-4
                         .team-profile-box-new.mt-6
                             .card-inner(onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
                                 .card-front
@@ -319,7 +318,7 @@ html(lang='en')
                                         | Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).
 
                     // === Vivek Nallur ===
-                    .col-lg-4.px-3
+                    .col-lg-4.px-3.mb-4
                         .team-profile-box-new.mt-6
                             .card-inner(onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
                                 .card-front
@@ -339,10 +338,10 @@ html(lang='en')
         section#contact.page-section
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center
-                    .col-lg-8
+                    .col-lg-8.mb-4
                         .contact-card.col-lg-10
                             h4.text-primary.mx-4.my-3 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
-                    .col-lg-4
+                    .col-lg-4.mb-4
                         h2.mt-4.mt-lg-0 Get In Touch!
                         hr.divider.bg-secondary.mx-0
                         h6.mb-3

@@ -368,22 +368,11 @@ a.feature-card {
   background-color: #fff;
   height: 100%;
 }
-
 .feature-tile:hover {
     box-shadow: 0 0 15px #df1618;
     transform: translateY(-4px);
 }
-
-.adv-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-.left-space {
-    width: 33%;
-    padding-right: 32px;
-}
 .card-grid {
-    width: 67%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
