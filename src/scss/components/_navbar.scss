@@ -10,7 +10,7 @@
     .navbar-brand {
         font-family: $font-family-serif;
         font-weight: $font-weight-bold;
-        background: url("../assets/img/logo/logo.svg") no-repeat;
+        background: url("/assets/img/logo/logo.svg") no-repeat;
         background-size: 100%;
         width: 180px;
         height: 50px;
@@ -43,7 +43,7 @@
         background-color: transparent;
 
         .navbar-brand {
-            background: url("../assets/img/logo/logo-cs.png") no-repeat;
+            background: url("/assets/img/logo/logo-cs.png") no-repeat;
             background-size: 100%;
             width: 180px;
             height: 50px;
@@ -78,7 +78,7 @@
             background-color: $white;
 
             .navbar-brand {
-                background: url("../assets/img/logo/logo.svg") no-repeat;
+                background: url("/assets/img/logo/logo.svg") no-repeat;
                 background-size: 100%;
                 width: 180px;
                 height: 50px;

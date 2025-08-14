@@ -12,7 +12,7 @@ header.masthead {
     background: linear-gradient(to bottom,
         #{fade-out($primary, 0.6)} 0%,
         #{fade-out($primary, 0.6)} 100%),
-    url("../assets/img/h2.jpg");
+    url("/assets/img/h2.jpg");
 
     //background-image: url("../assets/img/h3.jpg");
     //background-color: $primary;
@@ -59,7 +59,7 @@ header.prodhead {
     // replace the masthead.jpg image in the /assets/img directory to change the image
     // if the image name change, make sure to update the url path below!
 
-    background-image: url("../assets/img/prod_banner.jpg");
+    background-image: url("/assets/img/prod_banner.jpg");
     background-color: $primary;
 
     background-position: center;
@@ -100,7 +100,7 @@ header.simplehead {
     // replace the masthead.jpg image in the /assets/img directory to change the image
     // if the image name change, make sure to update the url path below!
 
-    background-image: url("../assets/img/prod_banner.jpg");
+    background-image: url("/assets/img/prod_banner.jpg");
     background-color: $primary;
 
     background-position: center;
