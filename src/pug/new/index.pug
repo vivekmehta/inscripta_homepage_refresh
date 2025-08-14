@@ -334,23 +334,43 @@ html(lang='en')
                                         | Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.
 
 
-        // Contact
+
+        // Contact Section
         section#contact.page-section
             .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.align-items-center
-                    .col-lg-8.mb-4
-                        .contact-card.col-lg-10
-                            h4.text-primary.mx-4.my-3 Based on our decades of experience in building AI products, we can help you to formulate, implement, and build high-quality AI solutions specific to your business and domain
-                    .col-lg-4.mb-4
-                        h2.mt-4.mt-lg-0 Get In Touch!
+                .row.gx-4.gx-lg-5.align-items-stretch
+                    // Get In Touch Section
+                    .col-lg-6.mb-4.align-self-center
+                        h1.font-weight-bold.text-primary.mb-4 Get In Touch!
                         hr.divider.bg-secondary.mx-0
-                        h6.mb-3
+                        h5.mb-3
                             | Looking to add intelligence to your systems? 
                             hr.w-50
                             | Require customized deployment?
-                        p.flex-align-content-center
-                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
-                            a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
+                    // Contact Form Section  
+                    .col-lg-6.mb-4
+                        .form-card
+                            //- form#contactForm(action='/api/contact' method='post')
+                            form#contactForm(action='mailto:vardhil.patel@inscripta.ai' method='post' enctype='text/plain')
+                                .mb-3
+                                    label.form-label.fw-bold(for='name') Name
+                                    input.form-control#name(type='text' name='name' required placeholder='Your full name')
+                                    .invalid-feedback Please provide your name.
+                                .mb-3
+                                    label.form-label.fw-bold(for='email') Email
+                                    input.form-control#email(type='email' name='email' required placeholder='your.email@example.com')
+                                    .invalid-feedback Please provide a valid email address.
+                                .mb-4
+                                    label.form-label.fw-bold(for='message') Message
+                                    textarea.form-control#message(name='message' rows='5' required placeholder='Tell us about your requirements ...')
+                                    .invalid-feedback Please provide a message.
+                                button.btn.btn-primary.w-100(type='submit')
+                                    i.fas.fa-paper-plane.me-2
+                                    | Send Message
+                            .text-center.mt-3
+                                small.text-muted We'll get back to you within 24 hours
+
+
 
 
         // Footer
@@ -364,5 +384,5 @@ html(lang='en')
         script(async='' src='/js/carousel.js')
 
         
-        script(type='text/javascript' data-cfasync='false' async='').
-            window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
+        //- script(type='text/javascript' data-cfasync='false' async='').
+        //-     window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();

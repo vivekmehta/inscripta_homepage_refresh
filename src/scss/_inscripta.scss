@@ -113,7 +113,7 @@ h3.card-heading {
   background: linear-gradient(to bottom,
         #{fade-out($primary, 0.4)} 0%,
         #{fade-out($primary, 0.4)} 100%),
-    url("../assets/img/h3.jpg");
+    url("/assets/img/h3.jpg");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -595,4 +595,64 @@ a i.fab.fa-linkedin {
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+// Contact Us Form
+
+.form-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgb(25, 43, 128, 0.3);
+    height: 100%;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #df1618 0%, #192b80 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,123,255,0.3);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+    background: #e9ecef;
+    transform: translateX(10px);
+}
+
+.contact-info-item i {
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
 }
