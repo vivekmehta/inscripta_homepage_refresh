@@ -186,6 +186,10 @@ a.feature-card {
   writing-mode: sideways-lr;
 }
 
+.img-tech-stack {
+  width: 100%;
+}
+
 .mt-8 {
   margin-top: 8em;
 }
@@ -404,9 +408,9 @@ a.feature-card {
 // team members
 
 .team-profile-box-new{
-    height: 350px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    height: 320px;
+    //border: 1px solid #ddd;
+    //border-radius: 8px;
     padding: 20px;
     background: white;
     perspective: 1000px;
@@ -438,8 +442,8 @@ a.feature-card {
 .card-back {
     transform: rotateY(180deg);
     justify-content: flex-start;
-    padding: 15px;
-    background: #f8f9fa;
+    padding: 10px;
+    //background: #f8f9fa;
     overflow-y: auto;
 }
 
