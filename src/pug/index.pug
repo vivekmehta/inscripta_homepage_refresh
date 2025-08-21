@@ -99,7 +99,6 @@ html(lang='en')
                             img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
 
 
-
         // PRODUCTS 
         section#products.page-section.bg-light
             .container.px-4.px-lg-2
@@ -111,21 +110,20 @@ html(lang='en')
                 //hr.divider.bg-light.mb-5 
                 .row.gx-4.gx-lg-5.mt-4
                     .col-lg-4.col-md-6.col-sm-12.mb-3
-                        a.text-decoration-none.text-reset(href='/products/parseqa_qabot.html')
-                            .product-card-primary.bg-white
-                                .my-3.text-center
-                                    img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
-                                .product-detail
-                                    | Ask questions of your knowledge base and get relevant answers quickly.
-                                    br
-                                    br
-                                    ul.blue-bullets
-                                        li.mb-3 No more scouring documents for keywords, locations, or specific sections
-                                        li.mb-3 No need to know where the information resides
-                                        li.mb-3 No more hallucinations: high accuracy and fidelity to source documents
+                        .product-card-primary.bg-white
+                            .my-3.text-center
+                                img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
+                            .product-detail
+                                | Ask questions of your knowledge base and get relevant answers quickly.
+                                br
+                                br
+                                ul.blue-bullets
+                                    li.mb-3 No more scouring documents for keywords, locations, or specific sections
+                                    li.mb-3 No need to know where the information resides
+                                    li.mb-3 No more hallucinations: high accuracy and fidelity to source documents
+                            a(href='/products/parseqa/qabot.html') Know More
 
                     .col-lg-4.col-md-6.col-sm-12.mb-3
-                        a.text-decoration-none.text-reset(href='/products/parseqa_curate.html')
                             .product-card-secondary.bg-white
                                 .my-3.text-center
                                     img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT")
@@ -137,9 +135,9 @@ html(lang='en')
                                         li.mb-3 Verifiable and adaptive extraction with fine-grained source tracing
                                         li.mb-3 Human-in-the-loop validation for 100% reliability
                                         li.mb-3 Robust extraction of tables and images from PDFs
+                                a(href='/products/parseqa/curate.html') Know More
                     
                     .col-lg-4.col-md-6.col-sm-12.mb-3
-                        a.text-decoration-none.text-reset(href='/products/norg_ai.html')
                             .product-card-primary.bg-white
                                 .my-3.text-center
                                     img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="NorgAI title")
@@ -151,6 +149,7 @@ html(lang='en')
                                         li.mb-3 More reliable, relevant, and consistent outputs than leading GenAI tools
                                         li.mb-3 Catches critical gaps between sources and deliverables
                                         li.mb-3 Purpose-built for PS workflows — one dedicated workspace, no tool switching
+                                a(href='/products/norgai.html') Know More
                     
 
 
@@ -362,7 +361,7 @@ html(lang='en')
                                     .invalid-feedback Please provide a valid email address.
                                 .mb-4
                                     label.form-label.fw-bold(for='message') Message
-                                    textarea.form-control#message(name='message' rows='3' required placeholder='Tell us about your requirements ...')
+                                    textarea.form-control#message(name='message' rows='2' required placeholder='Tell us about your requirements ...')
                                     .invalid-feedback Please provide a message.
                                 button.btn.btn-primary.w-100(type='submit')
                                     i.fas.fa-paper-plane.me-2
@@ -383,6 +382,3 @@ html(lang='en')
         // carousel
         script(async='' src='/js/carousel.js')
 
-        
-        //- script(type='text/javascript' data-cfasync='false' async='').
-        //-     window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true }); done = true; } }; })();
