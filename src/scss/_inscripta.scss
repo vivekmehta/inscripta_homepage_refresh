@@ -414,6 +414,9 @@ a.feature-card {
     padding: 20px;
     background: white;
     perspective: 1000px;
+    will-change: transform;
+    transform: translateZ(0);
+
 }
 
 .card-inner {
@@ -423,6 +426,8 @@ a.feature-card {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     cursor: pointer;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .card-front, .card-back {
@@ -438,6 +443,11 @@ a.feature-card {
     align-items: center;
     text-align: center;
 }
+
+.team-profile-box-new:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
 
 .card-back {
     transform: rotateY(180deg);
@@ -476,6 +486,17 @@ a i.fab.fa-linkedin {
     text-decoration: none;
     margin-top: 10px;
 }
+
+.card-front,
+.card-back,
+.card-front * ,
+.card-back * {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
 
 
 
