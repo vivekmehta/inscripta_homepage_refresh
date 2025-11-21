@@ -420,32 +420,32 @@
                     </div>
                     <!-- Contact Form Section  -->
                     <div class="col-lg-6 mb-4">
-                        <div class="form-card">
-                            <form id="contactForm" action="mailto:sales@inscripta.ai" method="post" enctype="text/plain">
-                                <div class="mb-3">
-                                    <label class="form-label fw-bold" for="name">Name</label>
-                                    <input class="form-control" id="name" type="text" name="name" required placeholder="Your full name" />
-                                    <div class="invalid-feedback">Please provide your name.</div>
+                        <div id="form-card">
+                            <!-- Load Contact Form CSS-->
+                            <link rel="stylesheet" href="https://website-bot.inscripta.ai/contact-form/style.css" />
+                            <!-- Contact Form Container-->
+                            <div id="contact-form" data-source="homepage_form"></div>
+                            <!-- Fallback Container (hidden by default)-->
+                            <div class="d-none" id="contact-fallback">
+                                <div class="text-center">
+                                    <p class="mb-2">We couldn't load the contact form right now.</p>
+                                    <p class="mb-3">You can still reach us at:</p>
+                                    <p class="mb-3">
+                                        <strong>Email:</strong>
+                                        <a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                                    </p>
+                                    <div class="mt-4">
+                                        <a class="btn btn-secondary btn-lg" href="mailto:sales@inscripta.ai">
+                                            <i class="fas fa-envelope me-2"></i>
+                                            Send us an Email
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label fw-bold" for="email">Email</label>
-                                    <input class="form-control" id="email" type="email" name="email" required placeholder="your.email@example.com" />
-                                    <div class="invalid-feedback">Please provide a valid email address.</div>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label fw-bold" for="message">Message</label>
-                                    <textarea class="form-control" id="message" name="message" rows="2" required placeholder="Tell us about your requirements ..."></textarea>
-                                    <div class="invalid-feedback">Please provide a message.</div>
-                                </div>
-                                <button class="btn btn-primary w-100" type="submit">
-                                    <i class="fas fa-paper-plane me-2"></i>
-                                    Send Message
-                                </button>
-                            </form>
-                            <div class="text-center mt-3"><small class="text-muted">We'll get back to you within 24 hours</small></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-4"><small class="text-muted">We'll get back to you within 24 hours</small></div>
             </div>
         </section>
         <!-- Footer-->
@@ -526,5 +526,41 @@ span.text-info +1-555-123-4567
         <noscript><link href="/css/styles.min.css" rel="stylesheet" /></noscript>
         <!-- carousel-->
         <script async="" src="/js/carousel.js"></script>
+        <!-- Load Contact Form Bundle with fallback-->
+        <script>
+            (function () {
+                var scriptElement = document.createElement('script');
+                var formContainer = document.getElementById('contact-form');
+                var fallbackContainer = document.getElementById('contact-fallback');
+                var timeoutId;
+
+                scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
+
+                // Set timeout to show fallback after 5 seconds if form doesn't load
+                timeoutId = setTimeout(function () {
+                    if (formContainer && !formContainer.hasChildNodes()) {
+                        if (fallbackContainer) {
+                            fallbackContainer.classList.remove('d-none');
+                        }
+                        console.warn('Contact form timeout - showing fallback');
+                    }
+                }, 5000);
+
+                scriptElement.onload = function () {
+                    clearTimeout(timeoutId);
+                    console.log('Contact form loaded successfully');
+                };
+
+                scriptElement.onerror = function () {
+                    clearTimeout(timeoutId);
+                    if (fallbackContainer) {
+                        fallbackContainer.classList.remove('d-none');
+                    }
+                    console.error('Failed to load contact form - showing fallback');
+                };
+
+                document.body.appendChild(scriptElement);
+            })();
+        </script>
     </body>
 </html>
