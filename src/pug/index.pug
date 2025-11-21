@@ -24,6 +24,8 @@ html(lang='en')
 
         // Core theme CSS (includes Bootstrap)
         link(href='/css/critical.css', rel='stylesheet')
+    
+
         
         // Font Awesome
         link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
@@ -287,7 +289,7 @@ html(lang='en')
                     // === Anand Ramanathan ===
                     .col-lg-4.px-3.mb-4
                         .team-profile-box-new.mt-6
-                            .card-inner(onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
+                            .card-inner
                                 .card-front
                                     .card-front-content
                                         img.lazyload(data-src="/assets/img/team/AR.jpg", alt="Anand's Profile Photo")
@@ -303,7 +305,7 @@ html(lang='en')
                     // === Vivek Mehta ===
                     .col-lg-4.px-3.mb-4
                         .team-profile-box-new.mt-6
-                            .card-inner(onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
+                            .card-inner
                                 .card-front
                                     .card-front-content
                                         img.lazyload(data-src="/assets/img/team/VM.jpg", alt="Vivek Mehta's Profile Photo")
@@ -319,7 +321,7 @@ html(lang='en')
                     // === Vivek Nallur ===
                     .col-lg-4.px-3.mb-4
                         .team-profile-box-new.mt-6
-                            .card-inner(onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'")
+                            .card-inner
                                 .card-front
                                     .card-front-content
                                         img.lazyload(data-src="/assets/img/team/VN.jpg", alt="Vivek Nallur's Profile Photo")
@@ -331,8 +333,6 @@ html(lang='en')
                                     h5 Vivek Nallur
                                     p 
                                         | Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.
-
-
 
         // Contact Section
         section#contact.page-section
@@ -346,31 +346,31 @@ html(lang='en')
                             | Looking to add intelligence to your systems? 
                             hr.w-50
                             | Require customized deployment?
+                    
                     // Contact Form Section  
                     .col-lg-6.mb-4
-                        .form-card
-                            //- form#contactForm(action='/api/contact' method='post')
-                            form#contactForm(action='mailto:sales@inscripta.ai' method='post' enctype='text/plain')
-                                .mb-3
-                                    label.form-label.fw-bold(for='name') Name
-                                    input.form-control#name(type='text' name='name' required placeholder='Your full name')
-                                    .invalid-feedback Please provide your name.
-                                .mb-3
-                                    label.form-label.fw-bold(for='email') Email
-                                    input.form-control#email(type='email' name='email' required placeholder='your.email@example.com')
-                                    .invalid-feedback Please provide a valid email address.
-                                .mb-4
-                                    label.form-label.fw-bold(for='message') Message
-                                    textarea.form-control#message(name='message' rows='2' required placeholder='Tell us about your requirements ...')
-                                    .invalid-feedback Please provide a message.
-                                button.btn.btn-primary.w-100(type='submit')
-                                    i.fas.fa-paper-plane.me-2
-                                    | Send Message
-                            .text-center.mt-3
-                                small.text-muted We'll get back to you within 24 hours
+                        #form-card
+                            // Load Contact Form CSS
+                            link(rel="stylesheet", href="https://website-bot.inscripta.ai/contact-form/style.css")
 
+                            // Contact Form Container
+                            #contact-form(data-source="homepage_form")
 
+                            // Fallback Container (hidden by default)
+                            #contact-fallback.d-none
+                                .text-center
+                                    p.mb-2 We couldn't load the contact form right now.
+                                    p.mb-3 You can still reach us at:
+                                    p.mb-3
+                                        strong Email: 
+                                        a.text-primary(href="mailto:sales@inscripta.ai") sales@inscripta.ai
+                                    .mt-4
+                                        a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
+                                            i.fas.fa-envelope.me-2
+                                            | Send us an Email
 
+                .text-center.mt-4
+                    small.text-muted We'll get back to you within 24 hours
 
         // Footer
         include /pug/includes/footer_new.pug
@@ -382,3 +382,40 @@ html(lang='en')
         // carousel
         script(async='' src='/js/carousel.js')
 
+
+
+        // Load Contact Form Bundle with fallback
+        script.
+            (function() {
+                var scriptElement = document.createElement('script');
+                var formContainer = document.getElementById('contact-form');
+                var fallbackContainer = document.getElementById('contact-fallback');
+                var timeoutId;
+                
+                scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
+                
+                // Set timeout to show fallback after 5 seconds if form doesn't load
+                timeoutId = setTimeout(function() {
+                    if (formContainer && !formContainer.hasChildNodes()) {
+                        if (fallbackContainer) {
+                            fallbackContainer.classList.remove('d-none');
+                        }
+                        console.warn('Contact form timeout - showing fallback');
+                    }
+                }, 5000);
+                
+                scriptElement.onload = function() {
+                    clearTimeout(timeoutId);
+                    console.log('Contact form loaded successfully');
+                };
+                
+                scriptElement.onerror = function() {
+                    clearTimeout(timeoutId);
+                    if (fallbackContainer) {
+                        fallbackContainer.classList.remove('d-none');
+                    }
+                    console.error('Failed to load contact form - showing fallback');
+                };
+                
+                document.body.appendChild(scriptElement);
+            })();
