@@ -10,7 +10,8 @@
         <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
         <!--Font-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet" />
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet" /></noscript>
         <link rel="preload" href="https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript><link href="https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet" /></noscript>
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -40,7 +41,7 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript)-->
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" role="navigation">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="/"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -64,7 +65,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" role="banner">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100">
                     <div class="col-lg-8 align-self-end">

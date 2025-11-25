@@ -15,7 +15,9 @@ html(lang='en')
         //Font
         link(rel="preconnect" href="https://fonts.gstatic.com") 
 
-        link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap', rel='stylesheet')
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap', rel='stylesheet')
 
         link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
         noscript
@@ -54,7 +56,7 @@ html(lang='en')
         include /pug/includes/menu.pug
 
         // Masthead
-        header.masthead
+        header.masthead(role="banner")
             .container.px-4.px-lg-5.h-100
                 .row.gx-4.gx-lg-5.h-100
                     .col-lg-8.align-self-end
