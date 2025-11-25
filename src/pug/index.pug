@@ -24,6 +24,8 @@ html(lang='en')
         // Core theme CSS (includes Bootstrap)
         link(href='/css/critical.css', rel='stylesheet')
     
+        <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+        <link rel="preload" fetchpriority="high" as="image" href="/assets/img/h2.jpg" type="image/webp">
         
         // Font Awesome
         link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
