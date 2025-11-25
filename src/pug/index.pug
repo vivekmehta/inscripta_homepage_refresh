@@ -29,11 +29,6 @@ html(lang='en')
         <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
         <link rel="preload" fetchpriority="high" as="image" href="/assets/img/h2.jpg" type="image/webp">
         
-        // Font Awesome
-        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
-        noscript
-            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
-        
 
         // Google Tag Manager
         script.
@@ -50,6 +45,11 @@ html(lang='en')
         noscript
             iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
         // End Google Tag Manager (noscript)
+
+        //- SVG sprite (hidden)
+        svg(xmlns='http://www.w3.org/2000/svg' style='display:none')
+          symbol#icon-linkedin(viewBox='100 100 540 540')
+            path(d='M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z')
 
 
         // Navigation
@@ -297,10 +297,11 @@ html(lang='en')
                                         img.lazyload(data-src="/assets/img/team/AR.jpg", alt="Anand's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
                                         h6.mb-2 Cofounder
-                                        a(href="https://www.linkedin.com/in/anand-ramanathan/", target="_blank", rel="noopener")
-                                            i.fab.fa-linkedin.fa-1_25x
                                 .card-back
                                     h5 Anand Ramanathan
+                                    a.mb-2(href="https://www.linkedin.com/in/anand-ramanathan/", target="_blank", rel="noopener", aria-label="Anand's LinkeIn Page")
+                                        svg.icon_blue
+                                            use(href='#icon-linkedin')
                                     p 
                                         | Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
 
@@ -310,13 +311,14 @@ html(lang='en')
                             .card-inner
                                 .card-front
                                     .card-front-content
-                                        img.lazyload(data-src="/assets/img/team/VM.jpg", alt="Vivek Mehta's Profile Photo")
+                                        img.lazyload(data-src="/assets/img/team/VM.avif", alt="Vivek Mehta's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
                                         h6.mb-2 Cofounder
-                                        a(href="https://www.linkedin.com/in/vivek-mehta/", target="_blank", rel="noopener")
-                                            i.fab.fa-linkedin.fa-1_25x
                                 .card-back
                                     h5 Vivek Mehta
+                                    a.mb-2(href="https://www.linkedin.com/in/vivek-mehta/", target="_blank", rel="noopener", aria-label="Vivek's LinkeIn Page")
+                                        svg.icon_blue
+                                            use(href='#icon-linkedin')
                                     p 
                                         | Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).
 
@@ -326,13 +328,15 @@ html(lang='en')
                             .card-inner
                                 .card-front
                                     .card-front-content
-                                        img.lazyload(data-src="/assets/img/team/VN.jpg", alt="Vivek Nallur's Profile Photo")
+                                        img.lazyload(data-src="/assets/img/team/VN.avif", alt="Vivek Nallur's Profile Photo")
                                         h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
                                         h6.mb-2 Research and Academic Consultant
-                                        a(href="https://www.linkedin.com/in/vivek-nallur-1b27231/", target="_blank", rel="noopener")
-                                            i.fab.fa-linkedin.fa-1_25x
                                 .card-back
                                     h5 Vivek Nallur
+                                    a.mb-2(href="https://www.linkedin.com/in/vivek-nallur-1b27231/", target="_blank", rel="noopener", aria-label="Vivek's LinkeIn Page")
+                                        svg.icon_blue
+                                            use(href='#icon-linkedin')
+                                            
                                     p 
                                         | Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.
 
