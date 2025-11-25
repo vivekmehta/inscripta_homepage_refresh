@@ -81,7 +81,7 @@ html(lang='en')
                             //.mt-5
                                 a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
                     .col-lg-6.col-md-12
-                            img.img-fluid.lazyload(data-src="/assets/img/about_inscripta_ai.avif" alt="AI in action")
+                            img.img-fluid.lazyload(data-src="/assets/img/about_inscripta_ai.avif" width="408px" height="363px" alt="AI in action")
                  
 
 
@@ -93,7 +93,7 @@ html(lang='en')
                 .customer-marquee.d-flex.align-items-center
                     each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'Terrantic_logo_FC.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
                         .logo-item.mx-4
-                            img.img-fluid.lazyload(data-src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
+                            img.lazyload(data-src=`/assets/img/customers/${logo}` alt=logo height="60px")
                     //- // Repeat the same list for seamless loop
                     //- each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'Terrantic_logo_FC.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
                     //-     .logo-item.mx-4
