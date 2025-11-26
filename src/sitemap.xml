@@ -2,63 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-<loc>https://inscripta.ai/</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>1.00</priority>
+	<loc>https://inscripta.ai/</loc>
+	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
+	<priority>1.00</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/products/parseqa_qabot.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://inscripta.ai/products/parseqa_qabot.html</loc>
+	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
+	<priority>0.80</priority>
+</url>
+	<url>
+	<loc>https://inscripta.ai/products/parseqa_curate.html</loc>
+	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
+	<priority>0.80</priority>
+</url>
+	<url>
+	<loc>https://inscripta.ai/products/norg_ai.html</loc>
+	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
+	<priority>0.80</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/products/parseqa_curate.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://inscripta.ai/consulting.html</loc>
+	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
+	<priority>0.80</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/products/norg_ai.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://blog.inscripta.ai/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/consulting.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://blog.inscripta.ai/managing-ai-anxiety-a-case-study-with-notebooklm/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/blog/</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://blog.inscripta.ai/unlocking-the-secret-to-effective-enterprise-data-curation-and-qabots/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/legal/privacy.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://blog.inscripta.ai/research-highlight-pretrained-language-models-language-fundamentals-better-performance/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/case-study/parseqa-life-sciences.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://blog.inscripta.ai/nlp-for-business-in-the-time-of-bertera-seven-misplaced-passions/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/blog/nlp-seven-misplaced-passions.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://blog.inscripta.ai/parseqa-pushing-the-boundaries-of-knowledge-search/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/blog/parseqa-pushing-boundaries.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://blog.inscripta.ai/get-set-ai-fast-track-your-companys-transformation/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/legal/privacy</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://blog.inscripta.ai/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://inscripta.ai/products/parseqa.html</loc>
-<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-<priority>0.51</priority>
+	<loc>https://blog.inscripta.ai/does-conversational-ai-need-a-hippocratic-oath/</loc>
+	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://inscripta.ai/legal/privacy.html</loc>
+	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
+	<priority>0.80</priority>
+</url>
+<url>
+	<loc>https://inscripta.ai/legal/privacy</loc>
+	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
+	<priority>0.64</priority>
 </url>
 </urlset>

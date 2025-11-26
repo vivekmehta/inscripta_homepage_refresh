@@ -458,8 +458,8 @@ a.feature-card {
 }
 
 .card-front-content img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
 }
@@ -689,4 +689,16 @@ a i.fab.fa-linkedin {
             text-decoration: underline;
         }
     }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor; /* takes text color */
+}
+
+.icon_blue {
+  width: 24px;
+  height: 24px;
+  fill: #0c66c2; /* takes text color */
 }

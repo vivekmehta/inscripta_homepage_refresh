@@ -38,9 +38,9 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript)-->
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" role="navigation">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="/"></a>
+                <a class="navbar-brand" href="/" aria-label="Inscripta Home"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -53,7 +53,7 @@
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/consulting.html">CONSULTING</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog/">BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://blog.inscripta.ai">BLOG</a></li>
                         <!-- li.nav-item-->
                         <!--     a.nav-link(href='/hiring.html') HIRING-->
                         <li class="nav-item"><a class="nav-link" href="/#contact">CONTACT</a></li>
@@ -260,7 +260,7 @@
         </section>
         <!-- Footer-->
         <!-- Footer-->
-        <footer class="bg-dark py-5 text-white">
+        <footer class="bg-dark py-5 text-white" role="contentinfo">
             <div class="container px-4 px-lg-5">
                 <div class="row">
                     <!-- Left section: Logo and description-->
@@ -268,16 +268,13 @@
                         <img class="img-logo mb-3" src="/assets/img/logo/logo-cs.png" alt="Inscripta AI Logo" />
                         <p class="small text-light mb-3">Inscripta delivers AI solutions through both innovative products and expert consulting. Our offerings include ParseQa QABot for high-accuracy question answering and ParseQa Curate for intelligent content organization, alongside scalable capabilities in Generative AI, Agentic Workflows, LLMs, NLP, OCR, and Document AI. Whether through Saas applications, ready-to-deploy tools or customized engagements, we help enterprises streamline knowledge workflows, and accelerate AI adoption with measurable impact.</p>
                         <div class="mb-2">
-                            <i class="fas fa-envelope me-2"></i>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 540 540"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"></path></svg>
                             <a class="text-info text-decoration-none" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
                         </div>
                         <div class="mb-2">
-                            <i class="fab fa-linkedin fa-lg text-info me-2"></i>
-                            <a class="text-info text-decoration-none" href="https://www.linkedin.com/company/inscripta-ai/" target="_blank">LinkedIn</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 540 540"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544     529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"></path></svg>
+                            <a class="text-info text-decoration-none align-items-center" href="https://www.linkedin.com/company/inscripta-ai/" target="_blank">LinkedIn</a>
                         </div>
-                        <!--.mb-2i.fas.fa-phone.me-2
-span.text-info +1-555-123-4567
--->
                     </div>
                     <!-- Right sections: Products, Resources, Contact-->
                     <div class="col-lg-6 offset-lg-1">
@@ -334,28 +331,5 @@ span.text-info +1-555-123-4567
         <script src="https://website-bot.inscripta.ai/static/chatbot.bundle.iife.js" onload="window.chatbotApp.openChat()"></script>
         <!-- carousel-->
         <script async="" src="/js/carousel.js"></script>
-        <script type="text/javascript" data-cfasync="false" async="">
-            window.purechatApi = {
-                l: [],
-                t: [],
-                on: function () {
-                    this.l.push(arguments);
-                },
-            };
-            (function () {
-                var done = false;
-                var script = document.createElement('script');
-                script.async = true;
-                script.type = 'text/javascript';
-                script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
-                document.getElementsByTagName('HEAD').item(0).appendChild(script);
-                script.onreadystatechange = script.onload = function (e) {
-                    if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
-                        var w = new PCWidget({ c: '8e43e54d-9672-416c-bcf8-370b1ad7ea9f', f: true });
-                        done = true;
-                    }
-                };
-            })();
-        </script>
     </body>
 </html>

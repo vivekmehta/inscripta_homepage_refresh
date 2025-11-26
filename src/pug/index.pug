@@ -2,7 +2,6 @@ doctype html
 html(lang='en')
 
     head
-
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='Inscripta offers customizable AI and Natural Language processing solutions—like Generative AI agents, question-answering, document processing, and data curation—to fast-track enterprise AI transformation with high accuracy.')
@@ -16,21 +15,19 @@ html(lang='en')
         //Font
         link(rel="preconnect" href="https://fonts.gstatic.com") 
 
-        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
-
-        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
         noscript
-            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
+            link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap', rel='stylesheet')
+
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&display=swap', rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
-        link(href='/css/critical.css', rel='stylesheet')
-    
-
-        
-        // Font Awesome
-        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
-        noscript
-            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+        link(rel='stylesheet' href='/css/critical.css')
+            
+        <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+        link(rel="preload" fetchpriority="high" as="image" href="/assets/img/h2.jpg" type="image/webp")
         
 
         // Google Tag Manager
@@ -49,12 +46,17 @@ html(lang='en')
             iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
         // End Google Tag Manager (noscript)
 
+        //- SVG sprite (hidden)
+        svg(xmlns='http://www.w3.org/2000/svg' style='display:none')
+          symbol#icon-linkedin(viewBox='100 100 540 540')
+            path(d='M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z')
+
 
         // Navigation
         include /pug/includes/menu.pug
 
         // Masthead
-        header.masthead
+        header.masthead(role="banner")
             .container.px-4.px-lg-5.h-100
                 .row.gx-4.gx-lg-5.h-100
                     .col-lg-8.align-self-end
@@ -68,164 +70,165 @@ html(lang='en')
                         .mt-2
                             a.btn.btn-xl.btn-secondary(href='#about') KNOW MORE
 
-
-        // About
-        section#about.page-section.bg-white
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-lg-6.col-md-12.half-box
-                        .col-lg-10
-                            h5.text-primary // About Inscripta
-                            h1.font-weight-bold  Your Partner for AI Transformation
-                            h5.mt-4.mb-4 Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.
-                            h5.mt-4.mb-4 Across industries, multiple companies have adopted our AI technologies to elevate their offerings and streamline workflows.
-                            //.mt-5
-                                a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
-                    .col-lg-6.col-md-12
-                            img.img-fluid.lazyload(data-src="/assets/img/about_inscripta_ai.png" alt="AI in action")
-                 
-
-
-        // Customers
-        section#customers.bg-white.pb-5
-            h4.text-center.mb-5.satisfied-customers-heading Powering AI Innovation Across Industries
-            // Marquee Wrapper
-            .customer-marquee-wrapper.overflow-hidden.mb-4
-                .customer-marquee.d-flex.align-items-center
-                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'Terrantic_logo_FC.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
-                        .logo-item.mx-4
-                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
-                    // Repeat the same list for seamless loop
-                    each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'Terrantic_logo_FC.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
-                        .logo-item.mx-4
-                            img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
+        main(role="main")
+            // About
+            section#about.page-section.bg-white
+                .container.px-4.px-lg-5
+                    .row.gx-4.gx-lg-5
+                        .col-lg-6.col-md-12.half-box
+                            .col-lg-10
+                                h5.text-primary // About Inscripta
+                                h1.font-weight-bold  Your Partner for AI Transformation
+                                h5.mt-4.mb-4 Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.
+                                h5.mt-4.mb-4 Across industries, multiple companies have adopted our AI technologies to elevate their offerings and streamline workflows.
+                                //.mt-5
+                                    a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
+                        .col-lg-6.col-md-12
+                                img.img-fluid.lazyload(data-src="/assets/img/about_inscripta_ai.avif" width="408px" height="363px" alt="AI in action")
+                     
 
 
-        // PRODUCTS 
-        section#products.page-section.bg-light
-            .container.px-4.px-lg-2
-                .row.gx-4.gx-lg-5.mb-5
-                    .col-lg-5.col-md-5
-                        h1.font-weight-bold Inscripta's AI Products
-                    .col-lg-7.col-md-7
-                        h5 Our products, built using state-of-the-art Generative AI, Agentic Workflows, LLMs, Natural Language Processing (NLP), OCR and Document Processing techniques, can be customized quickly for a variety of business domains.
-                //hr.divider.bg-light.mb-5 
-                .row.gx-4.gx-lg-5.mt-4
-                    .col-lg-4.col-md-6.col-sm-12.mb-3
-                        .product-card-primary.bg-white
-                            .my-3.text-center
-                                img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
-                            .product-detail
-                                | Ask questions of your knowledge base and get relevant answers quickly.
-                                br
-                                br
-                                ul.blue-bullets
-                                    li.mb-3 No more scouring documents for keywords, locations, or specific sections
-                                    li.mb-3 No need to know where the information resides
-                                    li.mb-3 No more hallucinations: high accuracy and fidelity to source documents
-                            a(href='/products/parseqa/qabot.html') Know More
+            // Customers
+            section#customers.bg-white.pb-5
+                h4.text-center.mb-5.satisfied-customers-heading Powering AI Innovation Across Industries
+                // Marquee Wrapper
+                .customer-marquee-wrapper.overflow-hidden.mb-4
+                    .customer-marquee.d-flex.align-items-center
+                        each logo in ['automation_edge.avif', 'excelra.avif', 'ips_group.avif', 'Terrantic_logo_FC.png', 'manipal_technologies_limited.avif', 'spottabl.png', 'tenders_on_time.avif', 'xanthus.avif']
+                            .logo-item.mx-4
+                                img.lazyload(data-src=`/assets/img/customers/${logo}` alt=logo max-width="500 px" height="60px")
+                        //- // Repeat the same list for seamless loop
+                        //- each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'Terrantic_logo_FC.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
+                        //-     .logo-item.mx-4
+                        //-         img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
 
-                    .col-lg-4.col-md-6.col-sm-12.mb-3
-                            .product-card-secondary.bg-white
-                                .my-3.text-center
-                                    img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT")
-                                .product-detail
-                                    | Contextual data extraction & curation from a wide variety of documents.
-                                    br
-                                    br
-                                    ul.red-bullets
-                                        li.mb-3 Verifiable and adaptive extraction with fine-grained source tracing
-                                        li.mb-3 Human-in-the-loop validation for 100% reliability
-                                        li.mb-3 Robust extraction of tables and images from PDFs
-                                a(href='/products/parseqa/curate.html') Know More
-                    
-                    .col-lg-4.col-md-6.col-sm-12.mb-3
+
+            // PRODUCTS 
+            section#products.page-section.bg-light
+                .container.px-4.px-lg-2
+                    .row.gx-4.gx-lg-5.mb-5
+                        .col-lg-5.col-md-5
+                            h1.font-weight-bold Inscripta's AI Products
+                        .col-lg-7.col-md-7
+                            h5 Our products, built using state-of-the-art Generative AI, Agentic Workflows, LLMs, Natural Language Processing (NLP), OCR and Document Processing techniques, can be customized quickly for a variety of business domains.
+                    //hr.divider.bg-light.mb-5 
+                    .row.gx-4.gx-lg-5.mt-4
+                        .col-lg-4.col-md-6.col-sm-12.mb-3
                             .product-card-primary.bg-white
                                 .my-3.text-center
-                                    img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="NorgAI title")
+                                    img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot")
                                 .product-detail
-                                    | GenAI assistant for Professional Services (PS) teams.
+                                    | Ask questions of your knowledge base and get relevant answers quickly.
                                     br
                                     br
                                     ul.blue-bullets
-                                        li.mb-3 More reliable, relevant, and consistent outputs than leading GenAI tools
-                                        li.mb-3 Catches critical gaps between sources and deliverables
-                                        li.mb-3 Purpose-built for PS workflows — one dedicated workspace, no tool switching
-                                a(href='/products/norgai.html') Know More
-                    
+                                        li.mb-3 No more scouring documents for keywords, locations, or specific sections
+                                        li.mb-3 No need to know where the information resides
+                                        li.mb-3 No more hallucinations: high accuracy and fidelity to source documents
+                                a(href='/products/parseqa/qabot.html') Know More
+
+                        .col-lg-4.col-md-6.col-sm-12.mb-3
+                                .product-card-secondary.bg-white
+                                    .my-3.text-center
+                                        img.img-product-name.lazyload(data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT")
+                                    .product-detail
+                                        | Contextual data extraction & curation from a wide variety of documents.
+                                        br
+                                        br
+                                        ul.red-bullets
+                                            li.mb-3 Verifiable and adaptive extraction with fine-grained source tracing
+                                            li.mb-3 Human-in-the-loop validation for 100% reliability
+                                            li.mb-3 Robust extraction of tables and images from PDFs
+                                    a(href='/products/parseqa/curate.html') Know More
+                        
+                        .col-lg-4.col-md-6.col-sm-12.mb-3
+                                .product-card-primary.bg-white
+                                    .my-3.text-center
+                                        img.img-product-name.lazyload(data-src="/assets/img/products/norg_ai_title.png" alt ="NorgAI title")
+                                    .product-detail
+                                        | GenAI assistant for Professional Services (PS) teams.
+                                        br
+                                        br
+                                        ul.blue-bullets
+                                            li.mb-3 More reliable, relevant, and consistent outputs than leading GenAI tools
+                                            li.mb-3 Catches critical gaps between sources and deliverables
+                                            li.mb-3 Purpose-built for PS workflows — one dedicated workspace, no tool switching
+                                    a(href='/products/norgai.html') Know More
+                        
 
 
-        // Advantages
-        section#advantages.page-section.bg-white
-            .container
-                .row
-                    // Left side: Inscripta Advantage section
-                    .col-lg-4.col-md-12.mb-3.px-3
-                        .py-lg-5
-                            h1.font-weight-bold.mb-5 Inscripta Advantage
-                            h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.
-                            a.btn.btn-secondary-outline.btn-xl(href='#stack') Inscripta Stack
+            // Advantages
+            section#advantages.page-section.bg-white
+                .container
+                    .row
+                        // Left side: Inscripta Advantage section
+                        .col-lg-4.col-md-12.mb-3.px-3
+                            .py-lg-5
+                                h1.font-weight-bold.mb-5 Inscripta Advantage
+                                h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.
+                                a.btn.btn-secondary-outline.btn-xl(href='#stack') Inscripta Stack
 
-                    // Right side: Feature Cards
-                    .card-grid.col-lg-8.col-md-12
-                        .adv-card
-                            .adv-heading.h4.font-weight-bold Customizable AI Products
-                            .adv-text Our agent-driven product suite accelerates AI adoption tailored to your specific workflows, data environments, and business goals.
+                        // Right side: Feature Cards
+                        .card-grid.col-lg-8.col-md-12
+                            .adv-card
+                                .adv-heading.h4.font-weight-bold Customizable AI Products
+                                .adv-text Our agent-driven product suite accelerates AI adoption tailored to your specific workflows, data environments, and business goals.
 
-                        .adv-card
-                            .adv-heading.h4.font-weight-bold Designed by an Experienced AI Team
-                            .adv-text Our solutions are grounded in deep technical expertise and years of hands-on experience across domains at pioneering AI companies and labs.
+                            .adv-card
+                                .adv-heading.h4.font-weight-bold Designed by an Experienced AI Team
+                                .adv-text Our solutions are grounded in deep technical expertise and years of hands-on experience across domains at pioneering AI companies and labs.
 
-                        .adv-card
-                            .adv-heading.h4.font-weight-bold Robust in Real-World Conditions
-                            .adv-text Engineered to handle noisy and diverse data, our products excel in complex, real-world scenarios where off-the-shelf tools and LLMs struggle.
+                            .adv-card
+                                .adv-heading.h4.font-weight-bold Robust in Real-World Conditions
+                                .adv-text Engineered to handle noisy and diverse data, our products excel in complex, real-world scenarios where off-the-shelf tools and LLMs struggle.
 
-                        .adv-card
-                            .adv-heading.h4.font-weight-bold Powered by the Latest Research
-                            .adv-text We stay ahead of the curve, constantly integrating cutting-edge advancements to ensure your solutions are impactful, efficient, and future-ready.
-
-
-        // Inscripta Stack
-        section#stack.page-section.bg-light
-            .container.px-4.px-lg-2
-                .row.gx-2.gx-lg-4
-                    .col-lg-8.mb-4
-                        img.img-fluid.img-tech-stack.lazyload(data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack", width="730px")
-                    .col-lg-4.px-5.align-self-center
-                        h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
-                        h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
-                        //.mb-3
-                            a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
+                            .adv-card
+                                .adv-heading.h4.font-weight-bold Powered by the Latest Research
+                                .adv-text We stay ahead of the curve, constantly integrating cutting-edge advancements to ensure your solutions are impactful, efficient, and future-ready.
 
 
-        // Benchmarking
-        section#benchmarking.page-section
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-lg-6.col-md-12.half-box
-                        .col-lg-10
-                            h5.text-primary // Benchmarking
-                            h2.font-weight-bold ParseQa outperforms custom GPT by 50% on complex data extraction & question answering
-                            ul
-                                li.mt-1 Better performance even with much smaller local models.
-                                li.mt-1 Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.
-                                li.mt-1 Ideal for technical manuals and scientific publications.
-                    .col-lg-6.col-md-12.mb-4
-                        img.img-fluid.lazyload(data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa")
-            .container.px-4.px-lg-6.mt-5
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-lg-6.col-md-12.mb-4
-                        img.img-fluid.lazyload(data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal")
-                    .col-lg-6.col-md-12.half-box
-                        .col-lg-10
-                            h5.text-primary // Benchmarking
-                            h2.font-weight-bold Multimodal data performance
-                            ul
-                                li.mt-1 Significantly better answers from tables and diagrams.
-                                li.mt-1 More reliable across the board.
-                                li.mt-1 Navigate top-3 results with the UI for 100% quality assurance.
-                    
+            // Inscripta Stack
+            section#stack.page-section.bg-light
+                .container.px-4.px-lg-2
+                    .row.gx-2.gx-lg-4
+                        .col-lg-8.mb-4
+                            img.img-fluid.img-tech-stack.lazyload(data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack", width="730px")
+                        .col-lg-4.px-5.align-self-center
+                            h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
+                            h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
+                            //.mb-3
+                                a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
+
+
+            // Benchmarking
+            section#benchmarking.page-section
+                .container.px-4.px-lg-5
+                    .row.gx-4.gx-lg-5
+                        .col-lg-6.col-md-12.half-box
+                            .col-lg-10
+                                h5.text-primary // Benchmarking
+                                h2.font-weight-bold ParseQa outperforms custom GPT by 50% on complex data extraction & question answering
+                                ul
+                                    li.mt-1 Better performance even with much smaller local models.
+                                    li.mt-1 Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.
+                                    li.mt-1 Ideal for technical manuals and scientific publications.
+                        .col-lg-6.col-md-12.mb-4
+                            img.img-fluid.lazyload(data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa")
+                .container.px-4.px-lg-6.mt-5
+                .container.px-4.px-lg-5
+                    .row.gx-4.gx-lg-5
+                        .col-lg-6.col-md-12.mb-4
+                            img.img-fluid.lazyload(data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal")
+                        .col-lg-6.col-md-12.half-box
+                            .col-lg-10
+                                h5.text-primary // Benchmarking
+                                h2.font-weight-bold Multimodal data performance
+                                ul
+                                    li.mt-1 Significantly better answers from tables and diagrams.
+                                    li.mt-1 More reliable across the board.
+                                    li.mt-1 Navigate top-3 results with the UI for 100% quality assurance.
+                        
+
 
         // Blog
         section#blogs.text-white.page-section(style="background: url('/assets/img/prod_banner.jpg') no-repeat center center; background-size: cover;")
@@ -242,6 +245,7 @@ html(lang='en')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/ai-anxiety-notebooklm.jpg', style="width: 100%" alt="Managing AI anxiety")
                                         h5.font-weight-bold.mx-3.my-4 Managing AI anxiety: a case study with NotebookLM
+
                         .carousel-item
                             .col-md-4
                                 .image-card.mx-4
@@ -249,6 +253,7 @@ html(lang='en')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/data-curation-qabots.jpg', style="width: 100%" alt="Data curation and QAbots")
                                         h5.font-weight-bold.mx-3.my-4 Unlocking the secret to effective enterprise data curation and QAbots
+
                         .carousel-item
                             .col-md-4
                                 .image-card.mx-4
@@ -256,6 +261,7 @@ html(lang='en')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/pretrained-language-models.jpg', style="width: 100%" alt="Pretrained Language Models")
                                         h5.font-weight-bold.mx-3.my-4 Research highlight: Pretrained Language Models + Language Fundamentals = Better Performance
+
                         .carousel-item
                             .col-md-4
                                 .image-card.mx-4
@@ -263,6 +269,7 @@ html(lang='en')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/nlp-bertera.jpg', style="width: 100%" alt="NLP for Business")
                                         h5.font-weight-bold.mx-3.my-4 NLP for Business in the Time of BERTera: Seven Misplaced Passions
+
                         .carousel-item
                             .col-md-4
                                 .image-card.mx-4
@@ -270,6 +277,7 @@ html(lang='en')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/parseqa-knowledge-search.jpg', style="width: 100%" alt="ParseQa Knowledge Search")
                                         h5.font-weight-bold.mx-3.my-4 ParseQa: Pushing the Boundaries of Knowledge Search
+
                         .carousel-item
                             .col-md-4
                                 .image-card.mx-4
@@ -277,13 +285,15 @@ html(lang='en')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/get-set-ai.jpg', style="width: 100%" alt="Get Set AI")
                                         h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company's transformation
+
                         .carousel-item
                             .col-md-4
                                 .image-card.mx-4
                                     a.blog-link(target='new' href='https://blog.inscripta.ai/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer/')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/teaching-computers.jpg', style="width: 100%" alt="Teaching computers")
-                                        h5.font-weight-bold.mx-3.my-4 Teaching computers how humans think by creating questions that computers cannot answer!
+                                        h5.font-weight-bold.mx-3.my-4 Teaching computers how humans think by creating questions computers cannot answer
+
                         .carousel-item
                             .col-md-4
                                 .image-card.mx-4
@@ -291,6 +301,7 @@ html(lang='en')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/hippocratic-oath.jpg', style="width: 100%" alt="Hippocratic Oath")
                                         h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
+
                         .carousel-item
                             .col-md-4
                                 .image-card.mx-4
@@ -298,98 +309,106 @@ html(lang='en')
                                         .card-box
                                             img.lazyload(data-src='/assets/img/blog/product-search-broken.jpg', style="width: 100%" alt="Product Search")
                                         h5.font-weight-bold.mx-3.my-4 Product Search is Broken: Here's How
-                    a.carousel-control-prev(href='#myCarousel' role='button' data-bs-slide='prev')
-                        span.carousel-control-prev-icon(aria-hidden='true')
-                        span.sr-only Previous
-                    a.carousel-control-next(href='#myCarousel' role='button' data-bs-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-                        span.sr-only Next
 
-        
-        
-        // Team
-        section#team.page-section.bg-light
-            .container.px-4.px-lg-2
-                .col-lg-11.mx-auto 
-                    .row.mb-5
-                        .col-md-3
-                            h1.font-weight-bold The Team
-                        .col-md-9.mx-auto
-                            h5 
-                                | Having worked at organizations such as IBM Research, Flipkart, VMware, Reliance, Schlumberger, multiple startups and research labs, we are equipped with deep, real-world AI expertise. 
-                                | Our team consists of Masters and PhDs from top universities like IIT Bombay, CMU and University of Birmingham (UK).
+                a.carousel-control-prev(href='#myCarousel' role='button' data-bs-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                a.carousel-control-next(href='#myCarousel' role='button' data-bs-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
 
-            .container
-                .row
-                    // === Anand Ramanathan ===
-                    .col-lg-4.px-3.mb-4
-                        .team-profile-box-new.mt-6
-                            .card-inner
-                                .card-front
-                                    .card-front-content
-                                        img.lazyload(data-src="/assets/img/team/AR.jpg", alt="Anand's Profile Photo")
-                                        h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
-                                        h6.mb-2 Cofounder
-                                        a(href="https://www.linkedin.com/in/anand-ramanathan/", target="_blank", rel="noopener")
-                                            i.fab.fa-linkedin.fa-1_25x
-                                .card-back
-                                    h5 Anand Ramanathan
-                                    p 
-                                        | Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
 
-                    // === Vivek Mehta ===
-                    .col-lg-4.px-3.mb-4
-                        .team-profile-box-new.mt-6
-                            .card-inner
-                                .card-front
-                                    .card-front-content
-                                        img.lazyload(data-src="/assets/img/team/VM.jpg", alt="Vivek Mehta's Profile Photo")
-                                        h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
-                                        h6.mb-2 Cofounder
-                                        a(href="https://www.linkedin.com/in/vivek-mehta/", target="_blank", rel="noopener")
-                                            i.fab.fa-linkedin.fa-1_25x
-                                .card-back
-                                    h5 Vivek Mehta
-                                    p 
-                                        | Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).
 
-                    // === Vivek Nallur ===
-                    .col-lg-4.px-3.mb-4
-                        .team-profile-box-new.mt-6
-                            .card-inner
-                                .card-front
-                                    .card-front-content
-                                        img.lazyload(data-src="/assets/img/team/VN.jpg", alt="Vivek Nallur's Profile Photo")
-                                        h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
-                                        h6.mb-2 Research and Academic Consultant
-                                        a(href="https://www.linkedin.com/in/vivek-nallur-1b27231/", target="_blank", rel="noopener")
-                                            i.fab.fa-linkedin.fa-1_25x
-                                .card-back
-                                    h5 Vivek Nallur
-                                    p 
-                                        | Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.
+            
+            
+            // Team
+            section#team.page-section.bg-light
+                .container.px-4.px-lg-2
+                    .col-lg-11.mx-auto 
+                        .row.mb-5
+                            .col-md-3
+                                h1.font-weight-bold The Team
+                            .col-md-9.mx-auto
+                                h5 
+                                    | Having worked at organizations such as IBM Research, Flipkart, VMware, Reliance, Schlumberger, multiple startups and research labs, we are equipped with deep, real-world AI expertise. 
+                                    | Our team consists of Masters and PhDs from top universities like IIT Bombay, CMU and University of Birmingham (UK).
 
-        // Contact Section
-        section#contact.page-section
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.align-items-stretch
-                    // Get In Touch Section
-                    .col-lg-6.mb-4.align-self-center
-                        h1.font-weight-bold.text-primary.mb-4 Get In Touch!
-                        hr.divider.bg-secondary.mx-0
-                        h5.mb-3
-                            | Looking to add intelligence to your systems? 
-                            hr.w-50
-                            | Require customized deployment?
-                    
-                    // Contact Form Section  
-                    .col-lg-6.mb-4
-                        #form-card
-                            // Load Contact Form CSS
-                            link(rel="stylesheet", href="https://website-bot.inscripta.ai/contact-form/style.css")
+                .container
+                    .row
+                        // === Anand Ramanathan ===
+                        .col-lg-4.px-3.mb-4
+                            .team-profile-box-new.mt-6
+                                .card-inner
+                                    .card-front
+                                        .card-front-content
+                                            img.lazyload(data-src="/assets/img/team/AR.jpg", alt="Anand's Profile Photo")
+                                            h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
+                                            h6.mb-2 Cofounder
+                                    .card-back
+                                        h5 Anand Ramanathan
+                                        a.mb-2(href="https://www.linkedin.com/in/anand-ramanathan/", target="_blank", rel="noopener", aria-label="Anand's LinkeIn Page")
+                                            svg.icon_blue
+                                                use(href='#icon-linkedin')
+                                        p 
+                                            | Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.
 
-                            // Contact Form Container
-                            #contact-form(data-source="homepage_form")
+                        // === Vivek Mehta ===
+                        .col-lg-4.px-3.mb-4
+                            .team-profile-box-new.mt-6
+                                .card-inner
+                                    .card-front
+                                        .card-front-content
+                                            img.lazyload(data-src="/assets/img/team/VM.avif", alt="Vivek Mehta's Profile Photo")
+                                            h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
+                                            h6.mb-2 Cofounder
+                                    .card-back
+                                        h5 Vivek Mehta
+                                        a.mb-2(href="https://www.linkedin.com/in/vivek-mehta/", target="_blank", rel="noopener", aria-label="Vivek's LinkeIn Page")
+                                            svg.icon_blue
+                                                use(href='#icon-linkedin')
+                                        p 
+                                            | Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).
+
+                        // === Vivek Nallur ===
+                        .col-lg-4.px-3.mb-4
+                            .team-profile-box-new.mt-6
+                                .card-inner
+                                    .card-front
+                                        .card-front-content
+                                            img.lazyload(data-src="/assets/img/team/VN.avif", alt="Vivek Nallur's Profile Photo")
+                                            h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
+                                            h6.mb-2 Research and Academic Consultant
+                                    .card-back
+                                        h5 Vivek Nallur
+                                        a.mb-2(href="https://www.linkedin.com/in/vivek-nallur-1b27231/", target="_blank", rel="noopener", aria-label="Vivek's LinkeIn Page")
+                                            svg.icon_blue
+                                                use(href='#icon-linkedin')
+                                                
+                                        p 
+                                            | Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.
+
+            // Contact Section
+            section#contact.page-section
+                .container.px-4.px-lg-5
+                    .row.gx-4.gx-lg-5.align-items-stretch
+                        // Get In Touch Section
+                        .col-lg-6.mb-4.align-self-center
+                            h1.font-weight-bold.text-primary.mb-4 Get In Touch!
+                            hr.divider.bg-secondary.mx-0
+                            h5.mb-3
+                                | Looking to add intelligence to your systems? 
+                                hr.w-50
+                                | Require customized deployment?
+                        
+                        // Contact Form Section  
+                        .col-lg-6.mb-4
+                            #form-card
+                                // Load Contact Form CSS
+                                link(rel="stylesheet", href="https://website-bot.inscripta.ai/contact-form/style.css")
+
+                                // Contact Form Container
+                                #contact-form(data-source="homepage_form")
+
 
                             // Fallback Container (hidden by default)
                             #contact-fallback.d-none
@@ -403,6 +422,9 @@ html(lang='en')
                                         a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
                                             i.fas.fa-envelope.me-2
                                             | Send us an Email
+
+
+
         // Footer
         include /pug/includes/footer_new.pug
 
@@ -412,7 +434,6 @@ html(lang='en')
 
         // carousel
         script(async='' src='/js/carousel.js')
-
 
 
         // Load Contact Form Bundle with fallback
@@ -447,6 +468,9 @@ html(lang='en')
                     }
                     console.error('Failed to load contact form - showing fallback');
                 };
-                
                 document.body.appendChild(scriptElement);
-            })();   
+
+
+            })();
+
+

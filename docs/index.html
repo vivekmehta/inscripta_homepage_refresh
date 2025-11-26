@@ -10,14 +10,14 @@
         <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
         <!--Font-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet" />
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link href="https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet" /></noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet" /></noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet" /></noscript>
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/css/critical.css" rel="stylesheet" />
-        <!-- Font Awesome-->
-        <link rel="preload" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" /></noscript>
+        <link rel="stylesheet" href="/css/critical.css" />
+        <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+        <link rel="preload" fetchpriority="high" as="image" href="/assets/img/h2.jpg" type="image/webp" />
         <!-- Google Tag Manager-->
         <script>
             (function (w, d, s, l, i) {
@@ -37,10 +37,13 @@
         <!-- Google Tag Manager (noscript)-->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript)-->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="icon-linkedin" viewBox="100 100 540 540"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"></path></symbol>
+        </svg>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" role="navigation">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="/"></a>
+                <a class="navbar-brand" href="/" aria-label="Inscripta Home"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -53,7 +56,7 @@
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/consulting.html">CONSULTING</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog/">BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://blog.inscripta.ai">BLOG</a></li>
                         <!-- li.nav-item-->
                         <!--     a.nav-link(href='/hiring.html') HIRING-->
                         <li class="nav-item"><a class="nav-link" href="/#contact">CONTACT</a></li>
@@ -62,7 +65,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" role="banner">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100">
                     <div class="col-lg-8 align-self-end">
@@ -84,373 +87,371 @@
                 </div>
             </div>
         </header>
-        <!-- About-->
-        <section class="page-section bg-white" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-6 col-md-12 half-box">
-                        <div class="col-lg-10">
-                            <h5 class="text-primary">// About Inscripta</h5>
-                            <h1 class="font-weight-bold">Your Partner for AI Transformation</h1>
-                            <h5 class="mt-4 mb-4">Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.</h5>
-                            <h5 class="mt-4 mb-4">Across industries, multiple companies have adopted our AI technologies to elevate their offerings and streamline workflows.</h5>
-                            <!--.mt-5a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   -->
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12"><img class="img-fluid lazyload" data-src="/assets/img/about_inscripta_ai.png" alt="AI in action" /></div>
-                </div>
-            </div>
-        </section>
-        <!-- Customers-->
-        <section class="bg-white pb-5" id="customers">
-            <h4 class="text-center mb-5 satisfied-customers-heading">Powering AI Innovation Across Industries</h4>
-            <!-- Marquee Wrapper-->
-            <div class="customer-marquee-wrapper overflow-hidden mb-4">
-                <div class="customer-marquee d-flex align-items-center">
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/automation_edge.png" alt="automation_edge.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/excelra.png" alt="excelra.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/ips_group.png" alt="ips_group.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/Terrantic_logo_FC.png" alt="Terrantic_logo_FC.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/manipal_technologies_limited.png" alt="manipal_technologies_limited.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/spottabl.png" alt="spottabl.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/tenders_on_time.png" alt="tenders_on_time.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/xanthus.png" alt="xanthus.png" style="height: 60px" /></div>
-                    <!-- Repeat the same list for seamless loop-->
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/automation_edge.png" alt="automation_edge.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/excelra.png" alt="excelra.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/ips_group.png" alt="ips_group.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/Terrantic_logo_FC.png" alt="Terrantic_logo_FC.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/manipal_technologies_limited.png" alt="manipal_technologies_limited.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/spottabl.png" alt="spottabl.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/tenders_on_time.png" alt="tenders_on_time.png" style="height: 60px" /></div>
-                    <div class="logo-item mx-4"><img src="/assets/img/customers/xanthus.png" alt="xanthus.png" style="height: 60px" /></div>
-                </div>
-            </div>
-        </section>
-        <!-- PRODUCTS -->
-        <section class="page-section bg-light" id="products">
-            <div class="container px-4 px-lg-2">
-                <div class="row gx-4 gx-lg-5 mb-5">
-                    <div class="col-lg-5 col-md-5"><h1 class="font-weight-bold">Inscripta's AI Products</h1></div>
-                    <div class="col-lg-7 col-md-7"><h5>Our products, built using state-of-the-art Generative AI, Agentic Workflows, LLMs, Natural Language Processing (NLP), OCR and Document Processing techniques, can be customized quickly for a variety of business domains.</h5></div>
-                </div>
-                <!--hr.divider.bg-light.mb-5 -->
-                <div class="row gx-4 gx-lg-5 mt-4">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div class="product-card-primary bg-white">
-                            <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot" /></div>
-                            <div class="product-detail">
-                                Ask questions of your knowledge base and get relevant answers quickly.
-                                <br />
-                                <br />
-                                <ul class="blue-bullets">
-                                    <li class="mb-3">No more scouring documents for keywords, locations, or specific sections</li>
-                                    <li class="mb-3">No need to know where the information resides</li>
-                                    <li class="mb-3">No more hallucinations: high accuracy and fidelity to source documents</li>
-                                </ul>
+        <main role="main">
+            <!-- About-->
+            <section class="page-section bg-white" id="about">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-6 col-md-12 half-box">
+                            <div class="col-lg-10">
+                                <h5 class="text-primary">// About Inscripta</h5>
+                                <h1 class="font-weight-bold">Your Partner for AI Transformation</h1>
+                                <h5 class="mt-4 mb-4">Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.</h5>
+                                <h5 class="mt-4 mb-4">Across industries, multiple companies have adopted our AI technologies to elevate their offerings and streamline workflows.</h5>
+                                <!--.mt-5a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   -->
                             </div>
-                            <a href="/products/parseqa/qabot.html">Know More</a>
                         </div>
+                        <div class="col-lg-6 col-md-12"><img class="img-fluid lazyload" data-src="/assets/img/about_inscripta_ai.avif" width="408px" height="363px" alt="AI in action" /></div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div class="product-card-secondary bg-white">
-                            <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT" /></div>
-                            <div class="product-detail">
-                                Contextual data extraction & curation from a wide variety of documents.
-                                <br />
-                                <br />
-                                <ul class="red-bullets">
-                                    <li class="mb-3">Verifiable and adaptive extraction with fine-grained source tracing</li>
-                                    <li class="mb-3">Human-in-the-loop validation for 100% reliability</li>
-                                    <li class="mb-3">Robust extraction of tables and images from PDFs</li>
-                                </ul>
+                </div>
+            </section>
+            <!-- Customers-->
+            <section class="bg-white pb-5" id="customers">
+                <h4 class="text-center mb-5 satisfied-customers-heading">Powering AI Innovation Across Industries</h4>
+                <!-- Marquee Wrapper-->
+                <div class="customer-marquee-wrapper overflow-hidden mb-4">
+                    <div class="customer-marquee d-flex align-items-center">
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/automation_edge.avif" alt="automation_edge.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/excelra.avif" alt="excelra.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/ips_group.avif" alt="ips_group.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/Terrantic_logo_FC.png" alt="Terrantic_logo_FC.png" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/manipal_technologies_limited.avif" alt="manipal_technologies_limited.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/spottabl.png" alt="spottabl.png" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/tenders_on_time.avif" alt="tenders_on_time.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/xanthus.avif" alt="xanthus.avif" max-width="500 px" height="60px" /></div>
+                    </div>
+                </div>
+            </section>
+            <!-- PRODUCTS -->
+            <section class="page-section bg-light" id="products">
+                <div class="container px-4 px-lg-2">
+                    <div class="row gx-4 gx-lg-5 mb-5">
+                        <div class="col-lg-5 col-md-5"><h1 class="font-weight-bold">Inscripta's AI Products</h1></div>
+                        <div class="col-lg-7 col-md-7"><h5>Our products, built using state-of-the-art Generative AI, Agentic Workflows, LLMs, Natural Language Processing (NLP), OCR and Document Processing techniques, can be customized quickly for a variety of business domains.</h5></div>
+                    </div>
+                    <!--hr.divider.bg-light.mb-5 -->
+                    <div class="row gx-4 gx-lg-5 mt-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                            <div class="product-card-primary bg-white">
+                                <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot" /></div>
+                                <div class="product-detail">
+                                    Ask questions of your knowledge base and get relevant answers quickly.
+                                    <br />
+                                    <br />
+                                    <ul class="blue-bullets">
+                                        <li class="mb-3">No more scouring documents for keywords, locations, or specific sections</li>
+                                        <li class="mb-3">No need to know where the information resides</li>
+                                        <li class="mb-3">No more hallucinations: high accuracy and fidelity to source documents</li>
+                                    </ul>
+                                </div>
+                                <a href="/products/parseqa/qabot.html">Know More</a>
                             </div>
-                            <a href="/products/parseqa/curate.html">Know More</a>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div class="product-card-primary bg-white">
-                            <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/norg_ai_title.png" alt="NorgAI title" /></div>
-                            <div class="product-detail">
-                                GenAI assistant for Professional Services (PS) teams.
-                                <br />
-                                <br />
-                                <ul class="blue-bullets">
-                                    <li class="mb-3">More reliable, relevant, and consistent outputs than leading GenAI tools</li>
-                                    <li class="mb-3">Catches critical gaps between sources and deliverables</li>
-                                    <li class="mb-3">Purpose-built for PS workflows — one dedicated workspace, no tool switching</li>
-                                </ul>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                            <div class="product-card-secondary bg-white">
+                                <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT" /></div>
+                                <div class="product-detail">
+                                    Contextual data extraction & curation from a wide variety of documents.
+                                    <br />
+                                    <br />
+                                    <ul class="red-bullets">
+                                        <li class="mb-3">Verifiable and adaptive extraction with fine-grained source tracing</li>
+                                        <li class="mb-3">Human-in-the-loop validation for 100% reliability</li>
+                                        <li class="mb-3">Robust extraction of tables and images from PDFs</li>
+                                    </ul>
+                                </div>
+                                <a href="/products/parseqa/curate.html">Know More</a>
                             </div>
-                            <a href="/products/norgai.html">Know More</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                            <div class="product-card-primary bg-white">
+                                <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/norg_ai_title.png" alt="NorgAI title" /></div>
+                                <div class="product-detail">
+                                    GenAI assistant for Professional Services (PS) teams.
+                                    <br />
+                                    <br />
+                                    <ul class="blue-bullets">
+                                        <li class="mb-3">More reliable, relevant, and consistent outputs than leading GenAI tools</li>
+                                        <li class="mb-3">Catches critical gaps between sources and deliverables</li>
+                                        <li class="mb-3">Purpose-built for PS workflows — one dedicated workspace, no tool switching</li>
+                                    </ul>
+                                </div>
+                                <a href="/products/norgai.html">Know More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Advantages-->
-        <section class="page-section bg-white" id="advantages">
-            <div class="container">
-                <div class="row">
-                    <!-- Left side: Inscripta Advantage section-->
-                    <div class="col-lg-4 col-md-12 mb-3 px-3">
-                        <div class="py-lg-5">
-                            <h1 class="font-weight-bold mb-5">Inscripta Advantage</h1>
-                            <h5 class="mb-5">Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.</h5>
-                            <a class="btn btn-secondary-outline btn-xl" href="#stack">Inscripta Stack</a>
+            </section>
+            <!-- Advantages-->
+            <section class="page-section bg-white" id="advantages">
+                <div class="container">
+                    <div class="row">
+                        <!-- Left side: Inscripta Advantage section-->
+                        <div class="col-lg-4 col-md-12 mb-3 px-3">
+                            <div class="py-lg-5">
+                                <h1 class="font-weight-bold mb-5">Inscripta Advantage</h1>
+                                <h5 class="mb-5">Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.</h5>
+                                <a class="btn btn-secondary-outline btn-xl" href="#stack">Inscripta Stack</a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Right side: Feature Cards-->
-                    <div class="card-grid col-lg-8 col-md-12">
-                        <div class="adv-card">
-                            <div class="adv-heading h4 font-weight-bold">Customizable AI Products</div>
-                            <div class="adv-text">Our agent-driven product suite accelerates AI adoption tailored to your specific workflows, data environments, and business goals.</div>
-                        </div>
-                        <div class="adv-card">
-                            <div class="adv-heading h4 font-weight-bold">Designed by an Experienced AI Team</div>
-                            <div class="adv-text">Our solutions are grounded in deep technical expertise and years of hands-on experience across domains at pioneering AI companies and labs.</div>
-                        </div>
-                        <div class="adv-card">
-                            <div class="adv-heading h4 font-weight-bold">Robust in Real-World Conditions</div>
-                            <div class="adv-text">Engineered to handle noisy and diverse data, our products excel in complex, real-world scenarios where off-the-shelf tools and LLMs struggle.</div>
-                        </div>
-                        <div class="adv-card">
-                            <div class="adv-heading h4 font-weight-bold">Powered by the Latest Research</div>
-                            <div class="adv-text">We stay ahead of the curve, constantly integrating cutting-edge advancements to ensure your solutions are impactful, efficient, and future-ready.</div>
+                        <!-- Right side: Feature Cards-->
+                        <div class="card-grid col-lg-8 col-md-12">
+                            <div class="adv-card">
+                                <div class="adv-heading h4 font-weight-bold">Customizable AI Products</div>
+                                <div class="adv-text">Our agent-driven product suite accelerates AI adoption tailored to your specific workflows, data environments, and business goals.</div>
+                            </div>
+                            <div class="adv-card">
+                                <div class="adv-heading h4 font-weight-bold">Designed by an Experienced AI Team</div>
+                                <div class="adv-text">Our solutions are grounded in deep technical expertise and years of hands-on experience across domains at pioneering AI companies and labs.</div>
+                            </div>
+                            <div class="adv-card">
+                                <div class="adv-heading h4 font-weight-bold">Robust in Real-World Conditions</div>
+                                <div class="adv-text">Engineered to handle noisy and diverse data, our products excel in complex, real-world scenarios where off-the-shelf tools and LLMs struggle.</div>
+                            </div>
+                            <div class="adv-card">
+                                <div class="adv-heading h4 font-weight-bold">Powered by the Latest Research</div>
+                                <div class="adv-text">We stay ahead of the curve, constantly integrating cutting-edge advancements to ensure your solutions are impactful, efficient, and future-ready.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Inscripta Stack-->
-        <section class="page-section bg-light" id="stack">
-            <div class="container px-4 px-lg-2">
-                <div class="row gx-2 gx-lg-4">
-                    <div class="col-lg-8 mb-4"><img class="img-fluid img-tech-stack lazyload" data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack" width="730px" /></div>
-                    <div class="col-lg-4 px-5 align-self-center">
-                        <h1 class="font-weight-bold mt-3 mb-4">Inscripta Technology Stack</h1>
-                        <h5 class="mb-4">State-of-the-Art Technologies. Flexible Libraries. Customizable Products.</h5>
-                        <!--.mb-3a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
+            </section>
+            <!-- Inscripta Stack-->
+            <section class="page-section bg-light" id="stack">
+                <div class="container px-4 px-lg-2">
+                    <div class="row gx-2 gx-lg-4">
+                        <div class="col-lg-8 mb-4"><img class="img-fluid img-tech-stack lazyload" data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack" width="730px" /></div>
+                        <div class="col-lg-4 px-5 align-self-center">
+                            <h1 class="font-weight-bold mt-3 mb-4">Inscripta Technology Stack</h1>
+                            <h5 class="mb-4">State-of-the-Art Technologies. Flexible Libraries. Customizable Products.</h5>
+                            <!--.mb-3a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
 
 -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Benchmarking-->
-        <section class="page-section" id="benchmarking">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-6 col-md-12 half-box">
-                        <div class="col-lg-10">
-                            <h5 class="text-primary">// Benchmarking</h5>
-                            <h2 class="font-weight-bold">ParseQa outperforms custom GPT by 50% on complex data extraction & question answering</h2>
-                            <ul>
-                                <li class="mt-1">Better performance even with much smaller local models.</li>
-                                <li class="mt-1">Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.</li>
-                                <li class="mt-1">Ideal for technical manuals and scientific publications.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mb-4"><img class="img-fluid lazyload" data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa" /></div>
-                </div>
-            </div>
-            <div class="container px-4 px-lg-6 mt-5"></div>
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-6 col-md-12 mb-4"><img class="img-fluid lazyload" data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal" /></div>
-                    <div class="col-lg-6 col-md-12 half-box">
-                        <div class="col-lg-10">
-                            <h5 class="text-primary">// Benchmarking</h5>
-                            <h2 class="font-weight-bold">Multimodal data performance</h2>
-                            <ul>
-                                <li class="mt-1">Significantly better answers from tables and diagrams.</li>
-                                <li class="mt-1">More reliable across the board.</li>
-                                <li class="mt-1">Navigate top-3 results with the UI for 100% quality assurance.</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Blog-->
-        <section class="text-white page-section" id="blogs" style="background: url('/assets/img/prod_banner.jpg') no-repeat center center; background-size: cover">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="col-lg-10 mx-auto text-center"><h1 class="font-weight-bold mt-0 mb-5">BLOGS</h1></div>
-            </div>
-            <div class="container-fluid">
-                <div class="carousel slide mx-auto" id="myCarousel" data-bs-ride="carousel">
-                    <div class="carousel-inner row mx-auto col-lg-10">
-                        <div class="carousel-item active">
-                            <div class="col-md-4">
-                                <div class="image-card mx-4">
-                                    <a class="blog-link" target="new" href="https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d">
-                                        <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg" style="width: 100%" alt="Blog image" /></div>
-                                        <h5 class="font-weight-bold mx-3 my-4">Get Set AI: Fast-track your company&rsquo;s transformation</h5>
-                                    </a>
-                                </div>
+            </section>
+            <!-- Benchmarking-->
+            <section class="page-section" id="benchmarking">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-6 col-md-12 half-box">
+                            <div class="col-lg-10">
+                                <h5 class="text-primary">// Benchmarking</h5>
+                                <h2 class="font-weight-bold">ParseQa outperforms custom GPT by 50% on complex data extraction & question answering</h2>
+                                <ul>
+                                    <li class="mt-1">Better performance even with much smaller local models.</li>
+                                    <li class="mt-1">Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.</li>
+                                    <li class="mt-1">Ideal for technical manuals and scientific publications.</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="image-card mx-4">
-                                    <a class="blog-link" target="new" href="https://medium.com/inscripta/product-search-is-broken-heres-how-99e08504bdd9">
-                                        <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png" style="width: 100%" alt="Blog image" /></div>
-                                        <h5 class="font-weight-bold mx-3 my-4">Product Search is Broken: Here&rsquo;s How</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="image-card mx-4">
-                                    <a class="blog-link" target="new" href="https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede">
-                                        <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg" style="width: 100%" alt="Blog image" /></div>
-                                        <h5 class="font-weight-bold mx-3 my-4">Does Conversational AI Need a Hippocratic Oath?</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                <div class="image-card mx-4">
-                                    <a class="blog-link" target="new" href="https://medium.com/inscripta/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer-74adbafe48c1">
-                                        <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg" style="width: 100%" alt="Blog image" /></div>
-                                        <h5 class="font-weight-bold mx-3 my-4">Teaching computers how humans think ...</h5>
-                                    </a>
-                                </div>
+                        <div class="col-lg-6 col-md-12 mb-4"><img class="img-fluid lazyload" data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa" /></div>
+                    </div>
+                </div>
+                <div class="container px-4 px-lg-6 mt-5"></div>
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-6 col-md-12 mb-4"><img class="img-fluid lazyload" data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal" /></div>
+                        <div class="col-lg-6 col-md-12 half-box">
+                            <div class="col-lg-10">
+                                <h5 class="text-primary">// Benchmarking</h5>
+                                <h2 class="font-weight-bold">Multimodal data performance</h2>
+                                <ul>
+                                    <li class="mt-1">Significantly better answers from tables and diagrams.</li>
+                                    <li class="mt-1">More reliable across the board.</li>
+                                    <li class="mt-1">Navigate top-3 results with the UI for 100% quality assurance.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-            </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container px-4 px-lg-2">
-                <div class="col-lg-11 mx-auto">
-                    <div class="row mb-5">
-                        <div class="col-md-3"><h1 class="font-weight-bold">The Team</h1></div>
-                        <div class="col-md-9 mx-auto"><h5>Having worked at organizations such as IBM Research, Flipkart, VMware, Reliance, Schlumberger, multiple startups and research labs, we are equipped with deep, real-world AI expertise. Our team consists of Masters and PhDs from top universities like IIT Bombay, CMU and University of Birmingham (UK).</h5></div>
-                    </div>
+            </section>
+            <!-- Blog-->
+            <section class="text-white page-section" id="blogs" style="background: url('/assets/img/prod_banner.jpg') no-repeat center center; background-size: cover">
+                <div class="container px-4 px-lg-5 text-center">
+                    <div class="col-lg-10 mx-auto text-center"><h1 class="font-weight-bold mt-0 mb-5">BLOGS</h1></div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <!-- === Anand Ramanathan ===-->
-                    <div class="col-lg-4 px-3 mb-4">
-                        <div class="team-profile-box-new mt-6">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <div class="card-front-content">
-                                        <img class="lazyload" data-src="/assets/img/team/AR.jpg" alt="Anand's Profile Photo" />
-                                        <h4 class="text-primary font-weight-bold mb-2">Anand Ramanathan</h4>
-                                        <h6 class="mb-2">Cofounder</h6>
-                                        <a href="https://www.linkedin.com/in/anand-ramanathan/" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-1_25x"></i></a>
+                <div class="container-fluid">
+                    <div class="carousel slide mx-auto" id="myCarousel" data-bs-ride="carousel">
+                        <div class="carousel-inner row mx-auto col-lg-10">
+                            <div class="carousel-item active">
+                                <div class="col-md-4">
+                                    <div class="image-card mx-4">
+                                        <a class="blog-link" target="new" href="https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d">
+                                            <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg" style="width: 100%" alt="Blog image" /></div>
+                                            <h5 class="font-weight-bold mx-3 my-4">Get Set AI: Fast-track your company&rsquo;s transformation</h5>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="card-back">
-                                    <h5>Anand Ramanathan</h5>
-                                    <p>Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.</p>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- === Vivek Mehta ===-->
-                    <div class="col-lg-4 px-3 mb-4">
-                        <div class="team-profile-box-new mt-6">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <div class="card-front-content">
-                                        <img class="lazyload" data-src="/assets/img/team/VM.jpg" alt="Vivek Mehta's Profile Photo" />
-                                        <h4 class="text-primary font-weight-bold mb-2">Vivek Mehta</h4>
-                                        <h6 class="mb-2">Cofounder</h6>
-                                        <a href="https://www.linkedin.com/in/vivek-mehta/" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-1_25x"></i></a>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="image-card mx-4">
+                                        <a class="blog-link" target="new" href="https://medium.com/inscripta/product-search-is-broken-heres-how-99e08504bdd9">
+                                            <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png" style="width: 100%" alt="Blog image" /></div>
+                                            <h5 class="font-weight-bold mx-3 my-4">Product Search is Broken: Here&rsquo;s How</h5>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="card-back">
-                                    <h5>Vivek Mehta</h5>
-                                    <p>Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).</p>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- === Vivek Nallur ===-->
-                    <div class="col-lg-4 px-3 mb-4">
-                        <div class="team-profile-box-new mt-6">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <div class="card-front-content">
-                                        <img class="lazyload" data-src="/assets/img/team/VN.jpg" alt="Vivek Nallur's Profile Photo" />
-                                        <h4 class="text-primary font-weight-bold mb-2">Vivek Nallur</h4>
-                                        <h6 class="mb-2">Research and Academic Consultant</h6>
-                                        <a href="https://www.linkedin.com/in/vivek-nallur-1b27231/" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-1_25x"></i></a>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="image-card mx-4">
+                                        <a class="blog-link" target="new" href="https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede">
+                                            <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg" style="width: 100%" alt="Blog image" /></div>
+                                            <h5 class="font-weight-bold mx-3 my-4">Does Conversational AI Need a Hippocratic Oath?</h5>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="card-back">
-                                    <h5>Vivek Nallur</h5>
-                                    <p>Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.</p>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-stretch">
-                    <!-- Get In Touch Section-->
-                    <div class="col-lg-6 mb-4 align-self-center">
-                        <h1 class="font-weight-bold text-primary mb-4">Get In Touch!</h1>
-                        <hr class="divider bg-secondary mx-0" />
-                        <h5 class="mb-3">
-                            Looking to add intelligence to your systems?
-                            <hr class="w-50" />
-                            Require customized deployment?
-                        </h5>
-                    </div>
-                    <!-- Contact Form Section  -->
-                    <div class="col-lg-6 mb-4">
-                        <div id="form-card">
-                            <!-- Load Contact Form CSS-->
-                            <link rel="stylesheet" href="https://website-bot.inscripta.ai/contact-form/style.css" />
-                            <!-- Contact Form Container-->
-                            <div id="contact-form" data-source="homepage_form"></div>
-                            <!-- Fallback Container (hidden by default)-->
-                            <div class="d-none" id="contact-fallback">
-                                <div class="text-center">
-                                    <p class="mb-2">We couldn't load the contact form right now.</p>
-                                    <p class="mb-3">You can still reach us at:</p>
-                                    <p class="mb-3">
-                                        <strong>Email:</strong>
-                                        <a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
-                                    </p>
-                                    <div class="mt-4">
-                                        <a class="btn btn-secondary btn-lg" href="mailto:sales@inscripta.ai">
-                                            <i class="fas fa-envelope me-2"></i>
-                                            Send us an Email
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="image-card mx-4">
+                                        <a class="blog-link" target="new" href="https://medium.com/inscripta/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer-74adbafe48c1">
+                                            <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg" style="width: 100%" alt="Blog image" /></div>
+                                            <h5 class="font-weight-bold mx-3 my-4">Teaching computers how humans think ...</h5>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
-                <div class="text-center mt-4"><small class="text-muted">We'll get back to you within 24 hours</small></div>
-            </div>
-        </section>
+            </section>
+            <!-- Team-->
+            <section class="page-section bg-light" id="team">
+                <div class="container px-4 px-lg-2">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="row mb-5">
+                            <div class="col-md-3"><h1 class="font-weight-bold">The Team</h1></div>
+                            <div class="col-md-9 mx-auto"><h5>Having worked at organizations such as IBM Research, Flipkart, VMware, Reliance, Schlumberger, multiple startups and research labs, we are equipped with deep, real-world AI expertise. Our team consists of Masters and PhDs from top universities like IIT Bombay, CMU and University of Birmingham (UK).</h5></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- === Anand Ramanathan ===-->
+                        <div class="col-lg-4 px-3 mb-4">
+                            <div class="team-profile-box-new mt-6">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="card-front-content">
+                                            <img class="lazyload" data-src="/assets/img/team/AR.jpg" alt="Anand's Profile Photo" />
+                                            <h4 class="text-primary font-weight-bold mb-2">Anand Ramanathan</h4>
+                                            <h6 class="mb-2">Cofounder</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h5>Anand Ramanathan</h5>
+                                        <a class="mb-2" href="https://www.linkedin.com/in/anand-ramanathan/" target="_blank" rel="noopener" aria-label="Anand's LinkeIn Page">
+                                            <svg class="icon_blue"><use href="#icon-linkedin"></use></svg>
+                                        </a>
+                                        <p>Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === Vivek Mehta ===-->
+                        <div class="col-lg-4 px-3 mb-4">
+                            <div class="team-profile-box-new mt-6">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="card-front-content">
+                                            <img class="lazyload" data-src="/assets/img/team/VM.avif" alt="Vivek Mehta's Profile Photo" />
+                                            <h4 class="text-primary font-weight-bold mb-2">Vivek Mehta</h4>
+                                            <h6 class="mb-2">Cofounder</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h5>Vivek Mehta</h5>
+                                        <a class="mb-2" href="https://www.linkedin.com/in/vivek-mehta/" target="_blank" rel="noopener" aria-label="Vivek's LinkeIn Page">
+                                            <svg class="icon_blue"><use href="#icon-linkedin"></use></svg>
+                                        </a>
+                                        <p>Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === Vivek Nallur ===-->
+                        <div class="col-lg-4 px-3 mb-4">
+                            <div class="team-profile-box-new mt-6">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="card-front-content">
+                                            <img class="lazyload" data-src="/assets/img/team/VN.avif" alt="Vivek Nallur's Profile Photo" />
+                                            <h4 class="text-primary font-weight-bold mb-2">Vivek Nallur</h4>
+                                            <h6 class="mb-2">Research and Academic Consultant</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h5>Vivek Nallur</h5>
+                                        <a class="mb-2" href="https://www.linkedin.com/in/vivek-nallur-1b27231/" target="_blank" rel="noopener" aria-label="Vivek's LinkeIn Page">
+                                            <svg class="icon_blue"><use href="#icon-linkedin"></use></svg>
+                                        </a>
+                                        <p>Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section-->
+            <section class="page-section" id="contact">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 align-items-stretch">
+                        <!-- Get In Touch Section-->
+                        <div class="col-lg-6 mb-4 align-self-center">
+                            <h1 class="font-weight-bold text-primary mb-4">Get In Touch!</h1>
+                            <hr class="divider bg-secondary mx-0" />
+                            <h5 class="mb-3">
+                                Looking to add intelligence to your systems?
+                                <hr class="w-50" />
+                                Require customized deployment?
+                            </h5>
+                        </div>
+                        <!-- Contact Form Section  -->
+                        <div class="col-lg-6 mb-4">
+                            <div id="form-card">
+                                <!-- Load Contact Form CSS-->
+                                <link rel="stylesheet" href="https://website-bot.inscripta.ai/contact-form/style.css" />
+                                <!-- Contact Form Container-->
+                                <div id="contact-form" data-source="homepage_form"></div>
+                                <!-- Fallback Container (hidden by default)-->
+                                <div class="d-none" id="contact-fallback">
+                                    <div class="text-center">
+                                        <p class="mb-2">We couldn't load the contact form right now.</p>
+                                        <p class="mb-3">You can still reach us at:</p>
+                                        <p class="mb-3">
+                                            <strong>Email:</strong>
+                                            <a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                                        </p>
+                                        <div class="mt-4">
+                                            <a class="btn btn-secondary btn-lg" href="mailto:sales@inscripta.ai">
+                                                <i class="fas fa-envelope me-2"></i>
+                                                Send us an Email
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <!-- Footer-->
         <!-- Footer-->
-        <footer class="bg-dark py-5 text-white">
+        <footer class="bg-dark py-5 text-white" role="contentinfo">
             <div class="container px-4 px-lg-5">
                 <div class="row">
                     <!-- Left section: Logo and description-->
@@ -458,16 +459,13 @@
                         <img class="img-logo mb-3" src="/assets/img/logo/logo-cs.png" alt="Inscripta AI Logo" />
                         <p class="small text-light mb-3">Inscripta delivers AI solutions through both innovative products and expert consulting. Our offerings include ParseQa QABot for high-accuracy question answering and ParseQa Curate for intelligent content organization, alongside scalable capabilities in Generative AI, Agentic Workflows, LLMs, NLP, OCR, and Document AI. Whether through Saas applications, ready-to-deploy tools or customized engagements, we help enterprises streamline knowledge workflows, and accelerate AI adoption with measurable impact.</p>
                         <div class="mb-2">
-                            <i class="fas fa-envelope me-2"></i>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 540 540"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"></path></svg>
                             <a class="text-info text-decoration-none" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
                         </div>
                         <div class="mb-2">
-                            <i class="fab fa-linkedin fa-lg text-info me-2"></i>
-                            <a class="text-info text-decoration-none" href="https://www.linkedin.com/company/inscripta-ai/" target="_blank">LinkedIn</a>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 540 540"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544     529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"></path></svg>
+                            <a class="text-info text-decoration-none align-items-center" href="https://www.linkedin.com/company/inscripta-ai/" target="_blank">LinkedIn</a>
                         </div>
-                        <!--.mb-2i.fas.fa-phone.me-2
-span.text-info +1-555-123-4567
--->
                     </div>
                     <!-- Right sections: Products, Resources, Contact-->
                     <div class="col-lg-6 offset-lg-1">
@@ -558,7 +556,6 @@ span.text-info +1-555-123-4567
                     }
                     console.error('Failed to load contact form - showing fallback');
                 };
-
                 document.body.appendChild(scriptElement);
             })();
         </script>
