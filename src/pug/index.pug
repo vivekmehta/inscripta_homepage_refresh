@@ -356,8 +356,6 @@ html(lang='en')
                         // Contact Form Section  
                         .col-lg-6.mb-4
                             #form-card
-                                // Load Contact Form CSS
-                                link(rel="stylesheet", href="https://website-bot.inscripta.ai/contact-form/style.css")
 
                                 // Contact Form Container
                                 #contact-form(data-source="homepage_form")
@@ -378,6 +376,11 @@ html(lang='en')
 
         // Footer
         include /pug/includes/footer_new.pug
+
+        // Load Contact Form CSS
+        link(rel='preload' href='https://website-bot.inscripta.ai/contact-form/style.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel="stylesheet", href="https://website-bot.inscripta.ai/contact-form/style.css")
 
         link(rel='preload' href='/css/styles.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
         noscript

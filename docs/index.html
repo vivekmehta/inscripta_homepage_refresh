@@ -422,8 +422,6 @@
                         <!-- Contact Form Section  -->
                         <div class="col-lg-6 mb-4">
                             <div id="form-card">
-                                <!-- Load Contact Form CSS-->
-                                <link rel="stylesheet" href="https://website-bot.inscripta.ai/contact-form/style.css" />
                                 <!-- Contact Form Container-->
                                 <div id="contact-form" data-source="homepage_form"></div>
                                 <!-- Fallback Container (hidden by default)-->
@@ -520,6 +518,9 @@
         <link rel="stylesheet" href="https://website-bot.inscripta.ai/static/style.css" />
         <!-- Load the chatbot bundle and auto-open-->
         <script src="https://website-bot.inscripta.ai/static/chatbot.bundle.iife.js" onload="window.chatbotApp.openChat()"></script>
+        <!-- Load Contact Form CSS-->
+        <link rel="preload" href="https://website-bot.inscripta.ai/contact-form/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="https://website-bot.inscripta.ai/contact-form/style.css" /></noscript>
         <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript><link href="/css/styles.min.css" rel="stylesheet" /></noscript>
         <!-- carousel-->
