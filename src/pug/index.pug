@@ -501,41 +501,39 @@ html(lang='en')
         script(async='' src='/js/carousel.js')
 
 
-        // Load Contact Form Bundle with fallback
         script.
-            (function() {
-                var scriptElement = document.createElement('script');
-                var formContainer = document.getElementById('contact-form');
-                var fallbackContainer = document.getElementById('contact-fallback');
-                var timeoutId;
-                
-                scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
-                
-                // Set timeout to show fallback after 5 seconds if form doesn't load
-                timeoutId = setTimeout(function() {
-                    if (formContainer && !formContainer.hasChildNodes()) {
+            document.addEventListener('DOMContentLoaded', function () {
+                setTimeout(function() {
+                    var scriptElement = document.createElement('script');
+                    var formContainer = document.getElementById('contact-form');
+                    var fallbackContainer = document.getElementById('contact-fallback');
+                    var timeoutId;
+
+                    scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
+
+                    timeoutId = setTimeout(function() {
+                        if (formContainer && !formContainer.hasChildNodes()) {
+                            if (fallbackContainer) {
+                                fallbackContainer.classList.remove('d-none');
+                            }
+                            console.warn('Contact form timeout - showing fallback');
+                        }
+                    }, 5000);
+
+                    scriptElement.onload = function() {
+                        clearTimeout(timeoutId);
+                        console.log('Contact form loaded successfully');
+                    };
+
+                    scriptElement.onerror = function() {
+                        clearTimeout(timeoutId);
                         if (fallbackContainer) {
                             fallbackContainer.classList.remove('d-none');
                         }
-                        console.warn('Contact form timeout - showing fallback');
-                    }
-                }, 5000);
-                
-                scriptElement.onload = function() {
-                    clearTimeout(timeoutId);
-                    console.log('Contact form loaded successfully');
-                };
-                
-                scriptElement.onerror = function() {
-                    clearTimeout(timeoutId);
-                    if (fallbackContainer) {
-                        fallbackContainer.classList.remove('d-none');
-                    }
-                    console.error('Failed to load contact form - showing fallback');
-                };
-                document.body.appendChild(scriptElement);
+                        console.error('Failed to load contact form - showing fallback');
+                    };
 
-
-            })();
-
+                    document.body.appendChild(scriptElement);
+                }, 1500); // Load AFTER initial render
+            });
 
