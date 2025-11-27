@@ -1,1 +1,567 @@
-@charset "UTF-8";@font-face{font-family:Lato;font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype')}@font-face{font-family:Lato;font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wWw.ttf) format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:italic;font-weight:400;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1kMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t2FQWEAEOvV9wNvrwlNstMKW3Y6K5WMwXeVy3GboJ0kTHmqP92UnK_c.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:italic;font-weight:700;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1kMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t2FQWEAEOvV9wNvrwlNstMKW3Y6K5WMwXeVy3GboJ0kTHmpo8GUnK_c.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:300;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4GiClXs1Ug.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXs1Ug.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:700;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4GMS5Xs1Ug.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:900;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4Gfy5Xs1Ug.ttf) format('truetype')}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;line-height:1.5;color:#212529;background-color:#f8f9fa;padding:20px}.mb-3{margin-bottom:1rem}.btn{display:inline-block;font-family:Lato,sans-serif;line-height:1.5;text-align:center;vertical-align:middle;font-size:1rem;text-decoration:none;border:none}.text-center{text-align:center}@media (max-width:768px){body{padding:10px}}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-primary:#192B80;--bs-secondary:#DE1F26;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-font-sans-serif:"Nunito Sans",sans-serif;--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))}*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:"Nunito Sans",sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%}h1,h3,h5{margin-top:0;margin-bottom:.5rem;font-family:Lato,sans-serif;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h5{font-size:1.25rem}p{margin-top:0;margin-bottom:1rem}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}strong{font-weight:bolder}a{color:#192b80;text-decoration:underline}img,svg{vertical-align:middle}button{border-radius:0}button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{text-transform:none}[type=button],button{-webkit-appearance:button}::-moz-focus-inner{padding:0;border-style:none}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}iframe{border:0}.container{width:100%;padding-right:var(--bs-gutter-x,.75rem);padding-left:var(--bs-gutter-x,.75rem);margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(var(--bs-gutter-y) * -1);margin-right:calc(var(--bs-gutter-x)/ -2);margin-left:calc(var(--bs-gutter-x)/ -2)}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x)/ 2);padding-left:calc(var(--bs-gutter-x)/ 2);margin-top:var(--bs-gutter-y)}.gx-4{--bs-gutter-x:1.5rem}@media (min-width:768px){.col-md-4{flex:0 0 auto;width:33.3333333333%}}@media (min-width:992px){.col-lg-8{flex:0 0 auto;width:66.6666666667%}.gx-lg-5{--bs-gutter-x:3rem}}.btn{display:inline-block;font-family:Lato,sans-serif;font-weight:400;line-height:1.5;color:#212529;text-align:center;text-decoration:none;vertical-align:middle;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;border-radius:.25rem}.btn-secondary{color:#fff;background-color:#de1f26;border-color:#de1f26}.btn-lg{padding:.5rem 1rem;font-size:1.25rem;border-radius:.3rem}.collapse:not(.show){display:none}.dropdown{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.dropdown-menu{position:absolute;z-index:1000;display:none;min-width:10rem;padding:.5rem 0;margin:0;font-size:1rem;color:#212529;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}.dropdown-item{display:block;width:100%;padding:.25rem 1rem;clear:both;font-weight:400;color:#212529;text-align:inherit;text-decoration:none;white-space:nowrap;background-color:transparent;border:0}.nav-link{display:block;padding:.5rem 1rem;color:#192b80;text-decoration:none}.navbar{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-top:.5rem;padding-bottom:.5rem}.navbar>.container{display:flex;flex-wrap:inherit;align-items:center;justify-content:space-between}.navbar-brand{padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;text-decoration:none;white-space:nowrap}.navbar-nav{display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;background-repeat:no-repeat;background-position:center;background-size:100%}.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,.55)}.navbar-light .navbar-toggler{color:rgba(0,0,0,.55);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.carousel-item{position:relative;display:none;float:left;width:100%;margin-right:-100%;backface-visibility:hidden}.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}.d-none{display:none!important}.h-100{height:100%!important}.align-self-end{align-self:flex-end!important}.align-self-baseline{align-self:baseline!important}.mx-3{margin-right:1rem!important;margin-left:1rem!important}.mx-4{margin-right:1.5rem!important;margin-left:1.5rem!important}.my-2{margin-top:.5rem!important;margin-bottom:.5rem!important}.my-4{margin-top:1.5rem!important;margin-bottom:1.5rem!important}.mt-2{margin-top:.5rem!important}.mt-4{margin-top:1.5rem!important}.mt-5{margin-top:3rem!important}.me-2{margin-right:.5rem!important}.mb-2{margin-bottom:.5rem!important}.mb-3{margin-bottom:1rem!important}.mb-5{margin-bottom:3rem!important}.ms-auto{margin-left:auto!important}.px-4{padding-right:1.5rem!important;padding-left:1.5rem!important}.py-3{padding-top:1rem!important;padding-bottom:1rem!important}.fw-bold{font-weight:700!important}.text-center{text-align:center!important}.text-primary{color:#192b80!important}.text-secondary{color:#de1f26!important}.text-white{color:#fff!important}@media (min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start}.navbar-expand-lg .navbar-nav{flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}.my-lg-0{margin-top:0!important;margin-bottom:0!important}.px-lg-5{padding-right:3rem!important;padding-left:3rem!important}}html{height:100%;scroll-padding-top:calc(4.5rem - 1px);margin:0;padding:0}body{width:100%;height:100%;margin:0;padding:0;overflow-x:hidden}.font-weight-bold{font-weight:700}.image-card{background-color:#fff;height:100%}.card-box{display:block;height:250px;overflow:hidden;margin:0 auto;width:100%;max-height:100%}.blog-link{text-decoration:none}#contact-fallback{padding:30px;background:#f8f9fa;border-radius:15px;border:2px solid #e9ecef}#contact-fallback a.text-primary{text-decoration:none;font-weight:600}.btn-xl{padding:1.25rem 2.25rem;font-size:.85rem;font-weight:700;text-transform:uppercase;border:none;border-radius:0!important}#mainNav{box-shadow:0 .5rem 1rem rgba(0,0,0,.15);background-color:#fff}#mainNav .navbar-brand{font-family:Lato,sans-serif;font-weight:700;background:url("/css/assets/img/logo/logo.svg") no-repeat;background-size:100%;width:180px;height:50px;background-position-y:5px}#mainNav .navbar-nav .nav-item .nav-link{color:#313131;font-family:Lato,sans-serif;font-weight:700;font-size:1.1rem;padding:.75rem 0}header.masthead{padding-top:10rem;padding-bottom:calc(10rem - 4.5rem);background:linear-gradient(to bottom,rgba(25,43,128,.4) 0,rgba(25,43,128,.4) 100%),url("/css/assets/img/h2.jpg");background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}header.masthead h1{font-size:2.25rem}@media (min-width:992px){#mainNav{box-shadow:none;background-color:transparent}#mainNav .navbar-brand{background:url("/css/assets/img/logo/logo-cs.png") no-repeat;background-size:100%;width:180px;height:50px}#mainNav .navbar-nav .nav-item .nav-link{color:rgba(255,255,255,.8);padding:0 1rem}#mainNav .navbar-nav .nav-item:last-child .nav-link{padding-right:0}header.masthead{height:100vh;min-height:40rem;padding-top:4.5rem;padding-bottom:0}header.masthead h1{font-size:3rem}}@media (min-width:1200px){header.masthead h1{font-size:4.5rem}}@media (max-width:767px){.carousel-inner .carousel-item>div{display:none}.carousel-inner .carousel-item>div:first-child{display:block}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Inscripta offers customizable AI and Natural Language processing solutions—like Generative AI agents, question-answering, document processing, and data curation—to fast-track enterprise AI transformation with high accuracy.">
+        <meta name="author" content="Team Inscripta">
+        <title>Customizable AI Solutions for Enterprises</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <style>@charset "UTF-8";@font-face{font-family:Lato;font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype')}@font-face{font-family:Lato;font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wWw.ttf) format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:italic;font-weight:400;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1kMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t2FQWEAEOvV9wNvrwlNstMKW3Y6K5WMwXeVy3GboJ0kTHmqP92UnK_c.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:italic;font-weight:700;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1kMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t2FQWEAEOvV9wNvrwlNstMKW3Y6K5WMwXeVy3GboJ0kTHmpo8GUnK_c.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:300;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4GiClXs1Ug.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:400;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXs1Ug.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:700;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4GMS5Xs1Ug.ttf) format('truetype')}@font-face{font-family:'Nunito Sans';font-style:normal;font-weight:900;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/nunitosans/v19/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4Gfy5Xs1Ug.ttf) format('truetype')}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;line-height:1.5;color:#212529;background-color:#f8f9fa;padding:20px}.mb-3{margin-bottom:1rem}.btn{display:inline-block;font-family:Lato,sans-serif;line-height:1.5;text-align:center;vertical-align:middle;font-size:1rem;text-decoration:none;border:none}.text-center{text-align:center}@media (max-width:768px){body{padding:10px}}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-primary:#192B80;--bs-secondary:#DE1F26;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-font-sans-serif:"Nunito Sans",sans-serif;--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))}*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:"Nunito Sans",sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%}h1,h3,h5{margin-top:0;margin-bottom:.5rem;font-family:Lato,sans-serif;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h5{font-size:1.25rem}p{margin-top:0;margin-bottom:1rem}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}strong{font-weight:bolder}a{color:#192b80;text-decoration:underline}img,svg{vertical-align:middle}button{border-radius:0}button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button{text-transform:none}[type=button],button{-webkit-appearance:button}::-moz-focus-inner{padding:0;border-style:none}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}iframe{border:0}.container{width:100%;padding-right:var(--bs-gutter-x,.75rem);padding-left:var(--bs-gutter-x,.75rem);margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(var(--bs-gutter-y) * -1);margin-right:calc(var(--bs-gutter-x)/ -2);margin-left:calc(var(--bs-gutter-x)/ -2)}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x)/ 2);padding-left:calc(var(--bs-gutter-x)/ 2);margin-top:var(--bs-gutter-y)}.gx-4{--bs-gutter-x:1.5rem}@media (min-width:768px){.col-md-4{flex:0 0 auto;width:33.3333333333%}}@media (min-width:992px){.col-lg-8{flex:0 0 auto;width:66.6666666667%}.gx-lg-5{--bs-gutter-x:3rem}}.btn{display:inline-block;font-family:Lato,sans-serif;font-weight:400;line-height:1.5;color:#212529;text-align:center;text-decoration:none;vertical-align:middle;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;border-radius:.25rem}.btn-secondary{color:#fff;background-color:#de1f26;border-color:#de1f26}.btn-lg{padding:.5rem 1rem;font-size:1.25rem;border-radius:.3rem}.collapse:not(.show){display:none}.dropdown{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.dropdown-menu{position:absolute;z-index:1000;display:none;min-width:10rem;padding:.5rem 0;margin:0;font-size:1rem;color:#212529;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}.dropdown-item{display:block;width:100%;padding:.25rem 1rem;clear:both;font-weight:400;color:#212529;text-align:inherit;text-decoration:none;white-space:nowrap;background-color:transparent;border:0}.nav-link{display:block;padding:.5rem 1rem;color:#192b80;text-decoration:none}.navbar{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-top:.5rem;padding-bottom:.5rem}.navbar>.container{display:flex;flex-wrap:inherit;align-items:center;justify-content:space-between}.navbar-brand{padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;text-decoration:none;white-space:nowrap}.navbar-nav{display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;background-repeat:no-repeat;background-position:center;background-size:100%}.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,.55)}.navbar-light .navbar-toggler{color:rgba(0,0,0,.55);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.carousel-item{position:relative;display:none;float:left;width:100%;margin-right:-100%;backface-visibility:hidden}.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}.d-none{display:none!important}.h-100{height:100%!important}.align-self-end{align-self:flex-end!important}.align-self-baseline{align-self:baseline!important}.mx-3{margin-right:1rem!important;margin-left:1rem!important}.mx-4{margin-right:1.5rem!important;margin-left:1.5rem!important}.my-2{margin-top:.5rem!important;margin-bottom:.5rem!important}.my-4{margin-top:1.5rem!important;margin-bottom:1.5rem!important}.mt-2{margin-top:.5rem!important}.mt-4{margin-top:1.5rem!important}.mt-5{margin-top:3rem!important}.me-2{margin-right:.5rem!important}.mb-2{margin-bottom:.5rem!important}.mb-3{margin-bottom:1rem!important}.mb-5{margin-bottom:3rem!important}.ms-auto{margin-left:auto!important}.px-4{padding-right:1.5rem!important;padding-left:1.5rem!important}.py-3{padding-top:1rem!important;padding-bottom:1rem!important}.fw-bold{font-weight:700!important}.text-center{text-align:center!important}.text-primary{color:#192b80!important}.text-secondary{color:#de1f26!important}.text-white{color:#fff!important}@media (min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start}.navbar-expand-lg .navbar-nav{flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}.my-lg-0{margin-top:0!important;margin-bottom:0!important}.px-lg-5{padding-right:3rem!important;padding-left:3rem!important}}html{height:100%;scroll-padding-top:calc(4.5rem - 1px);margin:0;padding:0}body{width:100%;height:100%;margin:0;padding:0;overflow-x:hidden}.font-weight-bold{font-weight:700}.image-card{background-color:#fff;height:100%}.card-box{display:block;height:250px;overflow:hidden;margin:0 auto;width:100%;max-height:100%}.blog-link{text-decoration:none}#contact-fallback{padding:30px;background:#f8f9fa;border-radius:15px;border:2px solid #e9ecef}#contact-fallback a.text-primary{text-decoration:none;font-weight:600}.btn-xl{padding:1.25rem 2.25rem;font-size:.85rem;font-weight:700;text-transform:uppercase;border:none;border-radius:0!important}#mainNav{box-shadow:0 .5rem 1rem rgba(0,0,0,.15);background-color:#fff}#mainNav .navbar-brand{font-family:Lato,sans-serif;font-weight:700;background:url("/css/assets/img/logo/logo.svg") no-repeat;background-size:100%;width:180px;height:50px;background-position-y:5px}#mainNav .navbar-nav .nav-item .nav-link{color:#313131;font-family:Lato,sans-serif;font-weight:700;font-size:1.1rem;padding:.75rem 0}header.masthead{padding-top:10rem;padding-bottom:calc(10rem - 4.5rem);background:linear-gradient(to bottom,rgba(25,43,128,.4) 0,rgba(25,43,128,.4) 100%),url("/css/assets/img/h2.jpg");background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}header.masthead h1{font-size:2.25rem}@media (min-width:992px){#mainNav{box-shadow:none;background-color:transparent}#mainNav .navbar-brand{background:url("/css/assets/img/logo/logo-cs.png") no-repeat;background-size:100%;width:180px;height:50px}#mainNav .navbar-nav .nav-item .nav-link{color:rgba(255,255,255,.8);padding:0 1rem}#mainNav .navbar-nav .nav-item:last-child .nav-link{padding-right:0}header.masthead{height:100vh;min-height:40rem;padding-top:4.5rem;padding-bottom:0}header.masthead h1{font-size:3rem}}@media (min-width:1200px){header.masthead h1{font-size:4.5rem}}@media (max-width:767px){.carousel-inner .carousel-item>div{display:none}.carousel-inner .carousel-item>div:first-child{display:block}}</style>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet"></noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link href="https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet"></noscript>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!--link(rel='stylesheet' href='/css/critical.css')-->
+        <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+        <link rel="preload" fetchpriority="high" as="image" href="/assets/img/h2.jpg" type="image/webp">
+        <!-- Google Tag Manager-->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5XQVFGS');
+        </script>
+        <!-- End Google Tag Manager-->
+    </head>
+    <body id="page-top">
+        <!-- Google Tag Manager (noscript)-->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript)-->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="icon-linkedin" viewBox="100 100 540 540"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"></path></symbol>
+        </svg>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" role="navigation">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/" aria-label="Inscripta Home"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/products/parseqa/qabot.html">ParseQa QABot</a>
+                                <a class="dropdown-item" href="/products/parseqa/curate.html">ParseQa Curate</a>
+                                <a class="dropdown-item" href="/products/norgai.html">NorgAI</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/consulting.html">CONSULTING</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://blog.inscripta.ai">BLOG</a></li>
+                        <!-- li.nav-item-->
+                        <!--     a.nav-link(href='/hiring.html') HIRING-->
+                        <li class="nav-item"><a class="nav-link" href="/#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" role="banner">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">
+                            AI INTEGRATION.
+                            <br />
+                            FAST-TRACKED.
+                        </h1>
+                    </div>
+                    <div class="col-lg-8 align-self-baseline mt-5">
+                        <h3 class="text-white mb-5">
+                            <span class="fw-bold text-secondary">On-prem AI Agents</span>
+                            to
+                            <span class="fw-bold text-secondary">automate</span>
+                            data curation, question-answering, document generation and more.
+                        </h3>
+                        <div class="mt-2"><a class="btn btn-xl btn-secondary" href="#about">KNOW MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main role="main">
+            <!-- About-->
+            <section class="page-section bg-white" id="about">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-6 col-md-12 half-box">
+                            <div class="col-lg-10">
+                                <h5 class="text-primary">// About Inscripta</h5>
+                                <h1 class="font-weight-bold">Your Partner for AI Transformation</h1>
+                                <h5 class="mt-4 mb-4">Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.</h5>
+                                <h5 class="mt-4 mb-4">Across industries, multiple companies have adopted our AI technologies to elevate their offerings and streamline workflows.</h5>
+                                <!--.mt-5a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   -->
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12"><img class="img-fluid lazyload" data-src="/assets/img/about_inscripta_ai.avif" width="408px" height="363px" alt="AI in action" /></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Customers-->
+            <section class="bg-white pb-5" id="customers">
+                <h4 class="text-center mb-5 satisfied-customers-heading">Powering AI Innovation Across Industries</h4>
+                <!-- Marquee Wrapper-->
+                <div class="customer-marquee-wrapper overflow-hidden mb-4">
+                    <div class="customer-marquee d-flex align-items-center">
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/automation_edge.avif" alt="automation_edge.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/excelra.avif" alt="excelra.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/ips_group.avif" alt="ips_group.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/Terrantic_logo_FC.avif" alt="Terrantic_logo_FC.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/manipal_technologies_limited.avif" alt="manipal_technologies_limited.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/spottabl.avif" alt="spottabl.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/tenders_on_time.avif" alt="tenders_on_time.avif" max-width="500 px" height="60px" /></div>
+                        <div class="logo-item mx-4"><img class="lazyload" data-src="/assets/img/customers/xanthus.avif" alt="xanthus.avif" max-width="500 px" height="60px" /></div>
+                    </div>
+                </div>
+            </section>
+            <!-- PRODUCTS -->
+            <section class="page-section bg-light" id="products">
+                <div class="container px-4 px-lg-2">
+                    <div class="row gx-4 gx-lg-5 mb-5">
+                        <div class="col-lg-5 col-md-5"><h1 class="font-weight-bold">Inscripta's AI Products</h1></div>
+                        <div class="col-lg-7 col-md-7"><h5>Our products, built using state-of-the-art Generative AI, Agentic Workflows, LLMs, Natural Language Processing (NLP), OCR and Document Processing techniques, can be customized quickly for a variety of business domains.</h5></div>
+                    </div>
+                    <!--hr.divider.bg-light.mb-5 -->
+                    <div class="row gx-4 gx-lg-5 mt-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                            <div class="product-card-primary bg-white">
+                                <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_qabot.png" alt="ParseQa QABot" /></div>
+                                <div class="product-detail">
+                                    Ask questions of your knowledge base and get relevant answers quickly.
+                                    <br />
+                                    <br />
+                                    <ul class="blue-bullets">
+                                        <li class="mb-3">No more scouring documents for keywords, locations, or specific sections</li>
+                                        <li class="mb-3">No need to know where the information resides</li>
+                                        <li class="mb-3">No more hallucinations: high accuracy and fidelity to source documents</li>
+                                    </ul>
+                                </div>
+                                <a href="/products/parseqa/qabot.html">Know More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                            <div class="product-card-secondary bg-white">
+                                <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/parseqa_curate_title.png" alt="ParseQa CT" /></div>
+                                <div class="product-detail">
+                                    Contextual data extraction & curation from a wide variety of documents.
+                                    <br />
+                                    <br />
+                                    <ul class="red-bullets">
+                                        <li class="mb-3">Verifiable and adaptive extraction with fine-grained source tracing</li>
+                                        <li class="mb-3">Human-in-the-loop validation for 100% reliability</li>
+                                        <li class="mb-3">Robust extraction of tables and images from PDFs</li>
+                                    </ul>
+                                </div>
+                                <a href="/products/parseqa/curate.html">Know More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                            <div class="product-card-primary bg-white">
+                                <div class="my-3 text-center"><img class="img-product-name lazyload" data-src="/assets/img/products/norg_ai_title.png" alt="NorgAI title" /></div>
+                                <div class="product-detail">
+                                    GenAI assistant for Professional Services (PS) teams.
+                                    <br />
+                                    <br />
+                                    <ul class="blue-bullets">
+                                        <li class="mb-3">More reliable, relevant, and consistent outputs than leading GenAI tools</li>
+                                        <li class="mb-3">Catches critical gaps between sources and deliverables</li>
+                                        <li class="mb-3">Purpose-built for PS workflows — one dedicated workspace, no tool switching</li>
+                                    </ul>
+                                </div>
+                                <a href="/products/norgai.html">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Advantages-->
+            <section class="page-section bg-white" id="advantages">
+                <div class="container">
+                    <div class="row">
+                        <!-- Left side: Inscripta Advantage section-->
+                        <div class="col-lg-4 col-md-12 mb-3 px-3">
+                            <div class="py-lg-5">
+                                <h1 class="font-weight-bold mb-5">Inscripta Advantage</h1>
+                                <h5 class="mb-5">Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.</h5>
+                                <a class="btn btn-secondary-outline btn-xl" href="#stack">Inscripta Stack</a>
+                            </div>
+                        </div>
+                        <!-- Right side: Feature Cards-->
+                        <div class="card-grid col-lg-8 col-md-12">
+                            <div class="adv-card">
+                                <div class="adv-heading h4 font-weight-bold">Customizable AI Products</div>
+                                <div class="adv-text">Our agent-driven product suite accelerates AI adoption tailored to your specific workflows, data environments, and business goals.</div>
+                            </div>
+                            <div class="adv-card">
+                                <div class="adv-heading h4 font-weight-bold">Designed by an Experienced AI Team</div>
+                                <div class="adv-text">Our solutions are grounded in deep technical expertise and years of hands-on experience across domains at pioneering AI companies and labs.</div>
+                            </div>
+                            <div class="adv-card">
+                                <div class="adv-heading h4 font-weight-bold">Robust in Real-World Conditions</div>
+                                <div class="adv-text">Engineered to handle noisy and diverse data, our products excel in complex, real-world scenarios where off-the-shelf tools and LLMs struggle.</div>
+                            </div>
+                            <div class="adv-card">
+                                <div class="adv-heading h4 font-weight-bold">Powered by the Latest Research</div>
+                                <div class="adv-text">We stay ahead of the curve, constantly integrating cutting-edge advancements to ensure your solutions are impactful, efficient, and future-ready.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Inscripta Stack-->
+            <section class="page-section bg-light" id="stack">
+                <div class="container px-4 px-lg-2">
+                    <div class="row gx-2 gx-lg-4">
+                        <div class="col-lg-8 mb-4"><img class="img-fluid img-tech-stack lazyload" data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack" width="730px" /></div>
+                        <div class="col-lg-4 px-5 align-self-center">
+                            <h1 class="font-weight-bold mt-3 mb-4">Inscripta Technology Stack</h1>
+                            <h5 class="mb-4">State-of-the-Art Technologies. Flexible Libraries. Customizable Products.</h5>
+                            <!--.mb-3a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
+
+-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Benchmarking-->
+            <section class="page-section" id="benchmarking">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-6 col-md-12 half-box">
+                            <div class="col-lg-10">
+                                <h5 class="text-primary">// Benchmarking</h5>
+                                <h2 class="font-weight-bold">ParseQa outperforms custom GPT by 50% on complex data extraction & question answering</h2>
+                                <ul>
+                                    <li class="mt-1">Better performance even with much smaller local models.</li>
+                                    <li class="mt-1">Flexibly point ParseQa to larger models like GPT or Gemini for a bigger boost.</li>
+                                    <li class="mt-1">Ideal for technical manuals and scientific publications.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4"><img class="img-fluid lazyload" data-src="/assets/img/benchmarking_parseqa.png" alt="Benchmarking ParseQa" /></div>
+                    </div>
+                </div>
+                <div class="container px-4 px-lg-6 mt-5"></div>
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-6 col-md-12 mb-4"><img class="img-fluid lazyload" data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal" /></div>
+                        <div class="col-lg-6 col-md-12 half-box">
+                            <div class="col-lg-10">
+                                <h5 class="text-primary">// Benchmarking</h5>
+                                <h2 class="font-weight-bold">Multimodal data performance</h2>
+                                <ul>
+                                    <li class="mt-1">Significantly better answers from tables and diagrams.</li>
+                                    <li class="mt-1">More reliable across the board.</li>
+                                    <li class="mt-1">Navigate top-3 results with the UI for 100% quality assurance.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog-->
+            <section class="text-white page-section" id="blogs" style="background: url('/assets/img/prod_banner.jpg') no-repeat center center; background-size: cover">
+                <div class="container px-4 px-lg-5 text-center">
+                    <div class="col-lg-10 mx-auto text-center"><h1 class="font-weight-bold mt-0 mb-5">BLOGS</h1></div>
+                </div>
+                <div class="container-fluid">
+                    <div class="carousel slide mx-auto" id="myCarousel" data-bs-ride="carousel">
+                        <div class="carousel-inner row mx-auto col-lg-10">
+                            <div class="carousel-item active">
+                                <div class="col-md-4">
+                                    <div class="image-card mx-4">
+                                        <a class="blog-link" target="new" href="https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d">
+                                            <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg" style="width: 100%" alt="Blog image" /></div>
+                                            <h5 class="font-weight-bold mx-3 my-4">Get Set AI: Fast-track your company&rsquo;s transformation</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="image-card mx-4">
+                                        <a class="blog-link" target="new" href="https://medium.com/inscripta/product-search-is-broken-heres-how-99e08504bdd9">
+                                            <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png" style="width: 100%" alt="Blog image" /></div>
+                                            <h5 class="font-weight-bold mx-3 my-4">Product Search is Broken: Here&rsquo;s How</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="image-card mx-4">
+                                        <a class="blog-link" target="new" href="https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede">
+                                            <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg" style="width: 100%" alt="Blog image" /></div>
+                                            <h5 class="font-weight-bold mx-3 my-4">Does Conversational AI Need a Hippocratic Oath?</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="image-card mx-4">
+                                        <a class="blog-link" target="new" href="https://medium.com/inscripta/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer-74adbafe48c1">
+                                            <div class="card-box"><img class="lazyload" data-src="https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg" style="width: 100%" alt="Blog image" /></div>
+                                            <h5 class="font-weight-bold mx-3 my-4">Teaching computers how humans think ...</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Team-->
+            <section class="page-section bg-light" id="team">
+                <div class="container px-4 px-lg-2">
+                    <div class="col-lg-11 mx-auto">
+                        <div class="row mb-5">
+                            <div class="col-md-3"><h1 class="font-weight-bold">The Team</h1></div>
+                            <div class="col-md-9 mx-auto"><h5>Having worked at organizations such as IBM Research, Flipkart, VMware, Reliance, Schlumberger, multiple startups and research labs, we are equipped with deep, real-world AI expertise. Our team consists of Masters and PhDs from top universities like IIT Bombay, CMU and University of Birmingham (UK).</h5></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- === Anand Ramanathan ===-->
+                        <div class="col-lg-4 px-3 mb-4">
+                            <div class="team-profile-box-new mt-6">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="card-front-content">
+                                            <img class="lazyload" data-src="/assets/img/team/AR.jpg" alt="Anand's Profile Photo" />
+                                            <h4 class="text-primary font-weight-bold mb-2">Anand Ramanathan</h4>
+                                            <h6 class="mb-2">Cofounder</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h5>Anand Ramanathan</h5>
+                                        <a class="mb-2" href="https://www.linkedin.com/in/anand-ramanathan/" target="_blank" rel="noopener" aria-label="Anand's LinkeIn Page">
+                                            <svg class="icon_blue"><use href="#icon-linkedin"></use></svg>
+                                        </a>
+                                        <p>Anand has 15+ years of NLP/AI experience. He has developed AI solutions for varied domains including finance, telecom, and oil & gas, while working with organizations such as NCST, IBM Research, and Schlumberger. His work comprises machine translation systems, a smart search product for financial data analytics, an open source intelligence toolkit, a ticket analytics system, etc. Anand has a PhD in computer science from IIT Bombay.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === Vivek Mehta ===-->
+                        <div class="col-lg-4 px-3 mb-4">
+                            <div class="team-profile-box-new mt-6">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="card-front-content">
+                                            <img class="lazyload" data-src="/assets/img/team/VM.avif" alt="Vivek Mehta's Profile Photo" />
+                                            <h4 class="text-primary font-weight-bold mb-2">Vivek Mehta</h4>
+                                            <h6 class="mb-2">Cofounder</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h5>Vivek Mehta</h5>
+                                        <a class="mb-2" href="https://www.linkedin.com/in/vivek-mehta/" target="_blank" rel="noopener" aria-label="Vivek's LinkeIn Page">
+                                            <svg class="icon_blue"><use href="#icon-linkedin"></use></svg>
+                                        </a>
+                                        <p>Vivek has 15+ years of AI/ML experience. Before starting his entrepreneurial journey, he worked at various startups including Flipkart. He has experience in an array of problems like search and recommendations, personalization, ranking, handwriting recognition, fraud detection, online advertising, and others. Vivek holds a Master's degree from Carnegie Mellon University (US).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === Vivek Nallur ===-->
+                        <div class="col-lg-4 px-3 mb-4">
+                            <div class="team-profile-box-new mt-6">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="card-front-content">
+                                            <img class="lazyload" data-src="/assets/img/team/VN.avif" alt="Vivek Nallur's Profile Photo" />
+                                            <h4 class="text-primary font-weight-bold mb-2">Vivek Nallur</h4>
+                                            <h6 class="mb-2">Research and Academic Consultant</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <h5>Vivek Nallur</h5>
+                                        <a class="mb-2" href="https://www.linkedin.com/in/vivek-nallur-1b27231/" target="_blank" rel="noopener" aria-label="Vivek's LinkeIn Page">
+                                            <svg class="icon_blue"><use href="#icon-linkedin"></use></svg>
+                                        </a>
+                                        <p>Dr. Vivek Nallur is an Assistant Professor at University College Dublin. He works on Ethical AI and its applications in socio-technical systems. He is a member of the IEEE P7008 standards committee for Ethically Driven Nudging for Robotic, Intelligent, and Autonomous Systems. He has worked with evolutionary computing, multi-agent systems, and machine learning for his research. He has a PhD from the University of Birmingham (UK) and a Master's from Carnegie Mellon University (US). In a previous avatar, he worked in Silicon Valley at VMware Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section-->
+            <section class="page-section" id="contact">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 align-items-stretch">
+                        <!-- Get In Touch Section-->
+                        <div class="col-lg-6 mb-4 align-self-center">
+                            <h1 class="font-weight-bold text-primary mb-4">Get In Touch!</h1>
+                            <hr class="divider bg-secondary mx-0" />
+                            <h5 class="mb-3">
+                                Looking to add intelligence to your systems?
+                                <hr class="w-50" />
+                                Require customized deployment?
+                            </h5>
+                        </div>
+                        <!-- Contact Form Section  -->
+                        <div class="col-lg-6 mb-4">
+                            <div id="form-card">
+                                <!-- Contact Form Container-->
+                                <div id="contact-form" data-source="homepage_form"></div>
+                                <!-- Fallback Container (hidden by default)-->
+                                <div class="d-none" id="contact-fallback">
+                                    <div class="text-center">
+                                        <p class="mb-2">We couldn't load the contact form right now.</p>
+                                        <p class="mb-3">You can still reach us at:</p>
+                                        <p class="mb-3">
+                                            <strong>Email:</strong>
+                                            <a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                                        </p>
+                                        <div class="mt-4">
+                                            <a class="btn btn-secondary btn-lg" href="mailto:sales@inscripta.ai">
+                                                <i class="fas fa-envelope me-2"></i>
+                                                Send us an Email
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <!-- Footer-->
+        <footer class="bg-dark py-5 text-white" role="contentinfo">
+            <div class="container px-4 px-lg-5">
+                <div class="row">
+                    <!-- Left section: Logo and description-->
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <img class="img-logo mb-3" src="/assets/img/logo/logo-cs.png" alt="Inscripta AI Logo" />
+                        <p class="small text-light mb-3">Inscripta delivers AI solutions through both innovative products and expert consulting. Our offerings include ParseQa QABot for high-accuracy question answering and ParseQa Curate for intelligent content organization, alongside scalable capabilities in Generative AI, Agentic Workflows, LLMs, NLP, OCR, and Document AI. Whether through Saas applications, ready-to-deploy tools or customized engagements, we help enterprises streamline knowledge workflows, and accelerate AI adoption with measurable impact.</p>
+                        <div class="mb-2">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 540 540"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"></path></svg>
+                            <a class="text-info text-decoration-none" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                        </div>
+                        <div class="mb-2">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 540 540"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544     529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"></path></svg>
+                            <a class="text-info text-decoration-none align-items-center" href="https://www.linkedin.com/company/inscripta-ai/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                    <!-- Right sections: Products, Resources, Contact-->
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="row">
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Products</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light" href="/products/parseqa/qabot.html">ParseQa QABot</a></li>
+                                    <li><a class="text-light" href="/products/parseqa/curate.html">ParseQa Curate</a></li>
+                                    <li><a class="text-light" href="/products/norgai.html">NorgAI</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Resources</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light" href="/blog/">Blogs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white bold mb-3">Services</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light" href="/consulting.html">Consulting</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <h6 class="text-white mb-3">Contact</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light" href="mailto:sales@inscripta.ai">Email Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <div class="small text-light mt-2">
+                            &copy; 2025 Inscripta AI. All Rights Reserved.
+                            <a class="text-light mx-2">Terms of Service</a>
+                            <a class="text-light mx-2" href="/legal/privacy.html">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+        <!-- For loading images lazily-->
+        <script src="/js/lazysizes.min.js"></script>
+        <script src="/js/ls.unveilhooks.min.js"></script>
+        <link rel="stylesheet" href="https://website-bot.inscripta.ai/static/style.css" />
+        <!-- Load the chatbot bundle and auto-open-->
+        <script src="https://website-bot.inscripta.ai/static/chatbot.bundle.iife.js" onload="window.chatbotApp.openChat()"></script>
+        <!-- Load Contact Form CSS-->
+        <link rel="preload" href="https://website-bot.inscripta.ai/contact-form/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="https://website-bot.inscripta.ai/contact-form/style.css" /></noscript>
+        <!-- Main style-->
+        <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="/css/styles.min.css" rel="stylesheet" /></noscript>
+        <!-- carousel-->
+        <script async="" src="/js/carousel.js"></script>
+        <!-- Load Contact Form Bundle with fallback-->
+        <script>
+            (function () {
+                var scriptElement = document.createElement('script');
+                var formContainer = document.getElementById('contact-form');
+                var fallbackContainer = document.getElementById('contact-fallback');
+                var timeoutId;
+
+                scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
+
+                // Set timeout to show fallback after 5 seconds if form doesn't load
+                timeoutId = setTimeout(function () {
+                    if (formContainer && !formContainer.hasChildNodes()) {
+                        if (fallbackContainer) {
+                            fallbackContainer.classList.remove('d-none');
+                        }
+                        console.warn('Contact form timeout - showing fallback');
+                    }
+                }, 5000);
+
+                scriptElement.onload = function () {
+                    clearTimeout(timeoutId);
+                    console.log('Contact form loaded successfully');
+                };
+
+                scriptElement.onerror = function () {
+                    clearTimeout(timeoutId);
+                    if (fallbackContainer) {
+                        fallbackContainer.classList.remove('d-none');
+                    }
+                    console.error('Failed to load contact form - showing fallback');
+                };
+                document.body.appendChild(scriptElement);
+            })();
+        </script>
+        <noscript><link rel="stylesheet" href="https://website-bot.inscripta.ai/static/style.css"></noscript>
+    </body>
+</html>
