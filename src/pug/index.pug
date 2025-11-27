@@ -24,7 +24,7 @@ html(lang='en')
             link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&display=swap', rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
-        //link(rel='stylesheet' href='/css/critical.css')
+        link(rel='stylesheet' href='/css/critical.css')
             
         <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
         link(rel="preload" fetchpriority="high" as="image" href="/assets/img/h2.jpg" type="image/webp")
@@ -85,8 +85,6 @@ html(lang='en')
                                     a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
                         .col-lg-6.col-md-12
                                 img.img-fluid.lazyload(data-src="/assets/img/about_inscripta_ai.avif" width="408px" height="363px" alt="AI in action")
-                     
-
 
             // Customers
             section#customers.bg-white.pb-5
@@ -94,11 +92,13 @@ html(lang='en')
                 // Marquee Wrapper
                 .customer-marquee-wrapper.overflow-hidden.mb-4
                     .customer-marquee.d-flex.align-items-center
-                        each logo in ['automation_edge.avif', 'excelra.avif', 'ips_group.avif', 'Terrantic_logo_FC.avif', 'manipal_technologies_limited.avif', 'spottabl.avif', 'tenders_on_time.avif', 'xanthus.avif']
+                        - const logos = ['automation_edge.avif', 'excelra.avif', 'ips_group.avif', 'Terrantic_logo_FC.avif',  'manipal_technologies_limited.avif', 'spottabl.avif', 'tenders_on_time.avif', 'xanthus.avif']
+                        each logo in logos.concat(logos)
                             .logo-item.mx-4
-                                img.lazyload(data-src=`/assets/img/customers/${logo}` alt=logo max-width="500 px" height="60px")
+                                img.lazyload(data-src=`/assets/img/customers/${logo}` alt=logo max-width="500" height="60")
+
                         //- // Repeat the same list for seamless loop
-                        //- each logo in ['automation_edge.png', 'excelra.png', 'ips_group.png', 'Terrantic_logo_FC.png', 'manipal_technologies_limited.png', 'spottabl.png', 'tenders_on_time.png', 'xanthus.png']
+                        //- each logo in ['automation_edge.avif', 'excelra.avif', 'ips_group.avif', 'Terrantic_logo_FC.avif', 'manipal_technologies_limited.avif', 'spottabl.avif', 'tenders_on_time.avif', 'xanthus.avif']
                         //-     .logo-item.mx-4
                         //-         img(src=`/assets/img/customers/${logo}` alt=logo style="height: 60px")
 
