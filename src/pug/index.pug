@@ -229,6 +229,7 @@ html(lang='en')
                                     li.mt-1 Navigate top-3 results with the UI for 100% quality assurance.
                         
 
+
             // Blog
             section#blogs.text-white.page-section(style="background: url('/assets/img/prod_banner.jpg') no-repeat center center; background-size: cover;")
                 .container.px-4.px-lg-5.text-center
@@ -237,40 +238,151 @@ html(lang='en')
                 .container-fluid    
                     #myCarousel.carousel.slide(data-bs-ride="carousel").mx-auto
                         .carousel-inner.row.mx-auto.col-lg-10
+
+                            // === AI Anxiety ===
                             .carousel-item.active
                                 .col-md-4
                                     .image-card.mx-4
-                                        a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/managing-ai-anxiety-a-case-study-with-notebooklm/')
                                             .card-box
-                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%" alt="Blog image")
-                                            h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
+                                                img.lazyload(
+                                                    src="/assets/img/blog/ai-anxiety-notebooklm-400.avif"
+                                                    srcset="/assets/img/blog/ai-anxiety-notebooklm-400.avif 400w, /assets/img/blog/ai-anxiety-notebooklm-800.avif 800w, /assets/img/blog/ai-anxiety-notebooklm-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="Managing AI anxiety"
+                                                )
+                                            h5.font-weight-bold.mx-3.my-4 Managing AI anxiety: a case study with NotebookLM
+
+                            // === Data curation QABots ===
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
-                                        a.blog-link(target='new' href='https://medium.com/inscripta/product-search-is-broken-heres-how-99e08504bdd9')
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/unlocking-the-secret-to-effective-enterprise-data-curation-and-qabots/')
                                             .card-box
-                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*PCm8-X-YzQORT8mpZNxcJw.png', style="width: 100%" alt="Blog image")
-                                            h5.font-weight-bold.mx-3.my-4 Product Search is Broken: Here&rsquo;s How
+                                                img.lazyload(
+                                                    src="/assets/img/blog/data-curation-qabots-400.avif"
+                                                    srcset="/assets/img/blog/data-curation-qabots-400.avif 400w, /assets/img/blog/data-curation-qabots-800.avif 800w, /assets/img/blog/data-curation-qabots-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="Data curation and QA bots"
+                                                )
+                                            h5.font-weight-bold.mx-3.my-4 Unlocking the secret to effective enterprise data curation and QAbots
+
+                            // === Pretrained Language Models ===
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
-                                        a.blog-link(target='new' href='https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede')
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/research-highlight-pretrained-language-models-language-fundamentals-better-performance/')
                                             .card-box
-                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%" alt="Blog image")
+                                                img.lazyload(
+                                                    src="/assets/img/blog/pretrained-language-models-400.avif"
+                                                    srcset="/assets/img/blog/pretrained-language-models-400.avif 400w, /assets/img/blog/pretrained-language-models-800.avif 800w, /assets/img/blog/pretrained-language-models-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="Pretrained Language Models"
+                                                )
+                                            h5.font-weight-bold.mx-3.my-4 Research highlight: Pretrained Language Models + Language Fundamentals = Better Performance
+
+                            // === NLP Bertera ===
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/nlp-for-business-in-the-time-of-bertera-seven-misplaced-passions/')
+                                            .card-box
+                                                img.lazyload(
+                                                    src="/assets/img/blog/nlp-bertera-400.avif"
+                                                    srcset="/assets/img/blog/nlp-bertera-400.avif 400w, /assets/img/blog/nlp-bertera-800.avif 800w, /assets/img/blog/nlp-bertera-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="NLP for Business"
+                                                )
+                                            h5.font-weight-bold.mx-3.my-4 NLP for Business in the Time of BERTera: Seven Misplaced Passions
+
+                            // === ParseQA Knowledge Search ===
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/parseqa-pushing-the-boundaries-of-knowledge-search/')
+                                            .card-box
+                                                img.lazyload(
+                                                    src="/assets/img/blog/parseqa-knowledge-search-400.avif"
+                                                    srcset="/assets/img/blog/parseqa-knowledge-search-400.avif 400w, /assets/img/blog/parseqa-knowledge-search-800.avif 800w, /assets/img/blog/parseqa-knowledge-search-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="ParseQa Knowledge Search"
+                                                )
+                                            h5.font-weight-bold.mx-3.my-4 ParseQa: Pushing the Boundaries of Knowledge Search
+
+                            // === Get Set AI ===
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/get-set-ai-fast-track-your-companys-transformation/')
+                                            .card-box
+                                                img.lazyload(
+                                                    src="/assets/img/blog/get-set-ai-400.avif"
+                                                    srcset="/assets/img/blog/get-set-ai-400.avif 400w, /assets/img/blog/get-set-ai-800.avif 800w, /assets/img/blog/get-set-ai-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="Get Set AI"
+                                                )
+                                            h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company's transformation
+
+                            // === Teaching Computers ===
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer/')
+                                            .card-box
+                                                img.lazyload(
+                                                    src="/assets/img/blog/teaching-computer-400.avif"
+                                                    srcset="/assets/img/blog/teaching-computer-400.avif 400w, /assets/img/blog/teaching-computer-800.avif 800w, /assets/img/blog/teaching-computer-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="Teaching Computers"
+                                                )
+                                            h5.font-weight-bold.mx-3.my-4 Teaching computers how humans think by creating questions computers cannot answer
+
+                            // === Hippocratic Oath ===
+                            .carousel-item
+                                .col-md-4
+                                    .image-card.mx-4
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/does-conversational-ai-need-a-hippocratic-oath/')
+                                            .card-box
+                                                img.lazyload(
+                                                    src="/assets/img/blog/hippocratic-oath-400.avif"
+                                                    srcset="/assets/img/blog/hippocratic-oath-400.avif 400w, /assets/img/blog/hippocratic-oath-800.avif 800w, /assets/img/blog/hippocratic-oath-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="Hippocratic Oath"
+                                                )
                                             h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
+
+                            // === Product Search Broken ===
                             .carousel-item
                                 .col-md-4
                                     .image-card.mx-4
-                                        a.blog-link(target='new' href='https://medium.com/inscripta/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer-74adbafe48c1')
+                                        a.blog-link(target='new' href='https://blog.inscripta.ai/product-search-is-broken-heres-how/')
                                             .card-box
-                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*3mPvtGe1aOE-uCIUbrrTGQ.jpeg', style="width: 100%" alt="Blog image")
-                                            h5.font-weight-bold.mx-3.my-4 Teaching computers how humans think ...
+                                                img.lazyload(
+                                                    src="/assets/img/blog/product-search-broken-400.avif"
+                                                    srcset="/assets/img/blog/product-search-broken-400.avif 400w, /assets/img/blog/product-search-broken-800.avif 800w, /assets/img/blog/product-search-broken-1200.avif 1200w"
+                                                    sizes="(max-width: 600px) 100vw, 33vw"
+                                                    style="width:100%"
+                                                    alt="Product Search"
+                                                )
+                                            h5.font-weight-bold.mx-3.my-4 Product Search is Broken: Here's How
+
                         a.carousel-control-prev(href='#myCarousel' role='button' data-bs-slide='prev')
                             span.carousel-control-prev-icon(aria-hidden='true')
                             span.sr-only Previous
                         a.carousel-control-next(href='#myCarousel' role='button' data-bs-slide='next')
                             span.carousel-control-next-icon(aria-hidden='true')
                             span.sr-only Next
+
+
+
 
             
             
@@ -360,18 +472,20 @@ html(lang='en')
                                 // Contact Form Container
                                 #contact-form(data-source="homepage_form")
 
-                                // Fallback Container (hidden by default)
-                                #contact-fallback.d-none
-                                    .text-center
-                                        p.mb-2 We couldn't load the contact form right now.
-                                        p.mb-3 You can still reach us at:
-                                        p.mb-3
-                                            strong Email: 
-                                            a.text-primary(href="mailto:sales@inscripta.ai") sales@inscripta.ai
-                                        .mt-4
-                                            a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
-                                                i.fas.fa-envelope.me-2
-                                                | Send us an Email
+
+                            // Fallback Container (hidden by default)
+                            #contact-fallback.d-none
+                                .text-center
+                                    p.mb-2 We couldn't load the contact form right now.
+                                    p.mb-3 You can still reach us at:
+                                    p.mb-3
+                                        strong Email: 
+                                        a.text-primary(href="mailto:sales@inscripta.ai") sales@inscripta.ai
+                                    .mt-4
+                                        a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
+                                            i.fas.fa-envelope.me-2
+                                            | Send us an Email
+
 
 
         // Footer
@@ -391,37 +505,39 @@ html(lang='en')
         script(async='' src='/js/carousel.js')
 
 
-        // Load Contact Form Bundle with fallback
         script.
-            (function() {
-                var scriptElement = document.createElement('script');
-                var formContainer = document.getElementById('contact-form');
-                var fallbackContainer = document.getElementById('contact-fallback');
-                var timeoutId;
-                
-                scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
-                
-                // Set timeout to show fallback after 5 seconds if form doesn't load
-                timeoutId = setTimeout(function() {
-                    if (formContainer && !formContainer.hasChildNodes()) {
+            document.addEventListener('DOMContentLoaded', function () {
+                setTimeout(function() {
+                    var scriptElement = document.createElement('script');
+                    var formContainer = document.getElementById('contact-form');
+                    var fallbackContainer = document.getElementById('contact-fallback');
+                    var timeoutId;
+
+                    scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
+
+                    timeoutId = setTimeout(function() {
+                        if (formContainer && !formContainer.hasChildNodes()) {
+                            if (fallbackContainer) {
+                                fallbackContainer.classList.remove('d-none');
+                            }
+                            console.warn('Contact form timeout - showing fallback');
+                        }
+                    }, 5000);
+
+                    scriptElement.onload = function() {
+                        clearTimeout(timeoutId);
+                        console.log('Contact form loaded successfully');
+                    };
+
+                    scriptElement.onerror = function() {
+                        clearTimeout(timeoutId);
                         if (fallbackContainer) {
                             fallbackContainer.classList.remove('d-none');
                         }
-                        console.warn('Contact form timeout - showing fallback');
-                    }
-                }, 5000);
-                
-                scriptElement.onload = function() {
-                    clearTimeout(timeoutId);
-                    console.log('Contact form loaded successfully');
-                };
-                
-                scriptElement.onerror = function() {
-                    clearTimeout(timeoutId);
-                    if (fallbackContainer) {
-                        fallbackContainer.classList.remove('d-none');
-                    }
-                    console.error('Failed to load contact form - showing fallback');
-                };
-                document.body.appendChild(scriptElement);
-            })();
+                        console.error('Failed to load contact form - showing fallback');
+                    };
+
+                    document.body.appendChild(scriptElement);
+                }, 1500); // Load AFTER initial render
+            });
+

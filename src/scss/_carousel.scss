@@ -1,4 +1,3 @@
-
 @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none;
@@ -31,4 +30,16 @@
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
   transform: translateX(0);
+}
+
+
+#myCarousel {
+
+  .card-box img{
+    transition: transform 0.3s ease;
+  }
+
+  .blog-link:hover .card-box img {
+        transform: scale(1.05);
+  }    
 }
