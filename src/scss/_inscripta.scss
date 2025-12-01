@@ -6,6 +6,14 @@ img.img-logo {
   height: 40px;
 }
 
+p {
+  line-height: 1.1;
+}
+
+p.bigger {
+  font-size: 1.2rem;
+}
+
 .h1 {
   font-size: 3rem;
 }
@@ -502,8 +510,6 @@ a i.fab.fa-linkedin {
 }
 
 
-
-
 // case study
 .highlight-grid-box {
     border: 2px solid #192b80;
@@ -705,4 +711,332 @@ a i.fab.fa-linkedin {
   width: 24px;
   height: 24px;
   fill: #0c66c2; /* takes text color */
+}
+/* ===========================
+   AI Product Suite Section
+   =========================== */
+.ai-suite {
+    /* If you want slightly different card/bg just for this block, do it here
+       otherwise you can even drop these overrides. */
+    --bg-card: #ffffff;
+    --border-card: #e1e4ee;
+    --shadow-card: 0 18px 45px rgba(15, 23, 42, 0.08);
+
+    --text-main: #0f172a;
+    --text-muted: #6b7280;
+
+    --accent-qabot: #1d4ed8;
+    --accent-curate: #dc2626;
+    --accent-norgai: #7c3aed;
+
+    --pill-bg: #eef2ff;
+    --pill-text: #4f46e5;
+
+    --radius-card: 20px;
+    --radius-pill: 999px;
+
+    /*max-width: 1120px;*/
+    margin: 0 auto;
+    /*padding: 64px 20px 80px;*/
+    color: var(--text-main);
+}
+
+/* If you want local box-sizing reset just for this block */
+.ai-suite,
+.ai-suite * {
+    box-sizing: border-box;
+}
+
+.ai-suite {
+    /*max-width: 1120px;*/
+    margin: 0 auto;
+    /*padding: 64px 20px 80px;*/
+}
+
+.ai-suite-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.ai-suite-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding: 6px 15px 4px 15px;
+    border-radius: var(--radius-pill);
+    background: #e0ecff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: #192b80;
+}
+
+.ai-suite-title {
+    font-size: clamp(28px, 3vw, 34px);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.ai-suite-subtitle {
+    #font-size: 15px;
+    max-width: 680px;
+    color: var(--text-muted);
+}
+
+.ai-suite-grid {
+    display: grid;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+@media (min-width: 900px) {
+    .ai-suite-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.product-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-card);
+    padding: 22px 22px 24px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border-card);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height:95px;
+}
+
+.product-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-kicker {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.product-name {
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.product-chevron {
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.product-pill {
+    padding: 4px 11px;
+    border-radius: var(--radius-pill);
+    font-size: 11px;
+    font-weight: 600;
+    background: var(--pill-bg);
+    color: var(--pill-text);
+    white-space: nowrap;
+}
+
+.product-desc {
+    #font-size: 14px;
+    color: var(--text-muted);
+}
+
+.product-use-when {
+    font-size: 15px;
+    background: #f3f4ff;
+    border-radius: 14px;
+    padding: 8px 12px;
+    color: #4338ca;
+    min-height: 75px;
+
+}
+
+.product-use-when span {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: #6366f1;
+    margin-right: 6px;
+}
+
+.product-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+    font-size: 14px;
+    color: var(--text-main);
+}
+
+.product-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.product-bullet-dot {
+    margin-top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.product-cta-row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.product-cta {
+    border-radius: var(--radius-pill);
+    border: none;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #0f172a;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.25);
+    white-space: nowrap;
+}
+
+.product-cta span {
+    font-size: 15px;
+}
+
+.product-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.3);
+    background: #020617;
+}
+
+.product-meta {
+    color: var(--text-muted);
+    font-size: 12px;
+    text-align: right;
+}
+
+/* Accent colors per product */
+
+.product-qabot .product-bullet-dot {
+    background: var(--accent-qabot);
+}
+
+.product-curate .product-bullet-dot {
+    background: var(--accent-curate);
+}
+
+.product-norgai .product-bullet-dot {
+    background: var(--accent-norgai);
+}
+
+.product-qabot .product-pill {
+    background: rgba(37, 99, 235, 0.08);
+    color: #1d4ed8;
+}
+
+.product-curate .product-pill {
+    background: rgba(220, 38, 38, 0.06);
+    color: #b91c1c;
+}
+
+.product-norgai .product-pill {
+    background: rgba(124, 58, 237, 0.08);
+    color: #7c3aed;
+}
+
+.product-qabot .product-cta {
+    background: var(--accent-qabot);
+}
+
+.product-qabot .product-cta:hover {
+    background: #1e40af;
+}
+
+.product-curate .product-cta {
+    background: var(--accent-curate);
+}
+
+.product-curate .product-cta:hover {
+    background: #b91c1c;
+}
+
+.product-norgai .product-cta {
+    background: var(--accent-norgai);
+}
+
+.product-norgai .product-cta:hover {
+    background: #6d28d9;
+}
+
+/* Optional: mini comparison bar */
+
+.ai-suite-compare {
+    margin-top: 40px;
+    padding: 16px 18px;
+    max-width:600px;
+    border-radius: 16px;
+    background: #e5f0ff;
+    #font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-inline: auto;
+}
+
+.ai-suite-compare-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 11px;
+    color: #1f2937;
+}
+
+.ai-suite-compare-segment span {
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    .product-card {
+        padding: 18px 16px 20px;
+    }
+
+    .product-cta-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-meta {
+        text-align: left;
+    }
 }

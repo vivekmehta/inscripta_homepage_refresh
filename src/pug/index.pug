@@ -62,7 +62,7 @@ html(lang='en')
                     .col-lg-8.align-self-end
                         h1.text-white.font-weight-bold AI INTEGRATION.<br>FAST-TRACKED. 
                     .col-lg-8.align-self-baseline.mt-5
-                        h3.text-white.mb-5
+                        h2.text-white.mb-5
                             span.fw-bold.text-secondary On-prem AI Agents
                             | to 
                             span.fw-bold.text-secondary automate 
@@ -71,16 +71,17 @@ html(lang='en')
                             a.btn.btn-xl.btn-secondary(href='#about') KNOW MORE
 
         main(role="main")
-            // About
+
+            // About Section
             section#about.page-section.bg-white
                 .container.px-4.px-lg-5
                     .row.gx-4.gx-lg-5
                         .col-lg-6.col-md-12.half-box
                             .col-lg-10
-                                h5.text-primary // About Inscripta
-                                h1.font-weight-bold  Your Partner for AI Transformation
-                                h5.mt-4.mb-4 Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.
-                                h5.mt-4.mb-4 Across industries, multiple companies have adopted our AI technologies to elevate their offerings and streamline workflows.
+                                .ai-suite.ai-suite-eyebrow About Inscripta
+                                h2.font-weight-bold  Your Partner for AI Transformation
+                                p.bigger.mt-4.mb-4 Inscripta is an AI technology & consulting company that helps businesses fast-track integration of AI capabilities, through high quality customizable products.
+                                p.bigger.mt-4.mb-4 Across industries, multiple companies have adopted our AI technologies to elevate their offerings and streamline workflows.
                                 //.mt-5
                                     a.btn.btn-secondary-outline.btn-xl(href='#products') Explore products                   
                         .col-lg-6.col-md-12
@@ -88,7 +89,7 @@ html(lang='en')
 
             // Customers
             section#customers.bg-white.pb-5
-                h4.text-center.mb-5.satisfied-customers-heading Powering AI Innovation Across Industries
+                h2.text-center.mb-5.satisfied-customers-heading Powering AI Innovation Across Industries
                 // Marquee Wrapper
                 .customer-marquee-wrapper.overflow-hidden.mb-4
                     .customer-marquee.d-flex.align-items-center
@@ -104,7 +105,7 @@ html(lang='en')
 
 
             // PRODUCTS 
-            section#products.page-section.bg-light
+            //- section#products.page-section.bg-light
                 .container.px-4.px-lg-2
                     .row.gx-4.gx-lg-5.mb-5
                         .col-lg-5.col-md-5
@@ -154,6 +155,126 @@ html(lang='en')
                                             li.mb-3 Catches critical gaps between sources and deliverables
                                             li.mb-3 Purpose-built for PS workflows — one dedicated workspace, no tool switching
                                     a(href='/products/norgai.html') Know More
+
+
+            //Product new
+            section#products.bg-light.page-section
+              .container.px-4.px-lg-5.ai-suite(aria-labelledby="ai-suite-title")
+                header.ai-suite-header.mx-2
+                    .ai-suite-eyebrow Inscripta AI Suite
+                    h2.ai-suite-title#ai-suite-title
+                        | From knowledge to client-ready deliverables
+                    p.bigger.ai-suite-subtitle
+                        | Inscripta’s products combine Generative AI, agentic workflows, and
+                        | document intelligence to help teams search, extract, and deliver with
+                        | traceable, enterprise-grade reliability.
+
+                .ai-suite-grid
+                    //- ParseQa QABot
+                    article.product-card.product-qabot
+                        header.product-header
+                            .product-title-wrap
+                                .product-kicker Ask & Understand
+                                h3.product-name
+                                    | ParseQa QABot
+                                    span.product-chevron ↗
+                            .product-pill Enterprise Knowledge Q&A
+
+                        p.product-desc
+                            | Ask questions of your enterprise knowledge base and get evidence-backed
+                            | answers in seconds, with direct links to the source documents.
+
+                        .product-use-when
+                            span Use when
+                            | knowledge workers or support teams spend time searching policies,
+                            | contracts, or manuals.
+
+                        ul.blue-bullets
+                            li.mb-3 Answers come with citations and highlighted source passages.
+                            li.mb-3 Supports PDFs, PPTs, web pages, and other internal repositories.
+                            li.mb-3 Reduces expert escalations and repetitive questions.
+
+                        .product-cta-row
+                            a.product-cta(href="/products/parseqa/qabot.html")
+                                | Explore QABot
+                                span → 
+                            .product-meta Ideal for internal search & self-service help.
+
+                    //- ParseQa Curate
+                    article.product-card.product-curate
+                        header.product-header
+                            .product-title-wrap
+                                .product-kicker Extract & Curate
+                                h3.product-name
+                                    | ParseQa Curate
+                                    span.product-chevron ↗
+                            .product-pill Document Data Extraction
+
+                        p.product-desc
+                            | Contextual extraction and curation of structured data from contracts,
+                            | forms, financial statements, and large PDF collections—fully traceable.
+
+                        .product-use-when
+                            span Use when
+                            | you need reliable tables, records, or tags from unstructured documents.
+
+                        ul.red-bullets
+                            li.mb-3 Fine-grained source tracing for every extracted field.
+                            li.mb-3 Human-in-the-loop review workflows for 100% critical cases.
+                            li.mb-3 Robust extraction from complex PDFs, scans, and tables.
+
+                        .product-cta-row
+                            a.product-cta(href="/products/parseqa/curate.html")
+                                | View extraction possibilities
+                                span → 
+                            .product-meta Ideal for ops, risk, and compliance teams.
+
+                    //- NorgAI
+                    article.product-card.product-norgai
+                        header.product-header
+                            .product-title-wrap
+                                .product-kicker Synthesize & Deliver
+                                h3.product-name
+                                    | NorgAI
+                                    span.product-chevron ↗
+                            .product-pill AI Workspace for PS Teams
+
+                        p.product-desc
+                            | A GenAI assistant purpose-built for professional services workflows—
+                            | from research and analysis to polished client deliverables.
+
+                        .product-use-when
+                            span Use when
+                            | consultants or PS teams need consistent, on-brand outputs at scale.
+
+                        ul.blue-bullets
+                            li.mb-3
+                                div Generates slides, reports, and summaries tied back to evidence.
+                            li.mb-3
+                                div Captures critical gaps between sources and deliverables.
+                            li.mb-3
+                                div One dedicated workspace—no tool switching for each project.
+
+                        .product-cta-row
+                            a.product-cta(href="/products/norgai.html")
+                                | Untap AI workflows
+                                span → 
+                            .product-meta Ideal for consulting & delivery teams.
+
+                //- Optional mini compare strip
+                .ai-suite-compare
+                    .ai-suite-compare-title Which product do I start with?
+                    .ai-suite-compare-segment
+                        span ParseQa QABot
+                        |  → when your users need answers from documents.
+                    .ai-suite-compare-segment
+                        span ParseQa Curate
+                        |  → when you need structured data from documents.
+                    .ai-suite-compare-segment
+                        span NorgAI
+                        |  → when you need client-ready deliverables.
+
+
                         
             // Benchmarking
             section#benchmarking.page-section
@@ -161,7 +282,8 @@ html(lang='en')
                     .row.gx-4.gx-lg-5
                         .col-lg-6.col-md-12.half-box
                             .col-lg-10
-                                h5.text-primary // Benchmarking
+                                //h5.text-primary // Benchmarking
+                                .ai-suite.ai-suite-eyebrow Benchmarking
                                 h2.font-weight-bold ParseQa outperforms custom GPT by 50% on complex data extraction & question answering
                                 ul
                                     li.mt-1 Better performance even with much smaller local models.
@@ -176,7 +298,7 @@ html(lang='en')
                             img.img-fluid.lazyload(data-src="/assets/img/benchmarking_multimodal.png" alt="Benchmarking Multimodal")
                         .col-lg-6.col-md-12.half-box
                             .col-lg-10
-                                h5.text-primary // Benchmarking
+                                .ai-suite.ai-suite-eyebrow Benchmarking
                                 h2.font-weight-bold Multimodal data performance
                                 ul
                                     li.mt-1 Significantly better answers from tables and diagrams.
@@ -191,8 +313,8 @@ html(lang='en')
                         .col-lg-8.mb-4
                             img.img-fluid.img-tech-stack.lazyload(data-src="/assets/img/parseqa_stack_new.png" alt="Inscripta Stack", width="730px")
                         .col-lg-4.px-5.align-self-center
-                            h1.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
-                            h5.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
+                            h2.font-weight-bold.mt-3.mb-4 Inscripta Technology Stack
+                            h4.mb-4 State-of-the-Art Technologies. Flexible Libraries. Customizable Products.
                             //.mb-3
                                 a.btn.btn-secondary-outline.btn-xl(href='#blogs') Read our blogs
                         
@@ -478,7 +600,6 @@ html(lang='en')
                                         a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
                                             i.fas.fa-envelope.me-2
                                             | Send us an Email
-
 
 
         // Footer
