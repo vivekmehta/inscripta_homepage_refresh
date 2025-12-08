@@ -525,10 +525,10 @@ html(lang='en')
                                     .card-front
                                         .card-front-content
                                             img.lazyload(data-src="/assets/img/team/AR.jpg", alt="Anand's Profile Photo")
-                                            h4.text-primary.font-weight-bold.mb-2 Anand Ramanathan
+                                            h3.text-primary.mb-2 Anand Ramanathan
                                             p.mb-2 Cofounder
                                     .card-back
-                                        h5 Anand Ramanathan
+                                        h3 Anand Ramanathan
                                         a.mb-2(href="https://www.linkedin.com/in/anand-ramanathan/", target="_blank", rel="noopener", aria-label="Anand's LinkeIn Page")
                                             svg.icon_blue
                                                 use(href='#icon-linkedin')
@@ -542,10 +542,10 @@ html(lang='en')
                                     .card-front
                                         .card-front-content
                                             img.lazyload(data-src="/assets/img/team/VM.avif", alt="Vivek Mehta's Profile Photo")
-                                            h4.text-primary.font-weight-bold.mb-2 Vivek Mehta
+                                            h3.name.text-primary.mb-2 Vivek Mehta
                                             p.mb-2 Cofounder
                                     .card-back
-                                        h5 Vivek Mehta
+                                        h3.name Vivek Mehta
                                         a.mb-2(href="https://www.linkedin.com/in/vivek-mehta/", target="_blank", rel="noopener", aria-label="VM's LinkeIn Page")
                                             svg.icon_blue
                                                 use(href='#icon-linkedin')
@@ -559,10 +559,10 @@ html(lang='en')
                                     .card-front
                                         .card-front-content
                                             img.lazyload(data-src="/assets/img/team/VN.avif", alt="Vivek Nallur's Profile Photo")
-                                            h4.text-primary.font-weight-bold.mb-2 Vivek Nallur
+                                            h3.name.text-primary.mb-2 Vivek Nallur
                                             p.mb-2 Research and Academic Consultant
                                     .card-back
-                                        h5 Vivek Nallur
+                                        h3.name Vivek Nallur
                                         a.mb-2(href="https://www.linkedin.com/in/vivek-nallur-1b27231/", target="_blank", rel="noopener", aria-label="Vivek Nallur's LinkeIn Page")
                                             svg.icon_blue
                                                 use(href='#icon-linkedin')
@@ -600,17 +600,15 @@ html(lang='en')
                                         a.text-primary(href="mailto:sales@inscripta.ai") sales@inscripta.ai
                                     .mt-4
                                         a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
-                                            i.fas.fa-envelope.me-2
                                             | Send us an Email
 
 
         // Footer
         include /pug/includes/footer_new.pug
 
-        // Load Contact Form CSS
-        link(rel='preload' href='https://website-bot.inscripta.ai/contact-form/style.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
-        noscript
-            link(rel="stylesheet", href="https://website-bot.inscripta.ai/contact-form/style.css")
+        // Contact
+        include /pug/includes/contact.pug
+
 
         // Main style
         link(rel='preload' href='/css/styles.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
@@ -619,41 +617,3 @@ html(lang='en')
 
         // carousel
         script(async='' src='/js/carousel.js')
-
-
-        script.
-            document.addEventListener('DOMContentLoaded', function () {
-                setTimeout(function() {
-                    var scriptElement = document.createElement('script');
-                    var formContainer = document.getElementById('contact-form');
-                    var fallbackContainer = document.getElementById('contact-fallback');
-                    var timeoutId;
-
-                    scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
-
-                    timeoutId = setTimeout(function() {
-                        if (formContainer && !formContainer.hasChildNodes()) {
-                            if (fallbackContainer) {
-                                fallbackContainer.classList.remove('d-none');
-                            }
-                            console.warn('Contact form timeout - showing fallback');
-                        }
-                    }, 5000);
-
-                    scriptElement.onload = function() {
-                        clearTimeout(timeoutId);
-                        console.log('Contact form loaded successfully');
-                    };
-
-                    scriptElement.onerror = function() {
-                        clearTimeout(timeoutId);
-                        if (fallbackContainer) {
-                            fallbackContainer.classList.remove('d-none');
-                        }
-                        console.error('Failed to load contact form - showing fallback');
-                    };
-
-                    document.body.appendChild(scriptElement);
-                }, 1500); // Load AFTER initial render
-            });
-

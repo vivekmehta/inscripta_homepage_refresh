@@ -1,0 +1,43 @@
+//-contact.pug
+
+// Contact Form CSS
+link(rel='preload' href='https://website-bot.inscripta.ai/contact-form/style.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+noscript
+    link(rel="stylesheet", href="https://website-bot.inscripta.ai/contact-form/style.css")
+
+script.
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+            var scriptElement = document.createElement('script');
+            var formContainer = document.getElementById('contact-form');
+            var fallbackContainer = document.getElementById('contact-fallback');
+            var timeoutId;
+
+            scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
+
+            timeoutId = setTimeout(function() {
+                if (formContainer && !formContainer.hasChildNodes()) {
+                    if (fallbackContainer) {
+                        fallbackContainer.classList.remove('d-none');
+                    }
+                    console.warn('Contact form timeout - showing fallback');
+                }
+            }, 5000);
+
+            scriptElement.onload = function() {
+                clearTimeout(timeoutId);
+                console.log('Contact form loaded successfully');
+            };
+
+            scriptElement.onerror = function() {
+                clearTimeout(timeoutId);
+                if (fallbackContainer) {
+                    fallbackContainer.classList.remove('d-none');
+                }
+                console.error('Failed to load contact form - showing fallback');
+            };
+
+            document.body.appendChild(scriptElement);
+        }, 1500); // Load AFTER initial render
+    });
+

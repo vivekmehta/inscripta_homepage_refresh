@@ -7,17 +7,15 @@
         <meta name="author" content="Team Inscripta" />
         <title>GenAI Assistant for Professional Services Teams</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
         <!--Font-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet" />
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link href="https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet" /></noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet" /></noscript>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&amp;display=swap" rel="stylesheet" /></noscript>
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/css/critical.css" rel="stylesheet" />
-        <!-- Font Awesome-->
-        <link rel="preload" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" /></noscript>
+        <link rel="stylesheet" href="/css/critical.css" />
         <!-- Google Tag Manager-->
         <script>
             (function (w, d, s, l, i) {
@@ -213,22 +211,27 @@
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 align-items-center mb-5">
-                    <div class="col-lg-7">
-                        <div class="contact-card col-lg-10"><h3 class="text-primary mx-4 my-3">Save weeks of PS effort per project - improve quality, consistency, and client confidence.</h3></div>
+                    <div class="col-lg-6">
+                        <div class="contact-card col-lg-10"><h3 class="text-primary mx-4 my-3">Save weeks of PS effort per project with improved quality, consistency, and client confidence.</h3></div>
                     </div>
-                    <div class="col-lg-5">
-                        <h2 class="mt-4 mt-lg-0">Get In Touch!</h2>
-                        <hr class="divider bg-secondary mx-0" />
-                        <h6 class="mb-4">
-                            Find out what NorgAI can do for you
-                            <hr class="w-50" />
-                            Speak to an expert, request an assesment, see the demo of solutions
-                            <br />
-                        </h6>
-                        <p class="flex-align-content-center">
-                            <i class="fa fa-envelope fa-2x sr-contact text-primary"></i>
-                            <a class="mx-3 mt-2" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
-                        </p>
+                    <!-- Contact Form Section  -->
+                    <div class="col-lg-6 mb-4">
+                        <div id="form-card">
+                            <!-- Contact Form Container-->
+                            <div id="contact-form" data-source="homepage_form"></div>
+                        </div>
+                        <!-- Fallback Container (hidden by default)-->
+                        <div class="d-none" id="contact-fallback">
+                            <div class="text-center">
+                                <p class="mb-2">We couldn't load the contact form right now.</p>
+                                <p class="mb-3">You can still reach us at:</p>
+                                <p class="mb-3">
+                                    <strong>Email:</strong>
+                                    <a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                                </p>
+                                <div class="mt-4"><a class="btn btn-secondary btn-lg" href="mailto:sales@inscripta.ai">Send us an Email</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,6 +307,46 @@
         <link rel="stylesheet" href="https://website-bot.inscripta.ai/static/style.css" />
         <!-- Load the chatbot bundle and auto-open-->
         <script src="https://website-bot.inscripta.ai/static/chatbot.bundle.iife.js" onload="window.chatbotApp.openChat()"></script>
+        <!-- Contact-->
+        <!-- Contact Form CSS-->
+        <link rel="preload" href="https://website-bot.inscripta.ai/contact-form/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="https://website-bot.inscripta.ai/contact-form/style.css" /></noscript>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                setTimeout(function () {
+                    var scriptElement = document.createElement('script');
+                    var formContainer = document.getElementById('contact-form');
+                    var fallbackContainer = document.getElementById('contact-fallback');
+                    var timeoutId;
+
+                    scriptElement.src = 'https://website-bot.inscripta.ai/contact-form/contactform.bundle.iife.js';
+
+                    timeoutId = setTimeout(function () {
+                        if (formContainer && !formContainer.hasChildNodes()) {
+                            if (fallbackContainer) {
+                                fallbackContainer.classList.remove('d-none');
+                            }
+                            console.warn('Contact form timeout - showing fallback');
+                        }
+                    }, 5000);
+
+                    scriptElement.onload = function () {
+                        clearTimeout(timeoutId);
+                        console.log('Contact form loaded successfully');
+                    };
+
+                    scriptElement.onerror = function () {
+                        clearTimeout(timeoutId);
+                        if (fallbackContainer) {
+                            fallbackContainer.classList.remove('d-none');
+                        }
+                        console.error('Failed to load contact form - showing fallback');
+                    };
+
+                    document.body.appendChild(scriptElement);
+                }, 1500); // Load AFTER initial render
+            });
+        </script>
         <link rel="preload" href="/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript><link href="/css/styles.min.css" rel="stylesheet" /></noscript>
     </body>

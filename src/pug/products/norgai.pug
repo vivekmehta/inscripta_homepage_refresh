@@ -10,24 +10,21 @@ html(lang='en')
         title GenAI Assistant for Professional Services Teams
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
+        link(rel='icon', type='image/x-icon', href='/assets/favicon.png')
 
         //Font
         link(rel="preconnect" href="https://fonts.gstatic.com") 
 
-        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
-
-        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
         noscript
-            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,700,700i,900,900i&display=swap', rel='stylesheet')
+            link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap', rel='stylesheet')
+
+        link(rel='preload' href='https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,400,400i,700,700i,900&display=swap', rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
-        link(href='/css/critical.css', rel='stylesheet')
-        
-        // Font Awesome
-        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
-        noscript
-            link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+        link(rel='stylesheet' href='/css/critical.css')
 
         // Google Tag Manager
         script.
@@ -191,26 +188,39 @@ html(lang='en')
         section#contact.page-section
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center.mb-5
-                    .col-lg-7
+                    .col-lg-6
                         .contact-card.col-lg-10
-                            h3.text-primary.mx-4.my-3 Save weeks of PS effort per project - improve quality, consistency, and client confidence.
-                    .col-lg-5
-                        h2.mt-4.mt-lg-0 Get In Touch!
-                        hr.divider.bg-secondary.mx-0
-                        h6.mb-4
-                            | Find out what NorgAI can do for you
-                            hr.w-50
-                            | Speak to an expert, request an assesment, see the demo of solutions
-                            br
-                        p.flex-align-content-center
-                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
-                            a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
+                            h3.text-primary.mx-4.my-3 Save weeks of PS effort per project with improved quality, consistency, and client confidence.
+                    // Contact Form Section  
+                    .col-lg-6.mb-4
+                        #form-card
+
+                            // Contact Form Container
+                            #contact-form(data-source="homepage_form")
+
+
+                        // Fallback Container (hidden by default)
+                        #contact-fallback.d-none
+                            .text-center
+                                p.mb-2 We couldn't load the contact form right now.
+                                p.mb-3 You can still reach us at:
+                                p.mb-3
+                                    strong Email: 
+                                    a.text-primary(href="mailto:sales@inscripta.ai") sales@inscripta.ai
+                                .mt-4
+                                    a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
+                                        | Send us an Email
 
 
 
         // Footer
         include /pug/includes/footer_new.pug
 
+        // Contact
+        include /pug/includes/contact.pug
+
         link(rel='preload' href='/css/styles.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
         noscript
             link(href='/css/styles.min.css', rel='stylesheet')
+
+
