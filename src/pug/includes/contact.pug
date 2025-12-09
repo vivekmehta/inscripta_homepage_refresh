@@ -27,6 +27,10 @@ script.
             scriptElement.onload = function() {
                 clearTimeout(timeoutId);
                 console.log('Contact form loaded successfully');
+
+                if (fallbackContainer) {
+                    fallbackContainer.classList.add('d-none');
+                }
             };
 
             scriptElement.onerror = function() {
