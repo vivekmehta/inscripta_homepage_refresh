@@ -7,17 +7,17 @@
 	<priority>1.00</priority>
 </url>
 <url>
-	<loc>https://inscripta.ai/products/parseqa_qabot.html</loc>
+	<loc>https://inscripta.ai/products/parseqa/qabot.html</loc>
 	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 	<url>
-	<loc>https://inscripta.ai/products/parseqa_curate.html</loc>
+	<loc>https://inscripta.ai/products/parseqa/curate.html</loc>
 	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 	<url>
-	<loc>https://inscripta.ai/products/norg_ai.html</loc>
+	<loc>https://inscripta.ai/products/norgai.html</loc>
 	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
@@ -75,10 +75,5 @@
 	<loc>https://inscripta.ai/legal/privacy.html</loc>
 	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
 	<priority>0.80</priority>
-</url>
-<url>
-	<loc>https://inscripta.ai/legal/privacy</loc>
-	<lastmod>2025-08-18T19:26:18+00:00</lastmod>
-	<priority>0.64</priority>
 </url>
 </urlset>
