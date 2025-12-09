@@ -541,11 +541,8 @@
                                 <div class="text-center">
                                     <p class="mb-2">We couldn't load the contact form right now.</p>
                                     <p class="mb-3">You can still reach us at:</p>
-                                    <p class="mb-3">
-                                        <strong>Email:</strong>
-                                        <a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
-                                    </p>
-                                    <div class="mt-4"><a class="btn btn-secondary btn-lg" href="mailto:sales@inscripta.ai">Send us an Email</a></div>
+                                    <p class="mb-3"><a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a></p>
+                                    <div class="mt-4"></div>
                                 </div>
                             </div>
                         </div>
@@ -650,6 +647,10 @@
                     scriptElement.onload = function () {
                         clearTimeout(timeoutId);
                         console.log('Contact form loaded successfully');
+
+                        if (fallbackContainer) {
+                            fallbackContainer.classList.add('d-none');
+                        }
                     };
 
                     scriptElement.onerror = function () {
