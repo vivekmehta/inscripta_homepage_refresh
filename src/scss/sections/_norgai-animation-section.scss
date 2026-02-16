@@ -1,0 +1,403 @@
+/************************************
+ * NORGAI ANIMATION SECTION WRAPPER - CINEMATIC
+ ************************************/
+
+.norgai-animation-section {
+    position: relative;
+    padding: 0 !important;
+    margin: 0;
+    overflow: hidden;
+    min-height: 100vh; // Large section - needs scrolling
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.norgai-animation-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0; // Space at top
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include media-breakpoint-up(lg) {
+        padding: 10rem 0;
+    }
+}
+
+// Modern gradient background inspired by the screenshot
+.norgai-bg-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background:
+    radial-gradient(
+      700px circle at 10% 20%,
+      rgba(220, 38, 38, 0.18),
+      transparent 40%
+    ),
+    radial-gradient(
+      700px circle at 90% 80%,
+      rgba(220, 38, 38, 0.18),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #0b1020 0%,
+      #0e1428 50%,
+      #0b1020 100%
+    );
+}
+
+.norgai-bg-gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      600px circle at 30% 60%,
+      rgba(99, 102, 241, 0.12),
+      transparent 50%
+    );
+
+  animation: softFade 12s ease-in-out infinite;
+}
+
+@keyframes softFade {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+
+@keyframes gradientFlow {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+// Section intro styling
+.norgai-section-intro {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    .norgai-section-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 24px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.95);
+        letter-spacing: 0.5px;  
+        text-transform: uppercase;
+        animation: fadeInDown 0.8s ease-out;
+        
+        span:first-child {
+            font-size: 1.1rem;
+        }
+    }
+    
+    .norgai-section-heading {
+        font-size: 2.75rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: fadeInDown 0.8s ease-out 0.2s both;
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 3.5rem;
+        }
+    }
+    
+    .norgai-section-subheading {
+        font-size: 1.125rem;
+        max-width: 700px;
+        margin: 0 auto;
+        color: rgba(255, 255, 255, 0.75);
+        animation: fadeInDown 0.8s ease-out 0.4s both;
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+
+.norgai-animation-container-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    max-height: 600px; // Increased from 700px
+    padding: 0 2rem;
+    margin-bottom: 5rem;
+    
+    @include media-breakpoint-up(lg) {
+        padding: 0 3rem;
+        margin-bottom: 15rem;
+    }
+    
+    > .animation-glass-frame {
+        width: 100%;
+        height: 100%; // Takes full available height
+        background: rgba(255, 255, 255, 0.03);
+        background: linear-gradient(
+            180deg,
+            rgba(255,255,255,0.06),
+            rgba(255,255,255,0.02)
+        );
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 
+            0 25px 50px -12px rgba(0, 0, 0, 0.4),
+            0 0 100px rgba(99, 102, 241, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        animation: fadeInUp 1s ease-out 0.6s both;
+        
+        @include media-breakpoint-up(lg) {
+            padding: 2.5rem;
+        }
+        
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            padding: 2px;
+            background: linear-gradient(135deg, 
+                rgba(99, 102, 241, 0.3), 
+                rgba(236, 72, 153, 0.3),
+                rgba(59, 130, 246, 0.3)
+            );
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+}
+
+// Pause animations when section not visible
+.norgai-animation-section.animations-paused {
+    .norgai-bg-gradient {
+        animation-play-state: paused !important;
+        
+        &::after {
+            animation-play-state: paused !important;
+        }
+    }
+    
+    .norgai-section-badge,
+    .norgai-section-heading,
+    .norgai-section-subheading,
+    .animation-glass-frame {
+        animation-play-state: paused !important;
+    }
+}
+
+// Enhance existing animation components for dark background
+.norgai-animation-section {
+    .container {
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    .left-panel {
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .right-panel {
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+}
+
+// Animations
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Scroll-triggered animation
+.norgai-animation-section {
+    &.in-view {
+        .animation-glass-frame {
+            animation: scaleIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+// Mobile responsive
+@media (max-width: 991px) {
+    .norgai-animation-wrapper {
+        padding: 4rem 0;
+    }
+    
+    .norgai-animation-container-wrapper > .animation-glass-frame {
+        padding: 1rem;
+        border-radius: 16px;
+    }
+    
+    .norgai-section-intro {
+        .norgai-section-heading {
+            font-size: 2rem;
+        }
+        
+        .norgai-section-subheading {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .norgai-animation-container-wrapper {
+        padding: 0 0.5rem;
+        
+        .animation-glass-frame {
+            overflow-x: auto;
+            
+            .container {
+                min-width: 320px;
+            }
+        }
+    }
+}
+
+// Ensure the animation scales properly within the glass card
+.norgai-animation-section {
+    .animation-glass-frame .container {
+        max-width: 100%;
+        max-height: 100%;
+        
+        // Scale down if needed to fit
+        @media (max-height: 900px) {
+            transform: scale(0.9);
+        }
+        
+        @media (max-height: 800px) {
+            transform: scale(0.8);
+        }
+        
+        @media (max-height: 700px) {
+            transform: scale(0.7);
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 991px) {
+    .norgai-animation-wrapper {
+        padding: 3rem 0 2rem 0;
+    }
+    
+    .norgai-animation-container-wrapper > .animation-glass-frame {
+        padding: 1.5rem;
+        max-height: calc(100vh - 250px);
+    }
+}
+
+@media (max-width: 768px) {
+    .norgai-animation-wrapper {
+        padding: 2rem 0 1.5rem 0;
+    }
+    
+    .norgai-section-intro .norgai-section-heading {
+        font-size: 2rem;
+    }
+    
+    .norgai-animation-container-wrapper > .animation-glass-frame {
+        max-height: calc(100vh - 220px);
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .norgai-animation-section {
+        min-height: 180vh;
+    }
+    
+    .norgai-animation-wrapper {
+        padding: 4rem 0;
+    }
+    
+    .norgai-animation-container-wrapper {
+        height: calc(100vh - 200px);
+        padding: 0 1rem;
+        margin-bottom: 8rem;
+        
+        > .animation-glass-frame {
+            padding: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .norgai-animation-container-wrapper {
+        > .animation-glass-frame {
+            padding: 1rem;
+        }
+    }
+    
+    .norgai-section-intro .norgai-section-heading {
+        font-size: 2rem;
+    }
+}
