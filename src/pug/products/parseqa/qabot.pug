@@ -44,86 +44,334 @@ html(lang='en')
         // Google Tag Manager (noscript)
         noscript
             iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
-        // End Google Tag Manager (noscript)
+        // End Google Tag Manager (noscript)    
 
 
         // Navigation
         include /pug/includes/menu.pug
 
 
-        // Producthead
-        header.prodhead 
-            .container.px-4.px-lg-5.h-100
-                .row.gx-4.gx-lg-5.h-100
-                    .col-lg-8.align-self-end    
-                        h1.text-white.font-weight-bold ParseQa QABot
-                        h5.text-white.mt-4 Unlock the Power of Your Organization's Knowledge.
-                    .col-lg-8.align-self-baseline.mt-4
-        
-
-        // About
-        section#about.page-section
+        header.prodhead_qabot 
             .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.align-items-center
-                    .col-lg-6.col-md-12
-                        h2.font-weight-bold.text-primary Extract information nuggets from
-                            br 
-                            .span.text-secondary large knowledge bases efficiently
-                        h5.mt-4 On-prem AI Agents to automate summarization, data curation, question-answering and more. Unlock the potential of your knowledge repositories.
-                        //h5.mt-4 ParseQa is a state-of-the-art Natural Language Processing (NLP) system that combines information extraction, semantic search and question answering to leverage large heterogeneous knowledge repositories effectively. 
-                        //h5.mt-4 ParseQa can alter the way content management systems are perceived and used in organizations. 
-                        .mt-5
-                            a.btn.btn-primary-outline.btn-xl(href='#key-features') Explore Features
-                    .col-lg-6.col-md-12
-                        .responsive-video-wrapper(style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;")
-                            video#parseqa-qabot-video(
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px;"
-                                controls
-                                preload="metadata"
-                            )
-                                source(src="/assets/video/parseqa-qabot-about.mp4" type="video/mp4")
-                                | Your browser does not support the video tag.
+                .row.gx-5.align-items-center.position-relative
+                    // LEFT TEXT — 5 columns (narrower for better balance)
+                    .col-lg-5.col-md-12.text-section.hero-content
+                        // Add a subtle badge
+                        .hero-badge.mb-4
+                            span.badge-icon ⚡
+                            span AI-Powered Knowledge Q&A
+                        
+                        h1.text-white.font-weight-bold.hero-title ParseQa QABot
+                        h5.text-white.mt-4.hero-subtitle Turn PDFs, documents, tables, and complex manuals into an AI-powered Q&A assistant with secure on-prem deployment and zero data leakage
+                        
+                        // CTA Buttons
+                        .hero-cta-group.mt-5
+                            a.btn.btn-hero-primary.me-3(href='#parseqa-qabot-demo') 
+                                span Watch Demo
+                                i.fas.fa-play.ms-2
+                            a.btn.btn-hero-secondary(href='#contact')
+                                span Get Started
+                                i.fas.fa-arrow-right.ms-2
+                        
+                        // Trust indicators
+                        .hero-trust-bot.mt-4
+                            .trust-item-bot
+                                i.fas.fa-shield-alt.text-secondary
+                                span On-Prem Option
+                            .trust-item-bot
+                                i.fas.fa-lock.text-secondary
+                                span Configurable
+                            .trust-item-bot
+                                i.fas.fa-server.text-secondary
+                                span Task-Specific
+
+                    // RIGHT VIDEO — 7 columns (wider for prominence)
+                    .col-lg-7.col-md-12
+                        .hero-video-container
+                            // Floating decorative elements
+                            .hero-decoration.decoration-1
+                            .hero-decoration.decoration-2
+                            
+                            // Main video card
+                            .hero-video-card
+                                .video-glow
+                                video.hero-video(
+                                    autoplay
+                                    loop
+                                    muted
+                                    playsinline
+                                )
+                                    source(src="/assets/video/parseqa-animation.mp4" type="video/mp4")
+                                
+
+
+
+
                     
         
 
         // USP
-        section#usp.page-section.bg-light
-            .container.px-4.px-lg-4
-                .row
-                    .col-lg-12.col-md-12.mx-auto
-                        h1.font-weight-bold.text-center.mb-5 USP
-                .row.gx-4.gx-lg-4
-                    .col-lg-4.col-md-6.col-sm-12.mb-3
-                        .content-box-primary.bg-white.h-100
-                            .text-center.mb-4
-                                img.img-fluid.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-1.png")
-                            .h3.font-weight-bold.text-center.text-primary.mb-4 On-Prem
-                            .product-detail No external APIs in use. All models (including LLMs) are used in offline mode, safeguarding sensitive information
-                    .col-lg-4.col-md-6.col-sm-12.mb-3
-                        .content-box-secondary.bg-white.h-100
-                            .text-center.mb-4
-                                img.img-fluid.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-2.png")
-                            .h3.font-weight-bold.text-center.text-primary.mb-4 Configurable
-                            .product-detail Effortlessly adapt the solution to align with your document types, knowledge bases and curation targets. 
-                    .col-lg-4.col-md-6.col-sm-12.mb-3
-                        .content-box-primary.bg-white.h-100
-                            .text-center.mb-4
-                                img.img-fluid.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-3.png")
-                            .h3.font-weight-bold.text-center.text-primary.mb-4 Task Specific
-                            .product-detail AI solutions optimized for specific tasks, delivering high accuracy and efficiency for your unique business needs.
+        section#usp.page-section.usp-section
+            .container.px-4.px-lg-5
+                .row.justify-content-center.mb-5
+                    .col-lg-8.text-center
+                        .section-badge.mb-3
+                            span ✨ Why Choose ParseQa
+                        h2.section-heading What Sets ParseQa Apart
+                        p.section-subheading The enterprise-grade solution for secure, accurate, and efficient document intelligence
+                
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-lg-4.col-md-6.col-sm-12.mb-4
+                        .usp-card.usp-card-primary
+                            .usp-card-inner
+                                .usp-icon-wrapper
+                                    img.usp-icon.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-1.png", alt="On-Premise Icon")
+                                .usp-badge Secure
+                                h3.usp-title On-Prem LLM Option
+                                p.usp-description No external APIs in use. All models (including LLMs) run in offline mode, ensuring complete data privacy and zero cloud dependency
+                                .usp-features
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span 100% Air-gapped deployment
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span Zero data leakage
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span Complete control
+                    
+                    .col-lg-4.col-md-6.col-sm-12.mb-4
+                        .usp-card.usp-card-secondary
+                            .usp-card-inner
+                                .usp-icon-wrapper
+                                    img.usp-icon.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-2.png", alt="Configurable Icon")
+                                .usp-badge Flexible
+                                h3.usp-title Highly Configurable
+                                p.usp-description Effortlessly adapt the solution to align with your document types, knowledge bases, and specific curation targets
+                                .usp-features
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span Custom workflows
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span Domain adaptation
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span Flexible integration
+                    
+                    .col-lg-4.col-md-6.col-sm-12.mb-4
+                        .usp-card.usp-card-accent
+                            .usp-card-inner
+                                .usp-icon-wrapper
+                                    img.usp-icon.lazyload(data-src="/assets/img/products/parseqa-qabot/usp-3.png", alt="Task Specific Icon")
+                                .usp-badge Optimized
+                                h3.usp-title Task-Specific Excellence
+                                p.usp-description AI solutions optimized for specific use cases, delivering superior accuracy and efficiency for your unique business needs
+                                .usp-features
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span Adaptable to your needs
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span Multimodal support
+                                    .feature-item
+                                        i.fas.fa-check-circle
+                                        span Proven results
 
 
 
 
-        // Key Features
-        section#key-features.bg-white.page-section
-            .container
-                h2.text-center.mb-6.fw-bold.fs-2.mb-4 Key Features
-                .row.justify-content-center
-                    .col-6
-                        img.img-fluid.lazyload(src="/assets/img/products/parseqa-qabot/key-features-1.png")
-                    .col-6
-                        img.img-fluid.lazyload(src="/assets/img/products/parseqa-qabot/key-features-2.png")
+        // Key Features - Modern Tabbed Interface
+        section#key-features.page-section.features-section
+            .container.px-4.px-lg-5
+                .row.justify-content-center.mb-5
+                    .col-lg-8.text-center
+                        .section-badge.mb-3
+                            span 🚀 Powerful Features
+                        h2.section-heading Enterprise-Grade Capabilities
+                        p.section-subheading Everything you need to transform your document intelligence workflow
+                
+                // Tab Navigation
+                .features-tabs-wrapper
+                    .features-tabs-nav
+                        button.tab-btn.active(data-tab="intelligence")
+                            .tab-icon
+                                i.fas.fa-brain
+                            .tab-content
+                                span.tab-title Smart Intelligence
+                                span.tab-desc AI-powered accuracy
+                        
+                        button.tab-btn(data-tab="integration")
+                            .tab-icon
+                                i.fas.fa-plug
+                            .tab-content
+                                span.tab-title Seamless Integration
+                                span.tab-desc Connect anything
+                        
+                        button.tab-btn(data-tab="verification")
+                            .tab-icon
+                                i.fas.fa-shield-alt
+                            .tab-content
+                                span.tab-title Source Verification
+                                span.tab-desc Complete transparency
+                
+                // Tab Content Panels
+                .features-tabs-content
+                    // Intelligence Tab
+                    .tab-panel.active(data-panel="intelligence")
+                        .row.g-4
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-primary-soft
+                                            i.fas.fa-bullseye
+                                    .feature-content
+                                        h3.feature-title Hallucination-Free Answers
+                                        p.feature-description Get accurate, fact-based responses with the right level of detail. Our AI is trained to provide reliable answers without making up information.
+                                        .feature-tags
+                                            span.feature-tag High Accuracy
+                                            span.feature-tag Fact-Checked
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-secondary-soft
+                                            i.fas.fa-table
+                                    .feature-content
+                                        h3.feature-title Multimodal Intelligence
+                                        p.feature-description Extract insights from text, tables, charts, and diagrams. Holistic answers that integrate all data types for comprehensive understanding.
+                                        .feature-tags
+                                            span.feature-tag Tables
+                                            span.feature-tag Charts
+                                            span.feature-tag Images
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-primary-soft
+                                            i.fas.fa-comments
+                                    .feature-content
+                                        h3.feature-title Follow-Up Queries
+                                        p.feature-description Ask contextual follow-up questions to dive deeper. Domain-specific filters help you narrow down results for precise answers.
+                                        .feature-tags
+                                            span.feature-tag Contextual
+                                            span.feature-tag Filtered Search
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-secondary-soft
+                                            i.fas.fa-check-double
+                                    .feature-content
+                                        h3.feature-title Configurable Verification
+                                        p.feature-description Trustworthy answers through configurable extraction and verification workflows. Review, validate, and approve results before use.
+                                        .feature-tags
+                                            span.feature-tag Validated
+                                            span.feature-tag Auditable
+                    
+                    // Integration Tab
+                    .tab-panel(data-panel="integration")
+                        .row.g-4
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-primary-soft
+                                            i.fas.fa-file-alt
+                                    .feature-content
+                                        h3.feature-title Universal Document Support
+                                        p.feature-description Connect with your entire document ecosystem. Support for PDFs, Word, Excel, PowerPoint, images, and more—regardless of format or structure.
+                                        .feature-tags
+                                            span.feature-tag PDF
+                                            span.feature-tag Office
+                                            span.feature-tag Images
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-secondary-soft
+                                            i.fas.fa-database
+                                    .feature-content
+                                        h3.feature-title Knowledge Base Integration
+                                        p.feature-description Seamlessly integrate with SharePoint, Confluence, Google Drive, and other enterprise repositories. One unified search across all sources.
+                                        .feature-tags
+                                            span.feature-tag SharePoint
+                                            span.feature-tag Confluence
+                                            span.feature-tag Drive
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-primary-soft
+                                            i.fas.fa-sync
+                                    .feature-content
+                                        h3.feature-title Real-Time Sync
+                                        p.feature-description Automatic synchronization with your document sources. Always search the latest versions with no manual updates required.
+                                        .feature-tags
+                                            span.feature-tag Auto-Sync
+                                            span.feature-tag Live Updates
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-secondary-soft
+                                            i.fas.fa-code
+                                    .feature-content
+                                        h3.feature-title API & Webhooks
+                                        p.feature-description Programmatic access through REST APIs. Build custom integrations and automate workflows with our developer-friendly platform.
+                                        .feature-tags
+                                            span.feature-tag REST API
+                                            span.feature-tag Webhooks
+                    
+                    // Verification Tab
+                    .tab-panel(data-panel="verification")
+                        .row.g-4
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-primary-soft
+                                            i.fas.fa-search-location
+                                    .feature-content
+                                        h3.feature-title Precise Source Tracking
+                                        p.feature-description Every answer comes with exact source references. Click to view the original document, page, and highlighted text that supports each response.
+                                        .feature-tags
+                                            span.feature-tag Citations
+                                            span.feature-tag Highlights
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-secondary-soft
+                                            i.fas.fa-eye
+                                    .feature-content
+                                        h3.feature-title Easy-to-Use Verification UI
+                                        p.feature-description Intuitive interface designed for fast verification. Review sources, compare answers, and navigate results with minimal clicks.
+                                        .feature-tags
+                                            span.feature-tag User-Friendly
+                                            span.feature-tag Fast Review
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-primary-soft
+                                            i.fas.fa-clipboard-check
+                                    .feature-content
+                                        h3.feature-title Confidence Scoring
+                                        p.feature-description Each answer includes a confidence score based on source quality and relevance. Make informed decisions with transparency.
+                                        .feature-tags
+                                            span.feature-tag Scored
+                                            span.feature-tag Transparent
+                            
+                            .col-lg-6
+                                .feature-card.feature-card-hover
+                                    .feature-icon-wrapper
+                                        .feature-icon.bg-secondary-soft
+                                            i.fas.fa-history
+                                    .feature-content
+                                        h3.feature-title Audit Trail
+                                        p.feature-description Complete audit logs of all queries and results. Track who asked what, when, and which sources were used for compliance.
+                                        .feature-tags
+                                            span.feature-tag Logged
+                                            span.feature-tag Compliant
 
 
 
@@ -277,6 +525,9 @@ html(lang='en')
                             i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
                             a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
 
+
+        // Features Tabs JS
+        script(src='/js/features-tabs.js')
 
 
         // Footer
