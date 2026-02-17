@@ -33,8 +33,13 @@
         height: 40%;
         background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
         filter: blur(80px);
-        animation: float 6s ease-in-out infinite;
+        animation: herofloat 6s ease-in-out infinite;
     }
+}
+
+@keyframes heroFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
 }
 
 // Add this new animation
@@ -397,51 +402,6 @@
   color: white;
 }
 
-/* Particles */
-.particles {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.particle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  background: #60a5fa;
-  border-radius: 50%;
-  opacity: 0;
-  animation: floatParticle 2s ease-out infinite;
-  animation-delay: calc(2.5s + var(--angle) / 45 * 0.2s);
-}
-
-@keyframes floatParticle {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%);
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(
-      calc(-50% + cos(var(--angle) * 3.14159 / 180) * 100px),
-      calc(-50% + sin(var(--angle) * 3.14159 / 180) * 100px)
-    );
-  }
-}
-
-.particle:nth-child(1) { --angle: 0; }
-.particle:nth-child(2) { --angle: 45; }
-.particle:nth-child(3) { --angle: 90; }
-.particle:nth-child(4) { --angle: 135; }
-.particle:nth-child(5) { --angle: 180; }
-.particle:nth-child(6) { --angle: 225; }
-.particle:nth-child(7) { --angle: 270; }
-.particle:nth-child(8) { --angle: 315; }
 
 /* Core Label */
 .core-label {
@@ -623,7 +583,7 @@
         &[data-word="4"] {
             background: linear-gradient(135deg, 
                 #4fb7ff 0%, 
-                #192b80 50%,
+                #49b2fd 50%,
                 #5fc3ff 100%
             );
             -webkit-background-clip: text;
