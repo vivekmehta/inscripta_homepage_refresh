@@ -28,6 +28,8 @@ html(lang='en')
 
         link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
 
+        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+
         // Google Tag Manager
         script.
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -47,6 +49,8 @@ html(lang='en')
 
         // Navigation
         include /pug/includes/menu.pug
+
+        .norgai-hero-wrapper
 
         .norgai-hero-wrapper
 
@@ -337,6 +341,7 @@ html(lang='en')
                                 .feature-highlight
                                     i.fas.fa-check-circle
                                     span Your Data, Your Control
+        
         
         // Main Feature Grid
         section#impact-metrics.page-section.impact-gradient
@@ -770,6 +775,8 @@ html(lang='en')
 
         // Footer
         include /pug/includes/footer_new.pug
+
+        script(src='/js/norgai-animation.js')
 
         script(src='/js/norgai-animation.js')
 
