@@ -11,10 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 animationSection.classList.add('in-view');
                 animationSection.classList.remove('animations-paused');
-                // Auto-start animation when in view
-                if (!isRunning) {
-                    setTimeout(() => runSequence(), 500);
-                }
             } else {
                 // Pause animations when scrolled away
                 animationSection.classList.add('animations-paused');
@@ -320,20 +316,6 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(`Step ${index + 1} clicked`);
       // You can add custom functionality here
     });
-  });
-
-  // Optional: Restart animations on visibility change
-  document.addEventListener('visibilitychange', function() {
-    if (!document.hidden) {
-      // Restart animations when tab becomes visible
-      const fadeItems = document.querySelectorAll('.fade-in-item');
-      fadeItems.forEach(item => {
-        item.style.animation = 'none';
-        setTimeout(() => {
-          item.style.animation = '';
-        }, 10);
-      });
-    }
   });
 
   // Optional: Add intersection observer for scroll animations
