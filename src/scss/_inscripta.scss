@@ -16,6 +16,7 @@ p.bigger {
 
 .h1 {
   font-size: 3rem;  
+  font-size: 3rem;  
 }
 
 .h4 {
@@ -1167,7 +1168,6 @@ header.prodhead {
     gap: 8px;
     padding: 8px 20px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     font-size: 0.85rem;
@@ -1319,7 +1319,6 @@ header.prodhead .hero-trust {
     padding: 20px 28px;
     background: rgba(255, 255, 255, 0.06);
     border-radius: 50px;
-    backdrop-filter: blur(10px);
     border: 1px;
     white-space: nowrap;
     

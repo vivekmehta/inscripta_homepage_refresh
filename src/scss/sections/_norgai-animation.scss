@@ -969,27 +969,15 @@ box-shadow: 0 20px 25px -5px rgba(26, 35, 50, 0.3);
             height: 100%;
             display: flex;
             position: relative;
-            transform: scale(0.85);  // Bigger - was 0.7
-            
-            // Scale to fit different viewport sizes
-            @media (max-height: 900px) {
-                transform: scale(0.75);  // was 0.65
-            }
-            
-            @media (max-height: 800px) {
-                transform: scale(0.7);  // was 0.6
-            }
-            
-            @media (max-height: 700px) {
-                transform: scale(0.65);  // was 0.55
-            }
+            transform: scale(0.85);
+            transform-origin: top center;
             
             @media (max-width: 1400px) {
-                transform: scale(0.8);  // was 0.65
+                transform: scale(0.78);
             }
             
             @media (max-width: 1200px) {
-                transform: scale(0.75);  // was 0.6
+                transform: scale(0.72);
             }
         }
     }
