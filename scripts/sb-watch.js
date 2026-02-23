@@ -7,6 +7,8 @@ const renderAssets = require('./render-assets');
 const renderPug = require('./render-pug');
 const renderScripts = require('./render-scripts');
 const renderSCSS = require('./render-scss');
+const renderCname = require('./render-cname');
+const renderSitemap = require('./render-sitemap');
 
 const watcher = chokidar.watch('src', {
     persistent: true,
@@ -62,6 +64,10 @@ function _processFile(filePath, watchEvent) {
 
 	if (filePath.match(/src\/CNAME/)) {
         return renderCname();
+    }
+
+    if (filePath.match(/src\/sitemap\.xml/)) {
+        return renderSitemap();
     }
 }
 

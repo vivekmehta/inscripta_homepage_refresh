@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-let currentStep = 'upload';
-let isRunning = false;
+//let currentStep = 'upload';
+//let isRunning = false;
 
 const steps = {
     upload: document.getElementById('step-upload'),
