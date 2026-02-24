@@ -26,10 +26,6 @@ html(lang='en')
         // Core theme CSS (includes Bootstrap)
         link(rel='stylesheet' href='/css/critical.css')
 
-        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
-
-        link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
-
         // Google Tag Manager
         script.
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -52,11 +48,8 @@ html(lang='en')
 
         .norgai-hero-wrapper
 
-        .norgai-hero-wrapper
-
-
             // Producthead
-            header.prodhead 
+            header.prodhead (role="banner")
                 .container.px-4.px-lg-5
                     .row.gx-5.align-items-center.position-relative
                         // LEFT TEXT — 5 columns
@@ -277,494 +270,494 @@ html(lang='en')
                         span.highlight-purple more predictable go-lives
                         | —while keeping your team firmly in control.
 
-
-        // Key Features Section
-        section#key-features.page-section.key-features-modern
-            .container.px-4.px-lg-5
-                .row.justify-content-center.mb-5
-                    .col-lg-10.text-center
-                        .section-badge.mb-3
-                            span 🚀 Core Capabilities
-                        h2.section-heading Why Teams Choose NorgAI
-                        p.section-subheading Built specifically for Professional Services workflows—not a generic AI chatbot
-                
-                .row.g-4
-                    .col-lg-6.col-md-6
-                        .key-feature-card
-                            .feature-card-inner
-                                .feature-number 01
-                                .feature-icon-box
-                                    i.fas.fa-plug
-                                h3.feature-card-title Native Plugins
-                                p.feature-card-text Purpose-built plugins for MS PowerPoint, Word, Google Slides/Docs, and corporate templates.
-                                .feature-highlight
-                                    i.fas.fa-check-circle
-                                    span Direct Integration
+        main(role="main")
+            // Key Features Section
+            section#key-features.page-section.key-features-modern
+                .container.px-4.px-lg-5
+                    .row.justify-content-center.mb-5
+                        .col-lg-10.text-center
+                            .section-badge.mb-3
+                                span Core Capabilities
+                            h2.section-heading Why Teams Choose NorgAI
+                            p.section-subheading Built specifically for Professional Services workflows—not a generic AI chatbot
                     
-                    .col-lg-6.col-md-6
-                        .key-feature-card
-                            .feature-card-inner
-                                .feature-number 02
-                                .feature-icon-box
+                    .row.g-4
+                        .col-lg-6.col-md-6
+                            .key-feature-card
+                                .feature-card-inner
+                                    .feature-number 01
+                                    .feature-icon-box
+                                        i.fas.fa-plug
+                                    h3.feature-card-title Native Plugins
+                                    p.feature-card-text Purpose-built plugins for MS PowerPoint, Word, Google Slides/Docs, and corporate templates.
+                                    .feature-highlight
+                                        i.fas.fa-check-circle
+                                        span Direct Integration
+                        
+                        .col-lg-6.col-md-6
+                            .key-feature-card
+                                .feature-card-inner
+                                    .feature-number 02
+                                    .feature-icon-box
+                                        i.fas.fa-brain
+                                    h3.feature-card-title Intelligent Knowledge Reuse
+                                    p.feature-card-text Learns from past proposals, SOWs, and delivery docs without requiring manual "master" document maintenance. Your institutional knowledge, automatically leveraged.
+                                    .feature-highlight
+                                        i.fas.fa-check-circle
+                                        span Zero Maintenance
+                        
+                        .col-lg-6.col-md-6
+                            .key-feature-card
+                                .feature-card-inner
+                                    .feature-number 03
+                                    .feature-icon-box
+                                        i.fas.fa-arrows-alt-h
+                                    h3.feature-card-title Seamless Workflow
+                                    p.feature-card-text No tool-switching or copy-paste—works directly within the tools your team already uses for maximum productivity.
+                                    .feature-highlight
+                                        i.fas.fa-check-circle
+                                        span Zero Context Switching
+                        
+                        .col-lg-6.col-md-6
+                            .key-feature-card
+                                .feature-card-inner
+                                    .feature-number 04
+                                    .feature-icon-box
+                                        i.fas.fa-shield-alt
+                                    h3.feature-card-title On-Prem Deployment
+                                    p.feature-card-text On-prem deployment option ensures your sensitive client data, proposals, and IP remain completely private and secure within your infrastructure.
+                                    .feature-highlight
+                                        i.fas.fa-check-circle
+                                        span Your Data, Your Control
+            
+            
+            // Main Feature Grid
+            section#impact-metrics.page-section.impact-gradient
+                .container.px-4.px-lg-5
+                    .row.g-4
+                        .col-lg-4.col-md-6
+                            .about-feature-card
+                                .feature-card-icon.bg-gradient-primary
+                                    i.fas.fa-rocket
+                                h3.feature-card-title 50-60% Faster
+                                p.feature-card-desc Document creation through intelligent automation. Accelerate RFP responses, proposals, and delivery artifacts.
+                                .feature-card-badge
+                                    i.fas.fa-check-circle
+                                    span Proven Impact
+                        
+                        .col-lg-4.col-md-6
+                            .about-feature-card
+                                .feature-card-icon.bg-gradient-secondary
+                                    i.fas.fa-redo-alt
+                                h3.feature-card-title 80% Less Rework
+                                p.feature-card-desc Driven by consistent structure, complete requirements, and early gap detection across documents.
+                                .feature-card-badge
+                                    i.fas.fa-check-circle
+                                    span Quality First
+                        
+                        .col-lg-4.col-md-6
+                            .about-feature-card
+                                .feature-card-icon.bg-gradient-accent
                                     i.fas.fa-brain
-                                h3.feature-card-title Intelligent Knowledge Reuse
-                                p.feature-card-text Learns from past proposals, SOWs, and delivery docs without requiring manual "master" document maintenance. Your institutional knowledge, automatically leveraged.
-                                .feature-highlight
+                                h3.feature-card-title Smart Reuse
+                                p.feature-card-desc Effective knowledge reuse without the overhead of manually maintaining master documents.
+                                .feature-card-badge
                                     i.fas.fa-check-circle
-                                    span Zero Maintenance
-                    
-                    .col-lg-6.col-md-6
-                        .key-feature-card
-                            .feature-card-inner
-                                .feature-number 03
-                                .feature-icon-box
-                                    i.fas.fa-arrows-alt-h
-                                h3.feature-card-title Seamless Workflow
-                                p.feature-card-text No tool-switching or copy-paste—works directly within the tools your team already uses for maximum productivity.
-                                .feature-highlight
-                                    i.fas.fa-check-circle
-                                    span Zero Context Switching
-                    
-                    .col-lg-6.col-md-6
-                        .key-feature-card
-                            .feature-card-inner
-                                .feature-number 04
-                                .feature-icon-box
-                                    i.fas.fa-shield-alt
-                                h3.feature-card-title On-Prem Deployment
-                                p.feature-card-text On-prem deployment option ensures your sensitive client data, proposals, and IP remain completely private and secure within your infrastructure.
-                                .feature-highlight
-                                    i.fas.fa-check-circle
-                                    span Your Data, Your Control
-        
-        
-        // Main Feature Grid
-        section#impact-metrics.page-section.impact-gradient
-            .container.px-4.px-lg-5
-                .row.g-4
-                    .col-lg-4.col-md-6
-                        .about-feature-card
-                            .feature-card-icon.bg-gradient-primary
-                                i.fas.fa-rocket
-                            h3.feature-card-title 50-60% Faster
-                            p.feature-card-desc Document creation through intelligent automation. Accelerate RFP responses, proposals, and delivery artifacts.
-                            .feature-card-badge
-                                i.fas.fa-check-circle
-                                span Proven Impact
-                    
-                    .col-lg-4.col-md-6
-                        .about-feature-card
-                            .feature-card-icon.bg-gradient-secondary
-                                i.fas.fa-redo-alt
-                            h3.feature-card-title 80% Less Rework
-                            p.feature-card-desc Driven by consistent structure, complete requirements, and early gap detection across documents.
-                            .feature-card-badge
-                                i.fas.fa-check-circle
-                                span Quality First
-                    
-                    .col-lg-4.col-md-6
-                        .about-feature-card
-                            .feature-card-icon.bg-gradient-accent
-                                i.fas.fa-brain
-                            h3.feature-card-title Smart Reuse
-                            p.feature-card-desc Effective knowledge reuse without the overhead of manually maintaining master documents.
-                            .feature-card-badge
-                                i.fas.fa-check-circle
-                                span AI-Powered
+                                    span AI-Powered
 
 
 
-        // Modern PS Tasks Section
-        section#ps-tasks.page-section.bg-white
-            .container.px-4.px-lg-5
-                .row.justify-content-center.mb-5
-                    .col-lg-8.text-center
-                        .section-badge.mb-3
-                            span 💼 Capabilities
-                        h2.section-heading How NorgAI Helps PS Teams
-                        p.section-subheading Transform your Professional Services workflow with AI-powered automation
-                
-                .row.g-4.justify-content-center
-                    .col-lg-4.col-md-6
-                        .ps-task-card
-                            .task-card-icon
-                                i.fas.fa-file-contract
-                            p.task-card-main Convert RFPs, sales notes, and clarifications into structured proposal content and use case documents
-                            .task-card-badge
-                                i.fas.fa-check
-                                span Automated
+            // Modern PS Tasks Section
+            section#ps-tasks.page-section.bg-white
+                .container.px-4.px-lg-5
+                    .row.justify-content-center.mb-5
+                        .col-lg-8.text-center
+                            .section-badge.mb-3
+                                span 💼 Capabilities
+                            h2.section-heading How NorgAI Helps PS Teams
+                            p.section-subheading Transform your Professional Services workflow with AI-powered automation
                     
-                    .col-lg-4.col-md-6
-                        .ps-task-card
-                            .task-card-icon
-                                i.fas.fa-sync-alt
-                            p.task-card-main Ensure consistent structure and language across all proposals and deliverables
-                            .task-card-badge
-                                i.fas.fa-check
-                                span Standardized
-                    
-                    .col-lg-4.col-md-6
-                        .ps-task-card
-                            .task-card-icon
-                                i.fas.fa-project-diagram
-                            p.task-card-main Preserve context across RFP → proposal → delivery artifacts seamlessly
-                            .task-card-badge
-                                i.fas.fa-check
-                                span Traceable
-                    
-                    .col-lg-4.col-md-6
-                        .ps-task-card
-                            .task-card-icon
-                                i.fas.fa-users-cog
-                            p.task-card-main Scale PS output without scaling headcount proportionally
-                            .task-card-badge
-                                i.fas.fa-check
-                                span Efficient
-                    
-                    .col-lg-4.col-md-6
-                        .ps-task-card
-                            .task-card-icon
-                                i.fas.fa-database
-                            p.task-card-main Easier maintenance and updates of master reference material instead of fragmented content
-                            .task-card-badge
-                                i.fas.fa-check
-                                span Organized
+                    .row.g-4.justify-content-center
+                        .col-lg-4.col-md-6
+                            .ps-task-card
+                                .task-card-icon
+                                    i.fas.fa-file-contract
+                                p.task-card-main Convert RFPs, sales notes, and clarifications into structured proposal content and use case documents
+                                .task-card-badge
+                                    i.fas.fa-check
+                                    span Automated
+                        
+                        .col-lg-4.col-md-6
+                            .ps-task-card
+                                .task-card-icon
+                                    i.fas.fa-sync-alt
+                                p.task-card-main Ensure consistent structure and language across all proposals and deliverables
+                                .task-card-badge
+                                    i.fas.fa-check
+                                    span Standardized
+                        
+                        .col-lg-4.col-md-6
+                            .ps-task-card
+                                .task-card-icon
+                                    i.fas.fa-project-diagram
+                                p.task-card-main Preserve context across RFP → proposal → delivery artifacts seamlessly
+                                .task-card-badge
+                                    i.fas.fa-check
+                                    span Traceable
+                        
+                        .col-lg-4.col-md-6
+                            .ps-task-card
+                                .task-card-icon
+                                    i.fas.fa-users-cog
+                                p.task-card-main Scale PS output without scaling headcount proportionally
+                                .task-card-badge
+                                    i.fas.fa-check
+                                    span Efficient
+                        
+                        .col-lg-4.col-md-6
+                            .ps-task-card
+                                .task-card-icon
+                                    i.fas.fa-database
+                                p.task-card-main Easier maintenance and updates of master reference material instead of fragmented content
+                                .task-card-badge
+                                    i.fas.fa-check
+                                    span Organized
 
+                        
+            // Detailed Comparison Table
+            section#detailed-comparison.page-section.bg-white
+                .container.px-4.px-lg-5
+                    .row.justify-content-center.mb-5
+                        .col-lg-10.text-center
+                            .section-badge.mb-3
+                                span ⚡ Head-to-Head
+                            h2.section-heading Why NorgAI Outperforms Generic LLMs
+                            p.section-subheading Built specifically for Professional Services—not adapted from general-purpose AI
                     
-        // Detailed Comparison Table
-        section#detailed-comparison.page-section.bg-white
-            .container.px-4.px-lg-5
-                .row.justify-content-center.mb-5
-                    .col-lg-10.text-center
-                        .section-badge.mb-3
-                            span ⚡ Head-to-Head
-                        h2.section-heading Why NorgAI Outperforms Generic LLMs
-                        p.section-subheading Built specifically for Professional Services—not adapted from general-purpose AI
-                
-                .row.justify-content-center
-                    .col-lg-11
-                        .comparison-table-wrapper
-                            .comparison-table-header
-                                .header-cell.empty
-                                .header-cell.norgai
-                                    .header-content
-                                        span.product-badge NorgAI
-                                        span.tagline Purpose-Built for PS
-                                .header-cell.generic
-                                    .header-content
-                                        span.product-badge Generic LLMs
-                                        span.tagline ChatGPT, Gemini, Claude, etc.
-                            
-                            .comparison-table-body
-                                .comparison-row
-                                    .feature-cell
-                                        .feature-icon
-                                            i.fas.fa-bullseye
-                                        .feature-name No Hallucination
-                                    .value-cell.norgai-cell
-                                        .check-icon
-                                            i.fas.fa-check-circle
-                                        p Outputs grounded in client inputs
-                                    .value-cell.generic-cell
-                                        .cross-icon
-                                            i.fas.fa-times-circle
-                                        p Prone to hallucinations; not reliably grounded in complex project inputs
-                                
-                                .comparison-row
-                                    .feature-cell
-                                        .feature-icon
-                                            i.fas.fa-link
-                                        .feature-name Structured & Traceable
-                                    .value-cell.norgai-cell
-                                        .check-icon
-                                            i.fas.fa-check-circle
-                                        p Enforces PS templates and standards; every section linked to source inputs
-                                    .value-cell.generic-cell
-                                        .cross-icon
-                                            i.fas.fa-times-circle
-                                        p Free-form outputs; no enforced structure or source traceability
-                                
-                                .comparison-row
-                                    .feature-cell
-                                        .feature-icon
-                                            i.fas.fa-cogs
-                                        .feature-name PS-Tuned Intelligence
-                                    .value-cell.norgai-cell
-                                        .check-icon
-                                            i.fas.fa-check-circle
-                                        p Designed around Professional Services workflows and delivery best practices
-                                    .value-cell.generic-cell
-                                        .cross-icon
-                                            i.fas.fa-times-circle
-                                        p General-purpose models; not optimized for PS lifecycle workflows
-                                
-                                .comparison-row
-                                    .feature-cell
-                                        .feature-icon
-                                            i.fas.fa-search
-                                        .feature-name Automated Gap Detection
-                                    .value-cell.norgai-cell
-                                        .check-icon
-                                            i.fas.fa-check-circle
-                                        p Identifies missing, inconsistent, or misaligned requirements across documents
-                                    .value-cell.generic-cell
-                                        .cross-icon
-                                            i.fas.fa-times-circle
-                                        p Cannot systematically detect cross-document gaps or inconsistencies
-                                
-                                .comparison-row
-                                    .feature-cell
-                                        .feature-icon
-                                            i.fas.fa-plug
-                                        .feature-name Native Tool Integration
-                                    .value-cell.norgai-cell
-                                        .check-icon
-                                            i.fas.fa-check-circle
-                                        p Works directly in PowerPoint, Word, and corporate templates; no copy-paste
-                                    .value-cell.generic-cell
-                                        .cross-icon
-                                            i.fas.fa-times-circle
-                                        p Requires manual transfer between tools; workflow fragmentation
-                                
-                                .comparison-row
-                                    .feature-cell
-                                        .feature-icon
-                                            i.fas.fa-shield-alt
-                                        .feature-name Enterprise-Grade Governance
-                                    .value-cell.norgai-cell
-                                        .check-icon
-                                            i.fas.fa-check-circle
-                                        p On-prem deployment, auditability, and human-in-the-loop control
-                                    .value-cell.generic-cell
-                                        .cross-icon
-                                            i.fas.fa-times-circle
-                                        p Limited governance controls and enterprise deployment flexibility
-        
-
-
-        // Demo Animation (pptx)
-        section#norgai-demo.norgai-animation-section
-            .norgai-animation-wrapper
-                .norgai-bg-gradient
-                .container-fluid
                     .row.justify-content-center
-                        .col-12.text-center.norgai-section-intro
-                            .norgai-section-badge.mb-4
-                                span 🎬
-                                span Demo
-                            h2.norgai-section-heading NorgAI in Action
-                            p.norgai-section-subheading Watch how NorgAI transforms requirements into presentation-ready decks in seconds
-                    
-                    .row.justify-content-center.mt-5
-                        .col-12
-                            .norgai-animation-container-wrapper
-                                .animation-glass-frame
-                                    // THE ANIMATION GOES HERE - Copy everything from document index 4 (the HTML file)
-                                    // Start from <div class="container"> and include everything until </div> (matching container close)
-                                    .container
-                                        .left-panel
-                                            .ppt-navbar
-                                                .ppt-logo PPT
-                                                .ppt-tabs
-                                                    .ppt-tab File
-                                                    .ppt-tab.active Home
-                                                    .ppt-tab Insert
-                                                    .ppt-tab Design
-                                                    .ppt-tab Transitions
-                                            
-                                            .ppt-workspace
-                                                .ppt-canvas
-                                                    .slide-thumbnails#slide-thumbnails
-                                                    .main-slide#main-slide
-                                        
-                                        .right-panel
-                                            .plugin-header
-                                                h2 NorgAI Assistant
-                                            
-                                            .plugin-content
-                                                .animation-container
-                                                    // Upload Step
-                                                    .step.active#step-upload
-                                                        .card
-                                                            .card-header
-                                                                .icon-box
-                                                                    svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                        path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
-                                                                        polyline(points="14 2 14 8 20 8")
-                                                                        line(x1="16" y1="13" x2="8" y2="13")
-                                                                        line(x1="16" y1="17" x2="8" y2="17")
-                                                                h2.card-title Upload Documents
-                                                            
-                                                            .upload-zone#upload-empty
-                                                                .upload-icon
-                                                                    svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                        path(d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4")
-                                                                        polyline(points="17 8 12 3 7 8")
-                                                                        line(x1="12" y1="3" x2="12" y2="15")
-                                                                p.upload-text Drag & drop files here or 
-                                                                    span.browse browse files
-                                                                p.upload-subtext Supported formats: PDF, DOCX, TXT
+                        .col-lg-11
+                            .comparison-table-wrapper
+                                .comparison-table-header
+                                    .header-cell.empty
+                                    .header-cell.norgai
+                                        .header-content
+                                            span.product-badge NorgAI
+                                            span.tagline Purpose-Built for PS
+                                    .header-cell.generic
+                                        .header-content
+                                            span.product-badge Generic LLMs
+                                            span.tagline ChatGPT, Gemini, Claude, etc.
+                                
+                                .comparison-table-body
+                                    .comparison-row
+                                        .feature-cell
+                                            .feature-icon
+                                                i.fas.fa-bullseye
+                                            .feature-name No Hallucination
+                                        .value-cell.norgai-cell
+                                            .check-icon
+                                                i.fas.fa-check-circle
+                                            p Outputs grounded in client inputs
+                                        .value-cell.generic-cell
+                                            .cross-icon
+                                                i.fas.fa-times-circle
+                                            p Prone to hallucinations; not reliably grounded in complex project inputs
+                                    
+                                    .comparison-row
+                                        .feature-cell
+                                            .feature-icon
+                                                i.fas.fa-link
+                                            .feature-name Structured & Traceable
+                                        .value-cell.norgai-cell
+                                            .check-icon
+                                                i.fas.fa-check-circle
+                                            p Enforces PS templates and standards; every section linked to source inputs
+                                        .value-cell.generic-cell
+                                            .cross-icon
+                                                i.fas.fa-times-circle
+                                            p Free-form outputs; no enforced structure or source traceability
+                                    
+                                    .comparison-row
+                                        .feature-cell
+                                            .feature-icon
+                                                i.fas.fa-cogs
+                                            .feature-name PS-Tuned Intelligence
+                                        .value-cell.norgai-cell
+                                            .check-icon
+                                                i.fas.fa-check-circle
+                                            p Designed around Professional Services workflows and delivery best practices
+                                        .value-cell.generic-cell
+                                            .cross-icon
+                                                i.fas.fa-times-circle
+                                            p General-purpose models; not optimized for PS lifecycle workflows
+                                    
+                                    .comparison-row
+                                        .feature-cell
+                                            .feature-icon
+                                                i.fas.fa-search
+                                            .feature-name Automated Gap Detection
+                                        .value-cell.norgai-cell
+                                            .check-icon
+                                                i.fas.fa-check-circle
+                                            p Identifies missing, inconsistent, or misaligned requirements across documents
+                                        .value-cell.generic-cell
+                                            .cross-icon
+                                                i.fas.fa-times-circle
+                                            p Cannot systematically detect cross-document gaps or inconsistencies
+                                    
+                                    .comparison-row
+                                        .feature-cell
+                                            .feature-icon
+                                                i.fas.fa-plug
+                                            .feature-name Native Tool Integration
+                                        .value-cell.norgai-cell
+                                            .check-icon
+                                                i.fas.fa-check-circle
+                                            p Works directly in PowerPoint, Word, and corporate templates; no copy-paste
+                                        .value-cell.generic-cell
+                                            .cross-icon
+                                                i.fas.fa-times-circle
+                                            p Requires manual transfer between tools; workflow fragmentation
+                                    
+                                    .comparison-row
+                                        .feature-cell
+                                            .feature-icon
+                                                i.fas.fa-shield-alt
+                                            .feature-name Enterprise-Grade Governance
+                                        .value-cell.norgai-cell
+                                            .check-icon
+                                                i.fas.fa-check-circle
+                                            p On-prem deployment, auditability, and human-in-the-loop control
+                                        .value-cell.generic-cell
+                                            .cross-icon
+                                                i.fas.fa-times-circle
+                                            p Limited governance controls and enterprise deployment flexibility
+            
 
-                                                            .file-item#upload-progress(style="display: none;")
-                                                                .file-icon
-                                                                    svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                        path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
-                                                                        polyline(points="14 2 14 8 20 8")
-                                                                        line(x1="16" y1="13" x2="8" y2="13")
-                                                                        line(x1="16" y1="17" x2="8" y2="17")
-                                                                .file-info
-                                                                    p.file-name requirements_document.pdf
-                                                                    .progress-bar-bg
-                                                                        .progress-bar-fill#progress-fill(style="width: 0%")
-                                                                    p.upload-complete#upload-complete(style="display: none;")
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            polyline(points="20 6 9 17 4 12")
-                                                                        | Upload complete
 
-                                                            .file-item#upload-progress-2(style="display: none; margin-top: 1rem;")
-                                                                .file-icon
-                                                                    svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                        path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
-                                                                        polyline(points="14 2 14 8 20 8")
-                                                                        line(x1="16" y1="13" x2="8" y2="13")
-                                                                        line(x1="16" y1="17" x2="8" y2="17")
-                                                                .file-info
-                                                                    p.file-name Master Deck.pptx
-                                                                    .progress-bar-bg
-                                                                        .progress-bar-fill#progress-fill-2(style="width: 0%")
-                                                                    p.upload-complete#upload-complete-2(style="display: none;")
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            polyline(points="20 6 9 17 4 12")
-                                                                        | Upload complete
-                                                    
-                                                    // Chat Step
-                                                    .step#step-chat
-                                                        .card(style="padding: 0; overflow: hidden;")
-                                                            .chat-header
-                                                                h3 NorgAI Assistant
-                                                            .chat-content
-                                                                .message
-                                                                    .message-avatar
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                    .message-bubble.ai
-                                                                        p Hello! I am NorgAI, your AI-powered assistant. How can I help you today?
-                                                                .button-container
-                                                                    button.create-button Create New Presentation
-                                                                .message.user#user-message(style="opacity: 0;")
-                                                                    .message-bubble
-                                                                        p(style="display: flex; align-items: center; gap: 0.5rem;")
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 1rem; height: 1rem;")
-                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                            | Create a presentation based on the requirements file
-                                                                    .message-avatar.user
-                                                                        span U
-                                                    
-                                                    // Processing Step  
-                                                    .step#step-processing
-                                                        .card(style="padding: 0; overflow: hidden;")
-                                                            .chat-header
-                                                                h3 NorgAI Assistant
-                                                            .chat-content
-                                                                .message
-                                                                    .message-avatar
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                    .message-bubble.ai
-                                                                        p Hello! I am NorgAI, your AI-powered assistant. How can I help you today?
-                                                                .message.user
-                                                                    .message-bubble
-                                                                        p(style="display: flex; align-items: center; gap: 0.5rem;")
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 1rem; height: 1rem;")
-                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                            | Create a presentation based on the requirements file
-                                                                    .message-avatar.user
-                                                                        span U
-                                                                .message
-                                                                    .message-avatar
-                                                                        svg.spinner(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                    .message-bubble.ai
-                                                                        .processing-indicator
-                                                                            .dots
-                                                                                .dot
-                                                                                .dot
-                                                                                .dot
-                                                                            p(style="color: #475569; font-weight: 500;") Processing your request...
-                                                    
-                                                    // Result Step
-                                                    .step#step-result
-                                                        .card
-                                                            .result-grid
-                                                                div
-                                                                    div(style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;")
-                                                                        .success-badge
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                polyline(points="20 6 9 17 4 12")
-                                                                        h2.card-title Presentation Ready!
-                                                                    .slides-list
-                                                                        - for (let i = 1; i <= 8; i++)
-                                                                            .slide-item(style=`animation-delay: ${(i-1) * 0.06}s;`)
-                                                                                .slide-thumbnail
-                                                                                    span.slide-number= i
-                                                                                    .slide-lines
-                                                                                        .slide-line
-                                                                                        .slide-line
-                                                                                        div(style="flex: 1;")
-                                                                                        .slide-line
-                                                                                .slide-placeholder
-                                                                                    .slide-title
-                                                                                    .slide-subtitle
-                                                                .actions-panel
-                                                                    .actions-header
-                                                                        .actions-icon
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                        h3.actions-title 8 Slides Generated
-                                                                        p.actions-subtitle Expand or export your presentation
-                                                                    button.action-button.primary
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                        | Expand to 75 slides
-                                                                    button.action-button.secondary
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                        | Trim to 16 slides
-                                                                    button.action-button.outline
+            // Demo Animation (pptx)
+            section#norgai-demo.norgai-animation-section
+                .norgai-animation-wrapper
+                    .norgai-bg-gradient
+                    .container-fluid
+                        .row.justify-content-center
+                            .col-12.text-center.norgai-section-intro
+                                .norgai-section-badge.mb-4
+                                    span 🎬
+                                    span Demo
+                                h2.norgai-section-heading NorgAI in Action
+                                p.norgai-section-subheading Watch how NorgAI transforms requirements into presentation-ready decks in seconds
+                        
+                        .row.justify-content-center.mt-5
+                            .col-12
+                                .norgai-animation-container-wrapper
+                                    .animation-glass-frame
+                                        // THE ANIMATION GOES HERE - Copy everything from document index 4 (the HTML file)
+                                        // Start from <div class="container"> and include everything until </div> (matching container close)
+                                        .container
+                                            .left-panel
+                                                .ppt-navbar
+                                                    .ppt-logo PPT
+                                                    .ppt-tabs
+                                                        .ppt-tab File
+                                                        .ppt-tab.active Home
+                                                        .ppt-tab Insert
+                                                        .ppt-tab Design
+                                                        .ppt-tab Transitions
+                                                
+                                                .ppt-workspace
+                                                    .ppt-canvas
+                                                        .slide-thumbnails#slide-thumbnails
+                                                        .main-slide#main-slide
+                                            
+                                            .right-panel
+                                                .plugin-header
+                                                    h2 NorgAI Assistant
+                                                
+                                                .plugin-content
+                                                    .animation-container
+                                                        // Upload Step
+                                                        .step.active#step-upload
+                                                            .card
+                                                                .card-header
+                                                                    .icon-box
                                                                         svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
                                                                             path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
                                                                             polyline(points="14 2 14 8 20 8")
                                                                             line(x1="16" y1="13" x2="8" y2="13")
                                                                             line(x1="16" y1="17" x2="8" y2="17")
-                                                                        | Insert PPT
-         
-                       
-        // Contact
-        section#contact.page-section
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.align-items-center.mb-5
-                    .col-lg-6
-                        .contact-card.col-lg-10
-                            h3.text-primary.mx-4.my-3 Save weeks of PS effort per project with improved quality, consistency, and client confidence.
-                    // Contact Form Section  
-                    .col-lg-6.mb-4
-                        #form-card
+                                                                    h2.card-title Upload Documents
+                                                                
+                                                                .upload-zone#upload-empty
+                                                                    .upload-icon
+                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                            path(d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4")
+                                                                            polyline(points="17 8 12 3 7 8")
+                                                                            line(x1="12" y1="3" x2="12" y2="15")
+                                                                    p.upload-text Drag & drop files here or 
+                                                                        span.browse browse files
+                                                                    p.upload-subtext Supported formats: PDF, DOCX, TXT
 
-                            // Contact Form Container
-                            #contact-form(data-source="homepage_form")
+                                                                .file-item#upload-progress(style="display: none;")
+                                                                    .file-icon
+                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                            path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
+                                                                            polyline(points="14 2 14 8 20 8")
+                                                                            line(x1="16" y1="13" x2="8" y2="13")
+                                                                            line(x1="16" y1="17" x2="8" y2="17")
+                                                                    .file-info
+                                                                        p.file-name requirements_document.pdf
+                                                                        .progress-bar-bg
+                                                                            .progress-bar-fill#progress-fill(style="width: 0%")
+                                                                        p.upload-complete#upload-complete(style="display: none;")
+                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                polyline(points="20 6 9 17 4 12")
+                                                                            | Upload complete
+
+                                                                .file-item#upload-progress-2(style="display: none; margin-top: 1rem;")
+                                                                    .file-icon
+                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                            path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
+                                                                            polyline(points="14 2 14 8 20 8")
+                                                                            line(x1="16" y1="13" x2="8" y2="13")
+                                                                            line(x1="16" y1="17" x2="8" y2="17")
+                                                                    .file-info
+                                                                        p.file-name Master Deck.pptx
+                                                                        .progress-bar-bg
+                                                                            .progress-bar-fill#progress-fill-2(style="width: 0%")
+                                                                        p.upload-complete#upload-complete-2(style="display: none;")
+                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                polyline(points="20 6 9 17 4 12")
+                                                                            | Upload complete
+                                                        
+                                                        // Chat Step
+                                                        .step#step-chat
+                                                            .card(style="padding: 0; overflow: hidden;")
+                                                                .chat-header
+                                                                    h3 NorgAI Assistant
+                                                                .chat-content
+                                                                    .message
+                                                                        .message-avatar
+                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
+                                                                        .message-bubble.ai
+                                                                            p Hello! I am NorgAI, your AI-powered assistant. How can I help you today?
+                                                                    .button-container
+                                                                        button.create-button Create New Presentation
+                                                                    .message.user#user-message(style="opacity: 0;")
+                                                                        .message-bubble
+                                                                            p(style="display: flex; align-items: center; gap: 0.5rem;")
+                                                                                svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 1rem; height: 1rem;")
+                                                                                    path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
+                                                                                | Create a presentation based on the requirements file
+                                                                        .message-avatar.user
+                                                                            span U
+                                                        
+                                                        // Processing Step  
+                                                        .step#step-processing
+                                                            .card(style="padding: 0; overflow: hidden;")
+                                                                .chat-header
+                                                                    h3 NorgAI Assistant
+                                                                .chat-content
+                                                                    .message
+                                                                        .message-avatar
+                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
+                                                                        .message-bubble.ai
+                                                                            p Hello! I am NorgAI, your AI-powered assistant. How can I help you today?
+                                                                    .message.user
+                                                                        .message-bubble
+                                                                            p(style="display: flex; align-items: center; gap: 0.5rem;")
+                                                                                svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 1rem; height: 1rem;")
+                                                                                    path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
+                                                                                | Create a presentation based on the requirements file
+                                                                        .message-avatar.user
+                                                                            span U
+                                                                    .message
+                                                                        .message-avatar
+                                                                            svg.spinner(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
+                                                                        .message-bubble.ai
+                                                                            .processing-indicator
+                                                                                .dots
+                                                                                    .dot
+                                                                                    .dot
+                                                                                    .dot
+                                                                                p(style="color: #475569; font-weight: 500;") Processing your request...
+                                                        
+                                                        // Result Step
+                                                        .step#step-result
+                                                            .card
+                                                                .result-grid
+                                                                    div
+                                                                        div(style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;")
+                                                                            .success-badge
+                                                                                svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                    polyline(points="20 6 9 17 4 12")
+                                                                            h2.card-title Presentation Ready!
+                                                                        .slides-list
+                                                                            - for (let i = 1; i <= 8; i++)
+                                                                                .slide-item(style=`animation-delay: ${(i-1) * 0.06}s;`)
+                                                                                    .slide-thumbnail
+                                                                                        span.slide-number= i
+                                                                                        .slide-lines
+                                                                                            .slide-line
+                                                                                            .slide-line
+                                                                                            div(style="flex: 1;")
+                                                                                            .slide-line
+                                                                                    .slide-placeholder
+                                                                                        .slide-title
+                                                                                        .slide-subtitle
+                                                                    .actions-panel
+                                                                        .actions-header
+                                                                            .actions-icon
+                                                                                svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                    path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
+                                                                            h3.actions-title 8 Slides Generated
+                                                                            p.actions-subtitle Expand or export your presentation
+                                                                        button.action-button.primary
+                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
+                                                                            | Expand to 75 slides
+                                                                        button.action-button.secondary
+                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
+                                                                            | Trim to 16 slides
+                                                                        button.action-button.outline
+                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
+                                                                                path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
+                                                                                polyline(points="14 2 14 8 20 8")
+                                                                                line(x1="16" y1="13" x2="8" y2="13")
+                                                                                line(x1="16" y1="17" x2="8" y2="17")
+                                                                            | Insert PPT
+             
+                           
+            // Contact
+            section#contact.page-section
+                .container.px-4.px-lg-5
+                    .row.gx-4.gx-lg-5.align-items-center.mb-5
+                        .col-lg-6
+                            .contact-card.col-lg-10
+                                h3.text-primary.mx-4.my-3 Save weeks of PS effort per project with improved quality, consistency, and client confidence.
+                        // Contact Form Section  
+                        .col-lg-6.mb-4
+                            #form-card
+
+                                // Contact Form Container
+                                #contact-form(data-source="homepage_form")
 
 
-                        // Fallback Container (hidden by default)
-                        #contact-fallback.d-none
-                            .text-center
-                                p.mb-2 We couldn't load the contact form right now.
-                                p.mb-3 You can still reach us at:
-                                p.mb-3
-                                    strong Email: 
-                                    a.text-primary(href="mailto:sales@inscripta.ai") sales@inscripta.ai
-                                .mt-4
-                                    a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
-                                        | Send us an Email
+                            // Fallback Container (hidden by default)
+                            #contact-fallback.d-none
+                                .text-center
+                                    p.mb-2 We couldn't load the contact form right now.
+                                    p.mb-3 You can still reach us at:
+                                    p.mb-3
+                                        strong Email: 
+                                        a.text-primary(href="mailto:sales@inscripta.ai") sales@inscripta.ai
+                                    .mt-4
+                                        a.btn.btn-secondary.btn-lg(href="mailto:sales@inscripta.ai") 
+                                            | Send us an Email
 
 
 
