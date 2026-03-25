@@ -351,3 +351,38 @@ window.addEventListener('resize', function() {
 });
 
 
+
+
+
+
+// Animate stat progress bars on scroll + re-animate on hover
+const fills = document.querySelectorAll('.stat-progress-fill');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const fill = entry.target;
+            fill.style.width = fill.dataset.width + '%';
+            observer.unobserve(fill);
+        }
+    });
+}, { threshold: 0.4 });
+
+fills.forEach(fill => {
+    observer.observe(fill);
+
+    const card = fill.closest('.stat-bar-card');
+    if (card) {
+        card.addEventListener('mouseenter', () => {
+            fill.style.transition = 'none';
+            fill.style.width = '0%';
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    fill.style.transition = 'width 1.4s cubic-bezier(0.4, 0, 0.2, 1)';
+                    fill.style.width = fill.dataset.width + '%';
+                });
+            });
+        });
+    }
+});
+
