@@ -209,12 +209,9 @@ html(lang='en')
                                     .core-ring.middle-ring
                                     .core-center
                                         .core-center-inner
-                                            svg.sparkles-icon(viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2")
-                                                path(d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83")
+                                            img.core-logo(src='/assets/img/QAbot_logo_Final.png' alt='NorgAI')
 
                                 .core-label
-                                    svg.zap-icon(viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2")
-                                        polygon(points="13 2 3 14 12 14 11 22 21 10 12 10 13 2")
                                     span.label-text NorgAI
 
                         // Output Documents
@@ -247,7 +244,7 @@ html(lang='en')
                                         svg.doc-icon(viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2")
                                             path(d="M22 11.08V12a10 10 0 1 1-5.93-9.14")
                                             polyline(points="22 4 12 14.01 9 11.01")
-                                        span.doc-label Requirements
+                                        span.doc-label Requirements Use Cases
 
                             .doc-card(data-index="3")
                                 .connection-line.connection-right
@@ -338,40 +335,301 @@ html(lang='en')
             section#impact-metrics.page-section.impact-gradient
                 .container.px-4.px-lg-5
                     .row.g-4
-                        .col-lg-4.col-md-6
-                            .about-feature-card
-                                .feature-card-icon.bg-gradient-primary
-                                    i.fas.fa-rocket
-                                h3.feature-card-title 50-60% Faster
-                                p.feature-card-desc Document creation through intelligent automation. Accelerate RFP responses, proposals, and delivery artifacts.
-                                .feature-card-badge
-                                    i.fas.fa-check-circle
-                                    span Proven Impact
-                        
-                        .col-lg-4.col-md-6
-                            .about-feature-card
-                                .feature-card-icon.bg-gradient-secondary
-                                    i.fas.fa-redo-alt
-                                h3.feature-card-title 80% Less Rework
-                                p.feature-card-desc Driven by consistent structure, complete requirements, and early gap detection across documents.
-                                .feature-card-badge
-                                    i.fas.fa-check-circle
-                                    span Quality First
-                        
-                        .col-lg-4.col-md-6
-                            .about-feature-card
-                                .feature-card-icon.bg-gradient-accent
+                        .col-lg-4.col-md-12
+                            .stat-bar-card
+                                .stat-bar-body
+                                    .stat-number 60–70%
+                                    .stat-info
+                                        h3.stat-title Faster Document Creation
+                                        p.stat-desc Accelerate RFP responses, proposals, and delivery artifacts through intelligent automation.
+                                .stat-progress-track
+                                    .stat-progress-fill(data-width="70")
+
+                        .col-lg-4.col-md-12
+                            .stat-bar-card
+                                .stat-bar-body
+                                    .stat-number 80%
+                                    .stat-info
+                                        h3.stat-title Less Rework
+                                        p.stat-desc Driven by consistent structure, complete requirements Use Cases, and early gap detection across documents.
+                                .stat-progress-track
+                                    .stat-progress-fill(data-width="80")
+
+                        .col-lg-4.col-md-12
+                            .stat-bar-card
+                                .stat-bar-body
+                                    .stat-number 70%
+                                    .stat-info
+                                        h3.stat-title Smart Knowledge Reuse
+                                        p.stat-desc Effective reuse without the overhead of manually maintaining master documents.
+                                .stat-progress-track
+                                    .stat-progress-fill(data-width="70")
+
+
+            // Tools Comparison Matrix
+            section#tools-matrix.page-section.tools-matrix-section
+                .container.px-4.px-lg-5
+                    .row.justify-content-center.mb-5
+                        .col-lg-9.text-center
+                            .section-badge.mb-3
+                                span ⚡ Benchmark
+                            h2.section-heading How NorgAI Stacks Up
+                            p.section-subheading Tested head-to-head against popular AI tools on the workflows that matter most for PS teams
+
+                    .matrix-outer
+                        .matrix-scroll
+                            table.matrix-table
+                                thead
+                                    tr
+                                        th.col-feature
+                                        th.col-tool.col-norgai
+                                            .tool-cell-header
+                                                span.winner-badge ★ Best
+                                                span.tool-label NorgAI
+                                        th.col-tool
+                                            .tool-cell-header
+                                                span.tool-label Claude Add-in
+                                        th.col-tool
+                                            .tool-cell-header
+                                                span.tool-label ChatGPT
+                                        th.col-tool
+                                            .tool-cell-header
+                                                span.tool-label Gamma
+                                        th.col-tool
+                                            .tool-cell-header
+                                                span.tool-label Gemini
+                                        th.col-tool
+                                            .tool-cell-header
+                                                span.tool-label Replit
+
+                                tbody
+                                    tr
+                                        td.cell-feature
+                                            i.fas.fa-palette
+                                            span Template &amp; Branding
+                                        td.cell-score.col-norgai
+                                            span.score-pill.score-full Full fidelity
+                                        td.cell-score
+                                            span.score-pill.score-partial Content, not visuals
+                                        td.cell-score
+                                            span.score-pill.score-limited Layout broken
+                                        td.cell-score
+                                            span.score-pill.score-limited No master deck
+                                        td.cell-score
+                                            span.score-pill.score-limited No templates
+                                        td.cell-score
+                                            span.score-pill.score-limited Theme lost
+
+                                    tr
+                                        td.cell-feature
+                                            i.fas.fa-file-alt
+                                            span Content Generation
+                                        td.cell-score.col-norgai
+                                            span.score-pill.score-full Full topic coverage
+                                        td.cell-score
+                                            span.score-pill.score-good Accurate, partial
+                                        td.cell-score
+                                            span.score-pill.score-partial Vague output
+                                        td.cell-score
+                                            span.score-pill.score-partial No topic guidance
+                                        td.cell-score
+                                            span.score-pill.score-limited 1 slide only
+                                        td.cell-score
+                                            span.score-pill.score-partial 15 slides max
+
+                                    tr
+                                        td.cell-feature
+                                            i.fas.fa-bolt
+                                            span Speed
+                                        td.cell-score.col-norgai
+                                            span.score-pill.score-full &lt;5 min, 3 versions
+                                        td.cell-score
+                                            span.score-pill.score-partial &gt;5 min, 10 slides
+                                        td.cell-score
+                                            span.score-pill.score-full &lt;5 min
+                                        td.cell-score
+                                            span.score-pill.score-partial ~10 min, 10 slides
+                                        td.cell-score
+                                            span.score-pill.score-partial ~20 sec/slide
+                                        td.cell-score
+                                            span.score-pill.score-partial ~10 min, 15 slides
+
+                                    tr
+                                        td.cell-feature
+                                            i.fas.fa-plug
+                                            span Integration
+                                        td.cell-score.col-norgai
+                                            span.score-pill.score-full Native Office + Web
+                                        td.cell-score
+                                            span.score-pill.score-good Native PPT add-in
+                                        td.cell-score
+                                            span.score-pill.score-limited No integration
+                                        td.cell-score
+                                            span.score-pill.score-limited Web export only
+                                        td.cell-score
+                                            span.score-pill.score-good Native Google Slides
+                                        td.cell-score
+                                            span.score-pill.score-limited No Office support
+
+                                    tr
+                                        td.cell-feature
+                                            i.fas.fa-edit
+                                            span Editing &amp; Control
+                                        td.cell-score.col-norgai
+                                            span.score-pill.score-full Multi-slide editing
+                                        td.cell-score
+                                            span.score-pill.score-good Element-by-element
+                                        td.cell-score
+                                            span.score-pill.score-limited Download required
+                                        td.cell-score
+                                            span.score-pill.score-partial Web-based only
+                                        td.cell-score
+                                            span.score-pill.score-limited No editing support
+                                        td.cell-score
+                                            span.score-pill.score-partial Non-native workflow
+
+                                    tr
+                                        td.cell-feature
+                                            i.fas.fa-user-check
+                                            span Human-in-the-Loop
+                                        td.cell-score.col-norgai
+                                            span.score-pill.score-full Full HIL workflow
+                                        td.cell-score
+                                            span.score-pill.score-partial Open slides only
+                                        td.cell-score
+                                            span.score-pill.score-limited No preview
+                                        td.cell-score
+                                            span.score-pill.score-partial Web preview
+                                        td.cell-score
+                                            span.score-pill.score-partial Preview before insert
+                                        td.cell-score
+                                            span.score-pill.score-partial HTML preview only
+
+
+
+            section#dashboard-hub.page-section.dashboard-hub-section
+                .container.px-4.px-lg-5
+
+                    // Header
+                    .row.justify-content-center.mb-5
+                        .col-lg-7.text-center
+                            .section-badge.mb-3
+                                span 🖥️ NorgAI Dashboard
+                            h2.section-heading Your Central Command Center
+
+                    // 4 feature points in a 2x2 grid ABOVE the image
+                    .row.g-3.mb-5
+                        .col-lg-3.col-md-6
+                            .dfi-card
+                                .dfi-card-icon
+                                    i.fas.fa-folder-open
+                                p.dfi-card-title Project Hub
+                                p.dfi-card-desc Manage all projects, stages and artifacts in one place
+                        .col-lg-3.col-md-6
+                            .dfi-card
+                                .dfi-card-icon
+                                    i.fas.fa-magic
+                                p.dfi-card-title Central Artifact Generation
+                                p.dfi-card-desc Generate any document from the lifecycle
+                        .col-lg-3.col-md-6
+                            .dfi-card
+                                .dfi-card-icon
+                                    i.fas.fa-comments
+                                p.dfi-card-title Integrated AI Chat
+                                p.dfi-card-desc Full project context in every single conversation
+                        .col-lg-3.col-md-6
+                            .dfi-card
+                                .dfi-card-icon
                                     i.fas.fa-brain
-                                h3.feature-card-title Smart Reuse
-                                p.feature-card-desc Effective knowledge reuse without the overhead of manually maintaining master documents.
-                                .feature-card-badge
-                                    i.fas.fa-check-circle
-                                    span AI-Powered
+                                p.dfi-card-title Persistent Memory
+                                p.dfi-card-desc Context flows from first RFP to final delivery automatically
+
+                    // Screenshot below as proof
+                    .dashboard-img-wrapper.dashboard-img-wide
+                        .dashboard-browser-bar
+                            .browser-dots
+                                span
+                                span
+                                span
+                            .browser-url norgai.app / dashboard
+                        img.img-fluid.dashboard-screenshot(src='/assets/img/dashboard_ss.png' alt='NorgAI Dashboard')
+
+
+            // Plugins Section
+            section#plugins.page-section.plugins-section
+                .container.px-4.px-lg-5
+
+                    // Section Header
+                    .row.justify-content-center.mb-6
+                        .col-lg-8.text-center
+                            .section-badge.mb-3
+                                span 🔌 Native Plugins
+                            h2.section-heading Built into the tools your team already uses
+                            p.section-subheading Purpose-built add-ins for Microsoft Word and PowerPoint — no switching tabs, no copy-paste, no friction.
+
+                    // Word Plugin
+                    .plugin-block.mb-6
+                        .row.gx-5.gx-lg-6.align-items-center
+                            .col-lg-7.mb-4.mb-lg-0
+                                img.img-fluid(src='/assets/img/word_ss.png' alt='NorgAI Word Plugin Screenshot' style='border-radius: 12px; width: 100%;')
+                            .col-lg-5.ps-lg-5
+                                .plugin-points-wrapper
+                                    .plugin-points-header
+                                        i.fas.fa-file-word
+                                        span Inside Microsoft Word
+                                    ul.plugin-points-list
+                                        li
+                                            .point-icon
+                                                i.fas.fa-comment-dots
+                                            span Ask questions about your documents
+                                        li
+                                            .point-icon
+                                                i.fas.fa-file-alt
+                                            span Generate structured business documents
+                                        li
+                                            .point-icon
+                                                i.fas.fa-file-signature
+                                            span Create Statements of Work automatically
+                                        li
+                                            .point-icon
+                                                i.fas.fa-edit
+                                            span Modify and refine documents using AI
+
+                    // Divider
+                    .plugin-divider
+
+                    // PowerPoint Plugin
+                    .plugin-block.mt-6
+                        .row.gx-5.gx-lg-6.align-items-center
+                            .col-lg-5.mb-4.mb-lg-0.order-lg-1.order-2.pe-lg-5
+                                .plugin-points-wrapper
+                                    .plugin-points-header
+                                        i.fas.fa-file-powerpoint
+                                        span Inside Microsoft PowerPoint
+                                    ul.plugin-points-list
+                                        li
+                                            .point-icon
+                                                i.fas.fa-magic
+                                            span Generate full presentations automatically
+                                        li
+                                            .point-icon
+                                                i.fas.fa-pencil-alt
+                                            span Rewrite and refine slides instantly
+                                        li
+                                            .point-icon
+                                                i.fas.fa-search
+                                            span Search and retrieve slides from your knowledge base
+                                        li
+                                            .point-icon
+                                                i.fas.fa-layer-group
+                                            span AI understands slide context and visuals
+                            .col-lg-7.order-lg-2.order-1
+                                img.img-fluid(src='/assets/img/ppt_ss.png' alt='NorgAI PowerPoint Plugin Screenshot' style='border-radius: 12px; width: 100%;')
 
 
 
             // Modern PS Tasks Section
-            section#ps-tasks.page-section.bg-white
+            section#ps-tasks.page-section
                 .container.px-4.px-lg-5
                     .row.justify-content-center.mb-5
                         .col-lg-8.text-center
@@ -428,7 +686,7 @@ html(lang='en')
 
                         
             // Detailed Comparison Table
-            section#detailed-comparison.page-section.bg-white
+            section#detailed-comparison.page-section
                 .container.px-4.px-lg-5
                     .row.justify-content-center.mb-5
                         .col-lg-10.text-center
@@ -535,205 +793,7 @@ html(lang='en')
                                             .cross-icon
                                                 i.fas.fa-times-circle
                                             p Limited governance controls and enterprise deployment flexibility
-            
 
-
-            // Demo Animation (pptx)
-            section#norgai-demo.norgai-animation-section
-                .norgai-animation-wrapper
-                    .norgai-bg-gradient
-                    .container-fluid
-                        .row.justify-content-center
-                            .col-12.text-center.norgai-section-intro
-                                .norgai-section-badge.mb-4
-                                    span 🎬
-                                    span Demo
-                                h2.norgai-section-heading NorgAI in Action
-                                p.norgai-section-subheading Watch how NorgAI transforms requirements into presentation-ready decks in seconds
-                        
-                        .row.justify-content-center.mt-5
-                            .col-12
-                                .norgai-animation-container-wrapper
-                                    .animation-glass-frame
-                                        // THE ANIMATION GOES HERE - Copy everything from document index 4 (the HTML file)
-                                        // Start from <div class="container"> and include everything until </div> (matching container close)
-                                        .container
-                                            .left-panel
-                                                .ppt-navbar
-                                                    .ppt-logo PPT
-                                                    .ppt-tabs
-                                                        .ppt-tab File
-                                                        .ppt-tab.active Home
-                                                        .ppt-tab Insert
-                                                        .ppt-tab Design
-                                                        .ppt-tab Transitions
-                                                
-                                                .ppt-workspace
-                                                    .ppt-canvas
-                                                        .slide-thumbnails#slide-thumbnails
-                                                        .main-slide#main-slide
-                                            
-                                            .right-panel
-                                                .plugin-header
-                                                    h2 NorgAI Assistant
-                                                
-                                                .plugin-content
-                                                    .animation-container
-                                                        // Upload Step
-                                                        .step.active#step-upload
-                                                            .card
-                                                                .card-header
-                                                                    .icon-box
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
-                                                                            polyline(points="14 2 14 8 20 8")
-                                                                            line(x1="16" y1="13" x2="8" y2="13")
-                                                                            line(x1="16" y1="17" x2="8" y2="17")
-                                                                    h2.card-title Upload Documents
-                                                                
-                                                                .upload-zone#upload-empty
-                                                                    .upload-icon
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4")
-                                                                            polyline(points="17 8 12 3 7 8")
-                                                                            line(x1="12" y1="3" x2="12" y2="15")
-                                                                    p.upload-text Drag & drop files here or 
-                                                                        span.browse browse files
-                                                                    p.upload-subtext Supported formats: PDF, DOCX, TXT
-
-                                                                .file-item#upload-progress(style="display: none;")
-                                                                    .file-icon
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
-                                                                            polyline(points="14 2 14 8 20 8")
-                                                                            line(x1="16" y1="13" x2="8" y2="13")
-                                                                            line(x1="16" y1="17" x2="8" y2="17")
-                                                                    .file-info
-                                                                        p.file-name requirements_document.pdf
-                                                                        .progress-bar-bg
-                                                                            .progress-bar-fill#progress-fill(style="width: 0%")
-                                                                        p.upload-complete#upload-complete(style="display: none;")
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                polyline(points="20 6 9 17 4 12")
-                                                                            | Upload complete
-
-                                                                .file-item#upload-progress-2(style="display: none; margin-top: 1rem;")
-                                                                    .file-icon
-                                                                        svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                            path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
-                                                                            polyline(points="14 2 14 8 20 8")
-                                                                            line(x1="16" y1="13" x2="8" y2="13")
-                                                                            line(x1="16" y1="17" x2="8" y2="17")
-                                                                    .file-info
-                                                                        p.file-name Master Deck.pptx
-                                                                        .progress-bar-bg
-                                                                            .progress-bar-fill#progress-fill-2(style="width: 0%")
-                                                                        p.upload-complete#upload-complete-2(style="display: none;")
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                polyline(points="20 6 9 17 4 12")
-                                                                            | Upload complete
-                                                        
-                                                        // Chat Step
-                                                        .step#step-chat
-                                                            .card(style="padding: 0; overflow: hidden;")
-                                                                .chat-header
-                                                                    h3 NorgAI Assistant
-                                                                .chat-content
-                                                                    .message
-                                                                        .message-avatar
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                        .message-bubble.ai
-                                                                            p Hello! I am NorgAI, your AI-powered assistant. How can I help you today?
-                                                                    .button-container
-                                                                        button.create-button Create New Presentation
-                                                                    .message.user#user-message(style="opacity: 0;")
-                                                                        .message-bubble
-                                                                            p(style="display: flex; align-items: center; gap: 0.5rem;")
-                                                                                svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 1rem; height: 1rem;")
-                                                                                    path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                                | Create a presentation based on the requirements file
-                                                                        .message-avatar.user
-                                                                            span U
-                                                        
-                                                        // Processing Step  
-                                                        .step#step-processing
-                                                            .card(style="padding: 0; overflow: hidden;")
-                                                                .chat-header
-                                                                    h3 NorgAI Assistant
-                                                                .chat-content
-                                                                    .message
-                                                                        .message-avatar
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                        .message-bubble.ai
-                                                                            p Hello! I am NorgAI, your AI-powered assistant. How can I help you today?
-                                                                    .message.user
-                                                                        .message-bubble
-                                                                            p(style="display: flex; align-items: center; gap: 0.5rem;")
-                                                                                svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 1rem; height: 1rem;")
-                                                                                    path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                                | Create a presentation based on the requirements file
-                                                                        .message-avatar.user
-                                                                            span U
-                                                                    .message
-                                                                        .message-avatar
-                                                                            svg.spinner(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                        .message-bubble.ai
-                                                                            .processing-indicator
-                                                                                .dots
-                                                                                    .dot
-                                                                                    .dot
-                                                                                    .dot
-                                                                                p(style="color: #475569; font-weight: 500;") Processing your request...
-                                                        
-                                                        // Result Step
-                                                        .step#step-result
-                                                            .card
-                                                                .result-grid
-                                                                    div
-                                                                        div(style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;")
-                                                                            .success-badge
-                                                                                svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                    polyline(points="20 6 9 17 4 12")
-                                                                            h2.card-title Presentation Ready!
-                                                                        .slides-list
-                                                                            - for (let i = 1; i <= 8; i++)
-                                                                                .slide-item(style=`animation-delay: ${(i-1) * 0.06}s;`)
-                                                                                    .slide-thumbnail
-                                                                                        span.slide-number= i
-                                                                                        .slide-lines
-                                                                                            .slide-line
-                                                                                            .slide-line
-                                                                                            div(style="flex: 1;")
-                                                                                            .slide-line
-                                                                                    .slide-placeholder
-                                                                                        .slide-title
-                                                                                        .slide-subtitle
-                                                                    .actions-panel
-                                                                        .actions-header
-                                                                            .actions-icon
-                                                                                svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                    path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                            h3.actions-title 8 Slides Generated
-                                                                            p.actions-subtitle Expand or export your presentation
-                                                                        button.action-button.primary
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                            | Expand to 75 slides
-                                                                        button.action-button.secondary
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                path(d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z")
-                                                                            | Trim to 16 slides
-                                                                        button.action-button.outline
-                                                                            svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor")
-                                                                                path(d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z")
-                                                                                polyline(points="14 2 14 8 20 8")
-                                                                                line(x1="16" y1="13" x2="8" y2="13")
-                                                                                line(x1="16" y1="17" x2="8" y2="17")
-                                                                            | Insert PPT
-             
                            
             // Contact
             section#contact.page-section

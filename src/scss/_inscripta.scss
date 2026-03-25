@@ -2466,14 +2466,14 @@ header.prodhead .hero-trust {
 }
 
 .feature-card-icon {
-    width: 72px;
-    height: 72px;
+    width: 56px;
+    height: 56px;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     
@@ -2494,11 +2494,12 @@ header.prodhead .hero-trust {
 }
 
 .feature-card-title {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 900;
     color: #0f172a;
     margin-bottom: 0.75rem;
     line-height: 1.2;
+    letter-spacing: -0.5px;
 }
 
 .feature-card-desc {
@@ -2854,7 +2855,6 @@ header.prodhead .hero-trust {
     position: relative;
     overflow: hidden;
     padding: 5rem 0;
-    margin-top: 3rem;
     
     &::before {
         content: '';
@@ -2960,4 +2960,727 @@ section#case-study {
         top: auto !important;
         transform: none !important;
     }
+}
+
+
+
+
+/************************************
+ * PLUGINS SECTION - NORGAI
+ ************************************/
+
+.plugins-section {
+    background: #ffffff;
+    padding: 5rem 0;
+}
+
+.mb-6 {
+    margin-bottom: 5rem !important;
+}
+
+.mt-6 {
+    margin-top: 5rem !important;
+}
+
+// Media placeholder
+.plugin-media-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 20px;
+    background: #f8f9fc;
+    border: 1px solid #e8ecf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+}
+
+.plugin-media-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #eef2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: $primary;
+}
+
+.plugin-media-label {
+    font-size: 0.8rem;
+    color: #b0becf;
+    font-weight: 400;
+    margin: 0;
+}
+
+// Points wrapper
+.plugin-points-wrapper {
+    padding: 0.5rem 0;
+}
+
+.plugin-points-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #f1f5f9;
+
+    i {
+        font-size: 1.6rem;
+        color: $primary;
+    }
+
+    span {
+        font-size: 1.1rem;
+        font-weight: 650;
+        color: #0f172a;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+    }
+}
+
+
+// Feature points list
+.plugin-points-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 1.25rem 0;
+        border-bottom: 1px solid #f1f5f9;
+        font-size: 1.25rem;
+        font-weight: 650;
+        color: #1e293b;
+        line-height: 1.4;
+        transition: color 0.2s ease;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            color: $primary;
+
+            .point-icon {
+                background: linear-gradient(135deg, $primary, $secondary);
+                color: #fff;
+            }
+        }
+    }
+}
+
+.plugins-section img.img-fluid {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+    &:hover {
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.16), 0 12px 32px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.point-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 8px;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    color: #64748b;
+    transition: all 0.25s ease;
+}
+
+// Divider between Word and PPT blocks
+.plugin-divider {
+    height: 1px;
+    background: #f1f5f9;
+}
+
+// Responsive
+@media (max-width: 991px) {
+    .plugins-section {
+        padding: 3.5rem 0;
+    }
+
+    .plugin-media-placeholder {
+        aspect-ratio: 16 / 9;
+    }
+
+    .mb-6 {
+        margin-bottom: 3rem !important;
+    }
+
+    .mt-6 {
+        margin-top: 3rem !important;
+    }
+
+    .plugin-points-list li {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+}
+
+
+
+
+
+/************************************
+ * TOOLS MATRIX SECTION - NORGAI
+ ************************************/
+
+.tools-matrix-section {
+    background: #ffffff;
+    padding: 5rem 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background:
+            radial-gradient(circle at 5% 50%, rgba(25, 43, 128, 0.03) 0%, transparent 50%),
+            radial-gradient(circle at 95% 50%, rgba(223, 22, 24, 0.03) 0%, transparent 50%);
+        pointer-events: none;
+    }
+}
+
+.matrix-outer {
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.02),
+        0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+.matrix-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.matrix-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    thead tr {
+        background: linear-gradient(135deg, #0f172a 0%, #1e2f6e 60%, #192b80 100%);
+    }
+
+    th, td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        transition: background 0.2s ease;
+
+        &:last-child { border-bottom: none; }
+
+        &:hover {
+            background: rgba(25, 43, 128, 0.025);
+        }
+    }
+}
+
+// Header columns
+.col-feature {
+    width: 20%;
+    text-align: left !important;
+    padding: 1.5rem 1.25rem !important;
+}
+
+.col-tool {
+    width: 13.33%;
+    padding: 1.5rem 0.75rem !important;
+
+    &.col-norgai {
+        background: rgba(255, 255, 255, 0.12);
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+        position: relative;
+    }
+}
+
+.tool-cell-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.winner-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    background: linear-gradient(135deg, #df1618, #ff5a4d);
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.tool-label {
+    font-size: 0.895rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.3px;
+}
+
+// Body: feature labels
+.cell-feature {
+    text-align: left !important;
+    padding: 1.25rem 1.25rem !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, rgba(248, 249, 252, 0.6) 0%, rgba(255,255,255,1) 100%);
+
+    i {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        border-radius: 8px;
+        background: rgba(25, 43, 128, 0.07);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        color: $primary;
+    }
+
+    span {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #1e293b;
+        line-height: 1.3;
+    }
+}
+
+// Body: score cells
+.cell-score {
+    padding: 1.25rem 0.5rem !important;
+    vertical-align: middle;
+
+    &.col-norgai {
+        background: rgba(25, 43, 128, 0.03);
+        border-left: 1px solid rgba(25, 43, 128, 0.08);
+        border-right: 1px solid rgba(25, 43, 128, 0.08);
+    }
+}
+
+// Score pills
+// AFTER
+.score-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 0.810rem;
+    font-weight: 600;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+
+    &::before {
+        display: none;
+    }
+
+    &.score-full {
+        background: rgba(16, 185, 129, 0.1);
+        color: #065f46;
+        &::before { background: #10b981; }
+    }
+
+    &.score-good {
+        background: rgba(25, 43, 128, 0.08);
+        color: $primary;
+        &::before { background: $primary; }
+    }
+
+    &.score-partial {
+        background: rgba(245, 158, 11, 0.1);
+        color: #92400e;
+        &::before { background: #f59e0b; }
+    }
+
+    &.score-limited {
+        background: rgba(0, 0, 0, 0.04);
+        color: #94a3b8;
+        &::before { background: #cbd5e1; }
+    }
+}
+
+// Responsive
+@media (max-width: 991px) {
+    .tools-matrix-section {
+        padding: 3.5rem 0;
+    }
+
+    .matrix-outer {
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .matrix-scroll::-webkit-scrollbar {
+        height: 4px;
+    }
+    .matrix-scroll::-webkit-scrollbar-thumb {
+        background: rgba(25, 43, 128, 0.2);
+        border-radius: 2px;
+    }
+}
+
+
+
+/************************************
+ * DASHBOARD HUB SECTION - NORGAI
+ ************************************/
+
+.dashboard-hub-section {
+    background: linear-gradient(180deg, #0f172a 0%, #192b80 55%, #0f172a 100%);
+    padding: 6rem 0 4rem;
+    margin-top: 0rem;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background:
+            radial-gradient(ellipse at 15% 40%, rgba(223, 22, 24, 0.08) 0%, transparent 55%),
+            radial-gradient(ellipse at 85% 40%, rgba(255, 255, 255, 0.03) 0%, transparent 55%);
+        pointer-events: none;
+    }
+
+    .section-badge {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .section-heading { color: #ffffff; }
+}
+
+// Feature cards — clean, minimal, equal
+.dfi-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.75rem 1.5rem;
+    height: 100%;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #192b80, #df1618);
+        opacity: 0;
+        transition: opacity 0.25s ease;
+    }
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.15);
+        transform: translateY(-4px);
+
+        &::after { opacity: 1; }
+
+        .dfi-card-icon {
+            background: linear-gradient(135deg, #192b80, #df1618);
+            color: #fff;
+            border-color: transparent;
+        }
+    }
+}
+
+.dfi-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+    transition: all 0.25s ease;
+}
+
+.dfi-card-title {
+    margin: 0 0 0.4rem;
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.3;
+}
+
+.dfi-card-desc {
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.6;
+}
+
+// Screenshot — sits flush at bottom, no gap
+.dashboard-img-wrapper {
+    border-radius: 16px 16px 16px 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 -8px 60px rgba(25, 43, 128, 0.2);
+    position: relative;
+    z-index: 1;
+    margin-top: 1rem;
+}
+
+.dashboard-screenshot {
+    width: 100%;
+    display: block;
+    margin-bottom: -4px; // removes any subpixel gap
+}
+
+.dashboard-browser-bar {
+    background: #161f2e;
+    padding: 0.7rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.browser-dots {
+    display: flex;
+    gap: 6px;
+
+    span {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        &:nth-child(1) { background: #ef4444; }
+        &:nth-child(2) { background: #f59e0b; }
+        &:nth-child(3) { background: #10b981; }
+    }
+}
+
+.browser-url {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.25);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.dashboard-screenshot {
+    width: 100%;
+    display: block;
+}
+
+// Responsive
+@media (max-width: 991px) {
+    .dashboard-hub-section {
+        padding: 3.5rem 0 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .dfi-card {
+        padding: 1.25rem;
+    }
+
+    .dfi-card-title {
+        font-size: 0.95rem;
+    }
+}
+
+.dashboard-img-wide {
+    margin-left: -3rem;
+    margin-right: -3rem;
+}
+
+@media (max-width: 991px) {
+    .dashboard-img-wide {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+// White
+section#key-features {
+    background: #ffffff !important;
+}
+
+// Light grey — subtle difference
+section#impact-metrics {
+    background: linear-gradient(180deg, #0f172a 0%, #192b80 55%, #0f172a 100%) !important;
+}
+
+
+// Light blue-grey — alternates from plugins
+section#tools-matrix {
+    background: #f4f4f6 !important;
+}
+
+// White
+section#ps-tasks {
+    background: #f4f4f6  !important;
+}
+
+
+
+
+/************************************
+ * STAT BAR CARDS — Impact Metrics
+ ************************************/
+
+.stat-bar-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2rem 1.75rem 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.15);
+        transform: translateY(-4px);
+    }
+}
+
+.stat-bar-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-info {
+    flex: 1;
+}
+
+.stat-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.stat-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+}
+
+.stat-progress-track {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.stat-progress-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #192b80, #df1618);
+    transition: width 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Per-card accent colors on the number
+.col-lg-4:nth-child(1) .stat-number {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.col-lg-4:nth-child(2) .stat-number {
+    background: linear-gradient(135deg, #f87171, #ef4444);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.col-lg-4:nth-child(3) .stat-number {
+    background: linear-gradient(135deg, #c084fc, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.col-lg-4:nth-child(1) .stat-progress-fill { background: linear-gradient(90deg, #1d4ed8, #60a5fa); }
+.col-lg-4:nth-child(2) .stat-progress-fill { background: linear-gradient(90deg, #dc2626, #f87171); }
+.col-lg-4:nth-child(3) .stat-progress-fill { background: linear-gradient(90deg, #7c3aed, #c084fc); }
+
+
+
+
+
+
+
+section#impact-metrics .feature-card-title {
+    color: #ffffff !important;
+}
+
+section#impact-metrics .feature-card-desc {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+section#impact-metrics .about-feature-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+section#impact-metrics .feature-card-badge {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+section#impact-metrics .feature-card-badge i {
+    color: rgba(255, 255, 255, 0.6) !important;
 }
