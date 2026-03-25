@@ -3242,14 +3242,17 @@ section#case-study {
     letter-spacing: 0.3px;
 }
 
-// Body: feature labels
 .cell-feature {
-    text-align: left !important;
     padding: 1.25rem 1.25rem !important;
+    background: linear-gradient(90deg, rgba(248, 249, 252, 0.6) 0%, rgba(255,255,255,1) 100%);
+    // remove: display, align-items, gap — move those below
+}
+
+.cell-feature-inner {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(90deg, rgba(248, 249, 252, 0.6) 0%, rgba(255,255,255,1) 100%);
+    height: 100%;
 
     i {
         width: 28px;
