@@ -27,49 +27,74 @@
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://blog.inscripta.ai/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/managing-ai-anxiety-a-case-study-with-notebooklm/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://blog.inscripta.ai/we-tested-6-ai-presentation-tools-for-enterprise-proposals-heres-what-actually-works/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/unlocking-the-secret-to-effective-enterprise-data-curation-and-qabots/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://blog.inscripta.ai/ai-ppt-tools-comparative-case-study/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/research-highlight-pretrained-language-models-language-fundamentals-better-performance/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://blog.inscripta.ai/ai-can-make-slides-and-docs-can-it-ship-a-proposal-package/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/nlp-for-business-in-the-time-of-bertera-seven-misplaced-passions/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://blog.inscripta.ai/that-which-we-call-coding/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/parseqa-pushing-the-boundaries-of-knowledge-search/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://blog.inscripta.ai/managing-ai-anxiety-a-case-study-with-notebooklm/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/get-set-ai-fast-track-your-companys-transformation/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://blog.inscripta.ai/unlocking-the-secret-to-effective-enterprise-data-curation-and-qabots/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.6</priority>
+<loc>https://blog.inscripta.ai/research-highlight-pretrained-language-models-language-fundamentals-better-performance/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-	<loc>https://blog.inscripta.ai/does-conversational-ai-need-a-hippocratic-oath/</loc>
-	<lastmod>2025-11-25T08:47:19+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://blog.inscripta.ai/nlp-for-business-in-the-time-of-bertera-seven-misplaced-passions/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://blog.inscripta.ai/parseqa-pushing-the-boundaries-of-knowledge-search/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://blog.inscripta.ai/get-set-ai-fast-track-your-companys-transformation/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://blog.inscripta.ai/does-conversational-ai-need-a-hippocratic-oath/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://blog.inscripta.ai/product-search-is-broken-heres-how/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://blog.inscripta.ai/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer/</loc>
+<lastmod>2026-04-01T12:36:43+00:00</lastmod>
+<priority>0.51</priority>
 </url>
 <url>
 	<loc>https://inscripta.ai/legal/privacy</loc>
