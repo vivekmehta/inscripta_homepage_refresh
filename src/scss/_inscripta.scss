@@ -32,6 +32,11 @@ S
   max-width: 100%;
 }
 
+#process .img-main {
+  width: 100%;
+  height: auto;
+}
+
 .max-height-500 {
   max-height: 500px!important;
 }
@@ -4819,6 +4824,8 @@ section#impact-metrics .feature-card-badge i {
     min-width: 0;
     overflow: hidden;
     padding-bottom: 0;
+    height: 100%;
+    min-height: 500px;
 }
 
 .cns-cs-card {
@@ -4827,7 +4834,7 @@ section#impact-metrics .feature-card-badge i {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow-y: auto;
+    overflow: hidden;
     opacity: 0;
     pointer-events: none;
     transform: translateY(30px);
@@ -4838,7 +4845,174 @@ section#impact-metrics .feature-card-badge i {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
-}   
+}
+
+// ── Mobile: horizontal scroll-snap carousel ───────────────────
+
+@media (max-width: 991px) { .cns-cs-scroll-track { height: auto; } }
+
+@media (max-width: 991px) {
+    .cns-cs-sticky-panel {
+        position: static; height: auto; overflow: visible;
+        padding-top: 0; padding-bottom: 1.5rem;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 991px) {
+    .cns-cs-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .cns-cs-nav-item {
+        justify-content: center; text-align: center;
+        border-radius: 10px; border-left: none; border-bottom: none;
+        border: 1.5px solid rgba(255, 255, 255, 0.12);
+        padding: 0.65rem 0.5rem; gap: 6px; min-height: 44px;
+    }
+    .cns-cs-nav-item.active {
+        border-color: $secondary;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+// Horizontal scroll container — hides scrollbar visually
+@media (max-width: 991px) {
+    .cns-cs-right {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: visible;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding-bottom: 0.5rem;
+        gap: 0;
+        // Hide scrollbar cross-browser
+        scrollbar-width: none;
+        &::-webkit-scrollbar { display: none; }
+    }
+}
+
+// Every card always visible, snaps to full width
+@media (max-width: 991px) {
+    .cns-cs-card {
+        display: block !important;
+        position: static !important;
+        flex: 0 0 100%;
+        width: 100%;
+        min-width: 100%;
+        height: auto !important;
+        opacity: 1 !important;
+        transform: none !important;
+        scroll-snap-align: start;
+        overflow: visible;
+    }
+}
+
+@media (max-width: 991px) {
+    .cns-cs-card-inner { overflow: visible; padding: 1.25rem 1rem; }
+}
+
+@media (max-width: 991px) {
+    .cns-cs-card .row { display: flex; flex-direction: column; }
+    .cns-cs-card .col-lg-6:last-child { order: -1; margin-top: 0; margin-bottom: 0.75rem; }
+}
+
+@media (max-width: 991px) {
+    .cns-cs-visual {
+        flex: none; min-height: 0; overflow: hidden;
+        border-radius: 10px; height: 200px; background: #f4f6fb;
+    }
+    .cns-cs-img {
+        width: 100%; height: 100%; min-height: 0;
+        object-fit: contain; background: #f4f6fb;
+    }
+    .cns-cs-img-placeholder { min-height: 200px; }
+}
+
+@media (max-width: 480px) {
+    .cns-cs-visual          { height: 160px; }
+    .cns-cs-img-placeholder { min-height: 160px; }
+}
+
+// ── Mobile swipe nav: arrows + dots ───────────────────────────
+// Hidden on desktop; shown only inside the scroll carousel on mobile
+
+.cns-cs-swipe-nav {
+    display: none; // desktop: invisible
+}
+
+@media (max-width: 991px) {
+    .cns-cs-swipe-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 1rem 0.25rem;
+        gap: 0.75rem;
+        // Sticky at the bottom of the scroll container viewport
+        position: sticky;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        pointer-events: none; // let the container below receive swipe
+    }
+}
+
+.cns-cs-arrow {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .cns-cs-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1.5px solid rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.08);
+        color: #ffffff;
+        cursor: pointer;
+        pointer-events: auto;
+        transition: background 0.2s ease, border-color 0.2s ease;
+        font-size: 0.75rem;
+        flex-shrink: 0;
+        &:hover, &:focus { background: rgba(255,255,255,0.18); border-color: $secondary; outline: none; }
+        &:disabled { opacity: 0.3; cursor: default; }
+    }
+}
+
+.cns-cs-swipe-dots {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .cns-cs-swipe-dots {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        pointer-events: none;
+    }
+    .cns-cs-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transition: background 0.25s ease, transform 0.25s ease;
+        &.active {
+            background: $secondary;
+            transform: scale(1.4);
+        }
+    }
+}
 
 #cs-3 .cns-cs-img {
     object-fit: contain;
