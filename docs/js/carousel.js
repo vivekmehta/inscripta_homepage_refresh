@@ -5,8 +5,7 @@ items.forEach((el) => {
     let next = el.nextElementSibling
     for (var i=1; i<minPerSlide; i++) {
         if (!next) {
-            // wrap carousel by using first child
-          next = items[0]
+            next = items[0]
         }
         let cloneChild = next.cloneNode(true)
         el.appendChild(cloneChild.children[0])
@@ -52,18 +51,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setActive(0);
 
-    // ── Desktop: scroll-jacking ──────────────────────────────────
     window.addEventListener('scroll', function () {
         if (isMobile()) return;
-        var trackTop = getOffsetTop(track);
-        var scrolled = window.pageYOffset - trackTop;
+        var trackTop  = getOffsetTop(track);
+        var scrolled  = window.pageYOffset - trackTop;
         if (scrolled < 0) { setActive(0); return; }
-        var total = track.offsetHeight - window.innerHeight;
+        var total     = track.offsetHeight - window.innerHeight;
         if (scrolled >= total) { setActive(cards.length - 1); return; }
         setActive(Math.floor(scrolled / window.innerHeight));
     }, { passive: true });
 
-    // ── Desktop: nav pill clicks scroll the page ─────────────────
     navItems.forEach(function (item, i) {
         item.addEventListener('click', function (e) {
             e.preventDefault();
@@ -74,12 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
             var trackTop = getOffsetTop(track);
-            var target   = trackTop + (i * window.innerHeight) + 10;
-            window.scrollTo({ top: target, behavior: 'smooth' });
+            window.scrollTo({ top: trackTop + (i * window.innerHeight) + 10, behavior: 'smooth' });
         });
     });
 
-    // ── Mobile: arrow buttons scroll one card at a time ──────────
     function scrollToCard(index) {
         if (right && cards[index]) {
             right.scrollTo({ left: cards[index].offsetLeft, behavior: 'smooth' });
@@ -87,10 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function currentIndex() {
-        var active = Array.prototype.indexOf.call(
-            cards,
-            document.querySelector('.cns-cs-card.active')
-        );
+        var active = Array.prototype.indexOf.call(cards, document.querySelector('.cns-cs-card.active'));
         return active >= 0 ? active : 0;
     }
 
@@ -105,7 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ── Mobile: IntersectionObserver syncs nav/dots to visible card
     if ('IntersectionObserver' in window) {
         var observer = new IntersectionObserver(function (entries) {
             if (!isMobile()) return;
@@ -116,7 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         }, { root: right, threshold: 0.5 });
-
         cards.forEach(function (card) { observer.observe(card); });
     }
 });
