@@ -4478,6 +4478,11 @@ section#impact-metrics .feature-card-badge i {
         .cns-cs-nav-label { color: rgba(255, 255, 255, 0.85); }
     }
 
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px $secondary;
+    }
+
     &.active {
         background: rgba(255, 255, 255, 0.06);
         border-left-color: $secondary;
@@ -4534,6 +4539,7 @@ section#impact-metrics .feature-card-badge i {
     overflow: hidden;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 
+    // Dim track — always present as the "empty" state of the timer
     &::before {
         content: '';
         position: absolute;
@@ -4541,7 +4547,7 @@ section#impact-metrics .feature-card-badge i {
         left: 0;
         right: 0;
         height: 3px;
-        background: linear-gradient(90deg, $primary 0%, $secondary 100%);
+        background: rgba(25, 43, 128, 0.15);
     }
 
     &:hover {
@@ -4550,6 +4556,28 @@ section#impact-metrics .feature-card-badge i {
     }
 
     @media (max-width: 767px) { padding: 1.75rem 1.5rem; }
+}
+
+// Animated fill that grows left→right over the 6-second countdown.
+// Sits on top of the ::before dim track. JS drives it via Web Animations API.
+.cns-cs-progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, $primary 0%, $secondary 100%);
+    transform: scaleX(0);
+    transform-origin: left center;
+    will-change: transform;
+    z-index: 1;
+    pointer-events: none;
+
+    @media (max-width: 991px) { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cns-cs-progress-line { display: none; }
 }
 
 // ── Meta row (industry + outcome) ─────────────────────────────
@@ -4733,7 +4761,7 @@ section#impact-metrics .feature-card-badge i {
     overflow: hidden;
     background: #f4f6fb;
     border: 1px solid #e4e8f0;
-    height: 320px;
+    height: clamp(200px, 28vh, 320px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4772,42 +4800,28 @@ section#impact-metrics .feature-card-badge i {
 }
 
 
+// Click-tab pattern (no scroll-jacking).
+// The "scroll-track" wrapper is kept in markup for compatibility but is no
+// longer used to drive vertical scroll. The section is just a normal block
+// whose height is driven by the tallest card in the grid stack below.
 .cns-cs-scroll-track {
-    height: 450vh; // scroll distance for 4 cards
+    height: auto;
 }
 
 .cns-cs-sticky-panel {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow: hidden;
+    position: static;
+    height: auto;
+    overflow: visible;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-
-// Override the existing .cns-cs-right
-.cns-cs-scroll-track {
-    height: 400vh;
-}
-
-.cns-cs-sticky-panel {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .cns-cases .cns-cs-sticky-panel > .container:last-of-type {
     flex: 1;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     flex-direction: column;
 }
@@ -4820,28 +4834,69 @@ section#impact-metrics .feature-card-badge i {
 .cns-cs-right {
     flex: 1;
     min-width: 0;
+    padding-top: 24px; // headroom for the absolute-positioned progress bar
     padding-bottom: 0;
     // Grid stacking: all cards in the same cell, toggled via opacity.
     // Avoids the flex-chain height problem (height:100% on absolute children
     // collapses when no ancestor has an explicit height).
     display: grid;
+    position: relative; // anchor for the auto-rotate progress bar
+}
+
+// Auto-rotate progress bar — a dim track positioned just above the card with
+// a bright animated fill that visualises the 6-second countdown to the next
+// card. JS adds `.is-visible` when the section enters view and `.is-animating`
+// on each card switch (which retriggers the keyframe animation on the fill).
+// Hidden on mobile (mobile uses horizontal swipe) and after the user takes
+// manual control. Sits 10px above the card so it visually separates from the
+// static gradient accent on the card's top edge.
+// Auto-rotate progress bar — the wrapper is the dim track, the inner
+// .cns-cs-progress-fill is the bright fill that gets animated by JS via the
+// Web Animations API (more reliable than CSS animation restarts on pseudo-
+// elements). Hidden on mobile and when the user takes manual control.
+.cns-cs-progress-bar {
+    display: none; // replaced by .cns-cs-progress-line on each card
+}
+
+.cns-cs-progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: $secondary;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    will-change: transform;
+    box-shadow: 0 0 14px rgba(222, 31, 38, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cns-cs-progress-bar { display: none; }
 }
 
 .cns-cs-card {
-    // Place every card in cell 1/1 so they all overlap
+    // Place every card in cell 1/1 so they all overlap; only the .active one
+    // is shown. Snappy fade (~250ms) — within UX-recommended 150–300ms range
+    // for micro-interactions.
     grid-row: 1;
     grid-column: 1;
     overflow: hidden;
     opacity: 0;
     pointer-events: none;
-    transform: translateY(30px);
-    transition: opacity 0.45s ease, transform 0.45s ease;
+    transform: translateY(6px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .cns-cs-card.active {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cns-cs-card { transition: none; transform: none; }
 }
 
 // ── Mobile: horizontal scroll-snap carousel ───────────────────
@@ -4889,6 +4944,7 @@ section#impact-metrics .feature-card-badge i {
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
+        padding-top: 0; // progress line hidden on mobile — no headroom needed
         padding-bottom: 0.5rem;
         gap: 0;
         // Hide scrollbar cross-browser

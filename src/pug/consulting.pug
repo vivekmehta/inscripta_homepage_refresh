@@ -11,6 +11,7 @@ html(lang='en')
         title Agentic AI, Gen AI, NLP Consulting
 
         link(rel='icon', type='image/x-icon', href='assets/favicon.png')
+        link(rel='preconnect' href='https://blog.inscripta.ai')
         link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
         link(href='../css/styles.min.css', rel='stylesheet')
@@ -280,6 +281,7 @@ html(lang='en')
                                 // Case 1 ─────────────────────────────────
                                 .cns-cs-card(id='cs-1')
                                     .cns-cs-card-inner
+                                        .cns-cs-progress-line(aria-hidden='true')
                                         .cns-cs-meta
                                             span.cns-cs-industry
                                                 i.fas.fa-flask.me-2
@@ -318,6 +320,7 @@ html(lang='en')
                                 // Case 2 ─────────────────────────────────
                                 .cns-cs-card(id='cs-2')
                                     .cns-cs-card-inner
+                                        .cns-cs-progress-line(aria-hidden='true')
                                         .cns-cs-meta
                                             span.cns-cs-industry.cns-cs-industry--purple
                                                 i.fas.fa-balance-scale.me-2
@@ -353,6 +356,7 @@ html(lang='en')
                                 // Case 3 ─────────────────────────────────
                                 .cns-cs-card(id='cs-3')
                                     .cns-cs-card-inner
+                                        .cns-cs-progress-line(aria-hidden='true')
                                         .cns-cs-meta
                                             span.cns-cs-industry.cns-cs-industry--amber
                                                 i.fas.fa-industry.me-2
@@ -393,6 +397,7 @@ html(lang='en')
                                 // Case 4 ─────────────────────────────────
                                 .cns-cs-card(id='cs-4')
                                     .cns-cs-card-inner
+                                        .cns-cs-progress-line(aria-hidden='true')
                                         .cns-cs-meta
                                             span.cns-cs-industry.cns-cs-industry--teal
                                                 i.fas.fa-camera.me-2
@@ -455,27 +460,17 @@ html(lang='en')
                 .container-fluid
                     #myCarousel.carousel.slide(data-bs-ride="carousel").mx-auto
                         .carousel-inner.row.mx-auto.col-lg-10
-                            .carousel-item.active
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
-                                            .card-box
-                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%" alt="Blog image")
-                                            h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-2
-                                        a.blog-link(target='new' href='/blog/nlp-seven-misplaced-passions.html')
-                                            .card-box
-                                                img.lazyload(data-src='/assets/img/blog/nlp-seven-misplaced-passions/JoeDavisonTweetNew.jpg', style="width: 100%")
-                                            h5.font-weight-bold.mx-3.my-4 NLP for Business in the Time of BERTera: Seven Misplaced Passions
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede')
-                                            .card-box
-                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%" alt="Blog image")
-                                            h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
+                            //- Carousel cards generated at build time from src/data/blogs.json
+                            //- (populated by `npm run fetch:blogs` which is part of `npm run build`).
+                            if blogs && blogs.length
+                                each blog, i in blogs
+                                    div(class=(i === 0 ? 'carousel-item active' : 'carousel-item'))
+                                        .col-md-4
+                                            .image-card.mx-4
+                                                a.blog-link(target='new' rel='noopener' href=blog.url)
+                                                    .card-box
+                                                        img.lazyload(data-src=blog.image, style="width: 100%" alt=blog.title)
+                                                    h5.font-weight-bold.mx-3.my-4= blog.title
                         a.carousel-control-prev(href='#myCarousel' role='button' data-bs-slide='prev')
                             span.carousel-control-prev-icon(aria-hidden='true')
                             span.sr-only Previous
@@ -511,4 +506,4 @@ html(lang='en')
                             a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
 
         include /pug/includes/footer_new.pug
-        script(async='' src='/js/carousel.js')
+        script(defer src='/js/carousel.js')
