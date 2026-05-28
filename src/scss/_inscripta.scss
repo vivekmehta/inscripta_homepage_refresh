@@ -3739,7 +3739,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-section-heading {
-    font-size: clamp(1.9rem, 3.2vw, 2.65rem);
+    font-size: clamp(2.1rem, 3.5vw, 2.9rem);
     font-weight: 800;
     color: #0f172a;
     line-height: 1.2;
@@ -3871,7 +3871,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-hero-sub {
-    font-size: clamp(1rem, 1.8vw, 1.15rem);
+    font-size: clamp(1.1rem, 1.9vw, 1.25rem);
     color: #4b5675;
     line-height: 1.8;
     max-width: 580px;
@@ -3943,20 +3943,28 @@ section#impact-metrics .feature-card-badge i {
     &::after { display: none; }
 }
 
-.cns-challenge-lead p {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #0f172a; 
-    line-height: 1.6;
+.cns-challenge-lead {
     border-left: 3px solid $secondary;
     padding-left: 1.25rem;
+}
+
+.cns-challenge-lead p {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.6;
     margin: 0;
 }
 
+.cns-challenge-body {
+    border-left: 3px solid rgba($secondary, 0.18);
+    padding-left: 1.25rem;
+}
+
 .cns-challenge-body p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.85;
-    color: #64748b; 
+    color: #334155;
     margin: 0;
 }
 
@@ -3995,7 +4003,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-insight-quote {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-weight: 700;
     font-style: italic;
     color: #0f172a;
@@ -4006,7 +4014,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-insight-foot {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: #64748b;
     line-height: 1.65;
     margin: 0;
@@ -4116,7 +4124,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-adv-title {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #0f172a;
     margin-bottom: 0.3rem;
@@ -4124,7 +4132,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-adv-desc {
-    font-size: 0.93rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: #64748b;
     margin: 0;
@@ -4166,7 +4174,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-deliver-headline {
-    font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+    font-size: clamp(1.55rem, 2.7vw, 2rem);
     font-weight: 800;
     color: #0f172a;
     line-height: 1.35;
@@ -4178,7 +4186,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-deliver-subtext {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #64748b;
     line-height: 1.7;
     margin: 0;
@@ -4292,14 +4300,14 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-uc-title {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #0f172a;
     margin-bottom: 0.5rem;
 }
 
 .cns-uc-desc {
-    font-size: 0.92rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: #64748b;
     margin: 0;
@@ -4354,14 +4362,14 @@ section#impact-metrics .feature-card-badge i {
 .cns-benefit-body { flex: 1; }
 
 .cns-benefit-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #0f172a;
     margin-bottom: 0.35rem;
 }
 
 .cns-benefit-desc {
-    font-size: 0.92rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: #64748b;
     margin: 0;
@@ -4445,7 +4453,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-cs-left-sub {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.75;
     color: rgba(255, 255, 255, 0.45);
     margin-bottom: 2rem;
@@ -4510,7 +4518,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-cs-nav-num {
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     font-weight: 800;
     color: rgba(255, 255, 255, 0.2);
     letter-spacing: 0.05em;
@@ -4519,7 +4527,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-cs-nav-label {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.45);
     line-height: 1.3;
@@ -4655,7 +4663,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-cs-lead {
-    font-size: 0.97rem;
+    font-size: 1.08rem;
     line-height: 1.65;
     color: #64748b;
     margin-bottom: 1.25rem;
@@ -4684,7 +4692,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-cs-stat-value {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 900;
     color: $primary;
     line-height: 1;
@@ -4692,7 +4700,7 @@ section#impact-metrics .feature-card-badge i {
 }
 
 .cns-cs-stat-label {
-    font-size: 0.68rem;
+    font-size: 0.78rem;
     font-weight: 600;
     color: #64748b;
     text-transform: uppercase;
@@ -4720,18 +4728,18 @@ section#impact-metrics .feature-card-badge i {
 
 .cns-cs-bd-label {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.78rem;
     font-weight: 800;
     color: $primary;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     margin-bottom: 0.35rem;
 
-    i { color: $secondary; font-size: 0.65rem; }
+    i { color: $secondary; font-size: 0.72rem; }
 }
 
 .cns-cs-bd-item p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.65;
     color: #475569;
     margin: 0;
