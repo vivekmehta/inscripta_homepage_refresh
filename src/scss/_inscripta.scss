@@ -3745,7 +3745,7 @@ section#impact-metrics .feature-card-badge i {
 // ── HERO ──────────────────────────────────────────────────────
 
 .cns-hero {
-    padding: 9.5rem 0 8rem;
+    padding: 7rem 0 5rem;
     background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #020617 100%);
     position: relative;
     overflow: hidden;
@@ -4366,7 +4366,7 @@ section#impact-metrics .feature-card-badge i {
 // ── Consulting responsive ─────────────────────────────────────
 
 @media (max-width: 576px) {
-    .cns-hero { padding: 7.5rem 0 6rem; }
+    .cns-hero { padding: 5.5rem 0 4rem; }
 
     .btn-cns-primary,
     .btn-cns-ghost { width: 100%; justify-content: center; }
@@ -5217,6 +5217,9 @@ section#impact-metrics .feature-card-badge i {
     overflow: hidden;
     position: relative;
     width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.25rem 0;
     mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
     -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
 }
@@ -5238,22 +5241,22 @@ section#impact-metrics .feature-card-badge i {
 .cns-pain-item {
     display: inline-flex;
     align-items: center;
-    gap: 9px;
-    padding: 8px 20px;
-    margin: 0 8px;
+    gap: 10px;
+    padding: 10px 22px;
+    margin: 0 10px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 50px;
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.82);
     white-space: nowrap;
     transition: background 0.2s ease, color 0.2s ease;
 
     i {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         color: $secondary;
-        opacity: 0.85;
+        opacity: 0.9;
         flex-shrink: 0;
     }
 
