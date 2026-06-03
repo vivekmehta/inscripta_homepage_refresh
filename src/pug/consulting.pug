@@ -5,405 +5,472 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='Accelerate AI adoption with Inscripta’s consulting—leveraging deep expertise in Generative AI, Agentic Workflows, LLMs, NLP, OCR, and Document Intelligence to deliver scalable, real-world solutions')
+        meta(name='description', content="Accelerate AI adoption with Inscripta's consulting—leveraging deep expertise in Generative AI, Agentic Workflows, LLMs, NLP, OCR, and Document Intelligence to deliver scalable, real-world solutions")
         meta(name='author', content='Team Inscripta')
 
         title Agentic AI, Gen AI, NLP Consulting
 
-        // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.png')
-
-        //Font
+        link(rel='preconnect' href='https://blog.inscripta.ai')
         link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css?family=Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
-
-        // Core theme CSS (includes Bootstrap)
         link(href='../css/styles.min.css', rel='stylesheet')
-
-        // Font Awesome
         link(rel='preload' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
         noscript
             link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
-        //link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
-            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
 
-        // Google Tag Manager
         script.
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-5XQVFGS');
-        // End Google Tag Manager
 
 
     body#page-top
-        // Google Tag Manager (noscript)
         noscript
             iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS' height='0' width='0' style='display:none;visibility:hidden')
-        // End Google Tag Manager (noscript)
 
-
-        // Navigation
         include /pug/includes/menu.pug
 
-        // Producthead
-        header.simplehead 
-            .container.px-4.px-lg-5.h-100
-                .row.gx-4.gx-lg-5.h-100
-                    .col-lg-8.align-self-end    
-                        h1.text-white.font-weight-bold Inscripta Consulting
-                    .col-lg-8.align-self-baseline.mt-4
 
-        section#intro.page-section.bg-light
+        // ── HERO ─────────────────────────────────────────────────────
+        header.cns-hero
             .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-lg-8.mx-auto.text-center
-                        h1.my-5 Our depth in AI & Natural Language Processing(NLP), combined with our suite of customizable products, ensures quick and effective AI prototyping and integration
-                        a.mb-3.btn.btn-secondary-outline.btn-xl(href='#about') Know More
+                .row.justify-content-center
+                    .col-lg-9.col-xl-8.text-center.cns-hero-content
+                        .cns-eyebrow-badge.mb-4
+                            span.badge-dot
+                            | AI Consulting and Services
+                        h1.cns-hero-title
+                            | Accelerate AI Adoption.
+                            br
+                            span.cns-hero-gradient Build What Actually Works.
+                        p.cns-hero-sub.mt-3.mb-3
+                            | Blending deep expertise in Generative AI &amp; Agentic AI, NLP, and Document Intelligence with proven, customizable solutions to deliver scalable, real-world impact.
+                        .cns-hero-pain-ticker
+                            .cns-pain-track
+                                .cns-pain-item
+                                    i.fas.fa-exclamation-circle
+                                    | Got AI-generated code but struggling with reliability &amp; scale?
+                                .cns-pain-item
+                                    i.fas.fa-dollar-sign
+                                    | LLM APIs working but too costly to deploy at scale?
+                                .cns-pain-item
+                                    i.fas.fa-shield-alt
+                                    | Worried about Agent security and data privacy?
+                                .cns-pain-item
+                                    i.fas.fa-robot
+                                    | AI Agents not doing your bidding? Go beyond prompting.
+                                .cns-pain-item
+                                    i.fas.fa-search
+                                    | Struggling to identify the right AI use cases?
+                                .cns-pain-item
+                                    i.fas.fa-exclamation-circle
+                                    | Got AI-generated code but struggling with reliability &amp; scale?
+                                .cns-pain-item
+                                    i.fas.fa-dollar-sign
+                                    | LLM APIs working but too costly to deploy at scale?
+                                .cns-pain-item
+                                    i.fas.fa-shield-alt
+                                    | Worried about Agent security and data privacy?
+                                .cns-pain-item
+                                    i.fas.fa-robot
+                                    | AI Agents not doing your bidding? Go beyond prompting.
+                                .cns-pain-item
+                                    i.fas.fa-search
+                                    | Struggling to identify the right AI use cases?
+                        .cns-hero-actions
+                            a.btn-cns-primary(href='#contact')
+                                | Get In Touch
+                                i.fas.fa-arrow-right.ms-2
+                            a.btn-cns-ghost(href='#cns-challenge') Explore Our Approach
 
-        section#about.page-section
+
+        // ── THE CHALLENGE ─────────────────────────────────────────────
+        section#cns-challenge.cns-challenge.page-section
             .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-xs-12.col-md-6.order-md-2
-                        .img-box.text-center.mb-3
-                            img.img-main.lazyload(data-src="/assets/img/ai_wip.jpg")
+                .row.justify-content-center.mb-5
+                    .col-lg-8.text-center
+                        span.cns-section-eyebrow The Challenge
+                        h2.cns-section-heading.mt-3 Why Most AI Investments Fall Short
+                .row.gx-5.align-items-center
+                    .col-lg-6
+                        .cns-challenge-lead
+                            p Most enterprises struggle to realize ROI from AI, even as individuals see dramatic productivity gains.
+                        .cns-challenge-body.mt-3
+                            p Off-the-shelf tools and ad-hoc prompting aren&rsquo;t enough to enhance company-specific workflows or competitive advantages. In-house experiments often spiral into cost overruns, wasted effort, and misalignment with business goals.
+                            p.mt-3 The truth is, most breakthrough AI systems are finely tuned for a specific task. If your company&rsquo;s solutions aren&rsquo;t another copy in the crowd, why should your AI be? When it isn&rsquo;t tailored to the problems you actually face, results are bound to be underwhelming.
+                    .col-lg-6.mt-4.mt-lg-0
+                        .cns-insight-card
+                            .cns-insight-label
+                                i.fas.fa-lightbulb
+                                | &ensp;The Core Insight
+                            blockquote.cns-insight-quote
+                                | &ldquo;Real success demands domain expertise, rigorous design, and deep workflow integration.&rdquo;
+                            p.cns-insight-foot
+                                | AI delivers only when it&rsquo;s built for your business&mdash;not simply bought or borrowed.
 
-                    .col-xs-12.col-md-6
-                        .img-box
-                            h2.font-weight-bold.text-primary.mb-4  AI Products: The Challenge
-                            h5.mb-3 Studies show that only 10% of organizations that invest in AI, managed to achieve significant financial benefit from it. Why is this?  AI is not magic dust that can be sprinkled over existing businesses to transform them overnight. 
-                            h5.mb-3 Most headline-making AI technologies are software that has been tuned for a particular purpose. If the AI that your company is investing in has not been tuned to the problems that you face, the results are likely to be underwhelming. The key to successful AI deployment is tailoring. Lack of in-house experience could be a hidden obstacle to good customization.
-                            //.mb-3
-                                a.btn.btn-primary-outline.btn-xl(href='#advantage') Inscripta Advantage 
+
+        // ── INSCRIPTA ADVANTAGE ───────────────────────────────────────
+        section#cns-advantage.cns-advantage.page-section
+            .container.px-4.px-lg-5
+                .row.justify-content-center.mb-5
+                    .col-lg-7.text-center
+                        span.cns-section-eyebrow Why Inscripta
+                        h2.cns-section-heading The Inscripta Advantage
+
+                .cns-adv-list
+                    .cns-adv-row
+                        .cns-adv-row-left
+                            .cns-adv-icon.cns-adv-icon--1
+                                i.fas.fa-history
+                            span.cns-adv-num 01
+                        .cns-adv-row-right
+                            h4.cns-adv-title Decades of Production AI
+                            p.cns-adv-desc Deploying production-grade AI across startups and enterprises&mdash;from early NLP to modern foundation models and LLMs.
+
+                    .cns-adv-row
+                        .cns-adv-row-left
+                            .cns-adv-icon.cns-adv-icon--2
+                                i.fas.fa-layer-group
+                            span.cns-adv-num 02
+                        .cns-adv-row-right
+                            h4.cns-adv-title Full-Stack AI Evolution
+                            p.cns-adv-desc Track record spanning Word2Vec &rarr; BERT &rarr; Foundation Models &amp; LLMs &rarr; Agentic Workflows.
+
+                    .cns-adv-row
+                        .cns-adv-row-left
+                            .cns-adv-icon.cns-adv-icon--3
+                                i.fas.fa-cloud
+                            span.cns-adv-num 03
+                        .cns-adv-row-right
+                            h4.cns-adv-title Model-Agnostic Expertise
+                            p.cns-adv-desc Cloud, open-source, and on-prem: GPT-4o, Gemini, LLaMA, Phi-4-mini&mdash;we work across the full model landscape.
+
+                    .cns-adv-row
+                        .cns-adv-row-left
+                            .cns-adv-icon.cns-adv-icon--4
+                                i.fas.fa-cogs
+                            span.cns-adv-num 04
+                        .cns-adv-row-right
+                            h4.cns-adv-title Cutting-Edge Frameworks
+                            p.cns-adv-desc LangChain, AutoGen, Vertex AI, CrewAI, LlamaIndex&mdash;we deploy the right tools for the right problems.
+
+                    .cns-adv-row
+                        .cns-adv-row-left
+                            .cns-adv-icon.cns-adv-icon--5
+                                i.fas.fa-chart-line
+                            span.cns-adv-num 05
+                        .cns-adv-row-right
+                            h4.cns-adv-title Measurable ROI Focus
+                            p.cns-adv-desc Faster implementations, reduced risk, and sustainable adoption&mdash;obsessed with outcomes, not demos.
+
+
+        // ── WHAT WE DELIVER ───────────────────────────────────────────
+        section#cns-deliver.cns-deliver.page-section
+            .container.px-4.px-lg-5
+                .row.justify-content-center.mb-5
+                    .col-lg-7.text-center
+                        span.cns-section-eyebrow Our Expertise
+                        h2.cns-section-heading What We Deliver
+
+                .cns-deliver-shell
+                    .cns-deliver-header
+                        span.cns-deliver-category-pill Agentic AI &amp; Generative AI
+                        h3.cns-deliver-headline
+                            | Design and build autonomous, tool-using agents&nbsp;
+                            span.cns-deliver-headline-em for real-world business needs.
+                        p.cns-deliver-subtext Expertise in RAG, modular agent coordination, and production-ready agentic architectures.
+
+                    .cns-deliver-cards
+                        .cns-uc-card
+                            .cns-uc-card-top
+                                .cns-uc-icon.cns-uc-icon--blue
+                                    i.fas.fa-project-diagram
+                                span.cns-uc-tag Agentic AI
+                            h5.cns-uc-title Production Planning Agents
+                            p.cns-uc-desc Scenario analysis and decision support for inventory, demand, resources, and logistics.
+
+                        .cns-uc-card
+                            .cns-uc-card-top
+                                .cns-uc-icon.cns-uc-icon--red
+                                    i.fas.fa-file-alt
+                                span.cns-uc-tag RAG + Search + LLM Finetuning
+                            h5.cns-uc-title Document Intelligence Agents
+                            p.cns-uc-desc Search, QA, configurable extraction, and generation across text, tables, and diagrams.
+
+
+        // ── BUSINESS BENEFITS ─────────────────────────────────────────
+        section#cns-benefits.cns-benefits.page-section
+            .container.px-4.px-lg-5
+                .row.justify-content-center.mb-5
+                    .col-lg-7.text-center
+                        span.cns-section-eyebrow Business Impact
+                        h2.cns-section-heading Built to Deliver Results
+                .row.gx-4.gy-4
+                    .col-sm-6.col-lg-4
+                        .cns-benefit-item
+                            .cns-benefit-icon.cns-benefit-icon--amber
+                                i.fas.fa-bolt
+                            .cns-benefit-body
+                                h5.cns-benefit-title Faster Implementation
+                                p.cns-benefit-desc Pre-built modules and proven accelerators cut time-to-value dramatically.
+                    .col-sm-6.col-lg-4
+                        .cns-benefit-item
+                            .cns-benefit-icon.cns-benefit-icon--green
+                                i.fas.fa-shield-alt
+                            .cns-benefit-body
+                                h5.cns-benefit-title Reduced Risk
+                                p.cns-benefit-desc Avoid costly missteps in early-stage AI deployments with battle-tested methodology.
+                    .col-sm-6.col-lg-4
+                        .cns-benefit-item
+                            .cns-benefit-icon.cns-benefit-icon--red
+                                i.fas.fa-bullseye
+                            .cns-benefit-body
+                                h5.cns-benefit-title Business Alignment
+                                p.cns-benefit-desc Solutions anchored to your goals&mdash;not just interesting tech experiments.
+                    .col-sm-6.col-lg-6
+                        .cns-benefit-item
+                            .cns-benefit-icon.cns-benefit-icon--blue
+                                i.fas.fa-expand-arrows-alt
+                            .cns-benefit-body
+                                h5.cns-benefit-title Scalable &amp; Sustainable
+                                p.cns-benefit-desc Solutions owned by your teams, built to grow with your business.
+                    .col-sm-6.col-lg-6
+                        .cns-benefit-item
+                            .cns-benefit-icon.cns-benefit-icon--purple
+                                i.fas.fa-chart-bar
+                            .cns-benefit-body
+                                h5.cns-benefit-title Measurable ROI
+                                p.cns-benefit-desc Productivity gains, quicker time-to-value, and better decisions&mdash;tracked and proven.
+
+
+
+        // ── CASE STUDIES ─────────────────────────────────────────────
+        section#cns-cases.cns-cases.page-section
+            .cns-cs-scroll-track
+                .cns-cs-sticky-panel
+                    .container.px-4.px-lg-5
+                        .row.justify-content-center.mb-5
+                            .col-lg-7.text-center
+                                span.cns-section-eyebrow.cns-eyebrow--light Proven Impact
+                                h2.cns-section-heading.mt-3 Results That Speak for Themselves
+
+                    .container.px-4.px-lg-5
+                        .cns-cs-wrapper
+                            .cns-cs-left
+                                .cns-cs-left-inner
+                                    p.cns-cs-left-sub Real-world deployments across industries&mdash;each built to solve a specific problem with measurable outcomes.
+                                    nav.cns-cs-nav
+                                        a.cns-cs-nav-item.active(href='#cs-1' data-cs='1')
+                                            span.cns-cs-nav-num 01
+                                            span.cns-cs-nav-label Life Sciences &amp; Pharma
+                                        a.cns-cs-nav-item(href='#cs-2' data-cs='2')
+                                            span.cns-cs-nav-num 02
+                                            span.cns-cs-nav-label IT &middot; Fintech &middot; Legal
+                                        a.cns-cs-nav-item(href='#cs-3' data-cs='3')
+                                            span.cns-cs-nav-num 03
+                                            span.cns-cs-nav-label Manufacturing &amp; Logistics
+                                        a.cns-cs-nav-item(href='#cs-4' data-cs='4')
+                                            span.cns-cs-nav-num 04
+                                            span.cns-cs-nav-label Smart Infrastructure
+
+                            .cns-cs-right
+
+                                // Case 1 ─────────────────────────────────
+                                .cns-cs-card(id='cs-1')
+                                    .cns-cs-card-inner
+                                        .cns-cs-progress-line(aria-hidden='true')
+                                        .cns-cs-meta
+                                            span.cns-cs-industry
+                                                i.fas.fa-flask.me-2
+                                                | Life Sciences &amp; Pharma
+                                            span.cns-cs-outcome 70% Faster Data Extraction
+                                        .row.gx-lg-5.align-items-center.mt-3
+                                            .col-lg-6
+                                                h3.cns-cs-title Clinical Trials Intelligence
+                                                p.cns-cs-lead Unlocking structured insight from dense, complex medical research at scale.
+                                                .cns-cs-breakdown
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-exclamation-circle
+                                                            |  Challenge
+                                                        p Extracting structured clinical data from dense medical research papers&mdash;manually intensive, error-prone, and slow.
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-cog
+                                                            |  Solution
+                                                        p ParseQa extracts quantitative &amp; qualitative data from unstructured text, tables, and images with natural language querying.
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-chart-line
+                                                            |  Impact
+                                                        p Faster insights, reduced manual effort, and improved decision-making across life sciences R&amp;D workflows.
+                                                a.cns-cs-cta(href='/case-study/parseqa-life-sciences.html')
+                                                    | Read full case study
+                                                    i.fas.fa-arrow-right.ms-2
+                                            .col-lg-6.mt-4.mt-lg-0
+                                                .cns-cs-visual
+                                                    img.cns-cs-img(src='/assets/img/parseqa_clinical.png' alt='Clinical Trials Intelligence' onerror="this.style.display='none';this.nextElementSibling.style.display='flex'")
+                                                    .cns-cs-img-placeholder(style='display:none')
+                                                        i.fas.fa-flask
+                                                        span Clinical Trials
+
+                                // Case 2 ─────────────────────────────────
+                                .cns-cs-card(id='cs-2')
+                                    .cns-cs-card-inner
+                                        .cns-cs-progress-line(aria-hidden='true')
+                                        .cns-cs-meta
+                                            span.cns-cs-industry.cns-cs-industry--purple
+                                                i.fas.fa-balance-scale.me-2
+                                                | IT &middot; Fintech &middot; Legal
+                                            span.cns-cs-outcome Domain-Adaptive Semantic QA
+                                        .row.gx-lg-5.align-items-center.mt-3
+                                            .col-lg-6
+                                                h3.cns-cs-title Intelligent FAQ Bot
+                                                p.cns-cs-lead Moving beyond keyword matching to true document-level semantic understanding.
+                                                .cns-cs-breakdown
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-exclamation-circle
+                                                            |  Challenge
+                                                        p Traditional FAQ bots rely on keyword matching and lack document semantics&mdash;leading to missed answers and user frustration.
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-cog
+                                                            |  Solution
+                                                        p ParseQa enables semantic indexing of unstructured content across formats for intelligent, contextual question answering.
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-chart-line
+                                                            |  Impact
+                                                        p A dynamic FAQBot that&rsquo;s intuitive, scalable, and quickly customizable across legal, compliance, and fintech domains.
+                                            .col-lg-6.mt-4.mt-lg-0
+                                                .cns-cs-visual
+                                                    img.cns-cs-img(src='/assets/img/products/parseqa_concept.jpg' alt='Intelligent FAQ Bot' onerror="this.style.display='none';this.nextElementSibling.style.display='flex'")
+                                                    .cns-cs-img-placeholder(style='display:none')
+                                                        i.fas.fa-comments
+                                                        span Intelligent FAQ Bot
+
+                                // Case 3 ─────────────────────────────────
+                                .cns-cs-card(id='cs-3')
+                                    .cns-cs-card-inner
+                                        .cns-cs-progress-line(aria-hidden='true')
+                                        .cns-cs-meta
+                                            span.cns-cs-industry.cns-cs-industry--amber
+                                                i.fas.fa-industry.me-2
+                                                | Manufacturing &amp; Logistics
+                                            span.cns-cs-outcome Multi-Agent AI System
+                                        .row.gx-lg-5.align-items-center.mt-3
+                                            .col-lg-6
+                                                h3.cns-cs-title AI-Powered Production Planning
+                                                p.cns-cs-lead A conversational LLM copilot with specialized agents for demand, inventory, resource, and logistics planning.
+                                                .cns-cs-stats.mb-4
+                                                    .cns-cs-stat
+                                                        span.cns-cs-stat-value ML
+                                                        span.cns-cs-stat-label Demand &amp; Price Forecasts
+                                                    .cns-cs-stat
+                                                        span.cns-cs-stat-value OR
+                                                        span.cns-cs-stat-label Batch &amp; Logistics Optimization
+                                                    .cns-cs-stat
+                                                        span.cns-cs-stat-value &#8734;
+                                                        span.cns-cs-stat-label What-If Scenario Analysis
+                                                .cns-cs-breakdown
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-cog
+                                                            |  Solution
+                                                        p LLM-based Copilot + specialized agents for Demand, Inventory, Resource &amp; Planning &mdash; seamlessly integrated with ML engines, OR optimizers, and knowledge-search tools.
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-chart-line
+                                                            |  Capabilities
+                                                        p ML forecasts for demand &amp; prices &middot; OR algorithms for packing, scheduling &amp; line optimization &middot; Instant what-if scenario evaluation.
+                                            .col-lg-6.mt-4.mt-lg-0
+                                                .cns-cs-visual
+                                                    img.cns-cs-img(src='/assets/img/agent_ss.png' alt='Multi-Agent Production Planning' onerror="this.style.display='none';this.nextElementSibling.style.display='flex'")
+                                                    .cns-cs-img-placeholder(style='display:none')
+                                                        i.fas.fa-project-diagram
+                                                        span Multi-Agent Architecture
+
+                                // Case 4 ─────────────────────────────────
+                                .cns-cs-card(id='cs-4')
+                                    .cns-cs-card-inner
+                                        .cns-cs-progress-line(aria-hidden='true')
+                                        .cns-cs-meta
+                                            span.cns-cs-industry.cns-cs-industry--teal
+                                                i.fas.fa-camera.me-2
+                                                | Smart Infrastructure
+                                            span.cns-cs-outcome 95%+ System Accuracy
+                                        .row.gx-lg-5.align-items-center.mt-3
+                                            .col-lg-6
+                                                h3.cns-cs-title Parked Car Detection System
+                                                p.cns-cs-lead Computer vision for parking meters&mdash;handling real-world noise, variable lighting, and arbitrary sensor orientation.
+                                                .cns-cs-stats.mb-4
+                                                    .cns-cs-stat
+                                                        span.cns-cs-stat-value 95%+
+                                                        span.cns-cs-stat-label System Accuracy
+                                                    .cns-cs-stat
+                                                        span.cns-cs-stat-value Auto
+                                                        span.cns-cs-stat-label Area of Interest Detection
+                                                    .cns-cs-stat
+                                                        span.cns-cs-stat-value All
+                                                        span.cns-cs-stat-label Weather Conditions
+                                                .cns-cs-breakdown
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-exclamation-circle
+                                                            |  Challenge
+                                                        p Detection from parking meter images with no fixed sensor orientation, varied lighting, and noise from rain and smudge.
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-cog
+                                                            |  Solution
+                                                        p Automatic area-of-interest detection with robust handling of orientation variance, lighting, and weather-induced noise.
+                                                    .cns-cs-bd-item
+                                                        span.cns-cs-bd-label
+                                                            i.fas.fa-chart-line
+                                                            |  Impact
+                                                        p Production-deployed system achieving 95%+ accuracy across all real-world conditions, enabling automated parking enforcement at scale.
+                                            .col-lg-6.mt-4.mt-lg-0
+                                                .cns-cs-visual
+                                                    img.cns-cs-img(src='/assets/img/car_ss.png' alt='Parked Car Detection System' onerror="this.style.display='none';this.nextElementSibling.style.display='flex'")
+                                                    .cns-cs-img-placeholder(style='display:none')
+                                                        i.fas.fa-car
+                                                        span Parked Car Detection
+
+
+        // ── MAKE AI WORK FOR YOU (unchanged) ─────────────────────────
         section#intro.page-section.bg-light
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
                     .col-xs-12.col-md-8.mx-auto.text-center
-                            //.product-card-primary      
                             h2.font-weight-bold.text-primary.my-4  Make AI work for you
-                            h5.mt-2 Inscripta creates bespoke solutions, based on customizable products, that originate within your organization and thereby take deep roots within your workflows. Bank on our years of top-class, real-world AI & NLP experience to avoid common pitfalls in deploying enterprise AI solutions
+                            h5.mt-2 Inscripta creates bespoke solutions, based on customizable products, that originate within your organization and thereby take deep roots within your workflows. Bank on our years of top-class, real-world AI &amp; NLP experience to avoid common pitfalls in deploying enterprise AI solutions
                             .mt-5
-                                a.btn.btn-primary-outline.btn-xl(href='#advantage') Inscripta Advantage                   
-                    
-
-        // Advantage
-        //section#advantage.page-section 
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.align-items-center
-                    .col-lg-4.col-md-12
-                        .py-lg-5
-                            h1.font-weight-bold.mb-5 Inscripta Advantage
-                            h5.mb-5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation. 
-                            mb-5
-                                a.btn.btn-secondary-outline.btn-xl(href='#expertise') Our Expertise
-                    .col-lg-7.col-md-12.mx-auto
-                        .row
-                            .col-lg-6.col-md-6.text-center.mt-lg-0.mt-2
-                                .feature-card-old.animation-float.mb-4  
-                                    .mx-4.my-4
-                                        h3.font-weight-bold.mb-4 
-                                            | Quick Wins
-                                        h5
-                                            | Don’t reinvent the wheel -- leverage Inscripta’s industry-tested, customizable products and pre-built libraries to focus and expedite your first pilots
-
-                                .feature-card-old.animation-float.mb-4 
-                                        .mx-4.my-4
-                                            h3.font-weight-bold.mb-4 
-                                                | Sense of Control
-                                            h5
-                                                | Retain a sense of control through sustainable and truly extendable solutions that are owned by your teams.
-
-                            .col-lg-6.col-md-6.text-center.mt-lg-5
-                                .mb-4
-                                    .feature-card-old.animation-float.mb-4 
-                                        .mx-4.my-4
-                                            h3.font-weight-bold.mb-4 
-                                                | Battle-tested
-                                            h5
-                                                | Bank on our years of top-class, real-world AI & NLP experience to avoid common pitfalls in deploying enterprise AI solutions
-
-                                    .feature-card-old.animation-float.mb-4 
-                                        .mx-4.my-4
-                                            h3.font-weight-bold.mb-4 
-                                                | Expertise 
-                                            h5
-                                                | Based on our extensive end-to-end AI deployment experience, we create bespoke solutions that originate within your organization and thereby take deep roots within your workflows
-                                            
-
-        //section#benefits.page-section
-            .container.px-4.px-lg-4
-                .col-md-11.mx-auto
-                    //.row.mb-4
-                        .col-sm-12.text-center
-                            h1.font-weight-bold Inscripta Benefits
-                    .row.px-4.gx-4.gx-lg-4
-                        .col-sm-12.col-md-4.mb-3
-                            .img-box
-                                h1.font-weight-bold Inscripta Benefits
-                        .col-sm-12.col-md-4.mb-3
-                            .content-box-primary.bg-white.h-100
-                            
-                                //.mb-4
-                                    .i.fas.fa-3x.fa-list.text-primary
-                                .h3.font-weight-bold.mb-4 
-                                    | Start building before hiring
-                                .product-detail
-                                    | Approach hiring and solutioning as parallel, complementary processes
-
-                        .col-sm-12.col-md-4.mb-3
-                            .content-box-secondary.bg-white.h-100
-                                //.mb-4
-                                    .i.fas.fa-3x.fa-cogs.text-primary
-                                .h3.font-weight-bold.mb-4 Right use of budget
-                                .product-detail
-                                    | Focus on the right things to make your investments in AI more effective.
-
-        section#advantage.page-section
-            .container.px-4.px-lg-4
-                .row.gx-4.gx-lg-5.mb-5
-                    .col-md-12.col-lg-11.mx-auto
-                        .row
-                            .col-lg-5.col-md-5
-                                h1.font-weight-bold Inscripta Advantage
-                            .col-lg-7.col-md-7
-                                h5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.
-                .row.gx-4.gx-lg-4.mt-4
-                        .col-sm-6.col-lg-4.mb-4
-                            .feature-card-old.h-100.animation-float
-                                h3.card-heading 
-                                    | Achieve quick wins
-                                h5
-                                    | Don’t reinvent the wheel -- leverage Inscripta’s industry-tested, #[a.feature-card(href="/" target="blank") customizable products] and pre-built libraries to focus and expedite your first pilots
-
-                        .col-sm-6.col-lg-4.mb-4
-                            .feature-card-old.h-100.animation-float
-                                h3.card-heading
-                                    | Build end-to-end solutions
-                                h5
-                                    | Based on our extensive real-world experience, we understand the nuances of end-to-end AI deployment to help you find the right solutions, faster. 
-
-                        .col-sm-6.col-lg-4.mb-4
-                            .feature-card-old.h-100.animation-float
-                                h3.card-heading
-                                    | Retain a sense of control
-                                h5 
-                                    | Retain a sense of control through sustainable and truly extendable solutions that originate within your organization, owned by your teams, and thereby take deep roots within your workflows
-
-                        .col-sm-6.col-lg-4.mb-4
-                            .feature-card-old.h-100.animation-float
-                                h3.card-heading
-                                    | Avoid common pitfalls
-                                h5
-                                    | Navigate the treacherous landscape of AI-solution-ism, by leaning on our experience to avoid #[a.feature-card(href="/blog/nlp-seven-misplaced-passions.html" target="blank") common pitfalls] in deploying enterprise AI solutions
-
-                        .col-sm-6.col-lg-4.mb-4
-                            .feature-card-old.h-100.animation-float
-                                h3.card-heading
-                                    | Start building before hiring
-                                h5
-                                    | Approach hiring and solutioning as parallel, complementary processes
-
-                        .col-sm-6.col-lg-4.mb-4
-                            .feature-card-old.h-100.animation-float
-                                h3.card-heading
-                                    | Use your budget efficiently
-                                h5 
-                                    |Focus on the right things to make your investments in AI more effective.
+                                a.btn.btn-primary-outline.btn-xl(href='#cns-advantage') Inscripta Advantage
 
 
-        //section#benefits.page-section
-            .container.px-4.px-lg-4
-                .row.gx-4.gx-lg-5.mb-5
-                    .col-md-12.col-lg-11.mx-auto
-                        .row
-                            .col-lg-5.col-md-5
-                                h1.font-weight-bold Inscripta Advantage
-                            .col-lg-7.col-md-7
-                                h5 Inscripta enables companies to focus on their core business problem, instead of getting bogged down in the intricacies of AI implementation.
-                .row.gx-4.gx-lg-4.mt-4
-                        .col-sm-12.col-md-4.mb-3
-                            .content-box-primary.bg-white.h-100
-                                h3.font-weight-bold.mb-4 
-                                    | Quick Wins
-                                h5
-                                    | Don’t reinvent the wheel -- leverage Inscripta’s industry-tested, customizable products and pre-built libraries to focus and expedite your first pilots
-
-                        .col-sm-12.col-md-4.mb-3
-                            .content-box-secondary.bg-white.h-100
-                                h3.font-weight-bold.mb-4 
-                                    | Expertise
-                                h5
-                                    | Based on our extensive real-world experience, we understand the nuances of end-to-end AI deployment to help you find the right solutions, faster. 
-
-                        .col-sm-12.col-md-4.mb-3
-                            .content-box-primary.bg-white.h-100     
-                                h3.font-weight-bold.mb-4 
-                                    | Sense of Control
-                                h5 
-                                    | Retain a sense of control through sustainable and truly extendable solutions that originate within your organization, owned by your teams, and thereby take deep roots within your workflows
-
-                        .col-sm-12.col-md-4.mb-3
-                            .content-box-secondary.bg-white.h-100
-                                h3.font-weight-bold.mb-4 
-                                    | Battle-tested
-                                h5
-                                    | Navigate the treacherous landscape of AI-solution-ism, by leaning on our experience to avoid common pitfalls in deploying enterprise AI solutions
-
-                        .col-sm-12.col-md-4.mb-3
-                            .content-box-primary.bg-white.h-100
-                                h3.font-weight-bold.mb-4 
-                                    | Start building before hiring
-                                h5
-                                    | Approach hiring and solutioning as parallel, complementary processes
-
-                        .col-sm-12.col-md-4.mb-3
-                            .content-box-secondary.bg-white.h-100
-                                h3.font-weight-bold.mb-4 
-                                    | Right use of budget
-                                h5 
-                                    |Focus on the right things to make your investments in AI more effective.
-
-
-        section#expertise.page-section
-            .container.px-4.px-lg-4
-                    .row.mb-5
-                        .col-md-10.col-lg-8.mx-auto.text-center
-                            h1.font-weight-bold.mb-3 Our Expertise
-                            h5 We have many years of experience with pioneering AI companies for building end-to-end AI solutions for variety of problems 
-                    .row.my-4
-                            .col-sm-12.col-md-6.order-md-2
-                                h2.font-weight-bold.text-primary.mb-4 Natural Language Processing (NLP)
-
-                                p.detail  Extensive experience in various NLP technology:
-                                ul.detail
-                                    li Knowledge Search
-                                    li Question Answering
-                                    li Domain-specific Opinion Mining
-                                    li Aspect-Sentiment Analysis
-                                    li Information and Insight Extraction
-                                    li Conversational AI
-                                    li Summarization 
-
-                                br
-                                //hr.list-divider
-
-                                p.detail Deep understanding of the nuances of different data sources (blogs, video reviews, news, etc.) in various domains (E-commerce, Pharma, IT, Finance, and more)
-
-                                br
-
-                                p.detail Ability to handle real-world, noisy, heterogeneous data
-
-                                br
-
-                                p.detail Cutting-edge technology: Solutions built around state-of-the-art deep learning models such as Transformer (BERT variants) and LSTM at the core
-
-                            .col-sm-12.col-md-6
-                                .img-box.text-center
-                                    img.img-main.max-height-500.lazyload(data-src="/assets/img/nlp_diagram.jpeg" alt="natural language processing applications")
-
-                    .row.my-4
-                            .col-sm-12.col-md-6
-                                .img-box
-                                    h2.mb-4.text-primary Conversational AI
-
-                                    p.detail Task-oriented dialog agents that stand out from run-of-the-mill chatbots
-                                    
-                                    br 
-
-                                    p.detail Purpose-built for product discovery engines, support assistants, and FAQ bots
-                                    
-                                    br 
-
-                                    p.detail Bootstrapped from available data sources (reviews, blogs, knowledge articles) for quick deployment
-                                    
-                                    br
-
-                                    p.detail Easily adaptable to various domains such as Travel, E-commerce/Retail, Finance, IT and Pharma
-                            .col-sm-12.col-md-6
-                                .img-box.text-center
-                                    img.img-main.max-height-400.my-3.lazyload(data-src="/assets/img/parseqa_clinical.png" alt="Conversational AI example")
-
-                    .row.my-4
-                            .col-sm-12.col-md-6.order-md-2
-                                .img-box
-                                    h2.mb-4.text-primary Image & Video Processing
-
-                                    p.detail Ready modules for multiple use cases:
-                                    ul.detail 
-                                        li Automatic vehicle detection & tracking
-                                        li Invoice & PO scanning
-                                    
-                                    br
-
-                                    p.detail Object detection and masking for GDPR compliance
-
-                                    br
-
-                                    p.detail Combining cutting-edge image recognition and NLP techniques for high accuracy document processing systems
-                                    
-                                    br
-                            .col-sm-12.col-md-6
-                                .img-box.text-center
-                                    img.img-main.max-height-300.my-4.lazyload(data-src="/assets/img/document_examples.png" alt="document processing example")
-
-                    .row.my-4
-                        .col-sm-12.col-md-6
-                            .img-box
-                                h2.mb-4.text-primary Ethical AI
-
-                                p.detail Active research and thought leadership on ethical AI concepts by Inscripta founders
-
-                                br
-
-                                p.detail Helped organizations map out and implement their ethical AI strategy, to deal with overarching, recurrent and complex problems
-
-                                br
-
-                                p.detail Helped organizations to set up an AI governance structure, with operational procedures and guiding materials to ensure ethical decision-making at all levels in your AI team
-                                //hr.list-divider
-                                //a(href='/ethical-ai.html') More on Ethical AI
-
-                        .col-sm-12.col-md-6
-                                .img-box.text-center
-                                    //img.img-main.lazyload(data-src="/assets/img/products/parseqa_concept.jpg" alt="Ethical AI example")
-
-
-
-        // Blog
+        // ── BLOG (unchanged) ─────────────────────────────────────────
         section#blogs.bg-primary.text-white.page-section
                 .container.px-4.px-lg-5.text-center
                     .col-lg-10.mx-auto.text-center
                         h1.font-weight-bold.mt-0.mb-5 Blog
-                .container-fluid    
+                .container-fluid
                     #myCarousel.carousel.slide(data-bs-ride="carousel").mx-auto
                         .carousel-inner.row.mx-auto.col-lg-10
-                            .carousel-item.active
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://medium.com/inscripta/get-set-ai-fast-track-your-companys-transformation-92dd2696c96d')
-                                            .card-box
-                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*NyC1BVNPnbQFonVkfgUNRQ.jpeg', style="width: 100%" alt="Blog image")
-                                            h5.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company&rsquo;s transformation
-
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-2
-                                        a.blog-link(target='new' href='/blog/nlp-seven-misplaced-passions.html')
-                                            .card-box
-                                                img.lazyload(data-src='/assets/img/blog/nlp-seven-misplaced-passions/JoeDavisonTweetNew.jpg', style="width: 100%")
-                                            h5.font-weight-bold.mx-3.my-4 NLP for Business in the Time of BERTera: Seven Misplaced Passions
-
-
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://medium.com/inscripta/does-conversational-ai-need-a-hippocratic-oath-99d23f458ede')
-                                            .card-box
-                                                img.lazyload(data-src='https://miro.medium.com/max/300/1*69nhAmSOPS68-1dZp-S_Yw.jpeg', style="width: 100%" alt="Blog image")
-                                            h5.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
-
-
+                            //- Carousel cards generated at build time from src/data/blogs.json
+                            //- (populated by `npm run fetch:blogs` which is part of `npm run build`).
+                            if blogs && blogs.length
+                                each blog, i in blogs
+                                    div(class=(i === 0 ? 'carousel-item active' : 'carousel-item'))
+                                        .col-md-4
+                                            .image-card.mx-4
+                                                a.blog-link(target='new' rel='noopener' href=blog.url)
+                                                    .card-box
+                                                        img.lazyload(data-src=blog.image, style="width: 100%" alt=blog.title)
+                                                    h5.font-weight-bold.mx-3.my-4= blog.title
                         a.carousel-control-prev(href='#myCarousel' role='button' data-bs-slide='prev')
                             span.carousel-control-prev-icon(aria-hidden='true')
                             span.sr-only Previous
@@ -411,6 +478,8 @@ html(lang='en')
                             span.carousel-control-next-icon(aria-hidden='true')
                             span.sr-only Next
 
+
+        // ── CONSULTING PROCESS (unchanged) ───────────────────────────
         section#process.bg-dark.text-white.page-section
             .container.px-4.px-lg-5.text-center
                     .col-lg-10.mx-auto.text-center
@@ -418,7 +487,7 @@ html(lang='en')
                         img.img-main(src='/assets/img/inscripta-process.png' alt='Process timeline')
 
 
-        // Contact
+        // ── CONTACT (unchanged) ──────────────────────────────────────
         section#contact.page-section
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center
@@ -429,15 +498,12 @@ html(lang='en')
                         h2.mt-4.mt-lg-0 Get In Touch!
                         hr.divider.bg-secondary.mx-0
                         h6.mb-3
-                            | Looking to add intelligence to your systems? 
+                            | Looking to add intelligence to your systems?
                             hr.w-50
                             | Require customized deployment?
                         p.flex-align-content-center
-                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary 
+                            i.fa.fa-envelope.fa-2x.sr-contact.text-primary
                             a.mx-3.mt-2(href='mailto:sales@inscripta.ai') sales@inscripta.ai
 
-        // Footer
         include /pug/includes/footer_new.pug
-
-        // carousel
-        script(async='' src='/js/carousel.js')
+        script(defer src='/js/carousel.js')

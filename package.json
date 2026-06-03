@@ -3,7 +3,7 @@
     "name": "startbootstrap-creative",
     "version": "7.0.2",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets && npm run build:cname && npm run build:sitemap",
+        "build": "npm run clean && npm run fetch:blogs && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets && npm run build:cname && npm run build:sitemap",
         "build:assets": "node scripts/build-assets.js",
         "build:pug": "node scripts/build-pug.js",
         "build:scripts": "node scripts/build-scripts.js",
@@ -11,6 +11,7 @@
         "build:cname": "node scripts/build-cname.js",
         "build:sitemap": "node scripts/build-sitemap.js",
         "clean": "node scripts/clean.js",
+        "fetch:blogs": "node scripts/fetch-blogs.js",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },

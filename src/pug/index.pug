@@ -305,6 +305,34 @@ html(lang='en')
                                     li.mt-1 More reliable across the board.
                                     li.mt-1 Navigate top-3 results with the UI for 100% quality assurance.
 
+            
+            // Consulting Strip
+            section#consulting-strip.consulting-strip
+                .container.px-4.px-lg-5
+                    .consulting-strip-card
+                        .consulting-strip-left
+                            span.ai-suite-eyebrow AI Consulting &amp; Services
+                            h2.font-weight-bold.mt-3 Need AI that actually works for your business?
+                            p.mt-2
+                                | Off-the-shelf tools aren&rsquo;t enough. We blend deep expertise in Generative &amp; Agentic AI, NLP, and Document Intelligence with proven, customizable solutions to deliver real-world impact.
+                        .consulting-strip-right
+                            .consulting-strip-pills
+                                span.consulting-strip-pill
+                                    i.fas.fa-robot
+                                    | Agentic AI
+                                span.consulting-strip-pill
+                                    i.fas.fa-file-alt
+                                    | Document Intelligence
+                                span.consulting-strip-pill
+                                    i.fas.fa-comments
+                                    | NLP &amp; LLM
+                                span.consulting-strip-pill
+                                    i.fas.fa-chart-line
+                                    | Measurable ROI
+                            a.btn-cns-primary(href='/consulting')
+                                | Explore Consulting Services
+                                i.fas.fa-arrow-right.ms-2
+
 
             // Inscripta Stack
             section#stack.page-section.bg-light
@@ -361,125 +389,17 @@ html(lang='en')
                     #myCarousel.carousel.slide(data-bs-ride="carousel").mx-auto
                         .carousel-inner.row.mx-auto.col-lg-10
 
-                            // === AI Anxiety ===
-                            .carousel-item.active
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://blog.inscripta.ai/managing-ai-anxiety-a-case-study-with-notebooklm/')
-                                            .card-box
-                                                img.lazyload(
-                                                    src="/assets/img/blog/ai-anxiety-notebooklm-400.avif"
-                                                    srcset="/assets/img/blog/ai-anxiety-notebooklm-400.avif 400w, /assets/img/blog/ai-anxiety-notebooklm-800.avif 800w, /assets/img/blog/ai-anxiety-notebooklm-1200.avif 1200w"
-                                                    sizes="(max-width: 600px) 100vw, 33vw"
-                                                    style="width:100%"
-                                                    alt="Managing AI anxiety"
-                                                )
-                                            p.bigger.font-weight-bold.mx-3.my-4 Managing AI anxiety: a case study with NotebookLM
-
-                            // === Data curation QABots ===
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://blog.inscripta.ai/unlocking-the-secret-to-effective-enterprise-data-curation-and-qabots/')
-                                            .card-box
-                                                img.lazyload(
-                                                    src="/assets/img/blog/data-curation-qabots-400.avif"
-                                                    srcset="/assets/img/blog/data-curation-qabots-400.avif 400w, /assets/img/blog/data-curation-qabots-800.avif 800w, /assets/img/blog/data-curation-qabots-1200.avif 1200w"
-                                                    sizes="(max-width: 600px) 100vw, 33vw"
-                                                    style="width:100%"
-                                                    alt="Data curation and QA bots"
-                                                )
-                                            p.bigger.font-weight-bold.mx-3.my-4 Unlocking the secret to effective enterprise data curation and QAbots
-
-                            // === Pretrained Language Models ===
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://blog.inscripta.ai/research-highlight-pretrained-language-models-language-fundamentals-better-performance/')
-                                            .card-box
-                                                img.lazyload(
-                                                    src="/assets/img/blog/pretrained-language-models-400.avif"
-                                                    srcset="/assets/img/blog/pretrained-language-models-400.avif 400w, /assets/img/blog/pretrained-language-models-800.avif 800w, /assets/img/blog/pretrained-language-models-1200.avif 1200w"
-                                                    sizes="(max-width: 600px) 100vw, 33vw"
-                                                    style="width:100%"
-                                                    alt="Pretrained Language Models"
-                                                )
-                                            p.bigger.font-weight-bold.mx-3.my-4 Research highlight: Pretrained Language Models + Language Fundamentals = Better Performance
-
-                            // === NLP Bertera ===
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://blog.inscripta.ai/nlp-for-business-in-the-time-of-bertera-seven-misplaced-passions/')
-                                            .card-box
-                                                img.lazyload(
-                                                    src="/assets/img/blog/nlp-bertera-400.avif"
-                                                    srcset="/assets/img/blog/nlp-bertera-400.avif 400w, /assets/img/blog/nlp-bertera-800.avif 800w, /assets/img/blog/nlp-bertera-1200.avif 1200w"
-                                                    sizes="(max-width: 600px) 100vw, 33vw"
-                                                    style="width:100%"
-                                                    alt="NLP for Business"
-                                                )
-                                            p.bigger.font-weight-bold.mx-3.my-4 NLP for Business in the Time of BERTera: Seven Misplaced Passions
-
-                            // === ParseQA Knowledge Search ===
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://blog.inscripta.ai/parseqa-pushing-the-boundaries-of-knowledge-search/')
-                                            .card-box
-                                                img.lazyload(
-                                                    src="/assets/img/blog/parseqa-knowledge-search-400.avif"
-                                                    srcset="/assets/img/blog/parseqa-knowledge-search-400.avif 400w, /assets/img/blog/parseqa-knowledge-search-800.avif 800w, /assets/img/blog/parseqa-knowledge-search-1200.avif 1200w"
-                                                    sizes="(max-width: 600px) 100vw, 33vw"
-                                                    style="width:100%"
-                                                    alt="ParseQa Knowledge Search"
-                                                )
-                                            p.bigger.font-weight-bold.mx-3.my-4 ParseQa: Pushing the Boundaries of Knowledge Search
-
-                            // === Get Set AI ===
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://blog.inscripta.ai/get-set-ai-fast-track-your-companys-transformation/')
-                                            .card-box
-                                                img.lazyload(
-                                                    src="/assets/img/blog/get-set-ai-400.avif"
-                                                    srcset="/assets/img/blog/get-set-ai-400.avif 400w, /assets/img/blog/get-set-ai-800.avif 800w, /assets/img/blog/get-set-ai-1200.avif 1200w"
-                                                    sizes="(max-width: 600px) 100vw, 33vw"
-                                                    style="width:100%"
-                                                    alt="Get Set AI"
-                                                )
-                                            p.bigger.font-weight-bold.mx-3.my-4 Get Set AI: Fast-track your company's transformation
-
-                            // === Teaching Computers ===
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://blog.inscripta.ai/teaching-computers-how-humans-think-by-creating-questions-that-computers-cannot-answer/')
-                                            .card-box
-                                                img.lazyload(
-                                                    src="/assets/img/blog/teaching-computer-400.avif"
-                                                    srcset="/assets/img/blog/teaching-computer-400.avif 400w, /assets/img/blog/teaching-computer-800.avif 800w, /assets/img/blog/teaching-computer-1200.avif 1200w"
-                                                    sizes="(max-width: 600px) 100vw, 33vw"
-                                                    style="width:100%"
-                                                    alt="Teaching Computers"
-                                                )
-                                            p.bigger.font-weight-bold.mx-3.my-4 Teaching computers how humans think by creating questions computers cannot answer
-
-                            // === Hippocratic Oath ===
-                            .carousel-item
-                                .col-md-4
-                                    .image-card.mx-4
-                                        a.blog-link(target='new' href='https://blog.inscripta.ai/does-conversational-ai-need-a-hippocratic-oath/')
-                                            .card-box
-                                                img.lazyload(
-                                                    src="/assets/img/blog/hippocratic-oath-400.avif"
-                                                    srcset="/assets/img/blog/hippocratic-oath-400.avif 400w, /assets/img/blog/hippocratic-oath-800.avif 800w, /assets/img/blog/hippocratic-oath-1200.avif 1200w"
-                                                    sizes="(max-width: 600px) 100vw, 33vw"
-                                                    style="width:100%"
-                                                    alt="Hippocratic Oath"
-                                                )
-                                            p.bigger.font-weight-bold.mx-3.my-4 Does Conversational AI Need a Hippocratic Oath?
+                            //- Carousel cards generated at build time from src/data/blogs.json
+                            //- (populated by `npm run fetch:blogs` which is part of `npm run build`).
+                            if blogs && blogs.length
+                                each blog, i in blogs
+                                    div(class=(i === 0 ? 'carousel-item active' : 'carousel-item'))
+                                        .col-md-4
+                                            .image-card.mx-4
+                                                a.blog-link(target='new' rel='noopener' href=blog.url)
+                                                    .card-box
+                                                        img.lazyload(src=blog.image, style="width:100%", alt=blog.title)
+                                                    p.bigger.font-weight-bold.mx-3.my-4= blog.title
 
                             //- // === Product Search Broken ===
                             //- .carousel-item

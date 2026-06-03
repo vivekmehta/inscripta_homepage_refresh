@@ -217,8 +217,10 @@ async function runSequence() {
     runSequence();
 }
 
-// Start the sequence
-runSequence();
+// Start the sequence — only if the step elements exist on this page
+if (steps.upload && steps.chat && steps.processing && steps.result) {
+    runSequence();
+}
 
 
 
