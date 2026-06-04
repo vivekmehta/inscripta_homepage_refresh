@@ -24,14 +24,10 @@ window.addEventListener('DOMContentLoaded', event => {
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
+    // ScrollSpy is disabled — Bootstrap 5.0.x crashes on multi-page navs where
+    // some links resolve to in-page anchors and others go to other routes/URLs.
+    // The nav is primarily multi-page so scroll-based active highlighting added
+    // little value and produced a runtime error on every page load.
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
