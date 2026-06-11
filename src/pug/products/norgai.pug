@@ -836,6 +836,18 @@ html(lang='en')
                         playsinline
                     )
 
+        // NorgAI resources & legal links
+        .container.px-4.px-lg-5.my-5
+            .row.justify-content-center
+                .col-lg-8.text-center.pt-5.border-top
+                    a.btn.btn-secondary(href='/products/norgai/quick-start')
+                        | Quick Start Guide
+                        i.fas.fa-arrow-right.ms-2
+                    .mt-3
+                        a.small.text-muted.mx-2(href='/legal/norgai-terms') NorgAI Terms of Use
+                        span.small.text-muted &middot;
+                        a.small.text-muted.mx-2(href='/legal/privacy') Privacy Policy
+
         // Footer
         include /pug/includes/footer_new.pug
 

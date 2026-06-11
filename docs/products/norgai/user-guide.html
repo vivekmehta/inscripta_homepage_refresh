@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="NorgAI User Guide — the complete feature reference for AI-powered presentation generation inside Microsoft PowerPoint." />
+        <meta name="author" content="Team Inscripta" />
+        <title>NorgAI User Guide | Inscripta AI</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+        <!--Font-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito Sans:400,700" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.min.css" rel="stylesheet" />
+        <style>
+            .qs-lead {
+                font-size: 1.05rem;
+            }
+            .ug-section {
+                scroll-margin-top: 90px;
+                margin-top: 3.25rem;
+            }
+            .ug-section > h2 {
+                padding-bottom: 0.4rem;
+                border-bottom: 2px solid #f0f2f8;
+            }
+            .ug-section h3 {
+                margin-top: 1.75rem;
+                font-size: 1.25rem;
+            }
+            .ug-toc {
+                background: #f5f7ff;
+                border: 1px solid #e6eaf6;
+                border-radius: 12px;
+                padding: 1.25rem 1.5rem;
+            }
+            .ug-toc ol {
+                margin: 0;
+                padding-left: 1.25rem;
+            }
+            .ug-toc li {
+                margin-bottom: 0.35rem;
+            }
+            .ug-toc a {
+                color: #192b80;
+            }
+            .qs-fig {
+                margin: 1.5rem 0;
+            }
+            .qs-shot {
+                width: 100%;
+                max-width: 760px;
+                height: auto;
+                display: block;
+                border-radius: 12px;
+                border: 1px solid #eaecf3;
+                box-shadow: 0 12px 30px rgba(25, 43, 128, 0.12);
+            }
+            .qs-cap {
+                margin-top: 0.6rem;
+                font-size: 0.9rem;
+                color: #6c757d;
+                font-style: italic;
+                max-width: 760px;
+            }
+            .qs-note {
+                border-left: 4px solid #192b80;
+                background: #f5f7ff;
+                padding: 0.85rem 1.1rem;
+                border-radius: 0 8px 8px 0;
+                margin: 1.25rem 0;
+            }
+            .qs-note p {
+                margin: 0;
+            }
+            .qs-table th {
+                background: #f5f7ff;
+            }
+            .ug-cta {
+                margin-top: 3.5rem;
+                padding-top: 2rem;
+                border-top: 1px solid #eaecf3;
+            }
+        </style>
+        <!-- Google Tag Manager-->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5XQVFGS');
+        </script>
+        <!-- End Google Tag Manager-->
+    </head>
+    <body id="page-top">
+        <!-- Google Tag Manager (noscript)-->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XQVFGS" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript)-->
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5"><a class="navbar-brand" href="/"></a></div>
+        </nav>
+        <!-- Producthead-->
+        <header class="simplehead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100">
+                    <div class="col-lg-9 align-self-end"><h1 class="text-white font-weight-bold">NorgAI User Guide</h1></div>
+                    <div class="col-lg-9 align-self-baseline mt-3"><p class="text-white mb-0">The complete feature reference for AI-powered presentation generation in Microsoft PowerPoint</p></div>
+                </div>
+            </div>
+        </header>
+        <section class="page-section" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h5 class="text-primary">Publisher: Inscripta AI &nbsp;|&nbsp; Version 1.0 &nbsp;|&nbsp; Platform: Windows, macOS, Web (Microsoft 365)</h5>
+                        <p class="mt-3">
+                            New to NorgAI? Start with the&nbsp;
+                            <a class="text-primary" href="/products/norgai/quick-start">Quick Start Guide</a>
+                            &nbsp;for a 6-step walkthrough, then return here for the full reference.
+                        </p>
+                        <!-- Table of Contents-->
+                        <div class="ug-toc mt-4">
+                            <h2 class="h5 text-primary mb-3">Contents</h2>
+                            <ol>
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#prerequisites">Prerequisites &amp; Installation</a></li>
+                                <li><a href="#signing-in">Signing In</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#uploading">Uploading Documents</a></li>
+                                <li><a href="#generating">Generating a Presentation</a></li>
+                                <li><a href="#adapting">Adapting an Existing Presentation</a></li>
+                                <li><a href="#plan-review">The Plan Review Workflow</a></li>
+                                <li><a href="#modifying">Modifying Individual Slides</a></li>
+                                <li><a href="#asking-questions">Asking Questions About Your Documents</a></li>
+                                <li><a href="#source-attribution">Source Attribution</a></li>
+                                <li><a href="#knowledge">Knowledge &amp; Memory</a></li>
+                                <li><a href="#collaboration">Project Collaboration</a></li>
+                                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#privacy">Privacy &amp; Data Handling</a></li>
+                                <li><a href="#support">Support &amp; Contact</a></li>
+                            </ol>
+                        </div>
+                        <!-- 1. Overview-->
+                        <div class="ug-section" id="overview">
+                            <h2>1. Overview</h2>
+                            <p class="qs-lead">NorgAI is an AI assistant built into Microsoft PowerPoint as a task pane add-in. It connects the documents your team uploads&mdash;RFPs, case studies, product sheets, market research, meeting notes&mdash;to the presentations you create, so every deck is grounded in real, verifiable information rather than generic AI-generated content.</p>
+                            <p class="mb-2"><strong>How it works:</strong></p>
+                            <ol>
+                                <li>You upload reference documents into a project.</li>
+                                <li>NorgAI indexes the content and makes it available to the AI.</li>
+                                <li>You describe what you want in plain English.</li>
+                                <li>NorgAI generates a plan, you review and approve it, and the deck is built inside your open PowerPoint file.</li>
+                                <li>Every claim in the output is traced back to the document or web source that informed it.</li>
+                            </ol>
+                            <div class="qs-note">
+                                <p>
+                                    <strong>What it is not:</strong>
+                                    NorgAI is not a general-purpose AI chatbot. It is scoped to the documents you upload. If the information is not in your project, NorgAI will tell you&mdash;or supplement with web search when appropriate, with full attribution.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 2. Prerequisites & Installation-->
+                        <div class="ug-section" id="prerequisites">
+                            <h2>2. Prerequisites &amp; Installation</h2>
+                            <h3>System Requirements</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Requirement</th>
+                                            <th scope="col">Detail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Office version</td>
+                                            <td>Microsoft 365 or Office 2016+ (desktop or web)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Supported hosts</td>
+                                            <td>Microsoft PowerPoint (Desktop&mdash;Windows &amp; macOS; Web)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Internet connection</td>
+                                            <td>Required at all times&mdash;NorgAI is cloud-connected</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Account</td>
+                                            <td>Create a free account on the NorgAI login page</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>Installing the Add-in</h3>
+                            <p>NorgAI is available on Microsoft AppSource and can be installed by any user directly.</p>
+                            <ol>
+                                <li>
+                                    Open
+                                    <strong>Microsoft PowerPoint</strong>
+                                    .
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Home</strong>
+                                    on the ribbon.
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Add-ins</strong>
+                                    .
+                                </li>
+                                <li>
+                                    In the Office Add-ins store, search for
+                                    <strong>NorgAI</strong>
+                                    .
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Add</strong>
+                                    .
+                                </li>
+                                <li>
+                                    The
+                                    <strong>Norg AI Tools</strong>
+                                    group appears in your
+                                    <strong>Home</strong>
+                                    tab.
+                                </li>
+                            </ol>
+                            <h3>Opening the Add-in</h3>
+                            <ol>
+                                <li>
+                                    Open
+                                    <strong>Microsoft PowerPoint</strong>
+                                    .
+                                </li>
+                                <li>
+                                    On the
+                                    <strong>Home</strong>
+                                    tab, locate the
+                                    <strong>Norg AI Tools</strong>
+                                    group.
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Norg AI</strong>
+                                    .
+                                </li>
+                            </ol>
+                            <div class="qs-note">
+                                <p>
+                                    If you do not see the
+                                    <strong>Norg AI Tools</strong>
+                                    group, click
+                                    <strong>Insert</strong>
+                                    &rarr;
+                                    <strong>Add-ins</strong>
+                                    &rarr; search for
+                                    <strong>NorgAI</strong>
+                                    &rarr; click
+                                    <strong>Add</strong>
+                                    . The button appears in your Home tab after installation.
+                                </p>
+                            </div>
+                            <p>The task pane opens on the right side of your PowerPoint window.</p>
+                            <div class="qs-note">
+                                <p>
+                                    <strong>Auto-open:</strong>
+                                    After first use, NorgAI sets itself to open automatically every time you launch PowerPoint. This behaviour can be cleared by reinstalling the add-in.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 3. Signing In-->
+                        <div class="ug-section" id="signing-in">
+                            <h2>3. Signing In</h2>
+                            <h3>Authentication</h3>
+                            <p>NorgAI uses secure authentication to protect your account. You can sign up directly on the NorgAI login screen&mdash;no prior setup needed.</p>
+                            <figure class="qs-fig">
+                                <img class="qs-shot" src="/assets/img/products/norgai/quick-start/Login_page_2.png" alt="NorgAI sign-in screen showing the Login button in the PowerPoint task pane" loading="lazy" decoding="async" />
+                                <figcaption class="qs-cap">Click the Login button to open the secure authentication dialog.</figcaption>
+                            </figure>
+                            <ol>
+                                <li>
+                                    When the task pane opens for the first time, you see the NorgAI sign-in screen with a
+                                    <strong>Login</strong>
+                                    button.
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Login</strong>
+                                    .
+                                </li>
+                                <li>
+                                    A secure authentication dialog opens in a
+                                    <strong>separate popup window</strong>
+                                    within PowerPoint. The task pane itself does not navigate away.
+                                </li>
+                                <li>
+                                    Sign in with your existing NorgAI account, or click
+                                    <strong>Sign Up</strong>
+                                    to create a new one.
+                                </li>
+                                <li>Once authentication succeeds, the dialog closes automatically.</li>
+                                <li>The NorgAI home screen loads in the task pane.</li>
+                            </ol>
+                            <h3>Session Management</h3>
+                            <ul>
+                                <li>Your session persists on your device until you explicitly log out.</li>
+                                <li>
+                                    If the session expires due to inactivity, the sign-in screen reappears&mdash;click
+                                    <strong>Login</strong>
+                                    to re-authenticate.
+                                </li>
+                                <li>
+                                    To log out: click the user icon in the top-right corner of the task pane and select
+                                    <strong>Logout</strong>
+                                    .
+                                </li>
+                            </ul>
+                            <h3>Account Issues</h3>
+                            <p>
+                                For password resets or login problems, use the forgot-password option on the sign-in screen or contact NorgAI support at
+                                <a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                                .
+                            </p>
+                        </div>
+                        <!-- 4. Projects-->
+                        <div class="ug-section" id="projects">
+                            <h2>4. Projects</h2>
+                            <h3>What is a Project?</h3>
+                            <p>
+                                A
+                                <strong>project</strong>
+                                is an isolated knowledge space scoped to one client, opportunity or engagement. Each project maintains:
+                            </p>
+                            <ul>
+                                <li>
+                                    Its own
+                                    <strong>document library</strong>
+                                    &mdash;uploaded files are accessible only within the project.
+                                </li>
+                                <li>
+                                    Its own
+                                    <strong>conversation history</strong>
+                                    &mdash;chat context is per-project and persists across sessions within a project.
+                                </li>
+                                <li>
+                                    Its own
+                                    <strong>AI memory</strong>
+                                    &mdash;learned facts and preferences specific to that client or topic.
+                                </li>
+                            </ul>
+                            <p>Projects prevent information from one client leaking into another&rsquo;s outputs. Create a separate project for every distinct engagement.</p>
+                            <h3>Creating a Project</h3>
+                            <ol>
+                                <li>
+                                    Click the
+                                    <strong>project dropdown</strong>
+                                    at the top-left of the task pane header.
+                                </li>
+                                <li>
+                                    If no projects exist, the
+                                    <strong>New Project</strong>
+                                    dialog opens automatically.
+                                </li>
+                                <li>
+                                    If projects exist, click
+                                    <strong>Add Project</strong>
+                                    at the bottom of the dropdown list.
+                                </li>
+                                <li>
+                                    Type a project name. Recommended conventions:
+                                    <em>Acme Corp — Q3 Transformation Proposal</em>
+                                    ,
+                                    <em>Digital Banking RFP — Response 2025</em>
+                                    .
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Create</strong>
+                                    or press
+                                    <strong>Enter</strong>
+                                    .
+                                </li>
+                            </ol>
+                            <figure class="qs-fig">
+                                <img class="qs-shot" src="/assets/img/products/norgai/quick-start/Create_project_2.png" alt="New Project dialog with a name field and a Create button" loading="lazy" decoding="async" />
+                                <figcaption class="qs-cap">Click the project dropdown, then Add Project. Type a name in the dialog and click Create.</figcaption>
+                            </figure>
+                            <h3>Switching Projects</h3>
+                            <p>Click the project dropdown and select a different project. The task pane reloads with that project&rsquo;s document library and conversation history. Your previous project&rsquo;s context is preserved and resumes when you switch back.</p>
+                            <h3>Deleting a Project</h3>
+                            <p>
+                                Hover over a project name in the dropdown and click the delete icon. Confirm in the dialog.
+                                <strong>This action is permanent</strong>
+                                &mdash;all documents, conversation history and AI memory for that project are deleted.
+                            </p>
+                        </div>
+                        <!-- 5. Uploading Documents-->
+                        <div class="ug-section" id="uploading">
+                            <h2>5. Uploading Documents</h2>
+                            <p>Documents are the foundation of every NorgAI output. The quality and relevance of what you upload directly determines the quality of what NorgAI generates.</p>
+                            <h3>Accessing the Document Panel</h3>
+                            <p>
+                                Click the
+                                <strong>Documents</strong>
+                                icon in the task pane toolbar (the library icon below the project dropdown). The document management panel opens with the
+                                <strong>Local Documents</strong>
+                                tab active.
+                            </p>
+                            <h3>Uploading Local Files</h3>
+                            <p>
+                                Drag and drop files onto the upload area, or click
+                                <strong>browse files</strong>
+                                to open a file picker.
+                            </p>
+                            <figure class="qs-fig">
+                                <img class="qs-shot" src="/assets/img/products/norgai/quick-start/upload_page_2.png" alt="Document upload area with a drag-and-drop zone and a URL import field" loading="lazy" decoding="async" />
+                                <figcaption class="qs-cap">The upload area accepts drag-and-drop or file-picker selection. A URL import field below it imports text from any public webpage.</figcaption>
+                            </figure>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Format</th>
+                                            <th scope="col">Extension</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>PDF</td>
+                                            <td>.pdf</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Microsoft Word</td>
+                                            <td>.doc, .docx</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Microsoft PowerPoint</td>
+                                            <td>.ppt, .pptx</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Microsoft Excel</td>
+                                            <td>.xls, .xlsx</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CSV</td>
+                                            <td>.csv</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Plain Text</td>
+                                            <td>.txt</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Markdown</td>
+                                            <td>.md</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>Multiple files can be uploaded simultaneously. Each file is processed independently.</p>
+                            <h3>Importing from a Web URL</h3>
+                            <p>
+                                Below the upload area is a field labelled
+                                <strong>Paste a webpage URL</strong>
+                                . Enter any public webpage URL and click
+                                <strong>Import Webpage</strong>
+                                . NorgAI extracts the readable text from that page and adds it to your project as a document source.
+                            </p>
+                            <div class="qs-note">
+                                <p>
+                                    <strong>Note:</strong>
+                                    URL import captures text content only. PDFs or documents linked within a page must be downloaded and uploaded separately.
+                                </p>
+                            </div>
+                            <h3>Processing Stages</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">What is happening</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Uploading</strong></td>
+                                            <td>File is being transferred to the NorgAI server</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Parsing</strong></td>
+                                            <td>File content is being read and structured</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Indexing</strong></td>
+                                            <td>Content is being converted into AI-searchable vector format</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Fully Processed</strong></td>
+                                            <td>File is ready&mdash;NorgAI can draw on it</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Failed</strong></td>
+                                            <td>Processing error&mdash;delete the file and re-upload</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <figure class="qs-fig">
+                                <img class="qs-shot" src="/assets/img/products/norgai/quick-start/uploaded_docs_2.png" alt="Document list showing files at Fully Processed status" loading="lazy" decoding="async" />
+                                <figcaption class="qs-cap">Wait for all key documents to reach Fully Processed before generating content. Files still indexing are not available to the AI.</figcaption>
+                            </figure>
+                            <div class="qs-note">
+                                <p>
+                                    <strong>Wait for Fully Processed</strong>
+                                    before submitting a generation request. Files still in Parsing or Indexing are not available to the AI and will be silently skipped. Most files complete within 30&ndash;90 seconds; large PDFs (100+ pages) may take up to 5 minutes.
+                                </p>
+                            </div>
+                            <h3>Deleting a Document</h3>
+                            <p>
+                                Click the
+                                <strong>trash icon</strong>
+                                next to any file and confirm. Deleting a document removes it from the AI&rsquo;s knowledge&mdash;future generations will not reference it. This does not affect previously generated slides.
+                            </p>
+                            <h3>Best Practices for Document Uploads</h3>
+                            <ul>
+                                <li>
+                                    <strong>Upload the actual RFP first</strong>
+                                    &mdash;it is the primary source of scope, requirements and evaluation criteria.
+                                </li>
+                                <li>
+                                    <strong>Include past proposals and case studies</strong>
+                                    &mdash;they provide proven language and relevant examples.
+                                </li>
+                                <li>
+                                    <strong>Upload one master deck</strong>
+                                    &mdash;a reference PowerPoint NorgAI can use for slide structure and layout patterns.
+                                </li>
+                                <li>
+                                    <strong>Remove outdated files</strong>
+                                    &mdash;stale documents produce stale output.
+                                </li>
+                                <li>
+                                    <strong>Name files clearly</strong>
+                                    &mdash;NorgAI displays source filenames in citations, so descriptive names make output easier to trace.
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 6. Generating a Presentation-->
+                        <div class="ug-section" id="generating">
+                            <h2>6. Generating a Presentation</h2>
+                            <p>NorgAI can generate a complete presentation from scratch using the documents in your project.</p>
+                            <h3>How to Generate</h3>
+                            <ol>
+                                <li>Ensure the relevant project is selected in the dropdown.</li>
+                                <li>
+                                    Ensure key documents are
+                                    <strong>Fully Processed</strong>
+                                    .
+                                </li>
+                                <li>
+                                    Type your generation request in the chat input at the bottom of the task pane and press
+                                    <strong>Enter</strong>
+                                    .
+                                </li>
+                            </ol>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Goal</th>
+                                            <th scope="col">Example prompt</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Executive summary deck</td>
+                                            <td><em>&ldquo;Create a 10-slide executive proposal for the uploaded digital transformation RFP. Audience is a logistics CFO.&rdquo;</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sales pitch</td>
+                                            <td><em>&ldquo;Generate a 7-slide pitch for our cloud migration solution tailored to mid-market financial services.&rdquo;</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Capability overview</td>
+                                            <td><em>&ldquo;Create a capability presentation for a healthcare client covering our data platform offering.&rdquo;</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td>RFP response</td>
+                                            <td><em>&ldquo;Build a proposal responding to the uploaded RFP. Include an executive summary, solution overview, implementation timeline and pricing approach.&rdquo;</em></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>What Happens Next</h3>
+                            <p>
+                                NorgAI analyses your project documents and the open presentation (if any), then presents a structured
+                                <strong>slide plan</strong>
+                                for your review before generating anything&mdash;see
+                                <a class="text-primary" href="#plan-review">The Plan Review Workflow</a>
+                                .
+                            </p>
+                            <h3>Tips for Effective Generation Prompts</h3>
+                            <ul>
+                                <li>
+                                    <strong>State the audience</strong>
+                                    &mdash;a logistics CFO and a procurement manager need different language and emphasis.
+                                </li>
+                                <li>
+                                    <strong>Specify slide count</strong>
+                                    &mdash;&ldquo;10 slides&rdquo; is better than an open-ended request.
+                                </li>
+                                <li>
+                                    <strong>Name the documents</strong>
+                                    &mdash;&ldquo;based on the uploaded RFP&rdquo; is clearer than &ldquo;based on what I uploaded&rdquo;.
+                                </li>
+                                <li>
+                                    <strong>State the goal</strong>
+                                    &mdash;&ldquo;win a competitive RFP&rdquo; vs &ldquo;brief an internal steering committee&rdquo; produce very different decks.
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 7. Adapting an Existing Presentation-->
+                        <div class="ug-section" id="adapting">
+                            <h2>7. Adapting an Existing Presentation</h2>
+                            <p>Use this workflow when you have an existing deck&mdash;a template, a past proposal or a master pitch&mdash;and want to transform it for a new client, industry or opportunity.</p>
+                            <h3>How to Adapt</h3>
+                            <ol>
+                                <li>Open the presentation you want to adapt in PowerPoint.</li>
+                                <li>Select the relevant project in the NorgAI dropdown.</li>
+                                <li>
+                                    Type your adaptation request, for example:
+                                    <em>&ldquo;Adapt this deck into a proposal for Acme Corp, a mid-market logistics company. Use the uploaded case studies and RFP.&rdquo;</em>
+                                </li>
+                            </ol>
+                            <h3>How it Differs from Generation</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Generate</th>
+                                            <th scope="col">Adapt</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Starting point</td>
+                                            <td>Blank / topic only</td>
+                                            <td>Your open PowerPoint file</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Slide structure</td>
+                                            <td>Created by AI</td>
+                                            <td>Based on your existing deck</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Layout &amp; design</td>
+                                            <td>From master deck</td>
+                                            <td>From your open file&rsquo;s design</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Use case</td>
+                                            <td>New engagements</td>
+                                            <td>Reusing existing IP</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- 8. The Plan Review Workflow-->
+                        <div class="ug-section" id="plan-review">
+                            <h2>8. The Plan Review Workflow</h2>
+                            <p>
+                                Before NorgAI makes any changes to your PowerPoint file, it proposes a
+                                <strong>structured slide plan</strong>
+                                that you must review and approve. NorgAI never modifies your file without explicit approval.
+                            </p>
+                            <h3>Reading the Plan</h3>
+                            <figure class="qs-fig">
+                                <img class="qs-shot" src="/assets/img/products/norgai/quick-start/Plan_2.png" alt="AI-generated slide plan listing each slide with its action type and Approve and Give Feedback buttons" loading="lazy" decoding="async" />
+                                <figcaption class="qs-cap">The plan lists every output slide with its action type. Click any row to expand it and review the content brief before committing.</figcaption>
+                            </figure>
+                            <p>Each row shows the slide number, action type, proposed title and a content brief (expandable).</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Action</th>
+                                            <th scope="col">Meaning</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>NEW</strong></td>
+                                            <td>A new slide is created from scratch using project documents</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>MODIFY</strong></td>
+                                            <td>An existing slide in the open deck is updated with new content</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>KEEP</strong></td>
+                                            <td>Slide is carried over unchanged</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>RESTYLE</strong></td>
+                                            <td>Content restyled to match the reference deck&rsquo;s layout without content changes</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>REMOVE</strong></td>
+                                            <td>Slide is deleted from the output deck</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>
+                                A summary line at the top shows the total count&mdash;for example:
+                                <em>&ldquo;12 slides (4 NEW &middot; 6 MODIFY &middot; 1 KEEP &middot; 1 REMOVE)&rdquo;</em>
+                                .
+                            </p>
+                            <h3>Approving the Plan</h3>
+                            <p>
+                                Click
+                                <strong>Approve</strong>
+                                to accept the plan. NorgAI immediately generates content and inserts slides into your open file, showing progress as each slide completes.
+                            </p>
+                            <div class="qs-note">
+                                <p>
+                                    Once approved, the generation process cannot be interrupted. Use
+                                    <strong>Ctrl+Z</strong>
+                                    in PowerPoint to undo all inserted slides if you need to start over.
+                                </p>
+                            </div>
+                            <h3>Giving Feedback</h3>
+                            <p>
+                                Click
+                                <strong>Give feedback</strong>
+                                to request changes before approving. Type your feedback in plain English&mdash;for example:
+                                <em>&ldquo;Remove the team bio slide and replace it with a client ROI slide.&rdquo;</em>
+                                NorgAI regenerates the plan incorporating your instruction, and the loop repeats as many times as needed without losing prior context.
+                            </p>
+                            <div class="qs-note">
+                                <p>
+                                    <strong>Tip:</strong>
+                                    Be specific about slide numbers. &ldquo;Add a pricing slide after slide 7&rdquo; is more reliable than &ldquo;add a pricing slide somewhere in the middle&rdquo;.
+                                </p>
+                            </div>
+                            <h3>After Approval</h3>
+                            <figure class="qs-fig">
+                                <img class="qs-shot" src="/assets/img/products/norgai/quick-start/Approves_plan.png" alt="Presentation updated after approval, with a Sources panel listing the documents consulted" loading="lazy" decoding="async" />
+                                <figcaption class="qs-cap">After approval, NorgAI applies the changes and shows a Sources panel listing every document consulted.</figcaption>
+                            </figure>
+                        </div>
+                        <!-- 9. Modifying Individual Slides-->
+                        <div class="ug-section" id="modifying">
+                            <h2>9. Modifying Individual Slides</h2>
+                            <p>Use this workflow to update one or more specific slides without running a full adapt or generation cycle. It is faster and more surgical than the full plan workflow.</p>
+                            <h3>How to Modify</h3>
+                            <ol>
+                                <li>Navigate to the slide you want to modify in PowerPoint.</li>
+                                <li>
+                                    Type your modification instruction in the chat&mdash;for example:
+                                    <em>&ldquo;Update this slide with the latest competitive data from the uploaded market report.&rdquo;</em>
+                                </li>
+                                <li>
+                                    NorgAI generates a proposed updated slide and displays it as a
+                                    <strong>slide card</strong>
+                                    in the chat.
+                                </li>
+                            </ol>
+                            <figure class="qs-fig">
+                                <img class="qs-shot" src="/assets/img/products/norgai/quick-start/Modify_slide_2.png" alt="Slide card showing the proposed slide content with a source count and Apply and Apply All buttons" loading="lazy" decoding="async" />
+                                <figcaption class="qs-cap">The slide card shows the proposed content. Apply inserts the single slide; Apply All pushes all pending slide updates in one action.</figcaption>
+                            </figure>
+                            <h3>Applying Changes</h3>
+                            <ul>
+                                <li>
+                                    Click
+                                    <strong>Apply</strong>
+                                    on an individual slide card to replace that slide in your file.
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Apply All N Slides</strong>
+                                    to apply all pending updates at once.
+                                </li>
+                                <li>Once applied, the Apply button changes to a checkmark confirming the slide has been written.</li>
+                            </ul>
+                            <div class="qs-note">
+                                <p>
+                                    Use
+                                    <strong>Ctrl+Z</strong>
+                                    in PowerPoint immediately after applying to undo a slide insertion.
+                                </p>
+                            </div>
+                            <h3>When to Use Modify vs Adapt</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Use Modify</th>
+                                            <th scope="col">Use Adapt</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Updating 1&ndash;3 specific slides</td>
+                                            <td>Transforming an entire deck</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adding content to an existing slide</td>
+                                            <td>Changing the deck&rsquo;s audience or purpose</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Refreshing data on a single slide</td>
+                                            <td>Restructuring the narrative</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fixing a specific claim</td>
+                                            <td>Producing a new client version</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>Confidence-Based Filtering (Trim / Expand)</h3>
+                            <p>
+                                NorgAI assigns each generated slide a
+                                <strong>relevance confidence</strong>
+                                score (high, medium or low) based on how well it matches the source documents. After generation you may see
+                                <strong>Trim</strong>
+                                and
+                                <strong>Expand</strong>
+                                controls:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Trim</strong>
+                                    &mdash;removes low-confidence slides, keeping only high and medium confidence content.
+                                </li>
+                                <li>
+                                    <strong>Expand</strong>
+                                    &mdash;restores trimmed slides or asks NorgAI to generate additional supporting slides.
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 10. Asking Questions-->
+                        <div class="ug-section" id="asking-questions">
+                            <h2>10. Asking Questions About Your Documents</h2>
+                            <p>NorgAI is a search and Q&amp;A tool as well as a generation tool. You can query your uploaded documents in plain English without triggering a slide generation workflow.</p>
+                            <h3>How to Ask Questions</h3>
+                            <p>
+                                Select the relevant project and type your question in the chat&mdash;for example:
+                                <em>&ldquo;What are the mandatory compliance requirements in the uploaded RFP?&rdquo;</em>
+                                NorgAI searches across all Fully Processed documents and returns a synthesised answer with source citations.
+                            </p>
+                            <h3>Conversational Follow-Up</h3>
+                            <p>NorgAI maintains context for the last 5 exchanges in the current session, so you can ask follow-up questions without restating context. Conversation history is in-memory and resets if you close and reopen the task pane.</p>
+                        </div>
+                        <!-- 11. Source Attribution-->
+                        <div class="ug-section" id="source-attribution">
+                            <h2>11. Source Attribution</h2>
+                            <p>
+                                Every NorgAI response that draws on documents or web data includes a
+                                <strong>Sources</strong>
+                                panel&mdash;the primary mechanism for verifying AI outputs.
+                            </p>
+                            <h3>Sources Panel Structure</h3>
+                            <ul>
+                                <li>
+                                    <strong>Sources Used</strong>
+                                    &mdash;documents and web pages directly cited in the output.
+                                </li>
+                                <li>
+                                    <strong>Also Consulted</strong>
+                                    &mdash;sources retrieved and evaluated but not directly cited (click the expand arrow to view).
+                                </li>
+                            </ul>
+                            <h3>Document and Web Sources</h3>
+                            <p>Each document source shows the filename, upload date, the extracted passage (click to expand the full excerpt) and the page or section reference. Each web source shows the website name and URL; click it to open the page in your browser.</p>
+                            <h3>When Web Search is Used</h3>
+                            <p>NorgAI supplements document search with web search when a request needs current information not in your documents, when uploaded documents are insufficient, or when you explicitly ask for current data. Web sources are always attributed and never treated as hidden inputs.</p>
+                        </div>
+                        <!-- 12. Knowledge & Memory-->
+                        <div class="ug-section" id="knowledge">
+                            <h2>12. Knowledge &amp; Memory</h2>
+                            <p>NorgAI learns from your interactions to improve future outputs. This is not passive&mdash;you can view, edit and delete everything NorgAI has learned.</p>
+                            <h3>How Knowledge is Created</h3>
+                            <p>
+                                NorgAI saves learned facts and preferences as
+                                <strong>knowledge entries</strong>
+                                scoped to either
+                                <strong>user-level</strong>
+                                (preferences across all your projects) or
+                                <strong>project-level</strong>
+                                (facts specific to a project, such as client name or budget constraints).
+                            </p>
+                            <h3>Knowledge Chips</h3>
+                            <p>
+                                After a response you may see
+                                <strong>knowledge chips</strong>
+                                showing what NorgAI learned&mdash;for example:
+                                <em>&ldquo;Client is a mid-market logistics company based in the UK.&rdquo;</em>
+                            </p>
+                            <ul>
+                                <li>If the information is correct, dismiss the chip&mdash;NorgAI retains the entry.</li>
+                                <li>
+                                    If it is incorrect, click the
+                                    <strong>&times; button</strong>
+                                    to reject it&mdash;the entry is deleted and will not influence future outputs.
+                                </li>
+                            </ul>
+                            <div class="qs-note"><p>Always review knowledge chips after the first few exchanges in a new project&mdash;early corrections prevent compounding errors in later generations.</p></div>
+                            <h3>Viewing, Editing and Clearing Knowledge</h3>
+                            <p>
+                                Open the
+                                <strong>Documents</strong>
+                                icon &rarr;
+                                <strong>Project &amp; Knowledge</strong>
+                                tab. Saved entries display as editable markdown; edit directly and click
+                                <strong>Save</strong>
+                                . To clear all knowledge for a project, delete the content in the knowledge editor and click Save&mdash;this resets the project&rsquo;s AI memory without deleting documents or conversation history.
+                            </p>
+                        </div>
+                        <!-- 13. Project Collaboration-->
+                        <div class="ug-section" id="collaboration">
+                            <h2>13. Project Collaboration</h2>
+                            <p>NorgAI projects are shareable. All project members access the same document library, AI knowledge and conversation history.</p>
+                            <h3>Adding and Removing Team Members</h3>
+                            <ol>
+                                <li>
+                                    Open the
+                                    <strong>Documents</strong>
+                                    icon &rarr;
+                                    <strong>Project &amp; Knowledge</strong>
+                                    tab.
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Manage Members</strong>
+                                    (or the members icon).
+                                </li>
+                                <li>
+                                    Click
+                                    <strong>Add Member</strong>
+                                    , search by name or email, select the user and confirm.
+                                </li>
+                            </ol>
+                            <p>To remove a member, click the remove icon next to their name and confirm&mdash;access is revoked immediately.</p>
+                            <h3>Shared Context</h3>
+                            <ul>
+                                <li>All uploaded documents are available to all members.</li>
+                                <li>AI knowledge entries are shared&mdash;a fact one member confirms is visible to all.</li>
+                                <li>Conversation history is per-user&mdash;each member has their own chat thread within the project.</li>
+                            </ul>
+                        </div>
+                        <!-- 14. Troubleshooting-->
+                        <div class="ug-section" id="troubleshooting">
+                            <h2>14. Troubleshooting</h2>
+                            <h3>Add-in and Authentication</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Issue</th>
+                                            <th scope="col">Likely cause</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Login dialog does not open or opens blank</td>
+                                            <td>Pop-up blocked by browser or corporate security policy</td>
+                                            <td>Allow pop-ups for the NorgAI domain; in desktop PowerPoint, contact your IT administrator.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Login dialog opens but authentication fails</td>
+                                            <td>Incorrect credentials, locked account or SSO misconfiguration</td>
+                                            <td>Verify credentials with your IT administrator; clear browser cache in PowerPoint for Web.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Task pane shows a blank white screen</td>
+                                            <td>Add-in failed to load, or network error on startup</td>
+                                            <td>Close and reopen PowerPoint; if it persists, reinstall the add-in from AppSource.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&ldquo;Host not supported&rdquo; message on open</td>
+                                            <td>NorgAI opened in an unsupported Office application</td>
+                                            <td>NorgAI supports Microsoft PowerPoint only; open the add-in from within PowerPoint.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>Documents</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Issue</th>
+                                            <th scope="col">Likely cause</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>File stuck at Parsing/Indexing for 5+ minutes</td>
+                                            <td>Large file, complex formatting or temporary backend delay</td>
+                                            <td>Wait up to 10 minutes for large PDFs; if unchanged, delete and re-upload.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>File shows &ldquo;Failed&rdquo; or &ldquo;Unable to Process Document&rdquo;</td>
+                                            <td>Password-protected, corrupted or unsupported encoding</td>
+                                            <td>Remove password protection, re-save and re-upload, or convert to another supported format.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>File uploaded but not used in generation</td>
+                                            <td>File not yet Fully Processed, or wrong project selected</td>
+                                            <td>Confirm Fully Processed status and that the correct project is selected.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>Generation and Plan</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Issue</th>
+                                            <th scope="col">Likely cause</th>
+                                            <th scope="col">Resolution</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Plan shows unexpected REMOVE actions on important slides</td>
+                                            <td>AI is optimising for the stated audience</td>
+                                            <td>
+                                                Click Give feedback and list slides to preserve:
+                                                <em>&ldquo;Keep slides 2, 4 and 6 unchanged.&rdquo;</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Generated content does not use uploaded documents</td>
+                                            <td>Files still processing, or prompt lacked specificity</td>
+                                            <td>Wait for Fully Processed; rephrase to reference uploads explicitly (&ldquo;using the uploaded RFP&rdquo;).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apply All Slides fails with an error</td>
+                                            <td>Network interruption during slide insertion</td>
+                                            <td>Click Apply All again, or apply slides individually using each card&rsquo;s Apply button.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- 15. FAQ-->
+                        <div class="ug-section" id="faq">
+                            <h2>15. FAQ</h2>
+                            <p>
+                                <strong>What happens if I close PowerPoint while a generation is running?</strong>
+                                <br />
+                                Closing PowerPoint interrupts generation. Partially generated slides may have been inserted&mdash;use Ctrl+Z to remove them and retry.
+                            </p>
+                            <p>
+                                <strong>Can I use NorgAI without an open presentation?</strong>
+                                <br />
+                                Yes, for document Q&amp;A and conversational requests. Slide generation and modification require an open presentation.
+                            </p>
+                            <p>
+                                <strong>How many projects can I create?</strong>
+                                <br />
+                                There is no hard limit. Contact your administrator for storage limits specific to your plan.
+                            </p>
+                            <p>
+                                <strong>Why does the task pane say &ldquo;Trial Mode&rdquo;?</strong>
+                                <br />
+                                Your administrator has configured the add-in in Trial mode; some features may be restricted. Contact your account representative to upgrade.
+                            </p>
+                            <p>
+                                <strong>Can I rename a project?</strong>
+                                <br />
+                                Not in the current version. Create a new project with the correct name and re-upload your documents.
+                            </p>
+                            <p>
+                                <strong>Does NorgAI support languages other than English?</strong>
+                                <br />
+                                NorgAI can process and generate content in multiple languages; quality in non-English languages depends on the model and your source documents. English is the primary supported language.
+                            </p>
+                        </div>
+                        <!-- 16. Privacy & Data Handling-->
+                        <div class="ug-section" id="privacy">
+                            <h2>16. Privacy &amp; Data Handling</h2>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Data type</th>
+                                            <th scope="col">Storage</th>
+                                            <th scope="col">Retention</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Uploaded documents</td>
+                                            <td>Stored securely, scoped to your project</td>
+                                            <td>Until you delete them</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Open presentation content</td>
+                                            <td>Sent for processing during operations</td>
+                                            <td>Not stored after the operation completes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AI knowledge entries</td>
+                                            <td>Stored per-user and per-project</td>
+                                            <td>Until you delete them</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Authentication tokens</td>
+                                            <td>Stored in browser localStorage</td>
+                                            <td>Until session expiry or logout</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Passwords</td>
+                                            <td>Never stored by NorgAI</td>
+                                            <td>&mdash;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul>
+                                <li>
+                                    <strong>Authentication:</strong>
+                                    NorgAI uses OAuth 2.0 / OIDC via your organisation&rsquo;s identity provider and does not store passwords.
+                                </li>
+                                <li>
+                                    <strong>Data access:</strong>
+                                    Uploaded documents are accessible only to project members; no document content is shared across organisations.
+                                </li>
+                                <li>
+                                    <strong>AI model:</strong>
+                                    Content is processed by a large language model. See the Privacy Policy for data handling, retention and model-training policies.
+                                </li>
+                            </ul>
+                            <p>
+                                Full privacy policy:
+                                <a class="text-primary" href="/legal/privacy">inscripta.ai/legal/privacy</a>
+                            </p>
+                        </div>
+                        <!-- 17. Support & Contact-->
+                        <div class="ug-section" id="support">
+                            <h2>17. Support &amp; Contact</h2>
+                            <div class="table-responsive">
+                                <table class="table table-bordered qs-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Product website</td>
+                                            <td><a class="text-primary" href="/products/norgai">inscripta.ai/products/norgai</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quick Start Guide</td>
+                                            <td><a class="text-primary" href="/products/norgai/quick-start">inscripta.ai/products/norgai/quick-start</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Support &amp; contact</td>
+                                            <td><a class="text-primary" href="/#contact">inscripta.ai/#contact</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Support email</td>
+                                            <td><a class="text-primary" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Privacy policy</td>
+                                            <td><a class="text-primary" href="/legal/privacy">inscripta.ai/legal/privacy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Terms of use</td>
+                                            <td><a class="text-primary" href="/legal/norgai-terms">inscripta.ai/legal/norgai-terms</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="mt-3">For enterprise licensing, deployment configuration and administrator setup, contact your Inscripta AI account representative through the support page above.</p>
+                        </div>
+                        <div class="ug-cta">
+                            <p class="text-muted small">NorgAI is developed and maintained by Inscripta AI Technologies Private Limited. Version 1.0.</p>
+                            <a class="btn btn-secondary mt-2" href="/products/norgai/quick-start">
+                                <i class="fas fa-arrow-left me-2"></i>
+                                Back to Quick Start Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <!-- Footer-->
+        <footer class="bg-dark py-5 text-white" role="contentinfo">
+            <div class="container px-4 px-lg-5">
+                <div class="row">
+                    <!-- Left section: Logo and description-->
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img class="img-logo mb-3" src="/assets/img/logo/logo-cs.png" alt="Inscripta AI Logo" />
+                        <p class="small text-light mb-3">Inscripta delivers AI solutions through both innovative products and expert consulting. Our offerings include ParseQa QABot for high-accuracy question answering and ParseQa Curate for intelligent content organization, alongside scalable capabilities in Generative AI, Agentic Workflows, LLMs, NLP, OCR, and Document AI. Whether through Saas applications, ready-to-deploy tools or customized engagements, we help enterprises streamline knowledge workflows, and accelerate AI adoption with measurable impact.</p>
+                        <div class="mb-2">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 540 540"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"></path></svg>
+                            <a class="text-info text-decoration-none" href="mailto:sales@inscripta.ai">sales@inscripta.ai</a>
+                        </div>
+                        <div class="mb-2">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 540 540"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544     529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"></path></svg>
+                            <a class="text-info text-decoration-none align-items-center" href="https://www.linkedin.com/company/inscripta-ai/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                    <!-- Right sections: Products, Resources, Contact-->
+                    <div class="col-lg-7 offset-lg-1">
+                        <div class="row">
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <p class="text-white mb-3">Products</p>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light" href="/products/parseqa/qabot">ParseQa QABot</a></li>
+                                    <li><a class="text-light" href="/products/parseqa/curate">ParseQa Curate</a></li>
+                                    <li><a class="text-light" href="/products/norgai">NorgAI</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <p class="text-white mb-3">Resources</p>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light" href="https://blog.inscripta.ai">Blogs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <p class="text-white bold mb-3">Services</p>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light" href="/consulting">Consulting</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4 mb-md-0">
+                                <p class="text-white mb-3">Contact</p>
+                                <ul class="list-unstyled">
+                                    <li><a class="text-light" href="mailto:sales@inscripta.ai">Email Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <div class="small text-light mt-2">
+                            &copy; 2026 Inscripta AI. All Rights Reserved.
+                            <a class="text-light mx-2">Terms of Service</a>
+                            <a class="text-light mx-2" href="/legal/privacy">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+        <!-- For loading images lazily-->
+        <script src="/js/lazysizes.min.js"></script>
+        <script src="/js/ls.unveilhooks.min.js"></script>
+        <link rel="stylesheet" href="https://website-bot.inscripta.ai/static/style.css" />
+        <!-- Load the chatbot bundle and auto-open-->
+        <script src="https://website-bot.inscripta.ai/static/chatbot.bundle.iife.js" onload="window.chatbotApp.openChat()"></script>
+    </body>
+</html>
